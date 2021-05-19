@@ -4,28 +4,7 @@
 
 
 .btn {
-  display: block;
-  padding: 1rem 1.25rem;
 
-  @include font-bold;
-  font-size: 1.125rem;
-  color: $color-white;
-  text-align: center;
-  background-color: $color-black;
-  border: none;
-
-  cursor: pointer;
-  transition: all 0.2s ease-out;
-
-  &:hover {
-    background-color: $color-green;
-  }
-
-
-  &--small {
-    padding: 0.85rem 1rem 0.75rem 1rem;
-    font-size: 0.75rem;
-  }
 }
 
 

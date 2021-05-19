@@ -42,30 +42,6 @@
   }
 
 
-  p.highlight {
-    @include font-bold;
-
-    position: relative;
-
-    &::before {
-      content: '';
-      display: block;
-      position: absolute;
-
-      width: 4px;
-      height: 100%;
-      top: 0;
-      left: -12px;
-
-      background-color: $color-green;
-
-      @include mq(md) {
-        left: -16px;
-      }
-    }
-  }
-
-
   p.small {
     font-size: 1rem;
     margin: 0 0 1rem 0;
@@ -82,13 +58,13 @@
 
   a:link,
   a:visited {
-    color: $color-green;
-    border-bottom: 2px solid $color-green;
-    transition: all 0.2s ease-in;
+    // color: $color-green;
+    // border-bottom: 2px solid $color-green;
+    // transition: all 0.2s ease-in;
   }
 
   a:hover {
-    border-bottom: 2px solid $color-background;
+    //border-bottom: 2px solid $color-background;
   }
 
 
@@ -125,7 +101,7 @@
       top: 10px;
       left: 0;
 
-      background-color: $color-green;
+      // background-color: $color-green;
       border-radius: 50%;
 
       @include mq(md) {

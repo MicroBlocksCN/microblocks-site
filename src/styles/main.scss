@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 //
 // Main CSS
 // based on: https://github.com/inuitcss/inuitcss#css-directory-structure
@@ -8,37 +9,35 @@
 
 // Settings
 // =================================
-@import "settings/config.colors";
-@import "settings/config";
+@import "settings/config.colors"; // Used
+@import "settings/config"; // Used
 
 
 // Tools (functions, mixins,...)
 // =================================
 @import "tools/fonts";
-@import "tools/layout";
-@import "tools/media-querys";
+@import "tools/layout"; // Used -- Meh
+@import "tools/media-querys"; // Used
 @import "tools/shadows";
 
 
 // Generic (button, form)
 // =================================
 @import "generic/form";
-@import 'generic/minireset';
-@import 'generic/normalize';
+@import 'generic/minireset'; // Used
+@import 'generic/normalize'; // Used
 @import 'generic/svg';
 
 
 // Vendors (bootstrap,...)
 // =================================
-@import 'vendors/bootstrap-grid';
-@import 'vendors/bootstrap-utilities';
+@import 'vendors/bootstrap-grid'; // Used
+@import 'vendors/bootstrap-utilities'; // Used
 
 
 // Base (fonts,...)
 // =================================
-@import 'base/base';
-@import 'base/forms';
-@import 'base/tables';
+@import 'base/base'; // Used -- Meh
 @import 'base/typography';
 
 
@@ -53,7 +52,6 @@
 // =================================
 @import 'elements/button';
 @import 'elements/figure';
-@import 'elements/link-text';
 
 
 // Components (aka slider)
