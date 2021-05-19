@@ -1,6 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&display=swap");
 :root {
   --bs-gutter-x: 0.75rem; }
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/SpaceGrotesk-Bold.woff2") format("woff2"), url("../fonts/SpaceGrotesk-Bold.ttf") format("truetype"), url("../fonts/SpaceGrotesk-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Italic.woff2") format("woff2"), url("../fonts/Inter-Italic.woff") format("woff"), url("../fonts/Inter-Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff"), url("../fonts/Inter-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-BoldItalic.woff2") format("woff2"), url("../fonts/Inter-BoldItalic.woff") format("woff"), url("../fonts/Inter-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic; }
 
 input,
 select,
@@ -6027,8 +6056,9 @@ html {
 
 body {
   position: relative;
-  font-family: "Chivo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Inter", Helvetica, Arial, sans-serif;
   font-weight: 400;
+  font-style: normal;
   color: #2C2C2C;
   background-color: #F8F8F8; }
 
@@ -6046,28 +6076,13 @@ a:visited {
   .page-title--center {
     text-align: center; }
 
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 1rem 0; }
-  @media (min-width: 768px) {
-    .header .container {
-      display: flex;
-      justify-content: space-between;
-      padding: 1rem var(--bs-gutter-x); } }
-
 .header__logo {
   position: relative;
   display: block;
-  width: 140px; }
-  .header__logo svg {
-    width: 100%;
-    fill: #2C2C2C; }
+  width: 200px; }
   @media (min-width: 768px) {
     .header__logo {
-      width: 120px; } }
+      width: 240px; } }
   @media (min-width: 992px) {
     .header__logo {
       z-index: 10; } }
@@ -6182,11 +6197,6 @@ a:visited {
 .wysiwyg {
   line-height: 1.4;
   margin: 0 0 4rem 0; }
-  .wysiwyg h2 {
-    font-size: 2rem;
-    font-family: "Chivo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-weight: 700;
-    margin-bottom: 1.65rem; }
   .wysiwyg p {
     font-size: 1.25rem;
     letter-spacing: -0.25px;
@@ -6196,8 +6206,9 @@ a:visited {
         font-size: 1.5rem;
         margin: 0 0 2rem 0; } }
     .wysiwyg p strong {
-      font-family: "Chivo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-      font-weight: 700; }
+      font-family: "Inter", Helvetica, Arial, sans-serif;
+      font-weight: 700;
+      font-style: normal; }
   .wysiwyg p.small {
     font-size: 1rem;
     margin: 0 0 1rem 0; }

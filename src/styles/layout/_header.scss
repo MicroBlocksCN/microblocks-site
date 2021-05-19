@@ -3,36 +3,16 @@
 // ==========================================================================
 
 .header {
-  position: absolute;
-  //width: 100vw;
-  top: 0;
-  left: 0;
-  right: 0;
 
-  padding: 1rem 0;
-
-  @include mq(md) {
-
-    .container {
-      display: flex;
-      justify-content: space-between;
-      padding: 1rem var(--bs-gutter-x);
-    }
-  }
 }
 
 .header__logo {
   position: relative;
   display: block;
-  width: 140px;
-
-  svg {
-    width: 100%;
-    fill: $color-black;
-  }
+  width: 200px;
 
   @include mq(md) {
-    width: 120px;
+    width: 240px;
   }
 
   @include mq(lg) {

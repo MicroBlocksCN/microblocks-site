@@ -13,9 +13,7 @@
   // ==================================================
 
   h2 {
-    font-size: 2rem;
-    @include font-bold;
-    margin-bottom: 1.65rem;
+
   }
 
 
@@ -37,7 +35,7 @@
     }
 
     strong {
-      @include font-bold;
+      @include font-regular-bold;
     }
   }
 
