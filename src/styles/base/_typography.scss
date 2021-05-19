@@ -1,0 +1,37 @@
+// ==========================================================================
+// Base / Typography
+// ==========================================================================
+
+
+.page-title {
+  color: $color-green;
+  margin: 0 0 2rem 0;
+  font-size: 2.5rem;
+
+  @include mq(md) {
+    font-size: 3rem;
+    margin: 0 0 3rem 0;
+  }
+
+  &--center {
+    text-align: center
+  }
+}
+
+
+strong {
+  @include font-bold;
+}
+
+
+.alert {
+
+  &:link,
+  &:visited {
+    color: $color-green;
+  }
+
+  &-danger {
+    color: red;
+  }
+}

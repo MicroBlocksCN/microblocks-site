@@ -1,0 +1,25 @@
+// ==================================================
+// Elements / Figure
+// ==================================================
+
+
+.figure--sticky {
+
+  @include mq(lg) {
+    position: sticky;
+    top: 2rem;
+  }
+}
+
+.figure__image {
+  padding: 1rem;
+}
+
+.figure__figcaption {
+  margin: 1rem 0 0 0;
+  padding: 1rem 0 0 0;
+
+  border-top: 1px solid $color-grey-light;
+
+  color: $color-black;
+}

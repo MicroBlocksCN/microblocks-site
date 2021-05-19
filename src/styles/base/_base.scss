@@ -1,0 +1,21 @@
+// ==========================================================================
+// Base / Base
+// ==========================================================================
+
+html {
+  font-size: 16px; // Used for rem
+  line-height: 1.25;
+}
+
+body {
+  position: relative;
+
+  @include font-regular;
+  color: $color-black;
+  background-color: $color-background;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}

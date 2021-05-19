@@ -1,0 +1,132 @@
+// ==================================================
+// Layout / Footer
+// ==================================================
+
+
+
+.footer {
+  padding: 2rem 0 1rem 0;
+  background-color: $color-white;
+}
+
+
+
+// Footer titles
+// ==================================================
+
+.footer__title {
+  padding: 0.25rem 0 0.75rem 0;
+
+  border-top: 1px solid $color-grey-light;
+  //font-size: 0.75rem;
+}
+
+
+
+// Project Credits
+// ==================================================
+
+.footer__project-credits {
+  padding: 0 0 1rem 0;
+
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer__logos-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 2rem;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-grow: 1;
+  margin: 0 2rem 0 0;
+
+  &:last-of-type {
+    margin: 0;
+  }
+
+  @include mq(md) {
+    margin: 0 1rem 0 0;
+    min-width: 80px;
+  }
+
+  &:last-of-type {
+
+    @include mq(md) {
+      margin: 0;
+    }
+  }
+
+  @include mq(lg) {
+    min-width: 120px;
+  }
+}
+
+.footer__logo__anchor {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.footer__logo__image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+
+// Legal stuff links
+// ==================================================
+
+.footer__legal {
+  //padding: 1rem 0 0 0;
+  font-size: 0.75rem;
+
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer__legal__copyright {
+  margin: 0 0 0.5rem 0;
+
+  @include mq(md) {
+    margin: 0;
+  }
+}
+
+.footer__legal__texts {
+
+  @include mq(sm) {
+    display: flex;
+  }
+}
+
+.footer__text-link {
+  display: block;
+  color: $color-grey;
+  transition: color 0.2s ease-in;
+
+  &:hover {
+    color: $color-black;
+  }
+
+  &:last-of-type {
+
+    @include mq(sm) {
+      margin: 0 0 0 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@charset "UTF-8";
+//
+// Main CSS
+// based on: https://github.com/inuitcss/inuitcss#css-directory-structure
+// because of: https://github.com/locomotivemtl/locomotive-boilerplate
+//
+
+
+// Settings
+// =================================
+@import "settings/config.colors";
+@import "settings/config";
+
+
+// Tools (functions, mixins,...)
+// =================================
+@import "tools/fonts";
+@import "tools/layout";
+@import "tools/media-querys";
+@import "tools/shadows";
+
+
+// Generic (button, form)
+// =================================
+@import "generic/form";
+@import 'generic/minireset';
+@import 'generic/normalize';
+@import 'generic/svg';
+
+
+// Vendors (bootstrap,...)
+// =================================
+@import 'vendors/bootstrap-grid';
+@import 'vendors/bootstrap-utilities';
+
+
+// Base (fonts,...)
+// =================================
+@import 'base/base';
+@import 'base/forms';
+@import 'base/tables';
+@import 'base/typography';
+
+
+// Layout
+// =================================
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/main';
+
+
+// Elements (button)
+// =================================
+@import 'elements/button';
+@import 'elements/figure';
+@import 'elements/link-text';
+
+
+// Components (aka slider)
+// =================================
+@import 'components/wysiwyg';
+
+
+// Templates (aka homepage)
+// =================================
+@import 'templates/home';
+
+
+// Utilities (u_hidden, u_16)
+// =================================
+@import "utilities/ratio";
+@import "utilities/layout";
