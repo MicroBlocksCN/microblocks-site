@@ -1,0 +1,24 @@
+// ==================================================
+// Components / Menu Toggle
+// ==================================================
+
+
+.menu-toggle {
+  width: 48px;
+  height: 48px;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $color-white;
+  background-color: $color-black;
+  border-radius: 2px;  
+
+  @include block-connector;
+}
+
+

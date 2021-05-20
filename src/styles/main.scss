@@ -15,15 +15,16 @@
 
 // Tools (functions, mixins,...)
 // =================================
-@import "tools/fonts";
+@import "tools/block-connector"; // Used
+@import "tools/fonts"; // Used
 @import "tools/layout"; // Used -- Meh
 @import "tools/media-querys"; // Used
 @import "tools/shadows";
 
 
+
 // Generic (button, form)
 // =================================
-@import "generic/form";
 @import 'generic/minireset'; // Used
 @import 'generic/normalize'; // Used
 @import 'generic/svg';
@@ -41,13 +42,6 @@
 @import 'base/typography';
 
 
-// Layout
-// =================================
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/main';
-
-
 // Elements (button)
 // =================================
 @import 'elements/button';
@@ -56,7 +50,15 @@
 
 // Components (aka slider)
 // =================================
+@import 'components/menu-toggle';
 @import 'components/wysiwyg';
+
+
+// Layout
+// =================================
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/main';
 
 
 // Templates (aka homepage)

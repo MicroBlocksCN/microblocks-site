@@ -1,0 +1,23 @@
+// ==========================================================================
+// Tools / Block Connector
+// ==========================================================================
+
+
+@mixin block-connector {
+    
+    &::after {
+        display: block;
+        content: '';
+    
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        bottom: -4px;
+        left: 8px;
+    
+        background-color: inherit;
+        
+        transform: rotate(45deg);
+        border-radius: 2px;
+    }
+}
