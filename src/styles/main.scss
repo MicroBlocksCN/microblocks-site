@@ -41,7 +41,7 @@
 // =================================
 @import 'layout/header'; // Used
 @import 'layout/footer'; // Used
-@import 'layout/main'; // Used
+@import 'layout/page'; // Used
 
 
 // Base (typography,...)
@@ -60,9 +60,11 @@
 
 // Components (aka slider)
 // =================================
+@import 'components/hero-picture';
 @import 'components/links-and-buttons';
 @import 'components/menu';
 @import 'components/menu-toggle';
+@import 'components/title-blocks';
 @import 'components/wysiwyg';
 
 

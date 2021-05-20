@@ -1,0 +1,70 @@
+// ==========================================================================
+// Components / Title Blocks
+// ==========================================================================
+
+
+.title-blocks {
+  margin: -24px 0 40px 0;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  @include mq(md) {
+    margin: -28px 0 40px 0;
+  }
+
+  @include mq(md) {
+    margin: -32px 0 40px 0;
+  }
+}
+
+
+.title-blocks__word {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: $border-radius-global;
+  margin: 0 8px 12px 0;
+
+  @include font-display-bold;
+  color: $color-white;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -1px;
+  text-transform: lowercase;
+
+  @include block-connector;
+
+
+  // Large Screens
+
+  @include mq(md) {
+    font-size: 40px;
+  }
+
+  @include mq(lg) {
+    font-size: 48px;
+  }
+
+
+  // Colors
+
+  &--orange {
+    background-color: $color-orange;
+  }
+
+  &--purple {
+    background-color: $color-purple;
+  }
+
+  &--blue {
+    background-color: $color-blue;
+  }
+
+  &--teal {
+    background-color: $color-teal;
+  }
+
+  &--green {
+    background-color: $color-green;
+  }
+}

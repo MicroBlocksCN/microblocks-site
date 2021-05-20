@@ -3365,12 +3365,12 @@ svg {
       width: 240px;
       transform: translateY(-23px); } }
 
-.main {
+.page {
   position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column; }
-  .main .content {
+  .page .content {
     flex-grow: 1; }
 
 html {
@@ -3415,6 +3415,22 @@ a:visited {
   padding: 1rem 0 0 0;
   border-top: 1px solid #ececec;
   color: #2C2C2C; }
+
+.hero-picture {
+  position: relative;
+  height: 50vh; }
+
+.hero-picture__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  .hero-picture__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
 
 .link-circle-w-text {
   display: flex;
@@ -3588,6 +3604,59 @@ a:visited {
   align-items: center;
   justify-content: center;
   transition: opacity 0.3s ease-out; }
+
+.title-blocks {
+  margin: -24px 0 40px 0;
+  display: flex;
+  flex-wrap: wrap; }
+  @media (min-width: 768px) {
+    .title-blocks {
+      margin: -28px 0 40px 0; } }
+  @media (min-width: 768px) {
+    .title-blocks {
+      margin: -32px 0 40px 0; } }
+
+.title-blocks__word {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin: 0 8px 12px 0;
+  font-family: "Space Grotesk", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -1px;
+  text-transform: lowercase;
+  position: relative; }
+  .title-blocks__word::after {
+    display: block;
+    content: '';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    bottom: -4px;
+    left: 8px;
+    background-color: inherit;
+    transform: rotate(45deg);
+    border-radius: 2px; }
+  @media (min-width: 768px) {
+    .title-blocks__word {
+      font-size: 40px; } }
+  @media (min-width: 992px) {
+    .title-blocks__word {
+      font-size: 48px; } }
+  .title-blocks__word--orange {
+    background-color: #F58518; }
+  .title-blocks__word--purple {
+    background-color: #B6519D; }
+  .title-blocks__word--blue {
+    background-color: #009ECE; }
+  .title-blocks__word--teal {
+    background-color: #01928B; }
+  .title-blocks__word--green {
+    background-color: #52A546; }
 
 .wysiwyg {
   line-height: 1.4;
