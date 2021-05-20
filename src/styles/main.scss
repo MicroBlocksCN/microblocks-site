@@ -15,12 +15,13 @@
 
 // Tools (functions, mixins,...)
 // =================================
+@import "tools/backgrounds"; // Used
 @import "tools/block-connector"; // Used
+@import "tools/borders"; // Used
 @import "tools/fonts"; // Used
 @import "tools/layout"; // Used -- Meh
 @import "tools/media-querys"; // Used
 @import "tools/shadows";
-
 
 
 // Generic (button, form)
@@ -34,6 +35,13 @@
 // =================================
 @import 'vendors/bootstrap-grid'; // Used
 @import 'vendors/bootstrap-utilities'; // Used
+
+
+// Layout
+// =================================
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/main';
 
 
 // Base (fonts,...)
@@ -50,15 +58,13 @@
 
 // Components (aka slider)
 // =================================
+@import 'components/menu';
 @import 'components/menu-toggle';
 @import 'components/wysiwyg';
 
 
-// Layout
-// =================================
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/main';
+
+
 
 
 // Templates (aka homepage)

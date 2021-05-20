@@ -1,0 +1,12 @@
+// ==========================================================================
+// Tools / Backgrounds
+// ==========================================================================
+
+
+
+// Mixins
+
+@mixin background-emoji($color: yellow) {
+    background-image: url('../img/backgrounds/background-on-#{$color}.png');
+    background-position: center center;
+}

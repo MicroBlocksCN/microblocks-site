@@ -13,7 +13,6 @@ function autorun(){
   } */
 
   menuToggle();
-  slideshowInit();
 
 };
 

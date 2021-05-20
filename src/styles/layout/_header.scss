@@ -2,23 +2,29 @@
 // Layout / Header
 // ==========================================================================
 
-.header {
 
+.header {
+  height: 48px;
+  z-index: $zindex-menu;
+  position: relative;
+
+  background-color: $color-white;
+
+
+  // Large Screens
+
+  @include mq(lg) {
+    height: 56px;
+  }
 }
 
+
 .header__logo {
-  position: relative;
+  position: absolute;
   display: block;
   width: 200px;
 
   @include mq(md) {
     width: 240px;
   }
-
-  @include mq(lg) {
-    z-index: $zindex-menu;
-  }
 }
-
-
-

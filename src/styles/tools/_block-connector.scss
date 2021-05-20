@@ -4,6 +4,8 @@
 
 
 @mixin block-connector {
+
+    position: relative;
     
     &::after {
         display: block;
