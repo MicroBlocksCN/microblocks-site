@@ -13,7 +13,7 @@
 
   // Large Screens
 
-  @include mq(lg) {
+  @include mq(md) {
     height: 56px;
   }
 }

@@ -3316,7 +3316,7 @@ svg {
   z-index: 10;
   position: relative;
   background-color: #FFFFFF; }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .header {
       height: 56px; } }
 
@@ -3450,7 +3450,7 @@ a:visited {
 
 .menu {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0;
   right: -100%;
@@ -3468,6 +3468,7 @@ a:visited {
   @media (min-width: 992px) {
     .menu {
       height: 100%;
+      width: 100%;
       position: relative;
       right: auto;
       flex-direction: row;
@@ -3618,7 +3619,7 @@ a:visited {
 
 .title-blocks__word {
   display: inline-block;
-  padding: 8px 12px;
+  padding: 6px 12px 10px;
   border-radius: 4px;
   margin: 0 8px 12px 0;
   font-family: "Space Grotesk", Helvetica, Arial, sans-serif;
