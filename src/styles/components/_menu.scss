@@ -53,6 +53,11 @@
   
   @include border-bottom-large($color-yellow-dark);
 
+  a.menu__link:link,
+  a.menu__link:visited {
+    color: $color-black;
+  }
+
 
   // Large Screens
 

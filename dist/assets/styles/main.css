@@ -3461,6 +3461,9 @@ a:visited {
   width: 100%;
   padding: 32px 0 32px 0;
   border-bottom: 8px solid #FBC227; }
+  .menu__explain a.menu__link:link,
+  .menu__explain a.menu__link:visited {
+    color: #2C2C2C; }
   @media (min-width: 992px) {
     .menu__explain {
       width: auto;
