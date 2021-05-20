@@ -4,17 +4,12 @@
 
 
 .main {
-  // position: relative;
-  // min-height: 100vh;
-  // display: flex;
-  // flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 
-  // .content {
-  //   flex-grow: 1;
-  //   padding: 10rem 0 6rem 0;
-
-  //   @include mq(md) {
-  //     padding: 12rem 0 10rem 0;
-  //   }
-  // }
+  .content {
+    flex-grow: 1;
+  }
 }

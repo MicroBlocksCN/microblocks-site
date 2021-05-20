@@ -1,0 +1,19 @@
+// ==========================================================================
+// Elements / Rounded Icons, Lists Indexs...
+// ==========================================================================
+
+
+.circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+
+  @include center-content-flex;
+
+
+  // Colors
+
+  &--yellow {
+    background-color: $color-yellow;
+  }
+}

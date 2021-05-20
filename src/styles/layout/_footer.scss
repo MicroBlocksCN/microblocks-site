@@ -1,132 +1,68 @@
-// ==================================================
+// ==========================================================================
 // Layout / Footer
-// ==================================================
+// ==========================================================================
 
 
 
 .footer {
-  padding: 2rem 0 1rem 0;
-  background-color: $color-white;
-}
+  padding: 48px 0 24px 0;
+  background-color: $color-black;
 
+  color: $color-black-400;
+  font-size: 14px;
+  line-height: 1.2rem;
+  
 
+  h3 {
+    margin-bottom: 12px;
+    @include font-display-bold;
+    font-size: 24px;
+    color: $color-white;
+  }
 
-// Footer titles
-// ==================================================
+  p {
+    margin-bottom: 12px;
 
-.footer__title {
-  padding: 0.25rem 0 0.75rem 0;
-
-  border-top: 1px solid $color-grey-light;
-  //font-size: 0.75rem;
-}
-
-
-
-// Project Credits
-// ==================================================
-
-.footer__project-credits {
-  padding: 0 0 1rem 0;
-
-  @include mq(md) {
-    display: flex;
-    justify-content: space-between;
+    a:link,
+    a:visited {
+      color: $color-black-400;
+      text-decoration: underline;
+      transition: color 0.3s ease-out;
+    }
+  
+    a:hover {
+      color: $color-yellow;
+    }
   }
 }
 
-.footer__logos-wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 0 2rem;
+
+
+// Contents
+// ==========================================================================
+
+
+.footer__content {
+  margin: 0 0 40px 0;
 }
+
+
+.footer__col {
+  margin: 0 0 32px 0;
+}
+
+
+
+// Logo
+// ==========================================================================
+
 
 .footer__logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  flex-grow: 1;
-  margin: 0 2rem 0 0;
-
-  &:last-of-type {
-    margin: 0;
-  }
-
-  @include mq(md) {
-    margin: 0 1rem 0 0;
-    min-width: 80px;
-  }
-
-  &:last-of-type {
-
-    @include mq(md) {
-      margin: 0;
-    }
-  }
-
-  @include mq(lg) {
-    min-width: 120px;
-  }
-}
-
-.footer__logo__anchor {
   display: block;
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%;
-}
-
-.footer__logo__image {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-}
-
-
-// Legal stuff links
-// ==================================================
-
-.footer__legal {
-  //padding: 1rem 0 0 0;
-  font-size: 0.75rem;
+  width: 200px;
 
   @include mq(md) {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.footer__legal__copyright {
-  margin: 0 0 0.5rem 0;
-
-  @include mq(md) {
-    margin: 0;
-  }
-}
-
-.footer__legal__texts {
-
-  @include mq(sm) {
-    display: flex;
-  }
-}
-
-.footer__text-link {
-  display: block;
-  color: $color-grey;
-  transition: color 0.2s ease-in;
-
-  &:hover {
-    color: $color-black;
-  }
-
-  &:last-of-type {
-
-    @include mq(sm) {
-      margin: 0 0 0 1.5rem;
-    }
+    width: 240px;
+    transform: translateY(-23px); // Align logo to titles
   }
 }

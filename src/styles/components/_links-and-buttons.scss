@@ -1,0 +1,31 @@
+// ==========================================================================
+// Components / Links and Buttons
+// ==========================================================================
+
+
+
+// Circle with Text
+// ==========================================================================
+
+.link-circle-w-text {
+  display: flex;
+  align-items: center;
+
+  @include font-display-bold;
+  font-size: 16px;
+  color: $color-black;
+
+  transition: transform 0.2s ease-out;
+
+  .circle {
+    margin-right: 8px;
+  }
+
+  &--on-dark {
+    color: $color-white;
+  }
+
+  &:hover {
+    transform: translateX(8px);
+  }
+}

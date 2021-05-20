@@ -3,9 +3,27 @@
 // ==========================================================================
 
 
+
+
 @mixin inset {
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+}
+
+
+
+// Alignments
+// ==========================================================================
+
+
+@mixin center-content-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > * {
+        line-height: 1;
+    }
 }
