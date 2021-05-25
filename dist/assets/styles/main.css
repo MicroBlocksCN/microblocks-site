@@ -3352,10 +3352,10 @@ svg {
       color: #FED722; }
 
 .footer__content {
-  margin: 0 0 40px 0; }
+  margin-bottom: 40px; }
 
 .footer__col {
-  margin: 0 0 32px 0; }
+  margin-bottom: 32px; }
 
 .footer__logo {
   display: block;
