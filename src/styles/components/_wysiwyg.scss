@@ -26,10 +26,21 @@
   p {
     font-size: 1rem;
     line-height: 1.4;
-    margin: 0 0 2rem 0;
+    margin: 0 0 1.5rem 0;
 
     strong {
       @include font-regular-bold;
+    }
+
+    a:link,
+    a:visited {
+      color: $color-black;
+      text-decoration: underline;
+      transition: color 0.2s ease-out;
+    }
+
+    a:hover {
+      color: $color-purple;
     }
   }
 
@@ -58,16 +69,9 @@
 
   // Links
   // ==================================================
+  
 
-  a:link,
-  a:visited {
-    color: $color-black;
-    text-decoration: underline;
-  }
-
-  a:hover {
-    color: $color-purple;
-  }
+  
 
 
   // Lists
@@ -110,5 +114,12 @@
   //     }
   //   }
   // }
+
+
+  // Exceptions
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
 
 }

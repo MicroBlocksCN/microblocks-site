@@ -1,0 +1,32 @@
+// ==========================================================================
+// Layout / Section
+// ==========================================================================
+
+
+.colored-section {
+  padding: 80px 0;
+
+  text-align: center;
+
+
+  &__title {
+    margin-bottom: 16px;
+
+    .block {
+      transform: rotate(-2deg);
+    }
+  }
+
+
+  &__contents {
+    font-size: 20px;
+  }
+
+
+  &--yellow {
+    background-color: $color-yellow;
+    @include background-emoji(yellow);
+    @include border-top-large($color-yellow-dark)
+    @include border-bottom-large($color-yellow-dark)
+  }  
+}

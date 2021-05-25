@@ -4,8 +4,70 @@
 
 
 .btn {
+    display: inline-block;
+    position: relative;
 
+    padding: 10px 56px 10px 16px;
+    border-radius: 2px;
+    border: none; // Reset buttons
+    cursor: pointer; // Style buttons
+
+    @include font-display-bold;
+    font-size: 16px;
+    line-height: 1;
+    color: $color-white;
+    text-decoration: none;
+    background-color: $color-orange;
+
+    transition: background-color 0.2s ease-out;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 9px;
+
+        position: absolute;
+        top: 14px;
+        right: 16px;
+
+        background-image: url('../img/icons/icon-arrow-right.svg');
+
+        //background-color: #fff;
+        transition: right 0.2s ease-out;
+    }
+
+
+    // Colors
+
+    &--purple {
+        background-color: $color-purple;
+    }
+
+    &--blue {
+        background-color: $color-blue;
+    }
+
+    &--teal {
+        background-color: $color-teal;
+    }
+
+    &--green {
+        background-color: $color-green;
+    }
 }
+
+
+
+.btn:hover {
+    color: $color-white;
+    background-color: $color-black;
+
+    &::after {
+        right: 8px;
+    }
+}
+
 
 
 

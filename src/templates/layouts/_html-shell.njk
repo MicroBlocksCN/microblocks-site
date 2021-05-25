@@ -12,17 +12,17 @@
   
   <body>
 
-    <main class="page {{ data.pageClass }}">
+    <div class="page {{ data.pageClass }}">
 
       {% include 'partials/_header.njk' %}
 
-      <div class="content">
+      <main class="main">
         {% block content %}{% endblock %}
-      </div>
+      </main>
 
       {% include 'partials/_footer.njk' %}
 
-    </main>
+    </div>
 
   </body>
 </html>

@@ -39,27 +39,32 @@
 
 // Layout
 // =================================
+
 @import 'layout/header'; // Used
 @import 'layout/footer'; // Used
+@import 'layout/main'; // Used
 @import 'layout/page'; // Used
+@import 'layout/section'; // Used
 
 
 // Base (typography,...)
 // =================================
 @import 'base/base'; // Used -- Meh
-@import 'base/typography';
+@import 'base/typography'; // Used
 
 
 // Elements (aka button)
 // =================================
-@import 'elements/button';
+@import 'elements/border-top'; // Used
+@import 'elements/button'; // Used
 @import 'elements/circle'; // Used
 @import 'elements/figure';
 
 
-
 // Components (aka slider)
 // =================================
+@import 'components/blocks';
+@import 'components/colored-section';
 @import 'components/hero-picture';
 @import 'components/links-and-buttons';
 @import 'components/menu';
