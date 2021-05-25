@@ -26,7 +26,7 @@
   &--yellow {
     background-color: $color-yellow;
     @include background-emoji(yellow);
-    @include border-top-large($color-yellow-dark)
-    @include border-bottom-large($color-yellow-dark)
+    @include border-top-large($color-yellow-dark);
+    @include border-bottom-large($color-yellow-dark);
   }  
 }
