@@ -17,4 +17,17 @@
 
 .main__header {
   margin-bottom: 80px;
+
+  @include mq(lg) {
+    margin-bottom: 120px;
+  }
+}
+
+
+.main__contents {
+  margin-bottom: 80px;
+
+  @include mq(lg) {
+    margin-bottom: 120px;
+  }
 }
