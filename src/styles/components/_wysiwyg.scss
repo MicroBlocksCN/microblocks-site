@@ -5,34 +5,28 @@
 
 .wysiwyg {
 
-  line-height: 1.4;
-  margin: 0 0 4rem 0;
+  // line-height: 1.4;
+  // margin: 0 0 4rem 0;
+  color: $color-black-700;
 
 
   // Headings
   // ==================================================
 
-  h2 {
 
-  }
-
-
-  // Paragraphs
+  // Paragraphs 
+  //
+  // wysiwyg-sm: 14px/1.4 on desktop
+  // wysiwyg:    16px/1.4 on desktop
+  // wysiwyg-md: 20px/1.4 on desktop
+  // wysiwyg-lg: 32px/1.2 on desktop
+  //
   // ==================================================
 
   p {
-    font-size: 1.25rem;
-    letter-spacing: -0.25px;
-    margin: 0 0 1.65rem 0;
-
-    &:last-of-type {
-      //margin: 0;
-    }
-
-    @include mq(md) {
-      font-size: 1.5rem;
-      margin: 0 0 2rem 0;
-    }
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0 0 2rem 0;
 
     strong {
       @include font-regular-bold;
@@ -40,13 +34,24 @@
   }
 
 
-  p.small {
-    font-size: 1rem;
-    margin: 0 0 1rem 0;
+  p.wysiwyg--sm {
+    font-size: 0.875rem;
+  }
 
-    @include mq(md) {
-      font-size: 1rem;
-      margin: 0 0 1.5rem 0;
+
+  p.wysiwyg--md {
+    font-size: 1.5rem;
+  }
+
+
+  p.wysiwyg--lg {
+    font-size: 1.75rem;
+    line-height: 1.2;
+    letter-spacing: -1px;
+
+    @include mq(lg) {
+      font-size: 2rem;
+      margin: 0 0 2rem 0;
     }
   }
 
@@ -56,56 +61,54 @@
 
   a:link,
   a:visited {
-    // color: $color-green;
-    // border-bottom: 2px solid $color-green;
-    // transition: all 0.2s ease-in;
+    color: $color-black;
+    text-decoration: underline;
   }
 
   a:hover {
-    //border-bottom: 2px solid $color-background;
+    color: $color-purple;
   }
 
 
   // Lists
   // ==================================================
 
-  ul {
-    margin: 0 0 1.65rem 0;
+  // ul {
+  //   margin: 0 0 1.65rem 0;
 
-    @include mq(md) {
-      margin: 0 0 2rem 0;
-    }
-  }
+  //   @include mq(md) {
+  //     margin: 0 0 2rem 0;
+  //   }
+  // }
 
-  ul li {
-    position: relative;
-    font-size: 1.25rem;
-    letter-spacing: -0.25px;
-    margin: 0 0 0.25rem 0;
-    padding: 0 0 0 0.85rem;
+  // ul li {
+  //   position: relative;
+  //   font-size: 1.25rem;
+  //   letter-spacing: -0.25px;
+  //   margin: 0 0 0.25rem 0;
+  //   padding: 0 0 0 0.85rem;
 
-    @include mq(md) {
-      font-size: 1.5rem;
-      margin: 0 0 0.5rem 0;
-    }
+  //   @include mq(md) {
+  //     font-size: 1.5rem;
+  //     margin: 0 0 0.5rem 0;
+  //   }
 
-    &::before {
-      content: '';
-      display: block;
-      width: 0.45rem;
-      height: 0.45rem;
+  //   &::before {
+  //     content: '';
+  //     display: block;
+  //     width: 0.45rem;
+  //     height: 0.45rem;
 
-      position: absolute;
-      top: 10px;
-      left: 0;
+  //     position: absolute;
+  //     top: 10px;
+  //     left: 0;
 
-      // background-color: $color-green;
-      border-radius: 50%;
+  //     border-radius: 50%;
 
-      @include mq(md) {
-        top: 13px;
-      }
-    }
-  }
+  //     @include mq(md) {
+  //       top: 13px;
+  //     }
+  //   }
+  // }
 
 }

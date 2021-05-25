@@ -2,3 +2,7 @@
 // Base / Typography
 // ==========================================================================
 
+
+.section-title {
+    @include font-display-bold;
+}
