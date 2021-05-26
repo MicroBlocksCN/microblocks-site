@@ -1,0 +1,165 @@
+{#
+## Contribute
+#}
+
+{% extends 'layouts/_html-shell.njk' %}
+{% import 'data/_global.njk' as global %}
+{% import 'data/_learn.njk' as data %}
+
+
+{% block content %}
+
+
+<!-- Header -->
+<header class="main__header">
+
+
+    <!-- Hero -->
+    <div class="hero-picture">
+        <picture class="hero-picture__img">
+            <source media="(min-width: 768px)" srcset="assets/img/pictures/picture-1920x1080.jpg">
+            <source media="(max-width: 767px)" srcset="assets/img/pictures/picture-960x540.jpg">
+            <img src="assets/img/picture/picture-1920x1080.jpg" alt="Hands connecting wires to a board" />
+        </picture>
+    </div>
+
+
+    <div class="container">
+
+        <!-- Title -->
+        <div class="row">
+            <div class="col-12">
+                <h1 class="title-blocks">
+                    <span class="block block--purple">Learn</span>
+                </h1>
+            </div>
+        </div>
+
+        <!-- Intro -->
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="picture picture--16/9 u_rotate-left-2 u_mb-2">
+                    <img src="assets/img/pictures/learn-intro-960x540.jpg" alt="Kids playing with a board">
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="wysiwyg">
+                    <p class="wysiwyg--md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</header>
+<!-- Header -->
+
+
+<!-- Contents -->
+<div class="main__contents">
+
+
+    <div class="page-learn__activity-cards">
+
+        <form class="page-learn__filters">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Language -->
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <label class="page-learn__label" for="language">Language:</label>
+                        <select class="page-learn__select" id="language" name="language">
+                            <option value="english">English</option>
+                            <option value="spanish">Spanish</option>
+                            <option value="turkish">Turkish</option>
+                            <option value="catalan">Catalan</option>
+                        </select> 
+                    </div>
+
+                    <!-- Boards -->
+                    <div class="col-6 col-md-4 offset-lg-3 col-lg-3">
+                        <label class="page-learn__label" for="boards">Boards:</label>
+                        <select class="page-learn__select page-learn__select--purple" id="boards" name="boards">
+                            <option value="all-cards">All Cards</option>
+                            <option value="microbit">micro:bit</option>
+                        </select> 
+                    </div>
+
+                    <!-- Level -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <label class="page-learn__label" for="level">Level:</label>
+                        <select class="page-learn__select page-learn__select--teal" id="level" name="level">
+                            <option value="english">All Levels</option>
+                            <option value="spanish">Easy</option>
+                        </select> 
+                    </div>
+
+                </div>
+            </div>
+        </form>
+
+
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-learn__cards-list">
+                        {% for i in range(0, 12) %}
+                            {% include 'partials/_activity-card.njk' %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-learn__pagination pagination">
+                        <a href="#" class="pagination__item pagination__item--disabled">&lt;</a>
+                        <a href="#" class="pagination__item pagination__item--active">1</a>
+                        <a href="#" class="pagination__item">2</a>
+                        <a href="#" class="pagination__item">3</a>
+                        <a href="#" class="pagination__item">4</a>
+                        <a href="#" class="pagination__item">5</a>
+                        <a href="#" class="pagination__item">&gt;</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</div>
+<!-- Contents -->
+
+
+<!-- Contents Footer -->
+<aside class="main__footer colored-section colored-section--grey">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <div class="colored-section__title">
+                    <h2 class="block block--purple">Thanks</h2>
+                </div>
+                <div class="colored-section__contents">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+<!-- Contents Footer -->
+
+
+
+{% endblock %}

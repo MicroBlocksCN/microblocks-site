@@ -69,6 +69,7 @@
 // Components
 // Discrete, complete chunks of UI (e.g. .c-carousel {}).
 // ==========================================================================
+@import 'components/activity-cards';
 @import 'components/blocks';
 @import 'components/colored-section';
 @import 'components/hero-picture';
@@ -77,6 +78,8 @@
 @import 'components/menu';
 @import 'components/menu-toggle';
 @import 'components/next-steps';
+@import 'components/pagination';
+@import 'components/pictures';
 @import 'components/title-blocks';
 @import 'components/wysiwyg';
 
@@ -86,6 +89,7 @@
 // ==========================================================================
 @import 'templates/download';
 @import 'templates/home';
+@import 'templates/learn';
 @import 'templates/release';
 
 
@@ -95,4 +99,5 @@
 //@import "utilities/text"; // Used
 @import "utilities/layout"; // Used
 @import "utilities/ratio";
+@import "utilities/transforms"; // Used
 @import "utilities/text"; // Used
