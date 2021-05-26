@@ -1,0 +1,93 @@
+{#
+## Download
+#}
+
+{% extends 'layouts/_html-shell.njk' %}
+{% import 'data/_global.njk' as global %}
+{% import 'data/_download.njk' as data %}
+
+
+{% block content %}
+
+<!-- Header -->
+<header class="main__header">
+
+  <!-- Hero -->
+  <div class="hero-yellow">
+    <div class="page-download__hero">
+
+      <!-- Boardie -->
+      <div class="page-download__hero__boardie">
+        <img src="assets/img/boardie/boardie-download.svg" alt="Board with leds drawing a dowload arrow">
+      </div>
+
+      <!-- CTA -->
+      <div class="page-download__hero__action">
+        <h1>
+          <span>get MicroBlocks for</span>
+          <div class="section-title">windows</div>
+        </h1>        
+        <div class="btn btn--purple">Download</div>
+      </div>
+
+      <!-- Specs -->
+      <div class="page-download__hero__specs">
+        <div class="wysiwyg wysiwyg--black">
+          <p>
+            <strong>Current Version: 1.0.13</strong><br>
+            Released on 16 February 2021. <a href="release-notes.html">Release&nbsp;notes</a>.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+<!-- Header -->
+
+
+<!-- Contents -->
+<div class="main__contents">
+
+  <div class="container">
+    <div class="row section">
+      <article class="col-12">
+
+        <header>
+          <h2 class="section-title u_text-center">
+            Need more options?
+          </h2>
+        </header>
+
+        <main>
+          <div class="wysiwyg wysiwyg--center">
+            <p>
+              Are you searching for other platforms’ installers, Virtual Machines or Standalone executables? You will find them here!
+            </p>
+            <div>
+              <a class="btn btn--teal u_mb-0.5" href="other-platforms.html">Other Platforms</a><br>
+              <a class="btn btn--blue" href="previous-versions.html">Previous Versions</a>
+            </div>
+          </div>
+        </main>
+
+        
+      </article>
+    </div>
+  </div>
+
+</div>
+<!-- Contents -->
+
+
+<!-- Contents Footer -->
+<div class="main__footer">
+  <div class="next-steps section colored-section colored-section--grey">
+
+  </div>
+</div>
+<!-- Contents Footer -->
+
+
+{% endblock %}

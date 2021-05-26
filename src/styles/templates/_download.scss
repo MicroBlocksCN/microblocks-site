@@ -1,0 +1,45 @@
+// ==========================================================================
+// Templates / Download
+// ==========================================================================
+
+
+
+// Hero
+// ==========================================================================
+
+.page-download__hero {
+    text-align: center;
+}
+
+
+.page-download__hero__boardie {
+    overflow: hidden;
+    margin-bottom: 40px;
+
+    img {
+        margin-top: -80px;
+        transform: rotate(2deg);
+    }
+}
+
+
+.page-download__hero__action {
+    margin-bottom: 80px;
+
+    @include font-display-bold;
+
+    span {
+        font-size: 24px;
+        letter-spacing: -1px;
+    }    
+
+    .section-title {
+        font-size: 56px;
+        margin-bottom: 16px;
+    }
+}
+
+
+.page-download__hero__specs {
+    margin-bottom: 16px;
+}

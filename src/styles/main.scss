@@ -66,6 +66,7 @@
 @import 'components/blocks';
 @import 'components/colored-section';
 @import 'components/hero-picture';
+@import 'components/hero-yellow';
 @import 'components/links-and-buttons';
 @import 'components/menu';
 @import 'components/menu-toggle';
@@ -75,10 +76,12 @@
 
 // Templates (aka homepage)
 // =================================
+@import 'templates/download';
 @import 'templates/home';
 
 
 // Utilities (u_hidden, u_16)
 // =================================
 @import "utilities/ratio";
-@import "utilities/layout";
+@import "utilities/layout"; // Used
+@import "utilities/text"; // Used

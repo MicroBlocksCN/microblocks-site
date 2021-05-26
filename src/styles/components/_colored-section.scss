@@ -23,10 +23,19 @@
   }
 
 
+  // Colors
+
   &--yellow {
     background-color: $color-yellow;
-    @include background-emoji(yellow);
+    @include background-emoji(on-yellow);
     @include border-top-large($color-yellow-dark);
     @include border-bottom-large($color-yellow-dark);
-  }  
+  }
+
+  &--grey {
+    background-color: $color-black-200;
+    @include background-emoji(on-grey);
+    @include border-top-large($color-black-300);
+    @include border-bottom-large($color-black-300);
+  }
 }

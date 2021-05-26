@@ -3551,6 +3551,12 @@ a:visited {
     background-position: center center;
     border-top: 8px solid #FBC227;
     border-bottom: 8px solid #FBC227; }
+  .colored-section--grey {
+    background-color: #EDEDED;
+    background-image: url("../img/backgrounds/background-on-grey.png");
+    background-position: center center;
+    border-top: 8px solid #E0E0E0;
+    border-bottom: 8px solid #E0E0E0; }
 
 .hero-picture {
   position: relative;
@@ -3567,6 +3573,17 @@ a:visited {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover; }
+
+.hero-yellow {
+  min-height: 200px;
+  margin-bottom: 80px;
+  background-color: #FED722;
+  background-image: url("../img/backgrounds/background-on-yellow.png");
+  background-position: center center;
+  border-bottom: 8px solid #FBC227; }
+  @media (min-width: 992px) {
+    .hero-yellow {
+      min-height: 240px; } }
 
 .link-circle-w-text {
   display: flex;
@@ -3596,7 +3613,7 @@ a:visited {
   justify-content: flex-end;
   align-items: center;
   background-color: #FED722;
-  background-image: url("../img/backgrounds/background-on-yellow.png");
+  background-image: url("../img/backgrounds/background-yellow.png");
   background-position: center center;
   transition: right 0.4s ease-out; }
   .menu--is-visible {
@@ -3628,7 +3645,7 @@ a:visited {
   width: 100%;
   padding: 32px 0 64px 0;
   background-color: #2C2C2C;
-  background-image: url("../img/backgrounds/background-on-black.png");
+  background-image: url("../img/backgrounds/background-black.png");
   background-position: center center; }
   .menu__interact a.menu__link:link,
   .menu__interact a.menu__link:visited {
@@ -3782,6 +3799,35 @@ a:visited {
         margin: 0 0 2rem 0; } }
   .wysiwyg > :last-child {
     margin-bottom: 0; }
+  .wysiwyg--center {
+    text-align: center; }
+  .wysiwyg--black {
+    color: #2C2C2C; }
+
+.page-download__hero {
+  text-align: center; }
+
+.page-download__hero__boardie {
+  overflow: hidden;
+  margin-bottom: 40px; }
+  .page-download__hero__boardie img {
+    margin-top: -80px;
+    transform: rotate(2deg); }
+
+.page-download__hero__action {
+  margin-bottom: 80px;
+  font-family: "Space Grotesk", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal; }
+  .page-download__hero__action span {
+    font-size: 24px;
+    letter-spacing: -1px; }
+  .page-download__hero__action .section-title {
+    font-size: 56px;
+    margin-bottom: 16px; }
+
+.page-download__hero__specs {
+  margin-bottom: 16px; }
 
 /* stylelint-disable */
 .u-2\:1::before {
@@ -3809,3 +3855,6 @@ a:visited {
 
 .u_mb-2 {
   margin-bottom: 2rem; }
+
+.u_text-center {
+  text-align: center; }
