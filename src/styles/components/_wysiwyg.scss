@@ -11,6 +11,7 @@
   // Headings
   // ==================================================
 
+  
 
   // Paragraphs 
   //
@@ -30,6 +31,9 @@
       @include font-regular-bold;
     }
 
+
+    // Links
+
     a:link,
     a:visited {
       color: $color-black;
@@ -40,38 +44,33 @@
     a:hover {
       color: $color-purple;
     }
-  }
 
 
-  p.wysiwyg--sm {
-    font-size: 0.875rem;
-  }
+    // Sizes
 
-
-  p.wysiwyg--md {
-    font-size: 1.5rem;
-  }
-
-
-  p.wysiwyg--lg {
-    font-size: 1.75rem;
-    line-height: 1.2;
-    letter-spacing: -1px;
-
-    @include mq(lg) {
-      font-size: 2rem;
-      margin: 0 0 2rem 0;
+    &.wysiwyg--sm {
+      font-size: 0.875rem;
+    }  
+  
+    &.wysiwyg--md {
+      font-size: 1.5rem;
+      letter-spacing: -0.5px;
+    }  
+  
+    &.wysiwyg--lg {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      letter-spacing: -1px;
+  
+      @include mq(lg) {
+        font-size: 2rem;
+        margin: 0 0 2rem 0;
+      }
     }
   }
 
 
-  // Links
-  // ==================================================
   
-
-  
-
-
   // Lists
   // ==================================================
 

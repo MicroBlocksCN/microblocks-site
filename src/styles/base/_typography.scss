@@ -3,6 +3,28 @@
 // ==========================================================================
 
 
+
+// Headings
+// ==========================================================================
+
+.heading-large {
+    @include font-display-bold;
+    color: $color-black;
+    letter-spacing: -1px;
+    font-size: 40px;
+    line-height: 1.2;
+
+    @include mq(lg) {
+        font-size: 48px;
+    }
+}
+
+
+
+// Sections
+// ==========================================================================
+
+
 .section-title {
     @include font-display-bold;
     font-size: 32px;
