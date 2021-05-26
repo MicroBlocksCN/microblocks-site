@@ -8,13 +8,15 @@
 
 
 // Settings
-// =================================
+// Global variables, site-wide settings, config switches, etc.
+// ==========================================================================
 @import "settings/config.colors"; // Used
 @import "settings/config"; // Used
 
 
-// Tools (functions, mixins,...)
-// =================================
+// Tools
+// Site-wide mixins and functions.
+// ==========================================================================
 @import "tools/backgrounds"; // Used
 @import "tools/block-connector"; // Used
 @import "tools/borders"; // Used
@@ -24,22 +26,24 @@
 @import "tools/shadows";
 
 
-// Generic (button, form)
-// =================================
+// Generic
+// Low-specificity, far-reaching rulesets (e.g. resets).
+// ==========================================================================
 @import 'generic/minireset'; // Used
 @import 'generic/normalize'; // Used
 @import 'generic/svg';
 
 
 // Vendors (bootstrap,...)
-// =================================
+// ???
+// ==========================================================================
 @import 'vendors/bootstrap-grid'; // Used
 //@import 'vendors/bootstrap-utilities';
 
 
-// Layout
-// =================================
-
+// Objects
+// Objects, abstractions, and design patterns (e.g. .o-layout {}).
+// ==========================================================================
 @import 'layout/header'; // Used
 @import 'layout/footer'; // Used
 @import 'layout/main'; // Used
@@ -48,21 +52,24 @@
 
 
 // Base (typography,...)
-// =================================
+// ???
+// ==========================================================================
 @import 'base/base'; // Used -- Meh
 @import 'base/typography'; // Used
 
 
-// Elements (aka button)
-// =================================
-@import 'elements/border-top'; // Used
-@import 'elements/button'; // Used
-@import 'elements/circle'; // Used
+// Elements
+// Unclassed HTML elements (e.g. a {}, blockquote {}, address {}).
+// ==========================================================================
+@import 'elements/border-top'; // Used --- move
+@import 'elements/button'; // Used --- move
+@import 'elements/circle'; // Used --- move
 @import 'elements/figure';
 
 
-// Components (aka slider)
-// =================================
+// Components
+// Discrete, complete chunks of UI (e.g. .c-carousel {}).
+// ==========================================================================
 @import 'components/blocks';
 @import 'components/colored-section';
 @import 'components/hero-picture';
@@ -70,18 +77,22 @@
 @import 'components/links-and-buttons';
 @import 'components/menu';
 @import 'components/menu-toggle';
+@import 'components/next-steps';
 @import 'components/title-blocks';
 @import 'components/wysiwyg';
 
 
 // Templates (aka homepage)
-// =================================
+// ???
+// ==========================================================================
 @import 'templates/download';
 @import 'templates/home';
 
 
-// Utilities (u_hidden, u_16)
-// =================================
-@import "utilities/ratio";
+// Utilities
+// High-specificity, very explicit selectors. Overrides and helper classes (e.g. .u-hidden {})
+// ==========================================================================
+//@import "utilities/text"; // Used
 @import "utilities/layout"; // Used
+@import "utilities/ratio";
 @import "utilities/text"; // Used

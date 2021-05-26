@@ -11,9 +11,29 @@
   @include center-content-flex;
 
 
+  // Sizes
+
+  &--large {
+    width: 48px;
+    height: 48px;
+  }
+
+
   // Colors
 
   &--yellow {
     background-color: $color-yellow;
+  }
+
+  &--orange {
+    background-color: $color-orange;
+  }
+
+  &--teal {
+    background-color: $color-teal;
+  }
+
+  &--purple {
+    background-color: $color-purple;
   }
 }

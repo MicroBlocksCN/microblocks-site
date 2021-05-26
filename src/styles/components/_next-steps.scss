@@ -1,0 +1,57 @@
+// ==========================================================================
+// Components / Next Steps
+// ==========================================================================
+
+
+.next-steps {
+    padding-bottom: 56px;
+
+    text-align: center;
+    background-color: $color-black-200;
+    @include background-emoji(on-grey);
+    
+    a:link,
+    a:visited {
+        color: unset;
+    }
+}
+
+
+.next-steps__link {
+    display: block;
+    margin-bottom: 40px;
+}
+
+
+.next-steps__picture {
+    margin-bottom: -8px;
+
+    img {
+        width: 200px;
+    }
+}
+
+
+.next-steps__link-title {
+    margin-bottom: 8px;
+
+    @include font-display-bold;
+    font-size: 32px;
+    letter-spacing: -1px;
+}
+
+
+.next-steps__text {
+    margin-bottom: 16px;
+
+    p {
+        color: $color-black-700;
+        line-height: 1.2;
+    }
+}
+
+
+.next-steps__circle {    
+    display: flex;
+    justify-content: center;
+}

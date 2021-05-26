@@ -5,15 +5,10 @@
 
 .title-blocks {
   margin: -24px 0 40px 0;
-
-  // display: flex;
-  // flex-wrap: wrap;
-
-  @include mq(md) {
-    margin: -28px 0 40px 0;
-  }
+  font-size: 32px;
 
   @include mq(md) {
     margin: -32px 0 40px 0;
+    font-size: 48px;
   }
 }

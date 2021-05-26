@@ -3479,8 +3479,17 @@ a:visited {
   justify-content: center; }
   .circle > * {
     line-height: 1; }
+  .circle--large {
+    width: 48px;
+    height: 48px; }
   .circle--yellow {
     background-color: #FED722; }
+  .circle--orange {
+    background-color: #F58518; }
+  .circle--teal {
+    background-color: #01928B; }
+  .circle--purple {
+    background-color: #B6519D; }
 
 @media (min-width: 992px) {
   .figure--sticky {
@@ -3759,14 +3768,50 @@ a:visited {
   justify-content: center;
   transition: opacity 0.3s ease-out; }
 
+.next-steps {
+  padding-bottom: 56px;
+  text-align: center;
+  background-color: #EDEDED;
+  background-image: url("../img/backgrounds/background-on-grey.png");
+  background-position: center center; }
+  .next-steps a:link,
+  .next-steps a:visited {
+    color: unset; }
+
+.next-steps__link {
+  display: block;
+  margin-bottom: 40px; }
+
+.next-steps__picture {
+  margin-bottom: -8px; }
+  .next-steps__picture img {
+    width: 200px; }
+
+.next-steps__link-title {
+  margin-bottom: 8px;
+  font-family: "Space Grotesk", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  letter-spacing: -1px; }
+
+.next-steps__text {
+  margin-bottom: 16px; }
+  .next-steps__text p {
+    color: #616161;
+    line-height: 1.2; }
+
+.next-steps__circle {
+  display: flex;
+  justify-content: center; }
+
 .title-blocks {
-  margin: -24px 0 40px 0; }
+  margin: -24px 0 40px 0;
+  font-size: 32px; }
   @media (min-width: 768px) {
     .title-blocks {
-      margin: -28px 0 40px 0; } }
-  @media (min-width: 768px) {
-    .title-blocks {
-      margin: -32px 0 40px 0; } }
+      margin: -32px 0 40px 0;
+      font-size: 48px; } }
 
 .wysiwyg {
   color: #616161; }
@@ -3829,17 +3874,6 @@ a:visited {
 .page-download__hero__specs {
   margin-bottom: 16px; }
 
-/* stylelint-disable */
-.u-2\:1::before {
-  padding-bottom: 50%; }
-
-.u-4\:3::before {
-  padding-bottom: 75%; }
-
-.u-16\:9::before {
-  padding-bottom: 56.25%; }
-
-/* stylelint-enable */
 .u_flex-between {
   display: flex;
   justify-content: space-between; }
@@ -3856,5 +3890,16 @@ a:visited {
 .u_mb-2 {
   margin-bottom: 2rem; }
 
+/* stylelint-disable */
+.u-2\:1::before {
+  padding-bottom: 50%; }
+
+.u-4\:3::before {
+  padding-bottom: 75%; }
+
+.u-16\:9::before {
+  padding-bottom: 56.25%; }
+
+/* stylelint-enable */
 .u_text-center {
   text-align: center; }
