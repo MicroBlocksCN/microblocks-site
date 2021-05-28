@@ -1,0 +1,89 @@
+// ==================================================
+// Components / Team Member
+// ==================================================
+
+
+.team-member{
+    display: flex;
+    margin-bottom: 40px;
+
+    @include mq(lg) {
+        padding-right: 16px
+    }
+}
+
+
+
+// Picture
+// ==================================================
+
+
+.team-member__picture {
+    flex-shrink: 0;
+    width: 112px;
+    margin-right: 16px;
+
+    img {
+        display: block;
+        width: 100%;
+        clip-path: url(#teamMemberPath);
+        object-fit: cover;
+    }
+
+    @include mq(md) {
+        width: 80px
+    }
+}
+
+
+
+// Contents
+// ==================================================
+
+
+.team-member__name {
+    @include font-display-bold;
+    font-size: 32px;
+    letter-spacing: -1px;
+
+    @include mq(md) {
+        font-size: 24px;
+    }
+}
+
+
+.team-member__role {
+    margin-bottom: 16px;
+
+    @include font-display-bold;
+    font-size: 24px;
+    text-transform: lowercase;
+
+    @include mq(md) {
+        font-size: 20px;
+    }
+
+
+    // Roles
+
+    &--developer {
+        color: $color-teal;
+    }
+
+    &--partnership {
+        color: $color-blue;
+    }
+
+    &--educational {
+        color: $color-purple;
+    }
+
+    &--snap {
+        color: $color-orange;
+    }
+
+    &--advisor {
+        color: $color-green;
+    }
+}
+

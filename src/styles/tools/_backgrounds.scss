@@ -10,3 +10,14 @@
     background-image: url('../img/backgrounds/background-#{$color}.png');
     background-position: center center;
 }
+
+
+// Build somehow?
+
+.bg-grey {
+    background-color: $color-black-200;
+}
+
+.bg-white {
+    background-color: $color-white;
+}

@@ -1,0 +1,454 @@
+{#
+## Contribute
+#}
+
+{% extends 'layouts/_html-shell.njk' %}
+{% import 'data/_global.njk' as global %}
+{% import 'data/_about.njk' as data %}
+
+
+{% block content %}
+
+
+<!-- Header -->
+<header class="main__header">
+
+
+    <!-- Hero -->
+    <div class="hero-picture">
+        <picture class="hero-picture__img">
+            <source media="(min-width: 768px)" srcset="assets/img/pictures/picture-1920x1080.jpg">
+            <source media="(max-width: 767px)" srcset="assets/img/pictures/picture-960x540.jpg">
+            <img src="assets/img/picture/picture-1920x1080.jpg" alt="Hands connecting wires to a board" />
+        </picture>
+    </div>
+
+
+    <div class="container">
+
+        <!-- Title -->
+        <div class="row">
+            <div class="col">
+                <h1 class="title-blocks">
+                    <span class="block block--blue">About</span>
+                    <span class="block block--purple">MicroBlocks</span>
+                </h1>
+            </div>
+        </div>
+
+        <!-- Intro -->
+        <div class="row">
+            <div class="col col-lg-10">
+                <div class="page-header__intro wysiwyg">
+                    <p class="text-lg">We aim to make MicroBlocks the most intuitive, and engaging tool for physical
+                        computing imaginable, to create a global community of learners and educators around it.</p>
+                    <p>Meet the <a href="about.html#team">team</a>, our <a
+                            href="about.html#collaborators">collaborators</a> and <a
+                            href="about.html#ambassadors">ambassadors</a> or <a href="about.html#contact">contact
+                            us</a>.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</header>
+<!-- Header -->
+
+
+<!-- Contents -->
+<div class="main__contents">
+
+
+    <!-- Mission -->
+    <div id="#our-mission" class="our-mission bg-white border-color">
+        <div class="container">
+            <article class="row">
+
+                <header class="col-12">
+                    <h2 class="our-mission__title">Our Mission</h2>
+                </header>
+    
+                <main class="col-12">
+                    <div class="our-mission__items-wrapper">
+
+                        <div class="our-mission__item">
+                            <div class="our-mission__index">
+                                <div class="circle circle--orange">
+                                    1
+                                </div>
+                            </div>
+                            <div class="our-mission__contents">
+                                <h3 class="our-mission__item-title">
+                                    Help
+                                </h3>
+                                <div class="our-mission__item-text">
+                                    <div class="wysiwyg">
+                                        Help students and curious/creative makers everywhere discover the joys of physical computing.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="our-mission__item">
+                            <div class="our-mission__index">
+                                <div class="circle circle--purple">
+                                    2
+                                </div>
+                            </div>
+                            <div class="our-mission__contents">
+                                <h3 class="our-mission__item-title">
+                                    Enable
+                                </h3>
+                                <div class="our-mission__item-text">
+                                    <div class="wysiwyg">
+                                        Enable educators to create engaging, high-quality STEM/STEAM learning experiences.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="our-mission__item">
+                            <div class="our-mission__index">
+                                <div class="circle circle--teal">
+                                    3
+                                </div>
+                            </div>
+                            <div class="our-mission__contents">
+                                <h3 class="our-mission__item-title">
+                                    Inspire
+                                </h3>
+                                <div class="our-mission__item-text">
+                                    <div class="wysiwyg">
+                                        Inspire a wide range of learners, especially those who do not initially see themselves as potential technologists.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="our-mission__item">
+                            <div class="our-mission__index">
+                                <div class="circle circle--blue">
+                                    4
+                                </div>
+                            </div>
+                            <div class="our-mission__contents">
+                                <h3 class="our-mission__item-title">
+                                    Support
+                                </h3>
+                                <div class="our-mission__item-text">
+                                    <div class="wysiwyg">
+                                        Support hands-on learning and creative problem-solving. 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </main>
+    
+            </article>
+        </div>
+    </div>
+    <!-- Mission -->
+
+
+    <!-- The Team -->
+    <article id="#team" class="container section">
+        
+        <header class="row border-top u_mb-4">
+
+            <div class="col-12 col-md-4">
+                <h2 class="section-title">The Team</h2>
+            </div>
+
+            <div class="col-12 col-md-8">
+                <div class="wysiwyg">
+                    <p class="text-md">
+                        We aim to make MicroBlocks the most intuitive, fun, and engaging tool for physical computing imaginable, and to create a global community of learners and educators around it.
+                    </p>
+                </div>
+            </div>
+
+        </header>
+
+        <main class="row">
+
+            <svg width="0" height="0" viewBox="0 0 80 85">
+                <clipPath id="teamMemberPath" clipPathUnits="objectBoundingBox">
+                    <path d="M0.916409 0H0.0247678C0.0110889 0 0 0.011094 0 0.0247792V0.916828C0 0.930513 0.0110889 0.941607 0.0247678 0.941607H0.088106L0.112537 0.986974C0.12189 1.00434 0.151974 1.00434 0.161327 0.986974L0.185759 0.941607H0.916409C0.930088 0.941607 0.941176 0.930513 0.941176 0.916828V0.0247791C0.941176 0.011094 0.930088 0 0.916409 0Z"/>
+                </clipPath>
+            </svg>
+
+            <section class="col-12 col-md-8 offset-md-4 col-lg-6 offset-lg-0">
+                <div class="team-member">
+                    <div class="team-member__picture">
+                        <img src="assets/img/team/team-member.png" alt="Whoever">
+                    </div>
+                    <div class="team-member__contents">
+                        <div class="team-member__name">John Maloney</div>
+                        <div class="team-member__role team-member__role--developer">/Developer</div>
+                        <div class="team-member__bio">
+                            <p class="wysiwyg">
+                                On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil.
+                            </p>                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-12 col-md-8 offset-md-4 col-lg-6 offset-lg-0">
+                <div class="team-member">
+                    <div class="team-member__picture">
+                        <img src="assets/img/team/team-member.png" alt="Whoever">
+                    </div>
+                    <div class="team-member__contents">
+                        <div class="team-member__name">John Maloney</div>
+                        <div class="team-member__role team-member__role--partnership">/partnership</div>
+                        <div class="team-member__bio">
+                            <p class="wysiwyg">
+                                On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil.
+                            </p>                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-12 col-md-8 offset-md-4 col-lg-6 offset-lg-0">
+                <div class="team-member">
+                    <div class="team-member__picture">
+                        <img src="assets/img/team/team-member.png" alt="Whoever">
+                    </div>
+                    <div class="team-member__contents">
+                        <div class="team-member__name">John Maloney</div>
+                        <div class="team-member__role team-member__role--educational">/educational</div>
+                        <div class="team-member__bio">
+                            <p class="wysiwyg">
+                                On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil.
+                            </p>                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-12 col-md-8 offset-md-4 col-lg-6 offset-lg-0">
+                <div class="team-member">
+                    <div class="team-member__picture">
+                        <img src="assets/img/team/team-member.png" alt="Whoever">
+                    </div>
+                    <div class="team-member__contents">
+                        <div class="team-member__name">John Maloney</div>
+                        <div class="team-member__role team-member__role--advisor">/advisor</div>
+                        <div class="team-member__bio">
+                            <p class="wysiwyg">
+                                On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil.
+                            </p>                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </article>
+    <!-- The Team -->
+
+
+    <!-- Ambassadors -->
+    <div id="#ambassadors" class="container section">
+        <article class="row border-top">
+
+            <header class="col-12 col-md-4">
+                <h2 class="section-title">Collaborators</h2>
+            </header>
+
+            <main class="col-12 col-md-8">
+                <div class="row">
+
+                    <div class="wysiwyg">
+                        <p>
+                            MicroBlocks Ambassadors help us spread the word about MicroBlocks. They reach out to makers, educators, parents, librarians, museums – anyone interested in learning about physical computing – to let them know how easy, fun, and engaging MicroBlocks is. Once someone is interested, MicroBlocks Ambassadors can help them get started, find resources such as Activity Cards, and share ideas with others.
+                        </p>
+                        <ul class="text-lg">
+                            <li><a href="https://www.linkedin.com/in/sara-dib-b12840144/" target="_blank">Sara Dib</a> <small>(Algeria)</small></li>
+                            <li><a href="https://twitter.com/AudraKaplan/" target="_blank">Audra Kaplan</a> <small>(Eastern US and CSTA)</small></li>
+                            <li><a href="https://www.linkedin.com/in/nargizakholmatova/" target="_blank">Nargiza Kholmatova</a> <small>(Central Asia)</small></li>
+                            <li><a href="https://www.linkedin.com/in/leahstrichartz/" target="_blank">Leah Strichartz</a> <small>(Western US)</small></li>
+                            <li><a href="https://www.linkedin.com/in/cesaragomezs/" target="_blank">Cesar Gomez Suarez</a> <small>(Eastern Canada)</small></li>
+                            <li><a href="tguneysu at msn dot com" target="_blank">Turgut Güneysu</a> <small>(Turkey)</small></li>
+                            <li><a href="http://www.ramonmoorlag.nl/" target="_blank">Ramon Moorlag</a> <small>(The Netherlands)</small></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </main>
+
+        </article>
+    </div>
+    <!-- Ambassadors -->
+
+
+    <!-- Collaborators -->
+    <div id="#collaborators" class="section bg-grey border-color">
+        <div class="container">
+            <article class="row border-top">
+
+                <header class="col-12 col-lg-4 u_mb-2">
+                    <h2 class="section-title">Ambassadors</h2>
+                    <div class="wysiwyg">
+                        <p class="_text-md">
+                            MicroBlocks collaborates with the following organizations, projects and companies:
+                        </p>
+                    </div>
+                </header>
+    
+                <main class="col-12 col-lg-8">
+                    <div class="logo-grid">
+    
+                        <div class="row justify-content-md-center u_mb-2">
+
+                            <div class="col-6 col-md-4 col-xl-3 u_mb-1.5">
+                                <a class="logo-grid__item" href="https://www.sap.com/about/young-thinkers.html" target="_blank">
+                                    <div class="logo-grid__logo">
+                                        <img src="assets/img/collaborators/young-thinkers.png" alt="Young Thinkers">
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="col-6 col-md-4 col-xl-3 u_mb-1.5">
+                                <a class="logo-grid__item" href="http://faberresidency.cat/" target="_blank">
+                                    <div class="logo-grid__logo">
+                                        <img src="assets/img/collaborators/faber.png" alt="Faber">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-xl-3 u_mb-1.5">
+                                <a class="logo-grid__item" href="http://citilab.eu/" target="_blank">
+                                    <div class="logo-grid__logo">
+                                        <img src="assets/img/collaborators/citilab.png" alt="CitiLab Cornellà">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-xl-3 u_mb-1.5">
+                                <a class="logo-grid__item" href="http://innovadidactic.com/" target="_blank">
+                                    <div class="logo-grid__logo">
+                                        <img src="assets/img/collaborators/innova.png" alt="Innova Didactic">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-xl-3 u_mb-1.5">
+                                <a class="logo-grid__item" href="https://www.birdbraintechnologies.com/" target="_blank">
+                                    <div class="logo-grid__logo">
+                                        <img src="assets/img/collaborators/birdbrain.png" alt="Birdbrain Technologies">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-xl-3 u_mb-1.5">
+                                <a class="logo-grid__item" href="https://snap.berkeley.edu/" target="_blank">
+                                    <div class="logo-grid__logo">
+                                        <img src="assets/img/collaborators/snap.png" alt="Snap!">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-xl-3 u_mb-1.5">
+                                <a class="logo-grid__item" href="http://gpblocks.org/" target="_blank">
+                                    <div class="logo-grid__logo">
+                                        <img src="assets/img/collaborators/gp-blocks.png" alt="GP Blocks">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-xl-3">
+                                <a class="logo-grid__item" href="https://www.okdo.com/" target="_blank">
+                                    <div class="logo-grid__logo">
+                                        <img src="assets/img/collaborators/okdo.png" alt="OKDO">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-xl-3">
+                                <a class="logo-grid__item" href="http://fablabyucatan.com/" target="_blank">
+                                    <div class="logo-grid__logo">
+                                        <img src="assets/img/collaborators/fablab-yucatan.png" alt="FABLAB Yucatán">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-xl-3">
+                                <a class="logo-grid__item" href="https://platformio.org/" target="_blank">
+                                    <div class="logo-grid__logo">
+                                        <img src="assets/img/collaborators/pio.png" alt="Platform IO">
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="row justify-content-md-center">
+                            <div class="col-12 col-md-10 col-xl-8">
+                                <div class="wysiwyg">
+                                    <p class="wysiwyg--center">
+                                        MicroBlocks has also received countless contributions from invidivuals around the world. <a href="#">Check the full list</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </main>
+    
+            </article>
+        </div>
+    </div>
+    <!-- Collaborators -->
+
+
+    <!-- Contact -->
+    <div id="contact" class="section container">
+        <article class="row border-top">
+
+            <header class="col-12 col-md-4">
+                <h2 class="section-title">Contact Us</h2>
+            </header>
+
+            <main class="col-12 col-md-8">
+                <div class="row">
+
+                    <div class="col-12 col-lg-6 u_mb-2">
+                        <h3 class="section-subtitle">Report an issue</h3>
+                        <div class="wysiwyg">
+                            <p>
+                                For bug reports or feature requests, please use our <a href="https://bitbucket.org/john_maloney/smallvm/issues" target="_blank">issue tracker at BitBucket</a>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <h3 class="section-subtitle">Get in touch</h3>
+                        <div class="wysiwyg">
+                            <p>
+                                For anything else, you can reach us at <a href="mailto:interest@microblocks.fun">interest@microblocks.fun</a>.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+
+        </article>
+    </div>
+    <!-- Contact -->
+
+
+</div>
+<!-- Contents -->
+
+
+{% endblock %}

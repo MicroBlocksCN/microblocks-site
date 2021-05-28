@@ -23,6 +23,7 @@
 @import "tools/fonts"; // Used
 @import "tools/layout"; // Used
 @import "tools/media-querys"; // Used
+@import "tools/ratios";
 @import "tools/shadows";
 
 
@@ -31,7 +32,6 @@
 // ==========================================================================
 @import 'generic/minireset'; // Used
 @import 'generic/normalize'; // Used
-@import 'generic/svg';
 
 
 // Vendors (bootstrap,...)
@@ -64,6 +64,7 @@
 @import 'elements/border-top'; // Used --- move
 @import 'elements/circle'; // Used --- move
 @import 'elements/figure';
+@import 'elements/svg';
 
 
 // Components
@@ -75,11 +76,14 @@
 @import 'components/hero-picture';
 @import 'components/hero-yellow';
 @import 'components/links-and-buttons';
+@import 'components/logos-grid';
 @import 'components/menu';
 @import 'components/menu-toggle';
 @import 'components/next-steps';
+@import 'components/our-mission';
 @import 'components/pagination';
 @import 'components/pictures';
+@import 'components/team-member';
 @import 'components/title-blocks';
 @import 'components/wysiwyg';
 

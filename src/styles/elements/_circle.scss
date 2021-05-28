@@ -10,6 +10,8 @@
 
   @include center-content-flex;
 
+  color: $color-white;
+
 
   // Sizes
 
@@ -23,6 +25,7 @@
 
   &--yellow {
     background-color: $color-yellow;
+    color: $color-black;
   }
 
   &--orange {
@@ -35,5 +38,13 @@
 
   &--purple {
     background-color: $color-purple;
+  }
+
+  &--green {
+    background-color: $color-green;
+  }
+
+  &--blue {
+    background-color: $color-blue;
   }
 }

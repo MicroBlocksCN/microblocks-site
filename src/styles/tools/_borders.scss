@@ -21,3 +21,33 @@
 @mixin border-bottom-large($color: $color-black) {
     border-bottom: 8px solid $color;
 }
+
+
+
+// Color top borders
+
+.border-color {
+
+    position: relative;
+    
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        background-color: pink;
+        background: linear-gradient(90deg, $color-blue, $color-blue 25%, $color-orange 25%, $color-orange 50%, $color-purple 50%, $color-purple 75%, $color-teal 75%);
+    }
+
+    &::after {
+        top: unset;
+        bottom: 0;
+    }
+}
