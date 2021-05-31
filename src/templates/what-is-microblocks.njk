@@ -1,0 +1,377 @@
+{#
+## Get Started
+#}
+
+{% extends 'layouts/_html-shell.njk' %}
+{% import 'data/_global.njk' as global %}
+{% import 'data/_get-started.njk' as data %}
+
+
+{% block content %}
+
+
+<!-- Header -->
+<header class="main__header">
+
+
+    <!-- Hero -->
+    <div class="hero-picture">
+        <picture class="hero-picture__img">
+            <source media="(min-width: 768px)" srcset="assets/img/pictures/picture-1920x1080.jpg">
+            <source media="(max-width: 767px)" srcset="assets/img/pictures/picture-960x540.jpg">
+            <img src="assets/img/picture/picture-1920x1080.jpg" alt="Hands connecting wires to a board" />
+        </picture>
+    </div>
+
+
+    <div class="container">
+
+        <!-- Title -->
+        <div class="row">
+            <div class="col-12">
+                <h1 class="title-blocks">
+                    <span class="block block--orange">What</span>
+                    <span class="block block--purple">Is</span>
+                    <span class="block block--teal">MicroBlocks</span>
+                </h1>
+            </div>
+        </div>
+
+        <!-- Intro -->
+        <div class="row">
+
+            <div class="col-12 col-lg-7">
+                <div class="page-header__intro wysiwyg u_mb-4">
+                    <p class="text-lg">MicroBlocks is a free, Scratch-like blocks programming language for learning physical computing while programming educational microcontroller boards such as the micro:bit, Adafruit Circuit Playground Express, and many others.</p>
+                </div>
+            </div>
+
+            <div class="col-12 offset-lg-1 col-lg-3">
+                <ul class="list-bullets-colored">
+                    <li>
+                        <div class="wysiwyg">
+                            <p>
+                                MicroBlocks allows complete beginners to <a href="get-started.html">get started quickly</a>, from children as young as nine years old up through adults of all ages.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wysiwyg">
+                            <p>
+                                But MicroBlocks isn't just a toy; it can be used to learn electronics, to collect data for science experiments, or to automate your home.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</header>
+<!-- Header -->
+
+
+<!-- Contents -->
+<div class="main__contents">
+
+
+    <!-- Intro -->
+    <article class="section">
+
+        <div class="container">
+
+            <header class="row border-top u_mb-4">
+
+                <div class="col-12 col-md-4">
+                    <h2 class="section-title">What makes MicroBlocks different?</h2>
+                </div>
+    
+                <div class="col-12 col-md-8">
+                    <div class="wysiwyg">
+                        <p class="text-md">
+                            While there are other blocks languages for microcontrollers, what sets MicroBlocks apart is its combination live programming and autonomous operation. Other blocks languages support one the other of those features but not both.
+                        </p>
+                    </div>
+                </div>
+    
+            </header>
+
+        </div>
+
+
+        <!-- Live Programming -->
+        <div class="accordion accordion--teal">
+            <section class="accordion__block">
+
+                <div class="accordion__header" role="button">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <div class="accordion__index">1</div>
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <div class="accordion__title-wrapper">
+                                    <h3 class="accordion__title">Live Programming</h3>
+                                    <div class="accordion__toggle">
+                                        <div class="accordion__toggle--plus">
+                                            {% include 'partials/svg/icon-plus.svg' %}
+                                        </div>
+                                        <div class="accordion__toggle--minus">
+                                            {% include 'partials/svg/icon-minus.svg' %}
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion__content">
+                    <div class="accordion__content-inner">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-12 col-md-2 col-lg-4">
+                                    <img src="assets/img/pictures/picture-960x540.jpg" alt="Hands connecting wires to a board" />
+                                </div>
+
+                                <div class="col-12 col-md-10 col-lg-8">
+                                    <div class="wysiwyg">
+                                        <p>
+                                            <strong>Browser</strong> - On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <strong>Download and install Microblocks</strong>. See below for any additional setup steps for your system.
+                                            </li>
+                                            <li>
+                                                <strong>Download and install Microblocks</strong>. See below for any additional setup steps for your system.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+
+            </section>
+        </div>
+
+
+        <!-- Autonomous Operation -->
+        <div class="accordion accordion--purple">
+            <section class="accordion__block">
+
+                <div class="accordion__header" role="button">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-12 col-md-4">
+                                <div class="accordion__index">2</div>
+                            </div>
+
+                            <div class="col-12 col-md-8">
+                                <div class="accordion__title-wrapper">
+                                    <h3 class="accordion__title">Autonomous Operation</h3>
+                                    <div class="accordion__toggle">
+                                        <div class="accordion__toggle--plus">
+                                            {% include 'partials/svg/icon-plus.svg' %}
+                                        </div>
+                                        <div class="accordion__toggle--minus">
+                                            {% include 'partials/svg/icon-minus.svg' %}
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion__content">
+                    <div class="accordion__content-inner">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-12 col-md-2 col-lg-4">
+                                    <img src="assets/img/pictures/picture-960x540.jpg" alt="Hands connecting wires to a board" />
+                                </div>
+
+                                <div class="col-12 col-md-10 col-lg-8">
+                                    <div class="wysiwyg">
+                                        <p>
+                                            <strong>Browser</strong> - On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <strong>Download and install Microblocks</strong>. See below for any additional setup steps for your system.
+                                            </li>
+                                            <li>
+                                                <strong>Download and install Microblocks</strong>. See below for any additional setup steps for your system.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+
+            </section>
+        </div>
+
+
+        <!-- Blocks -->
+        <div class="accordion accordion--blue">            
+            <section class="accordion__block">
+
+                <div class="accordion__header" role="button">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-12 col-md-4">
+                                <div class="accordion__index">3</div>
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <div class="accordion__title-wrapper">
+                                    <h3 class="accordion__title">Blocks</h3>
+                                    <div class="accordion__toggle">
+                                        <div class="accordion__toggle--plus">
+                                            {% include 'partials/svg/icon-plus.svg' %}
+                                        </div>
+                                        <div class="accordion__toggle--minus">
+                                            {% include 'partials/svg/icon-minus.svg' %}
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion__content">
+                    <div class="accordion__content-inner">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-12 col-md-2 col-lg-4">
+                                    <img src="assets/img/pictures/picture-960x540.jpg" alt="Hands connecting wires to a board" />
+                                </div>
+
+                                <div class="col-12 col-md-10 col-lg-8">
+                                    <div class="wysiwyg">
+                                        <p>
+                                            <strong>Browser</strong> - On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <strong>Download and install Microblocks</strong>. See below for any additional setup steps for your system.
+                                            </li>
+                                            <li>
+                                                <strong>Download and install Microblocks</strong>. See below for any additional setup steps for your system.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+
+            </section>
+        </div>
+
+    </article>
+
+
+    <!-- How does it work -->
+    <div id="#ambassadors" class="container section">
+        <article class="row border-top">
+
+            <header class="col-12 col-md-4">
+                <h2 class="section-title">How does MicroBlocks work?</h2>
+            </header>
+
+            <main class="col-12 col-md-8">
+                <div class="row">
+
+                    <div class="wysiwyg">
+                        <p>
+                            The MicroBlocks system has three components:
+                        </p>
+                        <ul>
+                            <li>A blocks editor, which runs on a host computer during code development</li>
+                            <li>Virtual machine, which runs on the microcontroller and executes the user's code</li>
+                            <li>A communication system that updates the code on the board the user edits scripts.</li>
+                        </ul>
+                        <p>
+                            The blocks editor allows the user to create and edit blocks-based code. It also manages MicroBlocks libraries that provide additional functionality. Some libraries support sensors or output devices such as servos and NeoPixels, while others provide API's for working with strings or music. Libraries are written in MicroBlocks and can be explored, modified, and extended by users.
+                        </p>
+                        <p>
+                            Like MicroPython, MicroBlocks code is compiled into bytecodes that are executed by a virtual machine running on the microcontroller. Bytecodes are low-level instructions similar to machine code, but independent of any particular processor architecture. This design makes it easy for MicroBlocks to support many different 32-bit microcontrollers. In fact, the MicroBlocks virtual machine is not restricted to microcontrollers; it also runs on Linux computers such as the Raspberry Pi. It's even possible to run both the blocks editor and the virtual machine on the same computer.
+                        </p>
+                        <p>
+                            If you'd like to learn more about bytecodes, see xxx. You can also enable "advanced blocks" and use the right-click menu to on a script to view the assembly language and bytecodes it generates.
+                        </p>
+                        <p>
+                            The communication system send the bytecodes for scripts to the virtual machine and updates those bytecodes as the user edits their scripts. Since scripts are recompiled and sent to the virtual machine incrementally, the code is ready to go whenever the user wants to test it.
+                        </p>
+                        <p>
+                            The communication system also commands to start and stop scripts and processes messages from the board that indicate when scripts start and stop, allowing the editor to provide graphical feedback about which scripts are running.
+                        </p>
+                        <p>
+                            A key part of learning about sensors is seeing how they respond in real time. For example, how does the light sensor value change when you cover the micro:bit with your hand or how does acceleration change as you toss and catch the micro:bit? The communication system allows sensor values and computation result to be displayed in a little "talk bubble". It also support graphing sensor data in real time. Graphing is a powerful tool for building intuition about physical and electrical processes.
+                        </p>
+                    </div>
+
+                </div>
+            </main>
+
+        </article>
+    </div>
+    <!-- How does it work -->
+
+    
+        
+
+
+</div>
+<!-- Contents -->
+
+
+<!-- Contents Footer -->
+<aside class="main__footer colored-section colored-section--yellow">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <div class="colored-section__title">
+                    <h2 class="heading-large">
+                        Want more?<br />
+                        Check Our Wiki
+                    </h2>
+                </div>
+                <div class="colored-section__contents">
+                    <p class="u_mb-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo.
+                    </p>
+                    <div class="btn btn--purple">Visit our Wiki</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+<!-- Contents Footer -->
+
+
+{% endblock %}

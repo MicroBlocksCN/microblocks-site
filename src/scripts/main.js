@@ -14,6 +14,7 @@ function autorun(){
 
   menuToggle();
   tabs();
+  accordionInit();
 
 };
 

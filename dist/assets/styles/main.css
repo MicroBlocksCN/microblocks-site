@@ -26,6 +26,12 @@
 
 @font-face {
   font-family: "Space Grotesk";
+  src: url("../fonts/SpaceGrotesk-Light.woff2") format("woff2"), url("../fonts/SpaceGrotesk-Light.ttf") format("truetype"), url("../fonts/SpaceGrotesk-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Space Grotesk";
   src: url("../fonts/SpaceGrotesk-Bold.woff2") format("woff2"), url("../fonts/SpaceGrotesk-Bold.ttf") format("truetype"), url("../fonts/SpaceGrotesk-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal; }
@@ -3519,6 +3525,107 @@ a:visited {
 svg {
   fill: currentColor; }
 
+.accordion--teal {
+  background-color: #01928B; }
+  .accordion--teal .accordion__content {
+    background-color: #F2FFFE; }
+
+.accordion--purple {
+  background-color: #B6519D; }
+  .accordion--purple .accordion__content {
+    background-color: #FFF2FC; }
+
+.accordion--blue {
+  background-color: #009ECE; }
+  .accordion--blue .accordion__content {
+    background-color: #EEFBFF; }
+
+.accordion--active .accordion__content-inner {
+  opacity: 1; }
+
+.accordion--active .accordion__toggle--plus {
+  opacity: 0; }
+
+.accordion--active .accordion__toggle--minus {
+  opacity: 1; }
+
+.accordion__header {
+  padding: 12px 0;
+  font-size: 32px;
+  line-height: 32px;
+  color: #FFFFFF; }
+  .accordion__header:hover {
+    cursor: pointer; }
+  @media (min-width: 768px) {
+    .accordion__header {
+      padding: 24px 0; } }
+
+.accordion__index {
+  display: none;
+  position: relative;
+  font-family: "Space Grotesk", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-style: normal; }
+  @media (min-width: 768px) {
+    .accordion__index {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; } }
+  .accordion__index::before {
+    content: '';
+    display: block;
+    width: calc( 100% - 32px);
+    height: 1px;
+    position: absolute;
+    left: 32px;
+    top: 16px;
+    background-color: #FFFFFF;
+    opacity: 0.4; }
+
+.accordion__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.accordion__toggle {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1; }
+  .accordion__toggle > div {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.4s ease-out; }
+  .accordion__toggle--plus {
+    opacity: 1; }
+  .accordion__toggle--minus {
+    opacity: 0; }
+
+.accordion__title {
+  font-family: "Space Grotesk", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal; }
+
+.accordion__content {
+  overflow: hidden;
+  max-height: 0;
+  will-change: max-height;
+  transition: max-height 0.4s ease-out; }
+
+.accordion__content-inner {
+  padding: 40px;
+  opacity: 0;
+  transition: opacity 0.4s ease-out; }
+
 .activity-card {
   display: block;
   position: relative;
@@ -3792,6 +3899,31 @@ svg {
   font-size: 20px;
   letter-spacing: -1px;
   color: #2C2C2C; }
+
+.list-bullets-colored {
+  padding-left: 24px; }
+  .list-bullets-colored li {
+    position: relative;
+    margin-bottom: 32px; }
+    .list-bullets-colored li::before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      position: absolute;
+      top: 2px;
+      left: -24px; }
+  .list-bullets-colored li:nth-of-type(4n + 1)::before {
+    background-color: #F58518; }
+  .list-bullets-colored li:nth-of-type(4n + 2)::before {
+    background-color: #01928B; }
+  .list-bullets-colored li:nth-of-type(4n + 3)::before {
+    background-color: #009ECE; }
+  .list-bullets-colored li:nth-of-type(4n + 4)::before {
+    background-color: #B6519D; }
+  .list-bullets-colored li:last-of-type {
+    margin-bottom: 0; }
 
 .logo-grid__item {
   display: block;
@@ -4248,7 +4380,7 @@ svg {
       letter-spacing: -0.5px; }
     .wysiwyg p.text-lg {
       font-size: 1.75rem;
-      line-height: 1.2;
+      line-height: 1.4;
       letter-spacing: -1px; }
       @media (min-width: 992px) {
         .wysiwyg p.text-lg {

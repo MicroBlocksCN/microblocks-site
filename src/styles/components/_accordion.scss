@@ -1,0 +1,167 @@
+// ==========================================================================
+// Components / List Bullets Colored
+// ==========================================================================
+
+
+.accordion {
+
+    &--teal {
+        background-color: $color-teal;
+        
+        .accordion__content {
+            background-color: $color-teal-50;
+        }
+    }
+
+    &--purple {
+        background-color: $color-purple;
+        
+        .accordion__content {
+            background-color: $color-purple-50;
+        }
+    }
+
+    &--blue {
+        background-color: $color-blue;
+        
+        .accordion__content {
+            background-color: $color-blue-50;
+        }
+    }
+
+}
+
+
+.accordion--active {
+
+    .accordion__content-inner {
+        opacity: 1;
+    }
+
+    .accordion__toggle--plus {
+        opacity: 0;
+    }
+
+    .accordion__toggle--minus {
+        opacity: 1;
+    }
+}
+
+
+
+// Header
+// ==========================================================================
+
+
+.accordion__header {
+    padding: 12px 0;
+
+    font-size: 32px;
+    line-height: 32px;
+    color: $color-white;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    @include mq(md) {
+        padding: 24px 0;
+    }
+}
+
+
+.accordion__index {
+    display: none;
+
+    position: relative;
+    @include font-display-light;
+
+    @include mq(md) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        width: calc( 100% - 32px );
+        height: 1px;
+
+        position: absolute;
+        left: 32px;
+        top: 16px;
+
+        background-color: $color-white;
+        opacity: 0.4;
+    }
+}
+
+
+.accordion__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.accordion__toggle {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid $color-white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    line-height: 1;
+
+    & > div {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.4s ease-out;
+    }
+
+    &--plus {
+        opacity: 1;
+    }
+
+    &--minus {
+        opacity: 0;
+    }
+}
+
+
+.accordion__title {
+    @include font-display-bold;
+}
+
+
+
+// Content
+// ==========================================================================
+
+
+.accordion__content {
+    overflow: hidden;
+
+    max-height: 0;
+    will-change: max-height;
+
+    transition: max-height 0.4s ease-out;
+}
+
+.accordion__content-inner {
+    padding: 40px;
+
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+}
+
