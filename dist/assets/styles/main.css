@@ -4122,7 +4122,6 @@ svg {
   overflow-y: hidden;
   height: 40px;
   padding: 0 calc(var(--bs-gutter-x));
-  overflow-scrolling: touch;
   -webkit-overflow-scrolling: touch; }
   @media (min-width: 576px) {
     .tabs__buttons-list {
