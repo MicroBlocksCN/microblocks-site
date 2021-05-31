@@ -20,6 +20,16 @@
 }
 
 
+.title-small {
+    @include font-display-bold;
+    color: $color-black-700;
+
+    padding-top: 8px;
+    @include border-top-small($color-black-300);
+
+    margin-bottom: 20px;
+}
+
 
 // Sections
 // ==========================================================================
@@ -47,3 +57,5 @@
 
     margin-bottom: 16px;
 }
+
+

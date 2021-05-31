@@ -13,6 +13,7 @@ function autorun(){
   } */
 
   menuToggle();
+  tabs();
 
 };
 
