@@ -103,9 +103,7 @@
 
       background-color: $color-black-700;
       border-radius: 50%;
-    }
-
-    
+    }    
   }
 
 
@@ -148,7 +146,9 @@
   }
 
 
-  &--black {
+  // unify
+  &--black,
+  .text-black {
     color: $color-black;
   }
 

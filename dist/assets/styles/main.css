@@ -4430,7 +4430,8 @@ svg {
     margin-bottom: 0; }
   .wysiwyg--center {
     text-align: center; }
-  .wysiwyg--black {
+  .wysiwyg--black,
+  .wysiwyg .text-black {
     color: #2C2C2C; }
 
 .page-download__hero {
@@ -4456,6 +4457,46 @@ svg {
     margin-bottom: 16px; }
 
 .page-download__hero__specs {
+  margin-bottom: 16px; }
+
+.index-hero__boardie {
+  text-align: right; }
+
+.index-hero__statement {
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 56px;
+  line-height: 1;
+  letter-spacing: -2px;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  @media (min-width: 768px) {
+    .index-hero__statement {
+      font-size: 72px; } }
+
+.index-special {
+  padding-bottom: 40px; }
+
+.index-special__block {
+  margin-bottom: 40px; }
+  @media (min-width: 768px) {
+    .index-special__block:nth-of-type(2n + 1) {
+      flex-direction: row-reverse; }
+      .index-special__block:nth-of-type(2n + 1) .index-special__content {
+        text-align: right; }
+      .index-special__block:nth-of-type(2n + 1) .index-special__index {
+        display: flex;
+        justify-content: flex-end; } }
+
+.index-special__illustration {
+  text-align: center; }
+
+.index-special__title {
+  font-family: "Space Grotesk", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
   margin-bottom: 16px; }
 
 .page-learn__activity-cards {

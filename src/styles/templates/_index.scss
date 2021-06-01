@@ -1,0 +1,76 @@
+// ==========================================================================
+// Templates / Home
+// ==========================================================================
+
+
+
+// Hero
+// ==========================================================================
+
+
+.index-hero__boardie {
+    text-align: right;
+}
+
+
+.index-hero__statement {
+    @include font-regular-bold;
+    font-size: 56px;
+    line-height: 1;
+    letter-spacing: -2px;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    @include mq(md) {
+        font-size: 72px;
+    }
+}
+
+
+
+// What makes MicroBlocks Special
+// ==========================================================================
+
+
+.index-special {
+    padding-bottom: 40px;
+}
+
+
+.index-special__block {
+
+    margin-bottom: 40px;
+
+    @include mq(md) {
+
+        &:nth-of-type( 2n + 1 ) {
+            flex-direction: row-reverse;
+    
+            .index-special__content {
+                text-align: right
+            }
+    
+            .index-special__index {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }    
+}
+
+
+.index-special__illustration {
+    text-align: center
+}
+
+.index-special__index {
+
+}
+
+
+.index-special__title {
+    @include font-display-bold;
+    font-size: 32px;
+    margin-bottom: 16px;
+}
