@@ -6,7 +6,7 @@
  * and relates them together based on the index position
  */
 
-let tabs = function() {
+let tabsInit = function() {
 
   let tabsBlocks = document.querySelectorAll('.tabs');
 
