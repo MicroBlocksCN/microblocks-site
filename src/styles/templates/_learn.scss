@@ -108,6 +108,12 @@
     &--teal {
         background-color: $color-teal;
     }
+
+
+    @include mq(md) {
+        font-size: 20px;
+        line-height: 24px;
+    }
 }
 
 

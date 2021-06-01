@@ -4563,6 +4563,10 @@ svg {
     background-color: #B6519D; }
   .page-learn__select--teal {
     background-color: #01928B; }
+  @media (min-width: 768px) {
+    .page-learn__select {
+      font-size: 20px;
+      line-height: 24px; } }
 
 .page-learn__cards-list {
   padding-bottom: 40px;
