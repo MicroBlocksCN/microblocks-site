@@ -1,7 +1,4 @@
-<!-- 
----- Header
---->
-
+{{! Header }}
 
 <header class="header">
 
@@ -17,10 +14,10 @@
   <!-- Menu Toggle -->
   <div class="menu-toggle" id="menu-toggle" role="button" aria-haspopup="true" aria-controls="menu">
     <div class="menu-toggle__icon menu-toggle__icon--show">
-      {% include 'partials/svg/icon-show.svg' %}
+        {{> svg.icon-show }}
     </div>
     <div class="menu-toggle__icon menu-toggle__icon--hide">
-      {% include 'partials/svg/icon-hide.svg' %}
+        {{> svg.icon-hide }}
     </div>
   </div>
 

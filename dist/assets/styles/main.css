@@ -3509,7 +3509,6 @@ a:visited {
 
 @media (min-width: 992px) {
   .figure--sticky {
-    position: -webkit-sticky;
     position: sticky;
     top: 2rem; } }
 

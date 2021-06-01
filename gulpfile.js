@@ -9,13 +9,35 @@
 // declare packages
 //
 
+var fs = require('fs');
+var hbs = require('hbs');
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
-var nunjucks = require('gulp-nunjucks-render');
+var handlebars = require('gulp-handlebars');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var concat = require('gulp-concat');
+
+// register all handlebars partials
+
+function registerPartials (dir) {
+    var partialsDir = __dirname + '/src/templates/partials/' + dir;
+    var filenames = fs.readdirSync(partialsDir);
+    filenames.forEach(function (filename) {
+        var matches = /^([^.]+).hbs$/.exec(filename);
+        if (!matches) { return; }
+        var name = matches[1];
+        var template = fs.readFileSync(partialsDir + '/' + filename, 'utf8');
+        // if there's a dir, register the partial as dir.name
+        // i.e. svg.icon-plus.svg
+        hbs.registerPartial((dir ? dir + '.' : '') + name, template);
+    });
+}
+
+registerPartials('svg');
+registerPartials();
+
 // add uglify
 
 //
@@ -24,8 +46,8 @@ var concat = require('gulp-concat');
 
 // render nunjucks
 gulp.task('render', function(){
-    return gulp.src('src/templates/*.njk')
-        .pipe(nunjucks({
+    return gulp.src('src/templates/*.hbs')
+        .pipe(handlebars({
             path: ['src/templates/']
         }))
         .pipe(gulp.dest('dist'));
