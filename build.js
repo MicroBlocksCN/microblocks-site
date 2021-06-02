@@ -1,4 +1,5 @@
 var fs = require('fs'),
+    fse = require('fs-extra'),
     handlebars = require('handlebars'),
     httpServer = require('http-server'),
     debugMode = true;
@@ -71,32 +72,76 @@ handlebars.registerHelper('times', function(n, block) {
 function build () {
     // builds the whole thing
 
+    // remove and remake dist directory
+    fse.removeSync(`${__dirname}/dist`);
+    fse.ensureDirSync(`${__dirname}/dist`);
+
     // register all handlebars partials
     registerPartials('svg');
     registerPartials('layouts');
     registerPartials();
 
+    // concat all JS
+    concatJS();
+
+    // compile scss stylesheets
+    //TODO
+
+    // copy assets
+    copyAssets();
+
     // compile all templates
     compileAll();
 };
 
-function watchDir (dir, action) {
+function copyAssets () {
+    fse.copySync(
+        `${__dirname}/src/assets`,
+        `${__dirname}/dist/assets`,
+        { overwrite: true},
+        (err) => { if (err) { console.error(err); } }
+    );
+};
+
+function concatJS () {
+    var fullJS = '';
     doForFilesInDir(
-        dir,
-        'hbs',
-        (fileName, fileContents, fullPath) => {
-            debug(`watching file: ${fullPath}`);
-            fs.watchFile(fullPath, { interval: 1000 }, (c, p) => {
-                debug(`file ${fileName} in ${fullPath} changed. Rebuilding`);
-                fs.writeFileSync(
-                    `dist/${fileName}.html`,
-                    handlebars.compile(fs.readFileSync(fullPath, 'utf8'))({})
-                );
-            })
+        'src/scripts',
+        'js',
+        (fileName, fileContents) => {
+            fullJS += fileContents;
+        }
+    );
+    fs.writeFileSync(`${__dirname}/dist/main.js`, fullJS);
+};
+
+function watchDirs (dirs, action) {
+    dirs.forEach(
+        (dir) => {
+            doForFilesInDir(
+                dir,
+                'hbs',
+                (fileName, fileContents, fullPath) => {
+                    debug(`watching file: ${fullPath}`);
+                    fs.watchFile(fullPath, { interval: 1000 }, (c, p) => {
+                        debug(`File ${fullPath} changed. Rebuilding site.`);
+                        build();
+                    });
+                }
+            );
         }
     );
 };
 
+// Build, watch, and serve
+
 build();
-watchDir('src/templates');
-httpServer.createServer().listen(3000);
+watchDirs([
+    'src/templates', 'src/templates/partials', 'src/templates/partials/layouts',
+    'src/templates/partials/svg', 'src/styles', 'src/styles/base',
+    'src/styles/components', 'src/styles/elements', 'src/styles/generic',
+    'src/styles/layout', 'src/styles/settings', 'src/styles/templates',
+    'src/styles/tools', 'src/styles/utilities', 'src/styles/vendors',
+    'src/scripts']);
+
+httpServer.createServer({ root: __dirname + '/dist', cache: -1 }).listen(3000);
