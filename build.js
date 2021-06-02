@@ -3,6 +3,8 @@ var fs = require('fs'),
     sass = require('node-sass'),
     handlebars = require('handlebars'),
     httpServer = require('http-server'),
+    autoprefixer = require('autoprefixer'),
+    postcss = require('postcss'),
     debugMode = true;
 
 // Useful functions
@@ -85,7 +87,7 @@ function build () {
     // concat all JS
     concatJS();
 
-    // compile sass stylesheets
+    // compile sass stylesheets, autoprefixing the resulting CSS
     compileSass();
 
     // copy assets
@@ -117,6 +119,7 @@ function concatJS () {
 };
 
 function compileSass () {
+    // Compile SASS files and autoprefix the resulting CSS
     sass.render(
         {
             file: `${__dirname}/src/styles/main.scss`,
@@ -126,11 +129,23 @@ function compileSass () {
             if (err) {
                 console.error(err);
             } else {
-                fs.writeFileSync(`${__dirname}/dist/main.css`, result.css);
+                postcss([ autoprefixer ])
+                    .process(result.css, { from: undefined })
+                    .then(prefixed => {
+                        prefixed.warnings().forEach(warn => {
+                            console.warn(warn.toString())
+                        });
+                        fs.writeFileSync(
+                            `${__dirname}/dist/main.css`,
+                            prefixed.css
+                        );
+                    });
             }
         }
     );
 };
+
+
 
 function watchDirs (dirs, action) {
     dirs.forEach(
