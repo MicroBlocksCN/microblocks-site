@@ -2,9 +2,8 @@
   "name": "ccases-front",
   "version": "1.0.0",
   "description": "Clinical Cases Front-end - 2021-02-03",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node build.js"
   },
   "author": "Marc Camprecios",
   "license": "ISC",
@@ -12,13 +11,7 @@
     "autoprefixer": "^9.7.4",
     "browser-sync": "^2.26.7",
     "fs": "^0.0.1-security",
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-handlebars": "^5.0.2",
-    "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2",
     "handlebars": "^4.7.7",
-    "hbs": "^4.1.2",
     "http-server": "^0.12.3"
   }
 }
