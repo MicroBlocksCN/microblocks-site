@@ -3,6 +3,8 @@ var fs = require('fs'),
     httpServer = require('http-server'),
     debugMode = true;
 
+// Useful functions
+
 function debug (string) { if (debugMode) { console.info(string); } };
 
 function doForFilesInDir (dir, extension, action) {
@@ -19,6 +21,8 @@ function doForFilesInDir (dir, extension, action) {
         action.call(this, fileName, fileContents, fullPath);
     });
 };
+
+// Handlebars processing
 
 function registerPartials (dir) {
     // registers handlebars partials in a particular templates/partials subdir
@@ -51,6 +55,18 @@ function compileAll () {
         }
     );
 };
+
+// Handlebars additions
+
+handlebars.registerHelper('times', function(n, block) {
+    var accum = '';
+    for (var i = 0; i < n; ++i) {
+        accum += block.fn(i);
+    }
+    return accum;
+});
+
+// Build script functions
 
 function build () {
     // builds the whole thing
