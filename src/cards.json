@@ -9,7 +9,8 @@
         "altText":"Kids using a micro:bit"
     },
     {
-        "title":"Another Card",
+        "title":"Una Activitat",
+        "language":"CA",
         "reqs": "requires an ultrasonic distance sensor",
         "boards": ["ED1", "M5Stack", "M5Stick"],
         "level": 2,
