@@ -13,6 +13,7 @@
     "fs": "^0.0.1-security",
     "fs-extra": "^3.0.1",
     "handlebars": "^4.7.7",
-    "http-server": "^0.12.3"
+    "http-server": "^0.12.3",
+    "node-sass": "^6.0.0"
   }
 }

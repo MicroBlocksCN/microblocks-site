@@ -1,5 +1,6 @@
 var fs = require('fs'),
     fse = require('fs-extra'),
+    sass = require('node-sass'),
     handlebars = require('handlebars'),
     httpServer = require('http-server'),
     debugMode = true;
@@ -42,7 +43,7 @@ function registerPartials (dir) {
     );
 };
 
-function compileAll () {
+function compileTemplates () {
     // compiles all templates
     doForFilesInDir(
         'src/templates',
@@ -84,14 +85,14 @@ function build () {
     // concat all JS
     concatJS();
 
-    // compile scss stylesheets
-    //TODO
+    // compile sass stylesheets
+    compileSass();
 
     // copy assets
     copyAssets();
 
     // compile all templates
-    compileAll();
+    compileTemplates();
 };
 
 function copyAssets () {
@@ -113,6 +114,22 @@ function concatJS () {
         }
     );
     fs.writeFileSync(`${__dirname}/dist/main.js`, fullJS);
+};
+
+function compileSass () {
+    sass.render(
+        {
+            file: `${__dirname}/src/styles/main.scss`,
+            outputStyle: (debugMode ? 'nested' : 'compressed')
+        },
+        (err, result) => {
+            if (err) {
+                console.error(err);
+            } else {
+                fs.writeFileSync(`${__dirname}/dist/main.css`, result.css);
+            }
+        }
+    );
 };
 
 function watchDirs (dirs, action) {
