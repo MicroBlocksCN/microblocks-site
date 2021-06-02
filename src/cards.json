@@ -1,0 +1,19 @@
+[
+    {
+        "title":"Quickstart Guide",
+        "language":"EN",
+        "reqs": "",
+        "boards": ["micro:bit"],
+        "level": 0,
+        "pictureFile":"activity-card-420x240.jpg",
+        "altText":"Kids using a micro:bit"
+    },
+    {
+        "title":"Another Card",
+        "reqs": "requires an ultrasonic distance sensor",
+        "boards": ["ED1", "M5Stack", "M5Stick"],
+        "level": 2,
+        "pictureFile":"activity-card-420x240.jpg",
+        "altText":"Boards doing things"
+    }
+]

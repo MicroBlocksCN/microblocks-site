@@ -90,7 +90,7 @@ function build () {
     // compile sass stylesheets, autoprefixing the resulting CSS
     compileSass();
 
-    // copy assets
+    // copy assets and JSON files
     copyAssets();
 
     // compile all templates
@@ -103,6 +103,13 @@ function copyAssets () {
         `${__dirname}/dist/assets`,
         { overwrite: true},
         (err) => { if (err) { console.error(err); } }
+    );
+    doForFilesInDir(
+        'src',
+        'json',
+        (fileName, fileContents, fullPath) => {
+            fs.copyFileSync(fullPath, `${__dirname}/dist/${fileName}.json`);
+        }
     );
 };
 
@@ -145,6 +152,11 @@ function compileSass () {
     );
 };
 
+function serve () {
+    httpServer.createServer(
+        { root: __dirname + '/dist', cache: -1 }
+    ).listen(3000);
+}
 
 
 function watchDirs (dirs, action) {
@@ -165,15 +177,19 @@ function watchDirs (dirs, action) {
     );
 };
 
+function watch () {
+    watchDirs([
+        'src/templates', 'src/templates/partials', 'src/templates/partials/layouts',
+        'src/templates/partials/svg', 'src/styles', 'src/styles/base',
+        'src/styles/components', 'src/styles/elements', 'src/styles/generic',
+        'src/styles/layout', 'src/styles/settings', 'src/styles/templates',
+        'src/styles/tools', 'src/styles/utilities', 'src/styles/vendors',
+        'src/scripts']);
+};
+
 // Build, watch, and serve
 
 build();
-watchDirs([
-    'src/templates', 'src/templates/partials', 'src/templates/partials/layouts',
-    'src/templates/partials/svg', 'src/styles', 'src/styles/base',
-    'src/styles/components', 'src/styles/elements', 'src/styles/generic',
-    'src/styles/layout', 'src/styles/settings', 'src/styles/templates',
-    'src/styles/tools', 'src/styles/utilities', 'src/styles/vendors',
-    'src/scripts']);
+watch();
+serve();
 
-httpServer.createServer({ root: __dirname + '/dist', cache: -1 }).listen(3000);

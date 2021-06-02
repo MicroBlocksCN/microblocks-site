@@ -102,11 +102,7 @@
 
             <div class="row">
                 <div class="col-12">
-                    <div class="page-learn__cards-list">
-                        {% for i in range(0, 12) %}
-                            {% include 'partials/_activity-card.njk' %}
-                        {% endfor %}
-                    </div>
+                    {{> _card_list }}
                 </div>
             </div>
 
