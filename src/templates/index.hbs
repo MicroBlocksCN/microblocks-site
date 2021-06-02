@@ -1,14 +1,8 @@
-{#
-## Templates Index
-#}
+{{! Templates Index }}
 
-{% extends 'layouts/_html-shell.njk' %}
-{% import 'data/_global.njk' as global %}
-{% import 'data/_index.njk' as data %}
+{{#> layouts._html-shell title="Microblocks - Home" pageClass="page-home page-has-hero"}}
 
-
-{% block content %}
-
+{{#*inline "main-content"}}
 
 <!-- Header -->
 <header class="main__header">
@@ -212,9 +206,9 @@
 
 <!-- Contents Footer -->
 <div class="main__footer">
-	{% include 'partials/_next-steps.njk' %}
+    {{> _next-steps }}
 </div>
 <!-- Contents Footer -->
 
-
-{% endblock %}
+{{/inline}}
+{{/layouts._html-shell }}

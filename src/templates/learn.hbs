@@ -1,13 +1,8 @@
-{#
-## Contribute
-#}
+{{! Learn }}
 
-{% extends 'layouts/_html-shell.njk' %}
-{% import 'data/_global.njk' as global %}
-{% import 'data/_learn.njk' as data %}
+{{#> layouts._html-shell title="Microblocks - Learn" pageClass="page-learn"}}
 
-
-{% block content %}
+{{#*inline "main-content"}}
 
 
 <!-- Header -->
@@ -160,6 +155,5 @@
 </aside>
 <!-- Contents Footer -->
 
-
-
-{% endblock %}
+{{/inline}}
+{{/layouts._html-shell}}

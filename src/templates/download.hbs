@@ -1,13 +1,8 @@
-{#
-## Download
-#}
+{{! Download }}
 
-{% extends 'layouts/_html-shell.njk' %}
-{% import 'data/_global.njk' as global %}
-{% import 'data/_download.njk' as data %}
+{{#> layouts._html-shell title="Microblocks - Download" pageClass="page-download"}}
 
-
-{% block content %}
+{{#*inline "main-content"}}
 
 <!-- Header -->
 <header class="main__header">
@@ -82,9 +77,9 @@
 
 <!-- Contents Footer -->
 <div class="main__footer">
-  {% include 'partials/_next-steps.njk' %}
+    {{> _next-steps }}
 </div>
 <!-- Contents Footer -->
 
-
-{% endblock %}
+{{/inline}}
+{{/layouts._html-shell}}

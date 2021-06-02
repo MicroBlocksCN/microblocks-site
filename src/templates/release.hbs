@@ -1,13 +1,8 @@
-{#
-## Release
-#}
+{{! Release }}
 
-{% extends 'layouts/_html-shell.njk' %}
-{% import 'data/_global.njk' as global %}
-{% import 'data/_release.njk' as data %}
+{{#> layouts._html-shell title="Microblocks - Release" pageClass="page-release"}}
 
-
-{% block content %}
+{{#*inline "main-content"}}
 
 <!-- Header -->
 <header class="main__header">
@@ -65,7 +60,7 @@
                     <div class="col-12 col-lg-6 u_mb-1">
                         <a class="link-circle-w-text" href="#" target="_blank">
                             <div class="circle">
-                                {% include 'partials/svg/icon-arrow-down.svg' %}
+                                {{> svg.icon-arrow-down }}
                             </div>
                             <div class="link-circle-w-text__text">
                                 Raspberry Pi <small>(Raspbian)</small>
@@ -96,7 +91,7 @@
                     <div class="col-12 col-lg-6 u_mb-1">
                         <a class="link-circle-w-text" href="#" target="_blank">
                             <div class="circle">
-                                {% include 'partials/svg/icon-arrow-down.svg' %}
+                                {{> svg.icon-arrow-down }}
                             </div>
                             <div class="link-circle-w-text__text">
                                 Linux, 64-bit <small>(deb)</small>
@@ -127,7 +122,7 @@
                     <div class="col-12 col-lg-6 u_mb-1.5">
                         <a class="link-circle-w-text" href="#" target="_blank">
                             <div class="circle">
-                                {% include 'partials/svg/icon-arrow-down.svg' %}
+                                {{> svg.icon-arrow-down }}
                             </div>
                             <div class="link-circle-w-text__text">
                                 Adafruit Circuit Playground Express Long Text
@@ -147,5 +142,5 @@
 </div>
 <!-- Contents -->
 
-
-{% endblock %}
+{{/inline}}
+{{/layouts._html-shell}}
