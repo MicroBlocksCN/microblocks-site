@@ -3,7 +3,7 @@
         "title":"Quickstart Guide",
         "language":"EN",
         "reqs": "",
-        "boards": ["micro:bit"],
+        "boards": ["micro:bit", "ED1"],
         "level": 0,
         "pictureFile":"activity-card-420x240.jpg",
         "altText":"Kids using a micro:bit"

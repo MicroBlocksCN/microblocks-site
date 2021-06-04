@@ -30,12 +30,12 @@ function cardHtml (descriptor) {
 };
 
 function matchesFilter (descriptor, filter) {
-    // TODO this is elegant, but it won't work for boards,
-    //      since cards can have multiple boards
-    var mismatches = Object.keys(filter).find(
-        key => filter[key] !== descriptor[key]
-    );
-    return mismatches === undefined;
+    return (filter.board === undefined ||
+        (descriptor.boards !== undefined) &&
+        (descriptor.boards.includes(filter.board))) ||
+        Object.keys(filter).find(key =>
+            filter[key] !== descriptor[key]
+        ) === undefined;
 };
 
 function renderCards (descriptors, filter, element) {
