@@ -7,6 +7,9 @@ var fs = require('fs'),
     postcss = require('postcss'),
     debugMode = true;
 
+// Data
+var data = JSON.parse(fs.readFileSync('data.json'));
+
 // Useful functions
 
 function debug (string) { if (debugMode) { console.info(string); } };
@@ -63,7 +66,7 @@ function compileTemplates () {
         (fileName, fileContents) => {
             fs.writeFileSync(
                 `dist/${fileName}.html`,
-                handlebars.compile(fileContents)({})
+                handlebars.compile(fileContents)(data[fileName] || {})
             );
             debug(`compiled template: ${fileName}`);
         }

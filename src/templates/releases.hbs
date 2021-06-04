@@ -57,20 +57,9 @@
 
             <main class="col-12 col-md-8">
                 <div class="row">
-
-                    {{#times 6 }}
-                    <div class="col-12 col-lg-6 u_mb-1">
-                        <a class="link-circle-w-text" href="#" target="_blank">
-                            <div class="circle">
-                                {{> svg.icon-arrow-down }}
-                            </div>
-                            <div class="link-circle-w-text__text">
-                                Raspberry Pi <small>(Raspbian)</small>
-                            </div>
-                        </a>
-                    </div>
-                    {{/times}}
-
+                    {{#each installers}}
+                    {{> _download-link}}
+                    {{/each}}
                 </div>
             </main>
 
@@ -88,20 +77,9 @@
 
             <main class="col-12 col-md-8">
                 <div class="row">
-
-                    {{#times 5 }}
-                    <div class="col-12 col-lg-6 u_mb-1">
-                        <a class="link-circle-w-text" href="#" target="_blank">
-                            <div class="circle">
-                                {{> svg.icon-arrow-down }}
-                            </div>
-                            <div class="link-circle-w-text__text">
-                                Linux, 64-bit <small>(deb)</small>
-                            </div>
-                        </a>
-                    </div>
-                    {{/times}}
-
+                    {{#each standalone}}
+                    {{> _download-link}}
+                    {{/each}}
                 </div>
             </main>
 
@@ -119,20 +97,9 @@
 
             <main class="col-12 col-md-8">
                 <div class="row">
-
-                    {{#times 14 }}
-                    <div class="col-12 col-lg-6 u_mb-1.5">
-                        <a class="link-circle-w-text" href="#" target="_blank">
-                            <div class="circle">
-                                {{> svg.icon-arrow-down }}
-                            </div>
-                            <div class="link-circle-w-text__text">
-                                Adafruit Circuit Playground Express Long Text
-                            </div>
-                        </a>
-                    </div>
-                    {{/times}}
-
+                    {{#each vm}}
+                    {{> _download-link}}
+                    {{/each}}
                 </div>
             </main>
 
