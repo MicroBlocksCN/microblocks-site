@@ -18,7 +18,7 @@ let accordionInit = function() {
     let content = accordion.querySelector('.accordion__content');
     accordion.classList.remove('accordion--active');
     content.style.maxHeight = null;
-  }
+  };
 
 
   accordions.forEach( (_theAccordion) => {
