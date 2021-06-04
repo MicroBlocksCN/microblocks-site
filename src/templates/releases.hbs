@@ -1,0 +1,115 @@
+{{! Release }}
+
+{{#> layouts._html-shell title="Microblocks - Release" pageClass="page-release"}}
+
+{{#*inline "main-content"}}
+
+<!-- Header -->
+<header class="main__header">
+
+    <!-- Hero -->
+    <div class="hero-yellow"></div>
+
+    <div class="container">
+
+        <!-- Title -->
+        <div class="row">
+            <div class="col">
+                <h1 class="title-blocks">
+                    <span class="block block--purple">download</span>
+                </h1>
+            </div>
+        </div>
+
+        <!-- Intro -->
+        <div class="row">
+            <div class="col-12 col-lg-9">
+                <div class="main-header__intro wysiwyg">
+                    <h2 class="heading-large">MicroBlocks Version <span class="version"></span></h2>
+                    <p class="text-md">released on <span class="date"></span></p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="page-release__intro-download-btn">
+                    <a class="btn btn--purple" href="/downloads">Other Versions</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        populateVersionAndDate();
+    </script>
+</header>
+<!-- Header -->
+
+
+<!-- Contents -->
+<div class="main__contents">
+
+    <!-- Installers -->
+    <div class="container">
+        <article class="row section border-top">
+
+            <header class="col-12 col-md-4">
+                <h3 class="section-title">Installers</h3>
+            </header>
+
+            <main class="col-12 col-md-8">
+                <div class="row">
+                    {{#each installers}}
+                    {{> _download-link}}
+                    {{/each}}
+                </div>
+            </main>
+
+        </article>
+    </div>
+    <!-- Installers -->
+
+    <!-- Standalone executables -->
+    <div class="container">
+        <article class="row section border-top">
+
+            <header class="col-12 col-md-4">
+                <h3 class="section-title">Standalone executables</h3>
+            </header>
+
+            <main class="col-12 col-md-8">
+                <div class="row">
+                    {{#each standalone}}
+                    {{> _download-link}}
+                    {{/each}}
+                </div>
+            </main>
+
+        </article>
+    </div>
+    <!-- Standalone executables -->
+    
+    <!-- Precompiled Virtual Machines -->
+    <div class="container">
+        <article class="row section border-top">
+
+            <header class="col-12 col-md-4">
+                <h3 class="section-title">Precompiled Virtual Machines</h3>
+            </header>
+
+            <main class="col-12 col-md-8">
+                <div class="row">
+                    {{#each vm}}
+                    {{> _download-link}}
+                    {{/each}}
+                </div>
+            </main>
+
+        </article>
+    </div>
+    <!-- Precompiled Virtual Machines -->
+
+
+</div>
+<!-- Contents -->
+
+{{/inline}}
+{{/layouts._html-shell}}

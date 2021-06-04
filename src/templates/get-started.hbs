@@ -1,14 +1,8 @@
-{#
-## Get Started
-#}
+{{! Get Started }}
 
-{% extends 'layouts/_html-shell.njk' %}
-{% import 'data/_global.njk' as global %}
-{% import 'data/_get-started.njk' as data %}
+{{#> layouts._html-shell title="Microblocks - Get Started" pageClass="page-get-started"}}
 
-
-{% block content %}
-
+{{#*inline "main-content"}}
 
 <!-- Header -->
 <header class="main__header">
@@ -299,5 +293,5 @@
 </aside>
 <!-- Contents Footer -->
 
-
-{% endblock %}
+{{/inline}}
+{{/layouts._html-shell}}

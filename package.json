@@ -1,20 +1,20 @@
 {
-  "name": "ccases-front",
+  "name": "microblocks-site",
   "version": "1.0.0",
-  "description": "Clinical Cases Front-end - 2021-02-03",
-  "main": "index.js",
+  "description": "MicroBlocks website",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node build.js"
   },
-  "author": "Marc Camprecios",
+  "author": "Marc Campreciós",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^9.7.4",
     "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-nunjucks-render": "^2.2.3",
-    "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2"
+    "fs": "^0.0.1-security",
+    "fs-extra": "^3.0.1",
+    "handlebars": "^4.7.7",
+    "http-server": "^0.12.3",
+    "node-sass": "^6.0.0",
+    "postcss": "^7.0.35"
   }
 }

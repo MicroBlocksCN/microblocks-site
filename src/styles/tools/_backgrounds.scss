@@ -7,7 +7,7 @@
 // Mixins
 
 @mixin background-emoji($color: on-yellow) {
-    background-image: url('../img/backgrounds/background-#{$color}.png');
+    background-image: url('assets/img/backgrounds/background-#{$color}.png');
     background-position: center center;
 }
 
