@@ -103,8 +103,23 @@ function build () {
     // copy assets and JSON files
     copyAssets();
 
+    if (debugMode) { makeFakeReleaseFiles(); }
+
     // compile all templates
     compileTemplates();
+};
+
+function makeFakeReleaseFiles () {
+    fse.ensureFileSync(`${__dirname}/dist/downloads/latest/VERSION.txt`);
+    fse.ensureFileSync(`${__dirname}/dist/downloads/latest/CHANGELOG.txt`);
+    fs.writeFileSync(
+        `${__dirname}/dist/downloads/latest/VERSION.txt`,
+        '0.0.0-test\n04/06/2021'
+    );
+    fs.writeFileSync(
+        `${__dirname}/dist/downloads/latest/CHANGELOG.txt`,
+        'nothing new under the sun'
+    );
 };
 
 function copyAssets () {
