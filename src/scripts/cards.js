@@ -1,3 +1,10 @@
+/*
+ * Scripts for filtering and displaying learning cards
+ */
+
+var currentPage = 1,
+    totalPages = 1;
+
 function cardHtml (descriptor) {
     return `<a class="activity-card" href="#" download>
     <div class="activity-card__picture">
@@ -30,27 +37,37 @@ function cardHtml (descriptor) {
 };
 
 function matchesFilter (descriptor, filter) {
-    return (filter.board === undefined ||
-        (descriptor.boards !== undefined) &&
-        (descriptor.boards.includes(filter.board))) ||
-        Object.keys(filter).find(key =>
-            filter[key] !== descriptor[key]
-        ) === undefined;
+    return ((filter.board === "") ||
+            (descriptor.boards.includes(filter.board))) &&
+        ((filter.language === "") ||
+            (descriptor.language === filter.language)) &&
+        ((filter.level === "") ||
+            (descriptor.level === parseInt(filter.level)));
 };
 
 function renderCards (descriptors, filter, element) {
-    var html = '';
-    cardDescriptors.filter(descriptor =>
-        { return matchesFilter(descriptor, filter); }
-    ).forEach(descriptor => {
-        html += cardHtml(descriptor);
-    });
+    var html = '',
+        filteredCards = cardDescriptors.filter(
+            descriptor => { return matchesFilter(descriptor, filter); });
+
+    totalPages = Math.ceil(filteredCards.length / 12);
+    updatePages(currentPage, totalPages);
+
+    filteredCards.slice(
+        (currentPage - 1) * 12,
+        (currentPage - 1) * 12 + 12).forEach(
+            descriptor => { html += cardHtml(descriptor); }
+        );
     element.innerHTML = html;
 };
 
 function readCards (action) {
     var req = new XMLHttpRequest();
-    req.open('GET', 'cards.json', false);
+    req.open(
+        'GET',
+        `cards.json?random=${Math.floor(Math.random()*99999)}`, // avoid caching
+        false
+    );
     req.onreadystatechange = function () {
         if (req.readyState === 4) {
             if (req.status === 200 || req.status == 0) {
@@ -60,5 +77,62 @@ function readCards (action) {
         }
     };
     req.send(null);
-}
+};
 
+function updateCards (resettingPage) {
+    if (resettingPage) { currentPage = 1; }
+    readCards(descriptors => {
+        renderCards(
+            descriptors,
+            Object.fromEntries(
+                new FormData(
+                    document.querySelector('form.page-learn__filters')
+                )
+            ),
+            document.querySelector('.page-learn__cards-list')
+        );
+    });
+};
+
+function nextPage () {
+    if (currentPage < totalPages) {
+        currentPage ++;
+        updateCards();
+    }
+};
+
+function previousPage () {
+    if (currentPage > 1) {
+        currentPage --;
+        updateCards();
+    }
+};
+
+function pageElementHtml (pageNum) {
+    if (typeof pageNum === 'number') {
+        return `<a class="pagination__item
+            ${currentPage === pageNum ? ' pagination__item--active' : ''}"
+            onclick="currentPage = ${pageNum}; updateCards()">${pageNum}</a>`;
+    } else {
+        // pageNum is either "<" or ">"
+        var disabled = (currentPage === 1 && pageNum === '<') ||
+            (totalPages === 0 || currentPage === totalPages && pageNum === '>');
+        // Yep, tomorrow I'll have a hard time understanding this code.
+        // Nope, sorry. I'm not documenting this. I'll just rewrite it from
+        // scratch if need be.
+        return `<a class="pagination__item
+            ${disabled ? ' pagination__item--disabled' : ''}"
+            onclick="${['previous','next'][['<','>'].indexOf(pageNum)]}Page();"
+            >&${['lt','gt'][['<','>'].indexOf(pageNum)]};</a>`
+    }
+};
+
+function updatePages () {
+    var html = pageElementHtml('<');
+    for (var pageNum = 1; pageNum <= totalPages; pageNum ++) {
+        html += pageElementHtml(pageNum);
+    }
+    html += pageElementHtml('>');
+    document.querySelector('.page-learn__pagination.pagination').innerHTML =
+        html;
+};
