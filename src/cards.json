@@ -1,7 +1,7 @@
 [{
         "title":"1 Quickstart Guide",
         "language":"EN",
-        "reqs": "",
+        "reqs": "needs a neopixel strip",
         "boards": ["micro:bit", "ED1"],
         "level": 0,
         "pictureFile":"activity-card-420x240.jpg",
@@ -10,7 +10,7 @@
 {
         "title":"2 Quickstart Guide",
         "language":"EN",
-        "reqs": "",
+        "reqs": "requires external stepper motors",
         "boards": ["micro:bit", "ED1"],
         "level": 0,
         "pictureFile":"activity-card-420x240.jpg",
@@ -290,7 +290,7 @@
         "title":"1 Activitat",
         "language":"CA",
         "reqs": "",
-        "boards": ["ED1", "M5Stack"],
+        "boards": ["ED1", "M5Stack", "M5Stick", "M5Atom"],
         "level": 2,
         "pictureFile":"activity-card-420x240.jpg",
         "altText":"Kids using a micro:bit"
