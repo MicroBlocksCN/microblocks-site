@@ -11,18 +11,28 @@ var fs = require('fs'),
 
 function debug (string) { if (debugMode) { console.info(string); } };
 
-function doForFilesInDir (dir, extension, action) {
+function doForFilesInDir (dir, extension, action, recursive) {
     // does something for each file of a particular extension in a directory
     var path = `${__dirname}/${dir}`;
     var filenames = fs.readdirSync(path);
-    filenames.forEach((filename) => {
-        var matches =
-            new RegExp(`^([^.]+).${extension}$`).exec(filename);
-        if (!matches) { return; }
-        var fileName = matches[1];
-        var fullPath = path + '/' + filename;
-        var fileContents = fs.readFileSync(fullPath, 'utf8');
-        action.call(this, fileName, fileContents, fullPath);
+    filenames.forEach((fileName) => {
+        var fullPath = path + '/' + fileName;
+        if (fs.statSync(fullPath).isFile()) {
+            var matches = extension ?
+                new RegExp(`^([^.]+).${extension}$`).exec(fileName) :
+                [fileName];
+            if (!matches) { return; }
+            var fileContents = fs.readFileSync(fullPath, 'utf8');
+            action.call(
+                this,
+                fileName.replace(/\..*$/,'','g'), // strip file extension
+                fileContents,
+                fullPath
+            );
+        } else if (recursive && fs.statSync(fullPath).isDirectory()) {
+            // recurse into directory
+            doForFilesInDir(dir + '/' + fileName, extension, action, recursive);
+        }
     });
 };
 
@@ -164,27 +174,22 @@ function watchDirs (dirs, action) {
         (dir) => {
             doForFilesInDir(
                 dir,
-                'hbs',
+                null, // all extensions
                 (fileName, fileContents, fullPath) => {
                     debug(`watching file: ${fullPath}`);
                     fs.watchFile(fullPath, { interval: 1000 }, (c, p) => {
                         debug(`File ${fullPath} changed. Rebuilding site.`);
                         build();
                     });
-                }
+                },
+                true // recursive
             );
         }
     );
 };
 
 function watch () {
-    watchDirs([
-        'src/templates', 'src/templates/partials', 'src/templates/partials/layouts',
-        'src/templates/partials/svg', 'src/styles', 'src/styles/base',
-        'src/styles/components', 'src/styles/elements', 'src/styles/generic',
-        'src/styles/layout', 'src/styles/settings', 'src/styles/templates',
-        'src/styles/tools', 'src/styles/utilities', 'src/styles/vendors',
-        'src/scripts']);
+    watchDirs(['src/templates', 'src/styles', 'src/scripts']);
 };
 
 // Build, watch, and serve
