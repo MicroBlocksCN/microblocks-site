@@ -175,73 +175,9 @@
                 </clipPath>
             </svg>
 
-            <section class="col-12 col-md-8 offset-md-4 col-lg-6 offset-lg-0">
-                <div class="team-member">
-                    <div class="team-member__picture">
-                        <img src="assets/img/team/team-member.png" alt="Whoever">
-                    </div>
-                    <div class="team-member__contents">
-                        <div class="team-member__name">John Maloney</div>
-                        <div class="team-member__role team-member__role--developer">/Developer</div>
-                        <div class="team-member__bio">
-                            <p class="wysiwyg">
-                                On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil.
-                            </p>                            
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="col-12 col-md-8 offset-md-4 col-lg-6 offset-lg-0">
-                <div class="team-member">
-                    <div class="team-member__picture">
-                        <img src="assets/img/team/team-member.png" alt="Whoever">
-                    </div>
-                    <div class="team-member__contents">
-                        <div class="team-member__name">John Maloney</div>
-                        <div class="team-member__role team-member__role--partnership">/partnership</div>
-                        <div class="team-member__bio">
-                            <p class="wysiwyg">
-                                On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil.
-                            </p>                            
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="col-12 col-md-8 offset-md-4 col-lg-6 offset-lg-0">
-                <div class="team-member">
-                    <div class="team-member__picture">
-                        <img src="assets/img/team/team-member.png" alt="Whoever">
-                    </div>
-                    <div class="team-member__contents">
-                        <div class="team-member__name">John Maloney</div>
-                        <div class="team-member__role team-member__role--educational">/educational</div>
-                        <div class="team-member__bio">
-                            <p class="wysiwyg">
-                                On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil.
-                            </p>                            
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="col-12 col-md-8 offset-md-4 col-lg-6 offset-lg-0">
-                <div class="team-member">
-                    <div class="team-member__picture">
-                        <img src="assets/img/team/team-member.png" alt="Whoever">
-                    </div>
-                    <div class="team-member__contents">
-                        <div class="team-member__name">John Maloney</div>
-                        <div class="team-member__role team-member__role--advisor">/advisor</div>
-                        <div class="team-member__bio">
-                            <p class="wysiwyg">
-                                On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil.
-                            </p>                            
-                        </div>
-                    </div>
-                </div>
-            </section>
+            {{#each team}}
+            {{>_team-member}}
+            {{/each}}
 
         </main>
 
