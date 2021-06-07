@@ -1,3 +1,5 @@
-On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. 
+Have ideas for your own activity cards or tutorial? We encourage you to use the MicroBlocks formats!
 
-On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. 
+**MicroBlocks Logo Use**
+
+However, the bunny image, the name *MicroBlocks*, and the phrase *Small, Fast, Human Friendly* are registered US trademarks and cannot be used without written permission from our fiscal sponsor, the Software Freedom Conservancy. Those trademarks (including the bunny image) should not appear on your own original materials, although they should appear on direct translations of MicroBlocks activity cards.

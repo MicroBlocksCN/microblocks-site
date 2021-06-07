@@ -1,577 +1,276 @@
-[{
-        "title":"1 Quickstart Guide",
-        "language":"English",
-        "reqs": "needs a neopixel strip",
-        "boards": ["micro:bit", "ED1"],
+[
+{
+        "title": "Getting Started",
+        "language": "English",
+        "reqs": "",
+        "boards": ["micro:bit"],
         "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "cards/mb_Getting_Started.pdf"
+},
 {
-        "title":"2 Quickstart Guide",
-        "language":"English",
-        "reqs": "requires external stepper motors",
-        "boards": ["micro:bit", "ED1"],
+        "title": "Sensors",
+        "language": "English",
+        "reqs": "",
+        "boards": ["micro:bit"],
         "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "cards/mb_Sensors.pdf"
+},
 {
-        "title":"3 Quickstart Guide",
-        "language":"English",
+        "title": "Sounds",
+        "language": "English",
         "reqs": "",
-        "boards": ["micro:bit", "ED1"],
+        "boards": ["micro:bit"],
         "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "cards/mb_Sounds.pdf"
+},
 {
-        "title":"4 Quickstart Guide",
-        "language":"English",
+        "title": "Step Counter",
+        "language": "English",
         "reqs": "",
-        "boards": ["micro:bit", "ED1"],
+        "boards": ["micro:bit"],
         "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "cards/mb_Step_Counter.pdf"
+},
 {
-        "title":"5 Quickstart Guide",
-        "language":"English",
+        "title": "Battery Tester",
+        "language": "English",
         "reqs": "",
-        "boards": ["micro:bit", "ED1"],
+        "boards": ["micro:bit"],
         "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "cards/mb_Battery_Tester.pdf"
+},
 {
-        "title":"6 Quickstart Guide",
-        "language":"English",
+        "title": "Radio",
+        "language": "English",
         "reqs": "",
-        "boards": ["micro:bit", "ED1"],
+        "boards": ["micro:bit"],
         "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "cards/mb_Radio.pdf"
+},
 {
-        "title":"7 Quickstart Guide",
-        "language":"English",
-        "reqs": "",
-        "boards": ["micro:bit", "ED1"],
+        "title": "NeoPixels",
+        "language": "English",
+        "reqs": "NeoPixels",
+        "boards": ["micro:bit"],
         "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "cards/mb_NeoPixels.pdf"
+},
 {
-        "title":"8 Quickstart Guide",
-        "language":"English",
-        "reqs": "",
-        "boards": ["micro:bit", "ED1"],
+        "title": "Servos",
+        "language": "English",
+        "reqs": "servo and a way to connect it",
+        "boards": ["micro:bit"],
         "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "cards/mb_Servos.pdf"
+},
 {
-        "title":"9 Quickstart Guide",
-        "language":"English",
-        "reqs": "",
-        "boards": ["micro:bit", "ED1"],
+        "title": "IR Remote Control",
+        "language": "English",
+        "reqs": "IR receiver and IR remote control",
+        "boards": ["micro:bit"],
         "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "cards/mb_IR_Remote_Control.pdf"
+},
+
 {
-        "title":"10 Quickstart Guide",
-        "language":"English",
+        "title": "Getting Started",
+        "language": "Deutsch",
         "reqs": "",
-        "boards": ["micro:bit", "ED1"],
+        "boards": ["micro:bit"],
         "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "cards/DE/mb_Getting_Started_DE.pdf"
+},
+
 {
-        "title":"11 Quickstart Guide",
-        "language":"English",
+        "title": "Getting Started",
+        "language": "Nederlands",
         "reqs": "",
-        "boards": ["micro:bit", "ED1"],
+        "boards": ["micro:bit"],
         "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "https://drive.google.com/file/d/1FfrI2HdwnZHW9su9XeU9PXIBrJWCL0Q1"
+},
 {
-        "title":"12 Quickstart Guide",
-        "language":"English",
+        "title": "Step Counter",
+        "language": "Nederlands",
         "reqs": "",
-        "boards": ["micro:bit", "ED1"],
+        "boards": ["micro:bit"],
         "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "https://drive.google.com/file/d/1RdWEoINypIMUV5lUcGXRz5RmfebggDUS"
+},
 {
-        "title":"13 Quickstart Guide",
-        "language":"English",
+        "title": "Battery Tester",
+        "language": "Nederlands",
         "reqs": "",
-        "boards": ["micro:bit", "ED1"],
+        "boards": ["micro:bit"],
         "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "https://drive.google.com/file/d/11briudm0avZrYIEMLKZ6zbkm9s0kUmWI"
+},
 {
-        "title":"14 Quickstart Guide",
-        "language":"English",
+        "title": "Radio",
+        "language": "Nederlands",
         "reqs": "",
-        "boards": ["micro:bit", "ED1"],
+        "boards": ["micro:bit"],
         "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "https://drive.google.com/file/d/1ya8KEE7QY7z6OUjdO5Ys4dLUw1nhaLGZ"
+},
+
 {
-        "title":"15 Quickstart Guide",
-        "language":"English",
+        "title": "Getting Started",
+        "language": "English",
         "reqs": "",
-        "boards": ["micro:bit", "ED1"],
+        "boards": ["Circuit Playground Express", "Circuit Playground Bluefruit"],
         "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "cards/cpx_Getting_Started.pdf"
+},
 {
-        "title":"16 Quickstart Guide",
-        "language":"English",
+        "title": "NeoPixels",
+        "language": "English",
         "reqs": "",
-        "boards": ["micro:bit", "ED1"],
+        "boards": ["Circuit Playground Express", "Circuit Playground Bluefruit"],
         "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "cards/cpx_NeoPixels.pdf"
+},
 {
-        "title":"17 Quickstart Guide",
-        "language":"English",
+        "title": "Sound",
+        "language": "English",
         "reqs": "",
-        "boards": ["micro:bit", "ED1"],
+        "boards": ["Circuit Playground Express", "Circuit Playground Bluefruit"],
         "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "cards/cpx_Sounds.pdf"
+},
 {
-        "title":"18 Quickstart Guide",
-        "language":"English",
-        "reqs": "",
-        "boards": ["micro:bit", "ED1"],
+        "title": "IR Remote Control",
+        "language": "English",
+        "reqs": "IR remote control",
+        "boards": ["Circuit Playground Express", "Circuit Playground Bluefruit"],
         "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "cpx_IR_Remote_Control.pdf"
+},
+
 {
-        "title":"19 Quickstart Guide",
-        "language":"English",
+        "title": "Buttons | LED Display",
+        "language": "English",
         "reqs": "",
-        "boards": ["micro:bit", "ED1"],
-        "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"20 Quickstart Guide",
-        "language":"English",
-        "reqs": "",
-        "boards": ["micro:bit", "ED1"],
-        "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"21 Quickstart Guide",
-        "language":"English",
-        "reqs": "",
-        "boards": ["micro:bit", "ED1"],
-        "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"22 Quickstart Guide",
-        "language":"English",
-        "reqs": "",
-        "boards": ["micro:bit", "ED1"],
-        "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"23 Quickstart Guide",
-        "language":"English",
-        "reqs": "",
-        "boards": ["micro:bit", "ED1"],
-        "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"24 Quickstart Guide",
-        "language":"English",
-        "reqs": "",
-        "boards": ["micro:bit", "ED1"],
-        "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"25 Quickstart Guide",
-        "language":"English",
-        "reqs": "",
-        "boards": ["micro:bit", "ED1"],
-        "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"26 Quickstart Guide",
-        "language":"English",
-        "reqs": "",
-        "boards": ["micro:bit", "ED1"],
-        "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"27 Quickstart Guide",
-        "language":"English",
-        "reqs": "",
-        "boards": ["micro:bit", "ED1"],
-        "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"28 Quickstart Guide",
-        "language":"English",
-        "reqs": "",
-        "boards": ["micro:bit", "ED1"],
-        "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"29 Quickstart Guide",
-        "language":"English",
-        "reqs": "",
-        "boards": ["micro:bit", "ED1"],
-        "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"30 Quickstart Guide",
-        "language":"English",
-        "reqs": "",
-        "boards": ["micro:bit", "ED1"],
-        "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"31 Quickstart Guide",
-        "language":"English",
-        "reqs": "",
-        "boards": ["micro:bit", "ED1"],
-        "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"32 Quickstart Guide",
-        "language":"English",
-        "reqs": "",
-        "boards": ["micro:bit", "ED1"],
-        "level": 0,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"1 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack", "M5Stick", "M5Atom"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"2 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"3 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"4 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"5 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"6 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"7 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"8 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"9 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"10 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"11 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"12 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"13 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"14 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"15 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"16 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"17 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"18 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"19 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"20 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"21 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"22 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"23 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"24 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"25 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"26 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
+        "boards": ["micro:bit"],
         "level": 1,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "cards2/1_mb_Buttons_Display.pdf"
+},
 {
-        "title":"27 Activitat",
-        "language":"Català",
+        "title": "Scrolling | Magic 8-Ball",
+        "language": "English",
         "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"28 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"29 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
-        "level": 2,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
-{
-        "title":"30 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
+        "boards": ["micro:bit"],
         "level": 1,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "cards2/2_mb_Scrolling.pdf"
+},
 {
-        "title":"31 Activitat",
-        "language":"Català",
+        "title": "Radio | Texting",
+        "language": "English",
         "reqs": "",
-        "boards": ["ED1", "M5Stack"],
+        "boards": ["micro:bit"],
         "level": 1,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    },
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "cards2/3_mb_Radio.pdf"
+},
 {
-        "title":"32 Activitat",
-        "language":"Català",
-        "reqs": "",
-        "boards": ["ED1", "M5Stack"],
+        "title": "Sound | Music",
+        "language": "English",
+        "reqs": "headphones, piezo speaker, or micro:bit v2",
+        "boards": ["micro:bit"],
         "level": 1,
-        "pictureFile":"activity-card-420x240.jpg",
-        "altText":"Kids using a micro:bit"
-    }
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "cards2/4_mb_Sound.pdf"
+},
+{
+        "title": "Sensors | Graphing",
+        "language": "English",
+        "reqs": "",
+        "boards": ["micro:bit"],
+        "level": 1,
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "cards2/6_mb_Sensors.pdf"
+},
+{
+        "title": "Step Counter | Motion",
+        "language": "English",
+        "reqs": "",
+        "boards": ["micro:bit"],
+        "level": 1,
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "cards2/7_mb_Motion.pdf"
+},
+{
+        "title": "Data | Logging",
+        "language": "English",
+        "reqs": "",
+        "boards": ["micro:bit"],
+        "level": 1,
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "cards2/8_mb_DataLogging.pdf"
+},
+{
+        "title": "Games | Simon",
+        "language": "English",
+        "reqs": "",
+        "boards": ["micro:bit"],
+        "level": 1,
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "cards2/9_mb_Games.pdf"
+},
+{
+        "title": "Flashlight Remote | Flashlight Tag",
+        "language": "English",
+        "reqs": "flashlight",
+        "boards": ["micro:bit"],
+        "level": 1,
+        "pictureFile": "activity-card-420x240.jpg",
+        "altText": "Kids using a micro:bit",
+        "url": "cards2/10_mb_FlashlightTag.pdf"
+}
 ]

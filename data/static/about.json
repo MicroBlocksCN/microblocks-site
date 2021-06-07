@@ -3,19 +3,19 @@
         {
             "name":"John Maloney",
             "role":"Developer",
-            "bio":"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil.",
+            "bio":"John Maloney creates live, highly-engaging programming systems for beginners and “casual programmers.” John was the lead developer for Scratch over its first eleven years. Before that, he worked in Dr. Alan Kay's research group, first at Apple Computer, then at Walt Disney Imagineering, where he helped create the Squeak portable Smalltalk system and Etoys, a programming system for children that was one of the inspirations for Scratch. After leaving the Scratch team in 2013, John led the creation of GP Blocks, a blocks language aimed at older students and adults, and MicroBlocks. John got his Ph.D. in Computer Science from the University of Washington. In his free time, John plays the dulcian, the Renaissance ancestor of the modern bassoon. At MicroBlocks, he is the lead developer for both the VM and the standalone IDE, as well as a member of the Project Leadership Committee and the project representative.",
             "img":"team-member.png"
         },
         {
             "name":"Bernat Romagosa",
             "role":"Developer",
-            "bio":"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil.",
+            "bio":"Bernat Romagosa is a software engineer from Barcelona. He is the author of Snap4Arduino, the main developer of Beetle Blocks and a contributor to the Snap! programming language. He was part of the Edutec group at the Citilab for 6 years, where he worked on developing an online programming school, a social knowledge management system, different educational applications, and a bunch of Snap! modifications. As part of the SAP Young Thinkers group he now contributes to the Snap! programming language and to MicroBlocks. At MicroBlocks, he codes parts of the VM and the standalone IDE, and is also a member of the Project Leadership Committee.",
             "img":"team-member.png"
         },
         {
             "name":"Kathy Giori",
             "role":"Global Partnerships and Outreach",
-            "bio":"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil.",
+            "bio":"Kathy Giori fills her desk with hardware that can be programmed using MicroBlocks. Earlier at Mozilla, while working on the WebThings Project, she championed a grant for MicroBlocks to include a \"Web Things\" library, so that any script could easily become an interoperable web thing, a standard for IoT devices (with the convenience of private and secure management using a WebThings Gateway). She has experience bridging open communities with industry to drive faster innovation. She is super keen on equity of access to a good (STEM) education, across the globe, which is part of what drives her strong desire to support MicroBlocks. Prior to Mozilla, she held senior roles at Arduino.org, Qualcomm Atheros, and many more. She received her bachelor's degree in Electrical Engineering from the University of Minnesota, and her master's in EE from Stanford. When not at a computer, she can usually be found exploring the great outdoors of northern California. At MicroBlocks, she directs global partnerships and outreach, and is part of the Project Leadership Committee.",
             "img":"team-member.png"
         }
     ],
