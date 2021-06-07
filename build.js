@@ -6,7 +6,8 @@ var fs = require('fs'),
     autoprefixer = require('autoprefixer'),
     postcss = require('postcss'),
     markdown = new (require('showdown')).Converter(),
-    debugMode = true;
+    args = process.argv.slice(2),
+    debugMode = args.includes('--debug');
 
 // Data
 
@@ -225,6 +226,9 @@ function watch () {
 // Build, watch, and serve
 
 build();
-watch();
-serve();
+
+if (debugMode) {
+    watch();
+    serve();
+}
 
