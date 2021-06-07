@@ -7,6 +7,13 @@ var currentPage = 1,
     cardDescriptors;
 
 function cardHtml (descriptor) {
+
+    var requirementsHTML = "";
+
+    if ( !(descriptor.reqs === "") ) {
+        requirementsHTML = `<div class="activity-card__requirement">${descriptor.reqs}</div>`
+    }
+
     return `<a class="activity-card" href="#" download>
     <div class="activity-card__picture">
         <img src="assets/img/pictures/${descriptor.pictureFile}"
@@ -17,9 +24,7 @@ function cardHtml (descriptor) {
             <h3 class="activity-card__title">
                 ${descriptor.title}
             </h3>
-            <div class="activity-card__requirement">
-                ${descriptor.reqs}
-            </div>
+            ${requirementsHTML}
         </div>
         <div class="activity-card__tags-wrapper">
             ${descriptor.boards.map(
