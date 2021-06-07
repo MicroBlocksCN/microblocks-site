@@ -1,0 +1,96 @@
+{
+    "installers":[
+        {
+            "platform":"Windows",
+            "href":"https://microblocks.fun/downloads/latest/packages/microBlocks%20setup.exe"
+        },
+        {
+            "platform":"Mac OS",
+            "href":"https://microblocks.fun/downloads/latest/packages/MicroBlocks.app.zip"
+        },
+        {
+            "platform":"Raspberry Pi (Raspbian)",
+            "href":"https://microblocks.fun/downloads/latest/packages/ublocks-armhf.deb"
+        },
+        {
+            "platform":"Linux (64 bit)",
+            "href":"https://microblocks.fun/downloads/latest/packages/ublocks-amd64.deb"
+        },
+        {
+            "platform":"Linux (32 bit)",
+            "href":"https://microblocks.fun/downloads/latest/packages/ublocks-i386.deb"
+        }
+    ],
+    "standalone":[
+        {
+            "platform":"Windows",
+            "href":"https://microblocks.fun/downloads/latest/standalone/ublocks-win.zip"
+        },
+        {
+            "platform":"Linux, 64-bit",
+            "href":"https://microblocks.fun/downloads/latest/standalone/ublocks-linux64bit.zip"
+        },
+        {
+            "platform":"Linux, 32-bit",
+            "href":"https://microblocks.fun/downloads/latest/standalone/ublocks-linux32bit.zip"
+        },
+        {
+            "platform":"Raspberry Pi",
+            "href":"https://microblocks.fun/downloads/latest/standalone/ublocks-raspberryPi.zip"
+        }
+    ],
+    "vm":[
+        {
+            "platform":"BBC micro:bit",
+            "href":"https://microblocks.fun/downloads/latest/vm/vm.microbit.hex"
+        },
+        {
+            "platform":"BBC micro:bit v2",
+            "href":"https://microblocks.fun/downloads/latest/vm/vm.microbitV2.hex"
+        },
+        {
+            "platform":"Calliope",
+            "href":"https://microblocks.fun/downloads/latest/vm/vm.calliope.hex"
+        },
+        {
+            "platform":"Adafruit Circuit Playground Express",
+            "href":"https://microblocks.fun/downloads/latest/vm/vm.circuitplay.uf2"
+        },
+        {
+            "platform":"Adafruit Circuit Playground Bluefruit",
+            "href":"https://microblocks.fun/downloads/latest/vm/vm.cplay52.uf2"
+        },
+        {
+            "platform":"Adafruit Clue",
+            "href":"https://microblocks.fun/downloads/latest/vm/vm.clue.uf2"
+        },
+        {
+            "platform":"AdaFruit ItsyBitsy M0",
+            "href":"https://microblocks.fun/downloads/latest/vm/vm.itsybitsy.uf2"
+        },
+        {
+            "platform":"Citilab ED1",
+            "href":"https://microblocks.fun/downloads/latest/vm/vm.citilab-ed1.bin"
+        },
+        {
+            "platform":"M5Stack",
+            "href":"https://microblocks.fun/downloads/latest/vm/vm.m5stack.bin"
+        },
+        {
+            "platform":"M5Stick",
+            "href":"https://microblocks.fun/downloads/latest/vm/vm.m5stick.bin"
+        },
+        {
+            "platform":"M5Atom Matrix",
+            "href":"https://microblocks.fun/downloads/latest/vm/vm.m5atom.bin"
+        },
+        {
+            "platform":"Generic ESP32",
+            "href":"https://microblocks.fun/downloads/latest/vm/vm.esp32.bin"
+        },
+        {
+            "platform":"NodeMCU (ESP8266)",
+            "href":"https://microblocks.fun/downloads/latest/vm/vm.nodemcu.bin"
+        }
+    ]
+}

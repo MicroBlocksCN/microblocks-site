@@ -1,0 +1,1 @@
+MicroBlocks is a **live** environment. Click on a block and it runs immediately, right on the board. Try out commands. See and graph sensor values in real time. No more waiting for code to compile and download. 

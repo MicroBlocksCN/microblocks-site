@@ -5,6 +5,7 @@ var fs = require('fs'),
     httpServer = require('http-server'),
     autoprefixer = require('autoprefixer'),
     postcss = require('postcss'),
+    markdown = new (require('showdown')).Converter(),
     debugMode = true;
 
 // Data
@@ -65,7 +66,7 @@ function compileTemplates () {
         (fileName, fileContents) => {
             var dataPath = `${__dirname}/data/static/${fileName}.json`;
             var data = fs.existsSync(dataPath) ?
-                    JSON.parse(fs.readFileSync(dataPath)) :
+                    JSON.parse(fs.readFileSync(dataPath), 'utf8') :
                     {};
             fs.writeFileSync(
                 `dist/${fileName}.html`,
@@ -78,12 +79,13 @@ function compileTemplates () {
 
 // Handlebars additions
 
-handlebars.registerHelper('times', function(n, block) {
-    var accum = '';
-    for (var i = 0; i < n; ++i) {
-        accum += block.fn(i);
+handlebars.registerHelper('markdown', (fileName, options) => {
+    var mdPath = `${__dirname}/data/markdown/${fileName}.md`,
+        md = options.fn(this) || '';
+    if (fileName && fs.existsSync(mdPath)) {
+        md = fs.readFileSync(mdPath, 'utf8');
     }
-    return accum;
+    return markdown.makeHtml(md);
 });
 
 // Build script functions
@@ -210,7 +212,8 @@ function watchDirs (dirs, action) {
 };
 
 function watch () {
-    watchDirs(['src/templates', 'src/styles', 'src/scripts']);
+    watchDirs(['src/templates', 'src/styles', 'src/scripts',
+        'data/markdown', 'data/static']);
 };
 
 // Build, watch, and serve

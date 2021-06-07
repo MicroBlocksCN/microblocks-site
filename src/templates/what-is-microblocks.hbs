@@ -136,17 +136,7 @@
 
                                 <div class="col-12 col-md-10 col-lg-8">
                                     <div class="wysiwyg">
-                                        <p>
-                                            <strong>Browser</strong> - On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
-                                        </p>
-                                        <ul>
-                                            <li>
-                                                <strong>Download and install Microblocks</strong>. See below for any additional setup steps for your system.
-                                            </li>
-                                            <li>
-                                                <strong>Download and install Microblocks</strong>. See below for any additional setup steps for your system.
-                                            </li>
-                                        </ul>
+                                        {{#markdown "live-programming"}}{{/markdown}}
                                     </div>
                                 </div>
 
@@ -200,17 +190,7 @@
 
                                 <div class="col-12 col-md-10 col-lg-8">
                                     <div class="wysiwyg">
-                                        <p>
-                                            <strong>Browser</strong> - On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
-                                        </p>
-                                        <ul>
-                                            <li>
-                                                <strong>Download and install Microblocks</strong>. See below for any additional setup steps for your system.
-                                            </li>
-                                            <li>
-                                                <strong>Download and install Microblocks</strong>. See below for any additional setup steps for your system.
-                                            </li>
-                                        </ul>
+                                        {{#markdown "autonomous-operation"}}{{/markdown}}
                                     </div>
                                 </div>
 
@@ -223,7 +203,7 @@
         </div>
 
 
-        <!-- Blocks -->
+        <!-- Portability -->
         <div class="accordion accordion--blue">            
             <section class="accordion__block">
 
@@ -236,7 +216,7 @@
                             </div>
                             <div class="col-12 col-md-8">
                                 <div class="accordion__title-wrapper">
-                                    <h3 class="accordion__title">Blocks</h3>
+                                    <h3 class="accordion__title">Portability</h3>
                                     <div class="accordion__toggle">
                                         <div class="accordion__toggle--plus">
                                             {{> svg.icon-plus }}
@@ -263,17 +243,7 @@
 
                                 <div class="col-12 col-md-10 col-lg-8">
                                     <div class="wysiwyg">
-                                        <p>
-                                            <strong>Browser</strong> - On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
-                                        </p>
-                                        <ul>
-                                            <li>
-                                                <strong>Download and install Microblocks</strong>. See below for any additional setup steps for your system.
-                                            </li>
-                                            <li>
-                                                <strong>Download and install Microblocks</strong>. See below for any additional setup steps for your system.
-                                            </li>
-                                        </ul>
+                                        {{#markdown "portability"}}{{/markdown}}
                                     </div>
                                 </div>
 
@@ -300,32 +270,7 @@
                 <div class="row">
 
                     <div class="wysiwyg">
-                        <p>
-                            The MicroBlocks system has three components:
-                        </p>
-                        <ul>
-                            <li>A blocks editor, which runs on a host computer during code development</li>
-                            <li>Virtual machine, which runs on the microcontroller and executes the user's code</li>
-                            <li>A communication system that updates the code on the board the user edits scripts.</li>
-                        </ul>
-                        <p>
-                            The blocks editor allows the user to create and edit blocks-based code. It also manages MicroBlocks libraries that provide additional functionality. Some libraries support sensors or output devices such as servos and NeoPixels, while others provide API's for working with strings or music. Libraries are written in MicroBlocks and can be explored, modified, and extended by users.
-                        </p>
-                        <p>
-                            Like MicroPython, MicroBlocks code is compiled into bytecodes that are executed by a virtual machine running on the microcontroller. Bytecodes are low-level instructions similar to machine code, but independent of any particular processor architecture. This design makes it easy for MicroBlocks to support many different 32-bit microcontrollers. In fact, the MicroBlocks virtual machine is not restricted to microcontrollers; it also runs on Linux computers such as the Raspberry Pi. It's even possible to run both the blocks editor and the virtual machine on the same computer.
-                        </p>
-                        <p>
-                            If you'd like to learn more about bytecodes, see xxx. You can also enable "advanced blocks" and use the right-click menu to on a script to view the assembly language and bytecodes it generates.
-                        </p>
-                        <p>
-                            The communication system send the bytecodes for scripts to the virtual machine and updates those bytecodes as the user edits their scripts. Since scripts are recompiled and sent to the virtual machine incrementally, the code is ready to go whenever the user wants to test it.
-                        </p>
-                        <p>
-                            The communication system also commands to start and stop scripts and processes messages from the board that indicate when scripts start and stop, allowing the editor to provide graphical feedback about which scripts are running.
-                        </p>
-                        <p>
-                            A key part of learning about sensors is seeing how they respond in real time. For example, how does the light sensor value change when you cover the micro:bit with your hand or how does acceleration change as you toss and catch the micro:bit? The communication system allows sensor values and computation result to be displayed in a little "talk bubble". It also support graphing sensor data in real time. Graphing is a powerful tool for building intuition about physical and electrical processes.
-                        </p>
+                        {{#markdown "how-does-it-work"}}{{/markdown}}
                     </div>
 
                 </div>
