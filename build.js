@@ -64,8 +64,9 @@ function compileTemplates () {
         'hbs',
         (fileName, fileContents) => {
             var dataPath = `${__dirname}/data/static/${fileName}.json`;
-            var data =
-                fs.existsSync(dataPath) ?  fs.readFileSync(dataPath) : {};
+            var data = fs.existsSync(dataPath) ?
+                    JSON.parse(fs.readFileSync(dataPath)) :
+                    {};
             fs.writeFileSync(
                 `dist/${fileName}.html`,
                 handlebars.compile(fileContents)(data)

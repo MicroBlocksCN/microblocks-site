@@ -190,7 +190,7 @@
         <article class="row border-top">
 
             <header class="col-12 col-md-4">
-                <h2 class="section-title">Collaborators</h2>
+                <h2 class="section-title">Ambassadors</h2>
             </header>
 
             <main class="col-12 col-md-8">
@@ -201,13 +201,9 @@
                             MicroBlocks Ambassadors help us spread the word about MicroBlocks. They reach out to makers, educators, parents, librarians, museums – anyone interested in learning about physical computing – to let them know how easy, fun, and engaging MicroBlocks is. Once someone is interested, MicroBlocks Ambassadors can help them get started, find resources such as Activity Cards, and share ideas with others.
                         </p>
                         <ul class="text-lg">
-                            <li><a href="https://www.linkedin.com/in/sara-dib-b12840144/" target="_blank">Sara Dib</a> <small>(Algeria)</small></li>
-                            <li><a href="https://twitter.com/AudraKaplan/" target="_blank">Audra Kaplan</a> <small>(Eastern US and CSTA)</small></li>
-                            <li><a href="https://www.linkedin.com/in/nargizakholmatova/" target="_blank">Nargiza Kholmatova</a> <small>(Central Asia)</small></li>
-                            <li><a href="https://www.linkedin.com/in/leahstrichartz/" target="_blank">Leah Strichartz</a> <small>(Western US)</small></li>
-                            <li><a href="https://www.linkedin.com/in/cesaragomezs/" target="_blank">Cesar Gomez Suarez</a> <small>(Eastern Canada)</small></li>
-                            <li><a href="tguneysu at msn dot com" target="_blank">Turgut Güneysu</a> <small>(Turkey)</small></li>
-                            <li><a href="http://www.ramonmoorlag.nl/" target="_blank">Ramon Moorlag</a> <small>(The Netherlands)</small></li>
+                            {{#each ambassadors}}
+                            {{>_ambassador}}
+                            {{/each}}
                         </ul>
                     </div>
 
@@ -225,7 +221,7 @@
             <article class="row border-top">
 
                 <header class="col-12 col-lg-4 u_mb-2">
-                    <h2 class="section-title">Ambassadors</h2>
+                    <h2 class="section-title">Collaborators</h2>
                     <div class="wysiwyg">
                         <p class="_text-md">
                             MicroBlocks collaborates with the following organizations, projects and companies:
@@ -237,88 +233,9 @@
                     <div class="logo-grid">
     
                         <div class="row justify-content-md-center u_mb-2">
-
-                            <div class="col-6 col-md-4 col-xl-3 u_mb-1.5">
-                                <a class="logo-grid__item" href="https://www.sap.com/about/young-thinkers.html" target="_blank">
-                                    <div class="logo-grid__logo">
-                                        <img src="assets/img/collaborators/young-thinkers.png" alt="Young Thinkers">
-                                    </div>
-                                </a>
-                            </div>
-
-
-                            <div class="col-6 col-md-4 col-xl-3 u_mb-1.5">
-                                <a class="logo-grid__item" href="http://faberresidency.cat/" target="_blank">
-                                    <div class="logo-grid__logo">
-                                        <img src="assets/img/collaborators/faber.png" alt="Faber">
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col-6 col-md-4 col-xl-3 u_mb-1.5">
-                                <a class="logo-grid__item" href="http://citilab.eu/" target="_blank">
-                                    <div class="logo-grid__logo">
-                                        <img src="assets/img/collaborators/citilab.png" alt="CitiLab Cornellà">
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col-6 col-md-4 col-xl-3 u_mb-1.5">
-                                <a class="logo-grid__item" href="http://innovadidactic.com/" target="_blank">
-                                    <div class="logo-grid__logo">
-                                        <img src="assets/img/collaborators/innova.png" alt="Innova Didactic">
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col-6 col-md-4 col-xl-3 u_mb-1.5">
-                                <a class="logo-grid__item" href="https://www.birdbraintechnologies.com/" target="_blank">
-                                    <div class="logo-grid__logo">
-                                        <img src="assets/img/collaborators/birdbrain.png" alt="Birdbrain Technologies">
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col-6 col-md-4 col-xl-3 u_mb-1.5">
-                                <a class="logo-grid__item" href="https://snap.berkeley.edu/" target="_blank">
-                                    <div class="logo-grid__logo">
-                                        <img src="assets/img/collaborators/snap.png" alt="Snap!">
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col-6 col-md-4 col-xl-3 u_mb-1.5">
-                                <a class="logo-grid__item" href="http://gpblocks.org/" target="_blank">
-                                    <div class="logo-grid__logo">
-                                        <img src="assets/img/collaborators/gp-blocks.png" alt="GP Blocks">
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col-6 col-md-4 col-xl-3">
-                                <a class="logo-grid__item" href="https://www.okdo.com/" target="_blank">
-                                    <div class="logo-grid__logo">
-                                        <img src="assets/img/collaborators/okdo.png" alt="OKDO">
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col-6 col-md-4 col-xl-3">
-                                <a class="logo-grid__item" href="http://fablabyucatan.com/" target="_blank">
-                                    <div class="logo-grid__logo">
-                                        <img src="assets/img/collaborators/fablab-yucatan.png" alt="FABLAB Yucatán">
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col-6 col-md-4 col-xl-3">
-                                <a class="logo-grid__item" href="https://platformio.org/" target="_blank">
-                                    <div class="logo-grid__logo">
-                                        <img src="assets/img/collaborators/pio.png" alt="Platform IO">
-                                    </div>
-                                </a>
-                            </div>
-
+                            {{#each collaborators}}
+                            {{>_collaborator}}
+                            {{/each}}
                         </div>
 
                         <div class="row justify-content-md-center">
