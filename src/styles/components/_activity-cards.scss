@@ -4,7 +4,8 @@
 
 
 .activity-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   position: relative;
 
   color: $color-black;
@@ -36,7 +37,6 @@
   }
 
   &:hover {
-    //cursor: pointer;
 
     &::before {
       opacity: 0.95;
@@ -62,10 +62,16 @@
 
 
 .activity-card__info {
+  flex-grow: 1;
+
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 20px 16px 16px 16px;
+
+  @include mq(md) {
+    min-height: 148px;
+  }
 }
 
 
@@ -99,7 +105,7 @@
 
     position: absolute;
     left: 0;
-    top: 0;
+    top: 1px;
 
     // background-color: $color-black-700;
     background-image: url('assets/img/icons/icon-asterisk.svg');
@@ -109,6 +115,7 @@
 
 .activity-card__tags-wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 
@@ -121,7 +128,7 @@
   color: $color-white;
   background-color: $color-black;
 
-  margin-right: 8px;
+  margin: 6px 8px 0 0;
   padding: 4px 8px 6px 8px;
   border-radius: 2px;
 

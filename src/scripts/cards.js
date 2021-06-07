@@ -14,7 +14,7 @@ function cardHtml (descriptor) {
         requirementsHTML = `<div class="activity-card__requirement">${descriptor.reqs}</div>`
     }
 
-    return `<a class="activity-card" href="#" download>
+    return `<a class="activity-card" href="${descriptor.url}" role="button" download>
     <div class="activity-card__picture">
         <img src="assets/img/pictures/${descriptor.pictureFile}"
             alt="${descriptor.altText}">
@@ -30,11 +30,11 @@ function cardHtml (descriptor) {
             ${descriptor.boards.map(
                 board =>
                 '<div class="activity-card__tag ' +
-                'activity-card__tag--board" href="#">' +
+                'activity-card__tag--board">' +
                 board +
                 '</div>'
             )}
-            <div class="activity-card__tag activity-card__tag--level" href="#">
+            <div class="activity-card__tag activity-card__tag--level">
                 ${["beginner","intermediate","advanced"][descriptor.level]}
             </div>
         </div>
