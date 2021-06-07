@@ -3,7 +3,8 @@
  */
 
 var currentPage = 1,
-    totalPages = 1;
+    totalPages = 1,
+    cardDescriptors;
 
 function cardHtml (descriptor) {
     return `<a class="activity-card" href="#" download>
@@ -45,7 +46,7 @@ function matchesFilter (descriptor, filter) {
             (descriptor.level === parseInt(filter.level)));
 };
 
-function renderCards (descriptors, filter, element) {
+function renderCards (filter, element) {
     var html = '',
         filteredCards = cardDescriptors.filter(
             descriptor => { return matchesFilter(descriptor, filter); });
@@ -62,28 +63,33 @@ function renderCards (descriptors, filter, element) {
 };
 
 function readCards (action) {
-    var req = new XMLHttpRequest();
-    req.open(
-        'GET',
-        `cards.json?random=${Math.floor(Math.random()*99999)}`, // avoid caching
-        false
-    );
-    req.onreadystatechange = function () {
-        if (req.readyState === 4) {
-            if (req.status === 200 || req.status == 0) {
-                cardDescriptors = JSON.parse(req.responseText);
-                action.call(this, cardDescriptors);
+    if (cardDescriptors) {
+        action.call(this);
+    } else {
+        // Only request the JSON file the first time
+        var req = new XMLHttpRequest();
+        req.open(
+            'GET',
+            `cards.json?random=${Math.floor(Math.random()*99999)}`, // avoid caching
+            false
+        );
+        req.onreadystatechange = function () {
+            if (req.readyState === 4) {
+                if (req.status === 200 || req.status == 0) {
+                    cardDescriptors = JSON.parse(req.responseText);
+                    populateFilterDropdowns();
+                    action.call(this);
+                }
             }
-        }
-    };
-    req.send(null);
+        };
+        req.send(null);
+    }
 };
 
 function updateCards (resettingPage) {
     if (resettingPage) { currentPage = 1; }
-    readCards(descriptors => {
+    readCards(() => {
         renderCards(
-            descriptors,
             Object.fromEntries(
                 new FormData(
                     document.querySelector('form.page-learn__filters')
@@ -135,4 +141,25 @@ function updatePages () {
     html += pageElementHtml('>');
     document.querySelector('.page-learn__pagination.pagination').innerHTML =
         html;
+};
+
+// Dropdown menu filling
+
+function populateFilterDropdowns () {
+    var langs = [],
+        boards = [];
+    cardDescriptors.forEach(card => {
+        if (!langs.includes(card.language)) {
+            langs.push(card.language);
+            document.querySelector('.page-learn__select#language').innerHTML +=
+                `<option value="${card.language}">${card.language}</option>`;
+        }
+        card.boards.forEach(board => {
+            if (!boards.includes(board)) {
+                boards.push(board);
+                document.querySelector('.page-learn__select#board').innerHTML +=
+                `<option value="${board}">${board}</option>`;
+            }
+        });
+    });
 };

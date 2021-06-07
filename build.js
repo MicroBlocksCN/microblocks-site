@@ -8,7 +8,6 @@ var fs = require('fs'),
     debugMode = true;
 
 // Data
-var data = JSON.parse(fs.readFileSync('data.json'));
 
 // Useful functions
 
@@ -64,9 +63,12 @@ function compileTemplates () {
         'src/templates',
         'hbs',
         (fileName, fileContents) => {
+            var dataPath = `${__dirname}/data/static/${fileName}.json`;
+            var data =
+                fs.existsSync(dataPath) ?  fs.readFileSync(dataPath) : {};
             fs.writeFileSync(
                 `dist/${fileName}.html`,
-                handlebars.compile(fileContents)(data[fileName] || {})
+                handlebars.compile(fileContents)(data)
             );
             debug(`compiled template: ${fileName}`);
         }
@@ -133,7 +135,7 @@ function copyAssets () {
         (err) => { if (err) { console.error(err); } }
     );
     doForFilesInDir(
-        'src',
+        'data/runtime',
         'json',
         (fileName, fileContents, fullPath) => {
             fs.copyFileSync(fullPath, `${__dirname}/dist/${fileName}.json`);
