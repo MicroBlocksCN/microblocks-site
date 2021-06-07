@@ -81,11 +81,17 @@ function compileTemplates () {
 
 handlebars.registerHelper('markdown', (fileName, options) => {
     var mdPath = `${__dirname}/data/markdown/${fileName}.md`,
-        md = options.fn(this) || '';
+        md = options.fn(this) || '',
+        html;
     if (fileName && fs.existsSync(mdPath)) {
         md = fs.readFileSync(mdPath, 'utf8');
     }
-    return markdown.makeHtml(md);
+    try {
+        html = markdown.makeHtml(md);
+    } catch (err) {
+        html = `<p>PARSING MARKDOWN FAILED:</p><pre>${md}</pre><br>`;
+    }
+    return html;
 });
 
 // Build script functions
