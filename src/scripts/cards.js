@@ -7,13 +7,6 @@ var currentPage = 1,
     cardDescriptors;
 
 function cardHtml (descriptor) {
-
-    var requirementsHTML = "";
-
-    if ( !(descriptor.reqs === "") ) {
-        requirementsHTML = `<div class="activity-card__requirement">${descriptor.reqs}</div>`
-    }
-
     return `<a class="activity-card" href="${descriptor.url}" role="button" download>
     <div class="activity-card__picture">
         <img src="assets/img/pictures/${descriptor.pictureFile}"
@@ -24,7 +17,9 @@ function cardHtml (descriptor) {
             <h3 class="activity-card__title">
                 ${descriptor.title}
             </h3>
-            ${requirementsHTML}
+            ${descriptor.reqs ?
+            `<div class="activity-card__requirement">${descriptor.reqs}</div>` :
+            ''}
         </div>
         <div class="activity-card__tags-wrapper">
             ${descriptor.boards.map(
@@ -33,7 +28,7 @@ function cardHtml (descriptor) {
                 'activity-card__tag--board">' +
                 board +
                 '</div>'
-            )}
+            ).join('')}
             <div class="activity-card__tag activity-card__tag--level">
                 ${["beginner","intermediate","advanced"][descriptor.level]}
             </div>
@@ -59,11 +54,15 @@ function renderCards (filter, element) {
     totalPages = Math.ceil(filteredCards.length / 12);
     updatePages(currentPage, totalPages);
 
-    filteredCards.slice(
-        (currentPage - 1) * 12,
-        (currentPage - 1) * 12 + 12).forEach(
-            descriptor => { html += cardHtml(descriptor); }
-        );
+    if (filteredCards.length === 0) {
+        html = '<strong>No cards match this criteria.</strong>';
+    } else {
+        filteredCards.slice(
+            (currentPage - 1) * 12,
+            (currentPage - 1) * 12 + 12).forEach(
+                descriptor => { html += cardHtml(descriptor); }
+            );
+    }
     element.innerHTML = html;
 };
 
