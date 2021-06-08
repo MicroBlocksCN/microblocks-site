@@ -25,6 +25,8 @@
     line-height: 16px;
     background-color: $color-white;
 
+    transition: all 0.2s ease-out;
+
     &--active {
         color: $color-white;
         background-color: $color-black;
@@ -34,5 +36,13 @@
         opacity: 0.5;
     }
 
+    &:hover {
+        cursor: pointer;
+        color: $color-white;
+        background-color: $color-black;
+    }
 
+    &--disabled {
+        opacity: 0.5;
+    }
 }
