@@ -50,6 +50,13 @@
       {{> _footer }}
 
     </div>
-
+    {{#if livereload}}
+    <script>
+        console.log('live reload enabled');
+        var ws = new WebSocket('ws://localhost:8080');
+        ws.onmessage = function (msg) { location.reload(); };
+    </script>
+    {{/if}}
   </body>
+
 </html>

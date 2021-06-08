@@ -3,6 +3,7 @@ var fs = require('fs'),
     sass = require('node-sass'),
     handlebars = require('handlebars'),
     httpServer = require('http-server'),
+    WebSocket = require('ws'),
     autoprefixer = require('autoprefixer'),
     postcss = require('postcss'),
     markdown = new (require('showdown')).Converter(),
@@ -69,6 +70,7 @@ function compileTemplates () {
             var data = fs.existsSync(dataPath) ?
                     JSON.parse(fs.readFileSync(dataPath), 'utf8') :
                     {};
+            if (debugMode) { data.livereload = true; }
             fs.writeFileSync(
                 `dist/${fileName}.html`,
                 handlebars.compile(fileContents)(data)
@@ -210,6 +212,7 @@ function watchDirs (dirs, action) {
                     fs.watchFile(fullPath, { interval: 1000 }, (c, p) => {
                         debug(`File ${fullPath} changed. Rebuilding site.`);
                         build();
+                        action.call(this);
                     });
                 },
                 true // recursive
@@ -219,8 +222,25 @@ function watchDirs (dirs, action) {
 };
 
 function watch () {
-    watchDirs(['src/templates', 'src/styles', 'src/scripts',
-        'data/markdown', 'data/static']);
+    var wss = new WebSocket.Server({ port: 8080 }),
+        client;
+
+    watchDirs(
+        [
+            'src/templates', 'src/styles', 'src/scripts',
+            'data/markdown', 'data/static'
+        ],
+        () => {
+            if (client && client.readyState === WebSocket.OPEN) {
+                client.send('reload');
+            }
+        }
+    );
+
+    wss.on('connection', ws => {
+        if (client) { client.close(); }
+        client = ws; // keep the latest client, disconnect from the previous one
+    });
 };
 
 // Build, watch, and serve
