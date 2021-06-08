@@ -28,7 +28,6 @@
             background-color: $color-blue-50;
         }
     }
-
 }
 
 
@@ -62,12 +61,17 @@
 
     &:hover {
         cursor: pointer;
+
+        .accordion__title {
+            left: 12px;
+        }
     }
 
     @include mq(md) {
         padding: 24px 0;
     }
 }
+
 
 
 .accordion__index {
@@ -141,6 +145,11 @@
 
 .accordion__title {
     @include font-display-bold;
+
+    position: relative;
+    left: 0;
+
+    transition: left 0.3s ease-out;
 }
 
 
@@ -159,9 +168,13 @@
 }
 
 .accordion__content-inner {
-    padding: 40px;
+    padding: 24px 8px 40px 8px;
 
     opacity: 0;
     transition: opacity 0.4s ease-out;
+
+    @include mq(lg) {
+        padding: 40px;
+    }
 }
 

@@ -98,10 +98,10 @@
 
 
         <!-- Live Programming -->
-        <div class="accordion accordion--teal">
+        <div class="accordion accordion--teal" aria-expanded="false">
             <section class="accordion__block">
 
-                <div class="accordion__header" role="button">
+                <div class="accordion__header" role="button" aria-controls="autonomous-operation" tabindex="0">
                     <div class="container">
                         <div class="row">
                             <div class="col-12 col-md-4">
@@ -125,16 +125,16 @@
                     </div>
                 </div>
 
-                <div class="accordion__content">
+                <div class="accordion__content" role="region" aria-labelledby="live-programming">
                     <div class="accordion__content-inner">
                         <div class="container">
                             <div class="row">
 
-                                <div class="col-12 col-md-2 col-lg-4">
+                                <div class="col-12 col-md-4">
                                     <img src="assets/img/pictures/picture-960x540.jpg" alt="Hands connecting wires to a board" />
                                 </div>
 
-                                <div class="col-12 col-md-10 col-lg-8">
+                                <div class="col-12 col-md-8">
                                     <div class="wysiwyg">
                                         {{#markdown "live-programming"}}{{/markdown}}
                                     </div>
@@ -150,10 +150,10 @@
 
 
         <!-- Autonomous Operation -->
-        <div class="accordion accordion--purple">
+        <div class="accordion accordion--purple" aria-expanded="false">
             <section class="accordion__block">
 
-                <div class="accordion__header" role="button">
+                <div class="accordion__header" role="button" aria-controls="autonomous-operation" tabindex="0">
                     <div class="container">
                         <div class="row">
 
@@ -179,16 +179,16 @@
                     </div>
                 </div>
 
-                <div class="accordion__content">
+                <div class="accordion__content" role="region" aria-labelledby="autonomous-operation" tabindex="0">
                     <div class="accordion__content-inner">
                         <div class="container">
                             <div class="row">
 
-                                <div class="col-12 col-md-2 col-lg-4">
+                                <div class="col-12 col-md-4">
                                     <img src="assets/img/pictures/picture-960x540.jpg" alt="Hands connecting wires to a board" />
                                 </div>
 
-                                <div class="col-12 col-md-10 col-lg-8">
+                                <div class="col-12 col-md-8">
                                     <div class="wysiwyg">
                                         {{#markdown "autonomous-operation"}}{{/markdown}}
                                     </div>
@@ -204,10 +204,10 @@
 
 
         <!-- Portability -->
-        <div class="accordion accordion--blue">            
+        <div class="accordion accordion--blue" aria-expanded="false">            
             <section class="accordion__block">
 
-                <div class="accordion__header" role="button">
+                <div class="accordion__header" role="button" aria-controls="portability">
                     <div class="container">
                         <div class="row">
 
@@ -232,16 +232,16 @@
                     </div>
                 </div>
 
-                <div class="accordion__content">
+                <div class="accordion__content" role="region" aria-labelledby="portability">
                     <div class="accordion__content-inner">
                         <div class="container">
                             <div class="row">
 
-                                <div class="col-12 col-md-2 col-lg-4">
+                                <div class="col-12 col-md-4">
                                     <img src="assets/img/pictures/picture-960x540.jpg" alt="Hands connecting wires to a board" />
                                 </div>
 
-                                <div class="col-12 col-md-10 col-lg-8">
+                                <div class="col-12 col-md-8">
                                     <div class="wysiwyg">
                                         {{#markdown "portability"}}{{/markdown}}
                                     </div>
@@ -305,7 +305,7 @@
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo.
                     </p>
-                    <div class="btn btn--purple">Visit our Wiki</div>
+                    <a class="btn btn--purple" href="https://wiki.microblocks.fun/" target="_blank">Visit our Wiki</a>
                 </div>
             </div>
         </div>

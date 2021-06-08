@@ -10,6 +10,9 @@ let accordionInit = function() {
   let openAccordion = (accordion) => {
     let content = accordion.querySelector('.accordion__content');
     accordion.classList.add('accordion--active');
+
+    // not fine!
+    accordion.setAttribute('aria-expanded', 'true');
     content.style.maxHeight = content.scrollHeight + 'px';
   };
 
@@ -17,6 +20,7 @@ let accordionInit = function() {
   let closeAccordion = (accordion) => {
     let content = accordion.querySelector('.accordion__content');
     accordion.classList.remove('accordion--active');
+    accordion.setAttribute('aria-expanded', 'false');
     content.style.maxHeight = null;
   }
 
