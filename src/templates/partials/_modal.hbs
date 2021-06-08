@@ -1,0 +1,40 @@
+<!-- Modal -->
+<div class="modal">
+
+    <div class="modal__content">
+
+        <!-- 
+            can place either a text or an image with
+            - modal__content-text (has padding)
+            - modal__content-image (no padding)
+            - both of them
+
+            they'll have a maximum with on biffer screens,
+            should work well with any image
+
+            smaller images, won't take the max width, 
+            so it works with portrait images
+         -->
+
+        <div class="modal__content-text">
+            <h2 class="modal__title">
+                An important statement
+            </h2>
+            <div class="modal__message">
+                <p>
+                    And its message
+                </p>
+            </div>
+        </div>
+
+        <div class="modal__content-image">
+            <img src="assets/img/pictures/learn-intro-960x540.jpg" alt="Kids whatever">
+        </div>
+
+    </div>
+
+    <div class="modal__close" role="button" aria-label="Close Modal">
+        {{> svg.icon-hide }}
+    </div>
+
+</div>
