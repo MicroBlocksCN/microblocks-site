@@ -24,7 +24,17 @@
   display: block;
   width: 200px;
 
+  transition: transform 0.2s ease-out;
+
   @include mq(md) {
     width: 240px;
+  }
+
+  @include mq(lg) {
+    z-index: $zindex-menu-on-top;
+  }
+  
+  &:hover {
+    transform: rotate(-2deg);
   }
 }
