@@ -83,22 +83,8 @@
     background-color: $color-black;
     border-radius: 2px;
 
-    // &::after {
-    //     content: '';
-    //     display: block;
-    //     width: 14px;
-    //     height: 14px;
-
-    //     position: absolute;
-    //     top: 12px;
-    //     right: -12px;
-
-    //     background-color: #fff;
-    // }
-
     background-image: url('assets/img/icons/icon-dropdown.svg');
-    background-position-x: right 12px;
-    background-position-y: center;
+    background-position: right 12px center;
     background-repeat: no-repeat;
 
     &--purple {
@@ -140,5 +126,35 @@
 
     @include mq(xl) {
         grid-template: 1fr / repeat(4, 1fr);
-    }   
+    }
+}
+
+.page-learn__cards-list--no-result {
+
+    span {
+        display: block;
+
+        @include font-display-bold;
+        text-align: center;
+        color: $color-black;
+        font-size: 24px;
+    }
+
+    span:first-of-type {
+        margin-bottom: 16px;
+        font-size: 40px;
+        color: $color-purple;
+    }
+    
+    @include mq(sm) {
+        grid-column: 1 / 3;
+    }
+
+    @include mq(md) {
+        grid-column: 1 / 4;
+    }
+
+    @include mq(xl) {
+        grid-column: 1 / 5;
+    }
 }

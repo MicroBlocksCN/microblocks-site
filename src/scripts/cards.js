@@ -55,7 +55,7 @@ function renderCards (filter, element) {
     updatePages(currentPage, totalPages);
 
     if (filteredCards.length === 0) {
-        html = '<strong>No cards match this criteria.</strong>';
+        html = '<div class="page-learn__cards-list--no-result"><span>{*_*}</span><span>No cards match this criteria</span></div>';
     } else {
         filteredCards.slice(
             (currentPage - 1) * 12,
