@@ -141,7 +141,7 @@ function copyAssets () {
     fse.copySync(
         `${__dirname}/src/assets`,
         `${__dirname}/dist/assets`,
-        { overwrite: true},
+        { overwrite: true },
         (err) => { if (err) { console.error(err); } }
     );
     doForFilesInDir(
