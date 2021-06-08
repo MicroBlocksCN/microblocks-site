@@ -104,6 +104,19 @@ function updateCards (resettingPage) {
     });
 };
 
+//
+// dirty marc
+//
+function scrollToContent () {
+    var contentPosition = document.querySelector('.page-learn__activity-cards').offsetTop;
+    console.log(contentPosition);
+    window.scroll({
+        top: contentPosition - 56,
+        left: 0,
+        behavior: 'smooth'
+      });
+}
+
 function nextPage () {
     if (currentPage < totalPages) {
         currentPage ++;
@@ -120,9 +133,10 @@ function previousPage () {
 
 function pageElementHtml (pageNum) {
     if (typeof pageNum === 'number') {
-        return `<a class="pagination__item
-            ${currentPage === pageNum ? ' pagination__item--active' : ''}"
-            onclick="currentPage = ${pageNum}; updateCards()">${pageNum}</a>`;
+        return `<div class="pagination__item ${currentPage === pageNum ? ' pagination__item--active' : ''}"
+            onclick="currentPage = ${pageNum}; updateCards(); scrollToContent();"
+            role="button" tabindex="0" aria-label="Go to page ${pageNum}"
+            ${currentPage === pageNum ? ' aria-current="true"' : ''}>${pageNum}</div>`;
     } else {
         // pageNum is either "<" or ">"
         var disabled = (currentPage === 1 && pageNum === '<') ||
@@ -130,10 +144,12 @@ function pageElementHtml (pageNum) {
         // Yep, tomorrow I'll have a hard time understanding this code.
         // Nope, sorry. I'm not documenting this. I'll just rewrite it from
         // scratch if need be.
-        return `<a class="pagination__item
-            ${disabled ? ' pagination__item--disabled' : ''}"
-            onclick="${['previous','next'][['<','>'].indexOf(pageNum)]}Page();"
-            >&${['lt','gt'][['<','>'].indexOf(pageNum)]};</a>`
+        return `<div class="pagination__item ${disabled ? ' pagination__item--disabled' : ''}"
+            onclick="${['previous','next'][['<','>'].indexOf(pageNum)]}Page(); scrollToContent();"
+            role="button" tabindex="0"
+            ${pageNum === '<' ? ' aria-label="Previous Page"' : ' aria-label="Next Page"' }
+            ${disabled ? ' aria-disabled="true"' : ''}
+            >&${['lt','gt'][['<','>'].indexOf(pageNum)]};</div>`
     }
 };
 
