@@ -288,7 +288,7 @@ function watch () {
     watchDirs(
         [
             'src/templates', 'src/styles', 'src/scripts',
-            'data/markdown', 'data/static'
+            'data'
         ],
         () => {
             clients.forEach(client => {
