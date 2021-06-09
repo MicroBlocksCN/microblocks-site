@@ -202,6 +202,7 @@ function serve () {
         fs.readFile(
             pathTo(fileName),
             (err,data) => {
+                res.setHeader('Content-Type', mimeTypeFor(fileName));
                 if (err) {
                     res.writeHead(404);
                     err.fileName = fileName;
@@ -211,6 +212,26 @@ function serve () {
                 res.writeHead(200);
                 res.end(data);
             });
+    };
+
+    function mimeTypeFor (fileName) {
+        var extension = fileName.replace(/.*\./,''),
+            mimeType = {
+                svg: 'image/svg+xml',
+                png: 'image/png',
+                jpg: 'image/jpg',
+                jpeg: 'image/jpg',
+                html: 'text/html',
+                htm: 'text/html',
+                css: 'text/css',
+                ttf: 'font/ttf',
+                otf: 'font/otf',
+                woff: 'font/woff',
+                pdf: 'application/pdf',
+                zip: 'application/zip',
+            }[extension];
+        if (!mimeType) { mimeType = 'text/html'; }
+        return mimeType;
     };
 
     function pathTo (fileName) {
@@ -262,7 +283,7 @@ function watchDirs (dirs, action) {
 
 function watch () {
     var wss = new WebSocket.Server({ port: 8080 }),
-        client;
+        clients = [];
 
     watchDirs(
         [
@@ -270,15 +291,16 @@ function watch () {
             'data/markdown', 'data/static'
         ],
         () => {
-            if (client && client.readyState === WebSocket.OPEN) {
-                client.send('reload');
-            }
+            clients.forEach(client => {
+                if (client.readyState === WebSocket.OPEN) {
+                    client.send('reload');
+                }
+            });
         }
     );
 
-    wss.on('connection', ws => {
-        if (client) { client.close(); }
-        client = ws; // keep the latest client, disconnect from the previous one
+    wss.on('connection', client => {
+        clients.push(client);
     });
 };
 
