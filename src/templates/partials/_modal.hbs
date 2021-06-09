@@ -16,20 +16,26 @@
             so it works with portrait images
          -->
 
+        {{#if modal-title}}
         <div class="modal__content-text">
             <h2 class="modal__title">
-                An important statement
+                {{modal-title}}
             </h2>
             <div class="modal__message">
                 <p>
-                    And its message
+                {{message}}
                 </p>
             </div>
         </div>
+        {{/if}}
 
-        <div class="modal__content-image">
-            <img src="assets/img/pictures/learn-intro-960x540.jpg" alt="Kids whatever">
-        </div>
+        {{#if img}}
+        <a href="{{href}}">
+            <div class="modal__content-image">
+                <img src="{{img}}" alt="{{img-alt}}">
+            </div>
+        </a>
+        {{/if}}
 
     </div>
 
