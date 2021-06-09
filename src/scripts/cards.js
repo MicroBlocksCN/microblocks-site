@@ -158,11 +158,16 @@ function pageElementHtml (pageNum) {
 };
 
 function updatePages () {
-    var html = pageElementHtml('<');
-    for (var pageNum = 1; pageNum <= totalPages; pageNum ++) {
-        html += pageElementHtml(pageNum);
+    var html;
+    if (totalPages < 2) {
+        html = '';
+    } else {
+        html = pageElementHtml('<');
+        for (var pageNum = 1; pageNum <= totalPages; pageNum ++) {
+            html += pageElementHtml(pageNum);
+        }
+        html += pageElementHtml('>');
     }
-    html += pageElementHtml('>');
     document.querySelector('.page-learn__pagination.pagination').innerHTML =
         html;
 };
