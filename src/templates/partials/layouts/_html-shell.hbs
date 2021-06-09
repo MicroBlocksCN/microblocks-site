@@ -53,8 +53,14 @@
     {{#if livereload}}
     <script>
         console.log('live reload enabled');
-        var ws = new WebSocket('ws://localhost:8080');
-        ws.onmessage = function (msg) { location.reload(); };
+        var ws = new WebSocket(`ws://${location.hostname}:8080`);
+        ws.onmessage = function (msg) {
+            if (msg.data === 'reload') {
+                location.reload();
+            } else {
+                console.log(msg.data);
+            }
+        };
     </script>
     {{/if}}
   </body>

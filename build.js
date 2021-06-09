@@ -301,6 +301,7 @@ function watch () {
 
     wss.on('connection', client => {
         clients.push(client);
+        client.send('LiveReload connected to server');
     });
 };
 
