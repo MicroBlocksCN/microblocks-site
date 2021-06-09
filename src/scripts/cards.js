@@ -55,7 +55,9 @@ function renderCards (filter, element) {
     updatePages(currentPage, totalPages);
 
     if (filteredCards.length === 0) {
-        html = '<div class="page-learn__cards-list--no-result"><span>{*_*}</span><span>No cards match this criteria</span></div>';
+        html = '<div class="page-learn__cards-list--no-result">' +
+            '<span>{*_*}</span><span>No cards match this criteria</span>' +
+            '</div>';
     } else {
         filteredCards.slice(
             (currentPage - 1) * 12,
@@ -74,7 +76,7 @@ function readCards (action) {
         var req = new XMLHttpRequest();
         req.open(
             'GET',
-            `cards.json?random=${Math.floor(Math.random()*99999)}`, // avoid caching
+            `cards.json?random=${Math.floor(Math.random()*99999)}`, // no cache
             false
         );
         req.onreadystatechange = function () {
@@ -104,18 +106,15 @@ function updateCards (resettingPage) {
     });
 };
 
-//
-// dirty marc
-//
 function scrollToContent () {
-    var contentPosition = document.querySelector('.page-learn__activity-cards').offsetTop;
-    console.log(contentPosition);
+    var contentPosition =
+        document.querySelector('.page-learn__activity-cards').offsetTop;
     window.scroll({
         top: contentPosition - 56,
         left: 0,
         behavior: 'smooth'
       });
-}
+};
 
 function nextPage () {
     if (currentPage < totalPages) {
@@ -133,10 +132,13 @@ function previousPage () {
 
 function pageElementHtml (pageNum) {
     if (typeof pageNum === 'number') {
-        return `<div class="pagination__item ${currentPage === pageNum ? ' pagination__item--active' : ''}"
-            onclick="currentPage = ${pageNum}; updateCards(); scrollToContent();"
-            role="button" tabindex="0" aria-label="Go to page ${pageNum}"
-            ${currentPage === pageNum ? ' aria-current="true"' : ''}>${pageNum}</div>`;
+        return `<div class="pagination__item
+            ${currentPage === pageNum ?  ' pagination__item--active' : ''}"
+            onclick="currentPage = ${pageNum}; updateCards();
+            scrollToContent();" role="button" tabindex="0"
+            aria-label="Go to page ${pageNum}"
+            ${currentPage === pageNum ? ' aria-current="true"' : ''}>
+            ${pageNum}</div>`;
     } else {
         // pageNum is either "<" or ">"
         var disabled = (currentPage === 1 && pageNum === '<') ||
@@ -144,10 +146,12 @@ function pageElementHtml (pageNum) {
         // Yep, tomorrow I'll have a hard time understanding this code.
         // Nope, sorry. I'm not documenting this. I'll just rewrite it from
         // scratch if need be.
-        return `<div class="pagination__item ${disabled ? ' pagination__item--disabled' : ''}"
-            onclick="${['previous','next'][['<','>'].indexOf(pageNum)]}Page(); scrollToContent();"
-            role="button" tabindex="0"
-            ${pageNum === '<' ? ' aria-label="Previous Page"' : ' aria-label="Next Page"' }
+        return `<div class="pagination__item
+            ${disabled ? ' pagination__item--disabled' : ''}"
+            onclick="${['previous','next'][['<','>'].indexOf(pageNum)]}Page();
+            scrollToContent();" role="button" tabindex="0"
+            ${pageNum === '<' ? ' aria-label="Previous Page"' :
+            ' aria-label="Next Page"' }
             ${disabled ? ' aria-disabled="true"' : ''}
             >&${['lt','gt'][['<','>'].indexOf(pageNum)]};</div>`
     }
