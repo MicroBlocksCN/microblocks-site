@@ -9,14 +9,14 @@
             - modal__content-image (no padding)
             - both of them
 
-            they'll have a maximum with on biffer screens,
+            they'll have a maximum with on bigger screens,
             should work well with any image
 
             smaller images, won't take the max width, 
             so it works with portrait images
          -->
 
-        {{#if modal-title}}
+        {{#if show-text}}
         <div class="modal__content-text">
             <h2 class="modal__title">
                 {{modal-title}}
@@ -42,5 +42,6 @@
     <div class="modal__close" role="button" aria-label="Close Modal">
         {{> svg.icon-hide }}
     </div>
-
+    <script>modalInit('{{modal-title}}');</script>
 </div>
+

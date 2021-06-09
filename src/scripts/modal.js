@@ -2,20 +2,20 @@
  * Scripts for modal windows
  */
 
-function modalInit() {
+function modalInit (title) {
     
     let modal = document.querySelector('.modal');
 
     if (modal) {
-
-        // Add localStorage
-        // - Needs date
-        // - Needs name of message
-        
-        let modalClose = document.querySelector('.modal__close');
-
-        modalClose.addEventListener('click', function(){
-            modal.style.display = 'none';
-        });        
+        if (localStorage.getItem('banner-closed') === title) {
+            modal.remove();
+        }
+        document.querySelector('.modal__close').addEventListener(
+            'click',
+            () => {
+                localStorage.setItem('banner-closed', title);
+                modal.remove();
+            }
+        );        
     };
 };

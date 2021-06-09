@@ -15,7 +15,6 @@ function autorun(){
   menuToggle();
   tabsInit();
   accordionInit();
-  modalInit();
 
 };
 
