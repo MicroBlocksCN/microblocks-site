@@ -2,7 +2,7 @@ var fs = require('fs'),
     fse = require('fs-extra'),
     sass = require('node-sass'),
     handlebars = require('handlebars'),
-    httpServer = require('http-server'),
+    http = require('http'),
     WebSocket = require('ws'),
     autoprefixer = require('autoprefixer'),
     postcss = require('postcss'),
@@ -195,11 +195,50 @@ function compileSass () {
 };
 
 function serve () {
-    httpServer.createServer(
-        { root: __dirname + '/dist', cache: -1 }
-    ).listen(3000);
-}
+    // Dead simple (and naive) HTTP static server
 
+    function respondWithFile (res, fileName, params) {
+        // So we need to do anything at all with params? I don't think so
+        fs.readFile(
+            pathTo(fileName),
+            (err,data) => {
+                if (err) {
+                    res.writeHead(404);
+                    err.fileName = fileName;
+                    res.end(JSON.stringify(err));
+                    return;
+                }
+                res.writeHead(200);
+                res.end(data);
+            });
+    };
+
+    function pathTo (fileName) {
+        return `${__dirname}/dist/${fileName.replace(/\?.*/,'')}`;
+    };
+
+    function getParams (url) {
+        url.replace(/.*\?/,'').split('&').map(
+            paramString => {
+                var pairArray = paramString.split('='),
+                    assoc = {};
+                assoc[pairArray[0]] = pairArray[1];
+                return assoc;
+            }
+        );
+    };
+
+    http.createServer(function (req, res) {
+        var fileName = req.url;
+        if (req.url === '/') {
+            fileName = 'index.html';
+        }
+        if (!fs.existsSync(pathTo(fileName))) {
+            fileName = fileName + '.html';
+        }
+        respondWithFile(res, fileName, getParams(req.url));
+    }).listen(3000);
+};
 
 function watchDirs (dirs, action) {
     dirs.forEach(
