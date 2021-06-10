@@ -34,7 +34,8 @@
     z-index: $zindex-menu-on-top;
   }
   
-  &:hover {
+  &:hover,
+  &:focus-visible {
     transform: rotate(-2deg);
   }
 }

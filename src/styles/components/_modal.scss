@@ -44,7 +44,8 @@
 
     transition: all 0.2s ease-out;
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
         cursor: pointer;
         top: -28px;
     }

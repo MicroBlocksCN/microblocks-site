@@ -37,7 +37,8 @@
     top: 0;
     transition: top 0.2s ease-out;
     
-    &:hover {
+    &:hover,
+    &:focus-visible {
         top: -16px;
     }
 }

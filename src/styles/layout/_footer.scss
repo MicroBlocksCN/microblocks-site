@@ -31,7 +31,8 @@
       transition: color 0.3s ease-out;
     }
   
-    a:hover {
+    a:hover,
+    a:focus-visible {
       color: $color-yellow;
     }
   }

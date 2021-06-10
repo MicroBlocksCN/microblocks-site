@@ -97,6 +97,8 @@
         background-color: $color-teal;
     }
 
+    @include focus-visible-large;
+
 
     @include mq(md) {
         font-size: 20px;

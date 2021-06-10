@@ -24,6 +24,17 @@
 
 
 
+// Focus Visible
+
+@mixin focus-visible-large {
+    &:focus-visible {
+        outline: 4px dashed $color-black;
+    }
+}
+
+
+
+
 // Color top borders
 
 .border-color {

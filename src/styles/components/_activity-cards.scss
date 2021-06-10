@@ -36,7 +36,8 @@
     transition: opacity 0.2s ease-out;
   }
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
 
     &::before {
       opacity: 0.95;

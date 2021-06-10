@@ -76,7 +76,8 @@
       transition: color 0.2s ease-out;
     }
   
-    a:hover {
+    a:hover,
+    a:focus-visible {
       color: $color-purple;
     }
   }

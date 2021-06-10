@@ -15,9 +15,12 @@
     left: 0;
 
 
-    &:hover{
+    &:hover,
+    &:focus-visible {
         left: 8px;
     }
+
+    // @include focus-visible-large;
 }
 
 

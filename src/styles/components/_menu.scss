@@ -168,7 +168,8 @@
       transition: width 0.3s ease-out;
     }
   
-    &:hover {
+    &:hover,
+    &:focus-visible {
   
       &::after {
         width: 100%;

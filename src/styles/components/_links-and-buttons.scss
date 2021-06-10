@@ -64,12 +64,13 @@
 
 
 
-.btn:hover {
+.btn:hover,       
+.btn:focus-visible {
   color: $color-white;
   background-color: $color-black;
 
   &::after {
-      right: 8px;
+    right: 8px;
   }
 }
 
@@ -106,7 +107,8 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     left: 8px;
   }
 

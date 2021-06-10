@@ -59,13 +59,16 @@
     line-height: 32px;
     color: $color-white;
 
-    &:hover {
+    &:hover,
+    &:focus {
         cursor: pointer;
 
         .accordion__title {
             left: 12px;
         }
     }
+
+    @include focus-visible-large;
 
     @include mq(md) {
         padding: 24px 0;
