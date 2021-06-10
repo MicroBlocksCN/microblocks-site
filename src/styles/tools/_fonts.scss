@@ -37,14 +37,14 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: "Inter";
-    src: url("assets/fonts/Inter-Italic.woff2") format("woff2"),
-         url("assets/fonts/Inter-Italic.woff") format("woff"),
-         url("assets/fonts/Inter-Italic.otf") format("opentype");
-    font-weight: 400;
-    font-style: italic;
-}
+// @font-face {
+//     font-family: "Inter";
+//     src: url("assets/fonts/Inter-Italic.woff2") format("woff2"),
+//          url("assets/fonts/Inter-Italic.woff") format("woff"),
+//          url("assets/fonts/Inter-Italic.otf") format("opentype");
+//     font-weight: 400;
+//     font-style: italic;
+// }
 
 @font-face {
     font-family: "Inter";
@@ -55,14 +55,14 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: "Inter";
-    src: url("assets/fonts/Inter-BoldItalic.woff2") format("woff2"),
-         url("assets/fonts/Inter-BoldItalic.woff") format("woff"),
-         url("assets/fonts/Inter-BoldItalic.otf") format("opentype");
-    font-weight: 700;
-    font-style: italic;
-}
+// @font-face {
+//     font-family: "Inter";
+//     src: url("assets/fonts/Inter-BoldItalic.woff2") format("woff2"),
+//          url("assets/fonts/Inter-BoldItalic.woff") format("woff"),
+//          url("assets/fonts/Inter-BoldItalic.otf") format("opentype");
+//     font-weight: 700;
+//     font-style: italic;
+// }
 
 
 
@@ -93,11 +93,11 @@ $font-regular: "Inter", Helvetica, Arial, sans-serif;
     font-style: normal;
 }
 
-@mixin font-regular-italic {
-    font-family: $font-regular;
-    font-weight: 400;
-    font-style: italic;
-}
+// @mixin font-regular-italic {
+//     font-family: $font-regular;
+//     font-weight: 400;
+//     font-style: italic;
+// }
 
 @mixin font-regular-bold {
     font-family: $font-regular;
@@ -105,13 +105,8 @@ $font-regular: "Inter", Helvetica, Arial, sans-serif;
     font-style: normal;
 }
 
-@mixin font-regular-bold-italic {
-    font-family: $font-regular;
-    font-weight: 700;
-    font-style: italic;
-}
-
-
-
-
-
+// @mixin font-regular-bold-italic {
+//     font-family: $font-regular;
+//     font-weight: 700;
+//     font-style: italic;
+// }

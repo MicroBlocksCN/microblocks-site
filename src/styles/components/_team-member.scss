@@ -3,7 +3,7 @@
 // ==================================================
 
 
-.team-member{
+.team-member {
     display: flex;
     margin-bottom: 40px;
 
@@ -55,7 +55,7 @@
 .team-member__role {
     margin-bottom: 16px;
 
-    @include font-display-bold;
+    @include font-display-light;
     font-size: 24px;
     text-transform: lowercase;
 

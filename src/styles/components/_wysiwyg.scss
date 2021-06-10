@@ -9,9 +9,19 @@
 
 
   // Headings
+  // 
+  // h4 is the chosen element to be used as title inside text blocks
   // ==================================================
 
-  
+  h4 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: 700;
+    color: $color-black;
+
+
+    margin: 0 0 1.5rem 0;
+  }
 
   // Paragraphs 
   //
