@@ -6,6 +6,14 @@
 .our-mission {
     margin-bottom: 40px;
     padding: 56px 0;
+
+    @include mq(lg) {
+        margin-bottom: 64px;
+    }
+
+    @include mq(xl) {
+        margin-bottom: 80px;
+    }
 }
 
 

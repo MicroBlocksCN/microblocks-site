@@ -30,3 +30,9 @@
 .u_mb-4 {
   margin-bottom: 4rem;
 }
+
+.u_lg\:mb-0 {
+  @include mq(lg) {
+    margin-bottom: 0 !important;
+  }
+}
