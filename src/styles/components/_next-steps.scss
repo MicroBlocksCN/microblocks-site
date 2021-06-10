@@ -17,14 +17,33 @@
 }
 
 
+.next-steps__cards-wrapper {
+
+    @include mq(lg) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 40px;
+    }
+}
+
+
 .next-steps__link {
-    display: block;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-bottom: 40px;
+
+    top: 0;
+    transition: top 0.2s ease-out;
+    
+    &:hover {
+        top: -16px;
+    }
 }
 
 
 .next-steps__picture {
-    margin-bottom: -8px;
 
     img {
         width: 200px;
@@ -36,7 +55,7 @@
     margin-bottom: 8px;
 
     @include font-display-bold;
-    font-size: 32px;
+    font-size: 28px;
     letter-spacing: -1px;
 }
 
