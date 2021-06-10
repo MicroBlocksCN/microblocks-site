@@ -6,11 +6,13 @@
         </div>
         <div class="team-member__contents">
             <div class="team-member__name">{{name}}</div>
-            <div class="team-member__role team-member__role--developer">/{{role}}</div>
+            <div class="team-member__role team-member__role--{{role-class}}">/{{role}}</div>
             <div class="team-member__bio">
-                <p class="wysiwyg">
-                {{bio}} 
-                </p>                            
+                <div class="wysiwyg">
+                    <p>
+                        {{bio}}
+                    </p>
+                </div>                       
             </div>
         </div>
     </div>
