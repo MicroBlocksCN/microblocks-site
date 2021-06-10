@@ -7,7 +7,6 @@
   display: inline-block;
   padding: 6px 12px 10px;
   border-radius: $border-radius-global;
-  // margin: 0 4px 12px 4px;
   margin-bottom: 12px;
 
   @include font-display-bold;
@@ -21,10 +20,6 @@
 
 
   // Large Screens
-
-  // @include mq(md) {
-  //   font-size: 40px;
-  // }
 
   @include mq(md) {
     font-size: 48px;
