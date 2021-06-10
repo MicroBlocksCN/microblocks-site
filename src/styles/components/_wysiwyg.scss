@@ -115,15 +115,18 @@
   strong {
     @include font-regular-bold;
 
-    i {
-      @include font-regular-bold-italic;
-    }
+    // Italics not used, commented in tools/fonts
+    //
+    // i {
+    //   @include font-regular-bold-italic;
+    // }
   }
 
-
-  i {
-    @include font-regular-italic;
-  }
+  // I talics not used, commented in tools/fonts
+  //
+  // i {
+  //   @include font-regular-italic;
+  // }
 
 
   small {
