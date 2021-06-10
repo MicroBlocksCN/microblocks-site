@@ -6,12 +6,55 @@
 .tabs {
     padding: 56px 0 24px 0;
     margin-bottom: 60px;
-    background: $color-black-300;
+    background: $color-black-200;
     
     &--orange {
         .tabs__button {
             background-color: $color-orange;
         }
+        .tabs__scroll-helper {
+            color: $color-orange;
+        }
+    }
+
+    &--teal {
+        .tabs__button {
+            background-color: $color-teal;
+        }
+        .tabs__scroll-helper {
+            color: $color-teal;
+        }
+    }
+
+    &--purple {
+        .tabs__button {
+            background-color: $color-purple;
+        }
+        .tabs__scroll-helper {
+            color: $color-purple;
+        }
+    }
+}
+
+
+
+// Scroll Helper
+// ==========================================================================
+
+
+.tabs__scroll-helper {
+    margin-bottom: 8px;
+
+    font-size: 14px;
+    font-weight: 700;
+    text-align: right;
+    
+    span {
+        color: $color-black;
+    }
+
+    @include mq(sm) {
+        display: none;
     }
 }
 
@@ -30,7 +73,7 @@
     height: 40px;
     padding: 0 calc(var(--bs-gutter-x));
 
-    //overflow-scrolling: touch;
+    overflow-scrolling: touch;
     -webkit-overflow-scrolling: touch;
 
 
@@ -72,8 +115,6 @@
     color: $color-white;
     line-height: 16px;
 
-    // position: relative;
-    // bottom: -8px;
     transition: all 0.2s ease-out;
 
     &:hover {

@@ -88,7 +88,8 @@
 
 
     <!-- Computer -->
-    <div id="computer" class="tabs">
+    <div id="computer" class="tabs tabs--orange">
+
         
         <!-- Intro -->
         <div class="container u_mb-4">
@@ -100,9 +101,22 @@
                 </div>
                 <div class="col-12 col-lg-8">
                     <div class="wysiwyg">
-                        <p class="text">
+                        <p class="text-md">
                             On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue.
                         </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        {{!-- Scroll Helper --}}
+        <div class="container tabs__scroll-helper">
+            <div class="row">
+                <div class="col-12">
+                    <div class="_tabs__scroll-helper">
+                        <span>scroll</span>
+                        {{> svg.icon-arrow-right }}
                     </div>
                 </div>
             </div>
@@ -112,19 +126,20 @@
         <div class="tabs__container tabs--orange">
 
 
-            <div class="tabs__buttons-list">
-                <button class="tabs__button">Windows</button>
-                <button class="tabs__button">MacOS</button>
-                <button class="tabs__button">Linux</button>
-                <button class="tabs__button">Chromebook</button>
-                <button class="tabs__button">Browser</button>
+            <div class="tabs__buttons-list" role="tablist" aria-label="Setting your computer tabs">
+                <button class="tabs__button" role="tab" aria-selected="true" aria-controls="windows" aria-controls="tab-windows">Windows</button>
+                <button class="tabs__button" role="tab" aria-selected="false" aria-controls="macos" aria-controls="tab-macos">MacOS</button>
+                <button class="tabs__button" role="tab" aria-selected="false" aria-controls="linux" aria-controls="tab-linux">Linux</button>
+                <button class="tabs__button" role="tab" aria-selected="false" aria-controls="chromebook" aria-controls="tab-chromebook">Chromebook</button>
+                <button class="tabs__button" role="tab" aria-selected="false" aria-controls="browser" aria-controls="tab-browser">Browser</button>
             </div>
 
 
             <div class="tabs__contents-wrapper">
 
+
                 <!-- Windows -->
-                <div class="tabs__tab-content">
+                <div class="tabs__tab-content" id="windows" role="tabpanel" tabindex="-1" aria-labelledby="tab-windows" hidden="false">
                     <div class="container">
                         <div class="row">
                             <div class="col-12 col-lg-4">
@@ -143,7 +158,7 @@
                 
 
                 <!-- MacOS -->
-                <div class="tabs__tab-content">
+                <div class="tabs__tab-content" id="macos" role="tabpanel" tabindex="-1" aria-labelledby="tab-macos" hidden="true">
                     <div class="container">
                         <div class="row">
                             <div class="col-12 col-lg-4">
@@ -160,7 +175,7 @@
 
 
                 <!-- Linux -->
-                <div class="tabs__tab-content">
+                <div class="tabs__tab-content" id="linux" role="tabpanel" tabindex="-1" aria-labelledby="tab-linux" hidden="true">
                     <div class="container">
                         <div class="row">
                             <div class="col-12 col-lg-4">
@@ -177,7 +192,7 @@
                 
 
                 <!-- Chromebook -->
-                <div class="tabs__tab-content">
+                <div class="tabs__tab-content" id="chromebook" role="tabpanel" tabindex="-1" aria-labelledby="tab-chromebook" hidden="true">
                     <div class="container">
                         <div class="row">
                             <div class="col-12 col-lg-4">
@@ -194,7 +209,7 @@
 
 
                 <!-- Browser -->
-                <div class="tabs__tab-content">
+                <div class="tabs__tab-content" id="browser" role="tabpanel" tabindex="-1" aria-labelledby="tab-browser" hidden="true">
                     <div class="container">
                         <div class="row">
                             <div class="col-12 col-lg-4">

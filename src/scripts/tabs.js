@@ -22,8 +22,10 @@ let tabsInit = function() {
       tabsContents.forEach( (_theContent, i) => {
         if (i == tab) {
           _theContent.classList.add('tabs__tab-content--visible');
+          _theContent.removeAttribute('hidden');
         } else {
           _theContent.classList.remove('tabs__tab-content--visible');
+          _theContent.setAttribute('hidden', '');
         }
       });
 
@@ -31,10 +33,13 @@ let tabsInit = function() {
       tabsButtons.forEach( (_theButton, i) => {
         if (i == tab) {
           _theButton.classList.add('tabs__button--active');
+          _theButton.setAttribute('aria-selected', 'true');
         } else {
           _theButton.classList.remove('tabs__button--active');
+          _theButton.setAttribute('aria-selected', 'false');
         }
       });
+
     };
 
 
