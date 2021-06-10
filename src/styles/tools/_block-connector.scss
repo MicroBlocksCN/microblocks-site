@@ -6,8 +6,9 @@
 @mixin block-connector {
 
     position: relative;
+    z-index: $zindex-content-layer;
     
-    &::after {
+    &::before {
         display: block;
         content: '';
     
@@ -16,6 +17,7 @@
         position: absolute;
         bottom: -4px;
         left: 8px;
+        z-index: $zindex-above;
     
         background-color: inherit;
         
