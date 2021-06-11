@@ -1,0 +1,17 @@
+{{! Tabbed content}}
+<div class="tabs__tab-content" id="{{tab-id}}" role="tabpanel" tabindex="-1" aria-labelledby="tab-{{tab-id}}" hidden="false">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <picture class="u_mb-2">
+                    <img src="assets/img/pictures/{{img}}" alt="{{alt-text}}" />
+                </picture>                                
+            </div>
+            <div class="col-12 col-lg-8">
+                <div class="wysiwyg">
+                    {{#markdown markdown}}{{/markdown}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

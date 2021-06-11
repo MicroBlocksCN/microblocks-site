@@ -1,7 +1,7 @@
 {{! Get Started }}
 
-{{#> layouts._html-shell 
-    title="Get Started" 
+{{#> layouts._html-shell
+    title="Get Started"
     pageClass="page-get-started"
     pageUrl="https://wwww.microblocks.fun/get-started"
     _pageDescription="Latest release of MicroBlocks."
@@ -54,13 +54,13 @@
                         <li>
                             <a class="list-numeric__anchor" href="#computer">
                                 <div class="list-numeric__index circle circle--orange">1</div>
-                                <div class="list-numeric__text">Setting up your computer</div>
+                                <div class="list-numeric__text">Set up your computer</div>
                             </a>
                         </li>
                         <li>
                             <a class="list-numeric__anchor" href="#board">
                                 <div class="list-numeric__index circle circle--purple">2</div>
-                                <div class="list-numeric__text">Setting up your board</div>
+                                <div class="list-numeric__text">Set up your board</div>
                             </a>
                         </li>
                         <li>
@@ -85,155 +85,77 @@
 
 <!-- Contents -->
 <div class="main__contents">
-
-
     <!-- Computer -->
-    <div id="computer" class="tabs tabs--orange">
+    {{#> layouts._tabbed-content
+        tabs-title="Setting up your computer"
+        color="orange"
+        id="computer"
+        markdown="computer-intro"
+    }}
 
-        
-        <!-- Intro -->
-        <div class="container u_mb-4">
-            <div class="row">
-                <div class="col-12 col-lg-4">
-                    <h2 class="section-title">
-                        Setting up your computer
-                    </h2>
-                </div>
-                <div class="col-12 col-lg-8">
-                    <div class="wysiwyg">
-                        <p class="text-md">
-                            On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {{#*inline "tab-buttons"}}
+            {{> _tab-button button-id="windows" button-label="Windows" selected="true"}}
+            {{> _tab-button button-id="macos" button-label="MacOS" selected="false"}}
+            {{> _tab-button button-id="linux" button-label="Linux" selected="false"}}
+            {{> _tab-button button-id="chromebook" button-label="Chromebook" selected="false"}}
+            {{> _tab-button button-id="browser" button-label="Browser" selected="false"}}
+        {{/inline}}
 
+        {{#*inline "tabbed-content"}}
+            {{> _tab-content tab-id="windows" markdown="setup-windows" img="picture-960x540.jpg" alt-text="Hands connecting wires to a board"}}
+            {{> _tab-content tab-id="macos" markdown="setup-macos" img="picture-960x540.jpg" alt-text="Hands connecting wires to a board"}}
+            {{> _tab-content tab-id="linux" markdown="setup-linux" img="picture-960x540.jpg" alt-text="Hands connecting wires to a board"}}
+            {{> _tab-content tab-id="chromebook" markdown="setup-chromebook" img="picture-960x540.jpg" alt-text="Hands connecting wires to a board"}}
+            {{> _tab-content tab-id="browser" markdown="setup-browser" img="picture-960x540.jpg" alt-text="Hands connecting wires to a board"}}
+        {{/inline}}
 
-        {{!-- Scroll Helper --}}
-        <div class="container tabs__scroll-helper">
-            <div class="row">
-                <div class="col-12">
-                    <div class="_tabs__scroll-helper">
-                        <span>scroll</span>
-                        {{> svg.icon-arrow-right }}
-                    </div>
-                </div>
-            </div>
-        </div>
+    {{/layouts._tabbed-content}}
 
-        <!-- Tabs -->
-        <div class="tabs__container tabs--orange">
+    <!-- Board -->
+    {{#> layouts._tabbed-content
+        tabs-title="Setting up your board"
+        color="purple"
+        id="board"
+        markdown="board-intro"
+    }}
 
+        {{#*inline "tab-buttons"}}
+            {{> _tab-button button-id="microbit" button-label="micro:bit" selected="true"}}
+            {{> _tab-button button-id="cpx" button-label="Circuit Playground Express" selected="false"}}
+            {{> _tab-button button-id="calliope" button-label="Calliope Mini" selected="false"}}
+            {{> _tab-button button-id="m5" button-label="M5 Boards" selected="false"}}
+            {{> _tab-button button-id="others" button-label="Others" selected="false"}}
+        {{/inline}}
 
-            <div class="tabs__buttons-list" role="tablist" aria-label="Setting your computer tabs">
-                <button class="tabs__button" role="tab" aria-selected="true" aria-controls="windows" aria-controls="tab-windows">Windows</button>
-                <button class="tabs__button" role="tab" aria-selected="false" aria-controls="macos" aria-controls="tab-macos">MacOS</button>
-                <button class="tabs__button" role="tab" aria-selected="false" aria-controls="linux" aria-controls="tab-linux">Linux</button>
-                <button class="tabs__button" role="tab" aria-selected="false" aria-controls="chromebook" aria-controls="tab-chromebook">Chromebook</button>
-                <button class="tabs__button" role="tab" aria-selected="false" aria-controls="browser" aria-controls="tab-browser">Browser</button>
-            </div>
+        {{#*inline "tabbed-content"}}
+            {{> _tab-content tab-id="microbit" markdown="setup-microbit" img="picture-960x540.jpg" alt-text="Hands connecting wires to a board"}}
+            {{> _tab-content tab-id="cpx" markdown="setup-cpx" img="picture-960x540.jpg" alt-text="Hands connecting wires to a board"}}
+            {{> _tab-content tab-id="calliope" markdown="setup-calliope" img="picture-960x540.jpg" alt-text="Hands connecting wires to a board"}}
+            {{> _tab-content tab-id="m5" markdown="setup-m5" img="picture-960x540.jpg" alt-text="Hands connecting wires to a board"}}
+            {{> _tab-content tab-id="others" markdown="setup-other-boards" img="picture-960x540.jpg" alt-text="Hands connecting wires to a board"}}
+        {{/inline}}
+    {{/layouts._tabbed-content}}
 
+    <!-- IDE -->
+    {{#> layouts._tabbed-content
+        tabs-title="Running the MicroBlocks IDE"
+        color="teal"
+        id="ide"
+        markdown="ide-intro"
+    }}
 
-            <div class="tabs__contents-wrapper">
+        {{#*inline "tab-buttons"}}
+            {{> _tab-button button-id="desktop" button-label="Desktop" selected="true"}}
+            {{> _tab-button button-id="chromebook" button-label="Chromebook" selected="false"}}
+            {{> _tab-button button-id="browser" button-label="Browser" selected="false"}}
+        {{/inline}}
 
-
-                <!-- Windows -->
-                <div class="tabs__tab-content" id="windows" role="tabpanel" tabindex="-1" aria-labelledby="tab-windows" hidden="false">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-lg-4">
-                                <picture class="u_mb-2">
-                                    <img src="assets/img/pictures/picture-960x540.jpg" alt="Hands connecting wires to a board" />
-                                </picture>                                
-                            </div>
-                            <div class="col-12 col-lg-8">
-                                <div class="wysiwyg">
-                                    {{#markdown "setup-windows"}}{{/markdown}}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-
-                <!-- MacOS -->
-                <div class="tabs__tab-content" id="macos" role="tabpanel" tabindex="-1" aria-labelledby="tab-macos" hidden="true">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-lg-4">
-                                <img src="assets/img/pictures/picture-960x540.jpg" alt="Hands connecting wires to a board" />
-                            </div>
-                            <div class="col-12 col-lg-8">
-                                <div class="wysiwyg">
-                                    {{#markdown "setup-macos"}}{{/markdown}}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Linux -->
-                <div class="tabs__tab-content" id="linux" role="tabpanel" tabindex="-1" aria-labelledby="tab-linux" hidden="true">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-lg-4">
-                                <img src="assets/img/pictures/picture-960x540.jpg" alt="Hands connecting wires to a board" />
-                            </div>
-                            <div class="col-12 col-lg-8">
-                                <div class="wysiwyg">
-                                    {{#markdown "setup-linux"}}{{/markdown}}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-
-                <!-- Chromebook -->
-                <div class="tabs__tab-content" id="chromebook" role="tabpanel" tabindex="-1" aria-labelledby="tab-chromebook" hidden="true">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-lg-4">
-                                <img src="assets/img/pictures/picture-960x540.jpg" alt="Hands connecting wires to a board" />
-                            </div>
-                            <div class="col-12 col-lg-8">
-                                <div class="wysiwyg">
-                                    {{#markdown "setup-chromebook"}}{{/markdown}}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Browser -->
-                <div class="tabs__tab-content" id="browser" role="tabpanel" tabindex="-1" aria-labelledby="tab-browser" hidden="true">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-lg-4">
-                                <img src="assets/img/pictures/picture-960x540.jpg" alt="Hands connecting wires to a board" />
-                            </div>
-                            <div class="col-12 col-lg-8">
-                                <div class="wysiwyg">
-                                    {{#markdown "setup-browser"}}{{/markdown}}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-    
-
-        </div>
-        
-    </div>
-    <!-- Computer -->
-
-
+        {{#*inline "tabbed-content"}}
+            {{> _tab-content tab-id="desktop" markdown="run-ide-desktop" img="picture-960x540.jpg" alt-text="Hands connecting wires to a board"}}
+            {{> _tab-content tab-id="chromebook" markdown="run-ide-chromebook" img="picture-960x540.jpg" alt-text="Hands connecting wires to a board"}}
+            {{> _tab-content tab-id="browser" markdown="run-ide-browser" img="picture-960x540.jpg" alt-text="Hands connecting wires to a board"}}
+        {{/inline}}
+    {{/layouts._tabbed-content}}
 </div>
 <!-- Contents -->
 
