@@ -1,7 +1,7 @@
 <div id="{{id}}" class="tabs tabs--{{color}}">
 
     <!-- Intro -->
-    <div class="container u_mb-4">
+    <div class="container u_mb-2">
         <div class="row">
             <div class="col-12 col-lg-4">
                 <h2 class="section-title">
@@ -9,10 +9,8 @@
                 </h2>
             </div>
             <div class="col-12 col-lg-8">
-                <div class="wysiwyg">
-                    <p class="text-md">
+                <div class="tabs__intro">
                     {{#markdown markdown}}{{/markdown}}
-                    </p>
                 </div>
             </div>
         </div>
@@ -23,21 +21,17 @@
     <div class="container tabs__scroll-helper">
         <div class="row">
             <div class="col-12">
-                <div class="_tabs__scroll-helper">
-                    <span>scroll</span>
-                    {{> svg.icon-arrow-right }}
-                </div>
+                <span>scroll</span>
+                {{> svg.icon-arrow-right }}
             </div>
         </div>
     </div>
 
     <!-- Tabs -->
-    <div class="tabs__container tabs--orange">
-
+    <div class="tabs__container">
         <div class="tabs__buttons-list" role="tablist" aria-label="{{tabs-title}} tabs">
             {{#> tab-buttons }}{{/tab-buttons }}
         </div>
-
         <div class="tabs__contents-wrapper">
             {{#> tabbed-content }}{{/tabbed-content }}
         </div>
