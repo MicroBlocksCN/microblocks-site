@@ -4,8 +4,8 @@
 
 
 .tabs {
-    padding: 56px 0 24px 0;
-    margin-bottom: 60px;
+    padding: 56px 0 16px 0;
+    margin-bottom: 80px;
     background: $color-black-200;
     
     &--orange {
@@ -56,6 +56,19 @@
     @include mq(sm) {
         display: none;
     }
+}
+
+
+
+// Scroll Helper
+// ==========================================================================
+
+
+.tabs__intro p {
+    font-size: 1.2rem;
+    letter-spacing: -0.5px;
+    line-height: 1.4;
+    margin: 0 0 1.5rem 0;
 }
 
 
@@ -137,6 +150,11 @@
 }
 
 
+
+// Tab Contents
+// ==========================================================================
+
+
 .tabs__contents-wrapper {
     padding: 56px 0 40px 0;
 
@@ -149,5 +167,16 @@
 
     &--visible {
         display: block;
+    }
+}
+
+
+.tabs__tab-picture {
+    display: block;
+    margin-bottom: 2rem;
+    line-height: 0;
+
+    @include mq(lg) {
+        margin-bottom: 0;
     }
 }

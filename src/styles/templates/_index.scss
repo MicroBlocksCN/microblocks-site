@@ -10,10 +10,16 @@
 
 .index-hero__boardie {
     text-align: right;
+
+    @include mq(xl) {
+        margin-right: 100px;
+    }
 }
 
 
 .index-hero__statement {
+    position: relative;
+
     @include font-regular-bold;
     font-size: 56px;
     line-height: 1;
@@ -24,7 +30,35 @@
 
     @include mq(md) {
         font-size: 72px;
+        margin-top: 100px;
+        padding-bottom: 40px;
     }
+}
+
+
+.index-hero__statement-explained {
+    display: none;
+
+    @include mq(md) {
+        display: block;
+        position: absolute;
+    }
+
+    &--tools {
+        top: -90px;
+        left: -20px;
+    }
+
+    &--fastest {
+        top: -80px;
+        left: 240px;
+    }
+
+    &--human {
+        top: 150px;
+        left: 100px;
+    }
+    
 }
 
 
