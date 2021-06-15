@@ -6,11 +6,11 @@
 
 .hero-picture {
   position: relative;
-  height: 50vh;
+  height: 40vh;
 
-  
-
-
+  @include mq(lg) {
+    height: 40vh;
+  }
 }
 
 
