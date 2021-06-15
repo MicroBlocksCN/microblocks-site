@@ -21,6 +21,14 @@
   @include mq(lg) {
     margin-bottom: 120px;
   }
+
+  &--margin-tight {
+    margin-bottom: 40px;
+
+    @include mq(lg) {
+      margin-bottom: 60px;
+    }
+  }
 }
 
 

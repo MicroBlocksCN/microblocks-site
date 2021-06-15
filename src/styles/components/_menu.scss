@@ -79,8 +79,6 @@
   background-color: $color-black;
   @include background-emoji(on-black);
 
-
-  
   @include mq(md) {
     padding: 32px 0 80px 0;
   }
@@ -133,6 +131,7 @@
   @include mq(md) {
     font-size: 36px;
     padding: 16px 12px;
+    letter-spacing: -0.25px;
   }
 
 
@@ -141,7 +140,7 @@
   @include mq(lg) {
     font-size: 18px;
     padding: 0;
-    margin: 0 8px;
+    margin: 0 12px;
   }
 
   @include mq(xl) {
