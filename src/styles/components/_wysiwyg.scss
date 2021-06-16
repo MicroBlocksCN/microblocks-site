@@ -165,4 +165,10 @@
   .text-black {
     color: $color-black;
   }
+
+
+  &.colored-section__contents {
+    color: $color-black;
+  }
+
 }
