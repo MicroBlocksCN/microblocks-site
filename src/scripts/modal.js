@@ -9,13 +9,14 @@ function modalInit (title) {
     if (modal) {
         if (localStorage.getItem('banner-closed') === title) {
             modal.remove();
+        } else {
+            document.querySelector('.modal__close').addEventListener(
+                'click',
+                () => {
+                    localStorage.setItem('banner-closed', title);
+                    modal.remove();
+                }
+            );
         }
-        document.querySelector('.modal__close').addEventListener(
-            'click',
-            () => {
-                localStorage.setItem('banner-closed', title);
-                modal.remove();
-            }
-        );        
     };
 };

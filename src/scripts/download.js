@@ -89,8 +89,7 @@ function populateDownloadPage () {
     } else {
         document.querySelector('.page-download__hero__action a.btn').href = 'https://chrome.google.com/webstore/detail/microblocks/cbmcbhgijipgdmlnieolilhghfmnngbb?authuser=0'
     }
-
-    document.querySelector('.page-download__hero__action .section-title').innerText = system;
+    document.querySelector('.page-download__hero__title').innerText = system;
 
     populateVersionAndDate();
 };
