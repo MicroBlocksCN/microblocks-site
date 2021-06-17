@@ -1,4 +1,17 @@
-**MacOS** - On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
+#### MacOS Setup ####
 
-- **Download and install Microblocks**. See below for any additional setup steps for your system.
-- **Download and install Microblocks**. See below for any additional setup steps for your system.
+Go to the [Download](/download) page and click the **Download** button.
+
+Open the Downloads folder on your computer. Double-click MicroBlocks.app.zip to unzip it.
+
+Right-click on the file MicroBlocks.app and select **open**. A dialog will inform you that the app was downloaded from the Internet and ask if you really want to open it. Click the **Open** button to proceed.
+
+Although it will seem that nothing happened, you can now open the app by double-clicking it.
+
+To finish, drag MicroBlocks.app to the Applications folder and drag MicroBlocks.app.zip to the trash.
+
+Once the MicroBlocks app is open, you can proceed to **Setting up your board**.
+
+#### Troubleshooting ####
+
+If you cannot open MicroBlocks.app, open **System Preferences...** from the Apple menu and  select **Security & Privacy**. In the **General** tab, make sure that **Allow apps downloaded from:** is set to **App Store and identified developers**.
