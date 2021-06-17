@@ -4,7 +4,7 @@
             "name":"John Maloney",
             "role":"Developer",
             "role-class":"developer",
-            "bio":"John Maloney creates live, highly-engaging programming systems for beginners and “casual programmers.” John was the lead developer for Scratch over its first eleven years. Before that, he worked in Dr. Alan Kay's research group, first at Apple Computer, then at Walt Disney Imagineering, where he helped create the Squeak portable Smalltalk system and Etoys, a programming system for children that was one of the inspirations for Scratch. After leaving the Scratch team in 2013, John led the creation of GP Blocks, a blocks language aimed at older students and adults, and MicroBlocks. John got his Ph.D. in Computer Science from the University of Washington. In his free time, John plays the dulcian, the Renaissance ancestor of the modern bassoon. At MicroBlocks, he is the lead developer for both the VM and the standalone IDE, as well as a member of the Project Leadership Committee and the project representative.",
+            "bio":"John Maloney is best known as one of the co-creators of Scratch, which he worked on for its first eleven years. He also helped create Squeak Smalltalk, EToys, GP Blocks, and the Morphic UI framework. At MicroBlocks, John is the lead developer for both the virtual machine and the programming environment, as well as a member of the Project Leadership Committee. He holds B.S. and M.S. degrees from MIT and a Ph.D. in Computer Science from the University of Washington.",
             "img":"team-member.png"
         },
         {
