@@ -44,9 +44,13 @@
             </div>
             <div class="col-12 col-md-6">
                 <div class="wysiwyg">
-                    <p class="text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+{{#markdown}}
+We have crafted several activity cards that present simple scripts to help users get started with an activity. They are designed to be printed two per page and folded in half to make a two-sided card. To make them last longer, the cards can be laminated or printed on card stock. 
+
+Some of these cards have been [contributed](https://wiki.microblocks.fun/contributors) by MicroBlocks users. If you want to, you can also [add yours](contribute#content-creation) to the collection.
+
+If you want to help translate these cards to your language, you are more than welcome to [help out](contribute#translate).
+{{/markdown}}
                 </div>
             </div>
         </div>
@@ -131,27 +135,7 @@
 </div>
 <!-- Contents -->
 
-
-<!-- Contents Footer -->
-<aside class="main__footer colored-section colored-section--grey">
-    <div class="container">
-        <div class="row justify-content-md-center">
-            <div class="col-12 col-md-10 col-lg-8">
-                <div class="colored-section__title">
-                    <h2 class="block block--purple">Thanks</h2>
-                </div>
-                <div class="colored-section__contents wysiwyg">
-                    <p class="text-md">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</aside>
-<!-- Contents Footer -->
+{{> _footer_thanks color="grey"}}
 
 {{/inline}}
 {{/layouts._html-shell}}

@@ -82,11 +82,11 @@ function compileTemplates () {
 
 // Handlebars additions
 
-handlebars.registerHelper('markdown', (fileName, options) => {
-    var mdPath = `${__dirname}/data/markdown/${fileName}.md`,
-        md = options.fn(this) || '',
+handlebars.registerHelper('markdown', (context, options) => {
+    var mdPath = `${__dirname}/data/markdown/${context}.md`,
+        md = options ? options.fn(this) : context.fn(this),
         html;
-    if (fileName && fs.existsSync(mdPath)) {
+    if (fs.existsSync(mdPath)) {
         md = fs.readFileSync(mdPath, 'utf8');
     }
     try {

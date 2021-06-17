@@ -38,8 +38,8 @@
       <div class="row">
         <div class="col-12 col-lg-10">
           <div class="page-header__intro wysiwyg">
-            <p class="text-lg">Introduction? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-            <p class="text-md">We are actively searching for <a href="contribute#translate">translators</a>, <a href="contribute#content-creation">content creators</a>, <a href="about#ambassadors">spreading the word</a> and <a href="contribute#financial-contribution">financial support</a>.</p>
+              <p class="text-lg">MicroBlocks is a <a href="https://mozilla.org/MPL/2.0/" target="_blank">free software</a> project that encourages, welcomes, and deeply appreciates contributions from its community.</p>
+              {{#markdown}}We are actively searching for [translators](contribute#translate), [content creators](contribute#content-creation), [enthusiastic community members](about#ambassadors) and [financial support](contribute#financial-contribution).{{/markdown}}
           </div>
         </div>
       </div>
@@ -136,25 +136,7 @@
   </div>
   <!-- Contents -->
 
-
-  <!-- Contents Footer -->
-  <aside class="main__footer colored-section colored-section--yellow">
-    <div class="container">
-      <div class="row justify-content-md-center">
-        <div class="col-12 col-md-10 col-lg-8">
-          <div class="colored-section__title">
-            <h2 class="block block--purple">Thank you!</h2>
-          </div>          
-          <div class="colored-section__contents wysiwyg">
-            <p class="text-md">
-              Our heartfelt thanks to <a href="wiki.microblocks.fun/contributors" target="_blank">those who have contributed</a> translations, educational materials, or financial support, and to all the educators who are using MicroBlocks to inspire their students.
-            </p>
-          </div>          
-        </div>
-      </div>
-    </div>
-  </aside>
-  <!-- Contents Footer -->
+{{> _footer_thanks color="yellow"}}
 
 {{/inline}}
 {{/layouts._html-shell}}
