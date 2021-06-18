@@ -5,7 +5,7 @@
             "role":"Developer",
             "role-class":"developer",
             "bio":"John Maloney is best known as one of the co-creators of Scratch, which he worked on for its first eleven years. He also helped create Squeak Smalltalk, EToys, GP Blocks, and the Morphic UI framework. At MicroBlocks, John is the lead developer for both the virtual machine and the programming environment, as well as a member of the Project Leadership Committee. He holds B.S. and M.S. degrees from MIT and a Ph.D. in Computer Science from the University of Washington.",
-            "img":"team-member.png"
+            "img":"john-maloney.png"
         },
         {
             "name":"Bernat Romagosa",
@@ -18,8 +18,8 @@
             "name":"Kathy Giori",
             "role":"Global Partnerships and Outreach",
             "role-class":"partnership",
-            "bio":"Kathy Giori fills her desk with hardware that can be programmed using MicroBlocks. Earlier at Mozilla, she championed a grant for MicroBlocks to include a \"Web Things\" library, so that any script could easily become an interoperable web thing, a standard for IoT devices. She has experience bridging open communities with industry to drive faster innovation. She is super keen on equity of access to a good (STEM) education, across the globe, which is part of what drives her strong desire to support MicroBlocks. Prior to Mozilla, she held senior roles at Arduino.org, Qualcomm Atheros, and many more. She received her bachelor's degree in Electrical Engineering from the University of Minnesota, and her master's in EE from Stanford. When not at a computer, she can usually be found exploring the great outdoors of northern California. At MicroBlocks, she directs global partnerships and outreach, and is part of the Project Leadership Committee.",
-            "img":"team-member.png"
+            "bio":"Kathy Giori fills her desk with hardware that can be programmed using MicroBlocks, and enjoys teaching workshops. She currently leads ecosystem engagement at Zededa, and has worked in Silicon Valley her whole career. At MicroBlocks, she directs global partnerships and outreach, and is a member of the Project Leadership Committee. She holds a B.S. in EE from the University of Minnesota and an M.S. in EE from Stanford.",
+            "img":"kathy-giori.png"
         },
         {
             "name":"Amon Millner",
