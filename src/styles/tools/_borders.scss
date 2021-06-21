@@ -4,19 +4,15 @@
 
 
 
-// Small Borders
-
 @mixin border-top-small($color: $color-black) {
     border-top: 1px solid $color;
 }
 
 
-
-// Large Borders
-
 @mixin border-top-large($color: $color-black) {
     border-top: 8px solid $color;
 }
+
 
 @mixin border-bottom-large($color: $color-black) {
     border-bottom: 8px solid $color;
@@ -25,6 +21,8 @@
 
 
 // Focus Visible
+// ==========================================================================
+
 
 @mixin focus-visible-large {
     &:focus-visible {
@@ -34,8 +32,9 @@
 
 
 
-
 // Color top borders
+// ==========================================================================
+
 
 .border-color {
 

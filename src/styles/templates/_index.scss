@@ -63,6 +63,25 @@
 
 
 
+// Intro text
+// ==========================================================================
+
+
+.page-home .page-header__intro {
+
+    margin-top: 32px;
+
+    @include mq(lg) {
+        height: 100%;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }    
+}
+
+
+
 // What makes MicroBlocks Special
 // ==========================================================================
 
