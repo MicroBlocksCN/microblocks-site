@@ -2,14 +2,14 @@
     "team":[
         {
             "name":"John Maloney",
-            "role":"Developer",
+            "role":"Software development",
             "role-class":"developer",
             "bio":"John Maloney is best known as one of the co-creators of Scratch, which he worked on for its first eleven years. He also helped create Squeak Smalltalk, EToys, GP Blocks, and the Morphic UI framework. At MicroBlocks, John is the lead developer for both the virtual machine and the programming environment, as well as a member of the Project Leadership Committee. He holds B.S. and M.S. degrees from MIT and a Ph.D. in Computer Science from the University of Washington.",
             "img":"john-maloney.png"
         },
         {
             "name":"Bernat Romagosa",
-            "role":"Developer",
+            "role":"Software development",
             "role-class":"developer",
             "bio":"Bernat Romagosa is a software engineer from Barcelona. He is the author of Snap4Arduino and the main developer of Beetle Blocks. As part of the SAP Young Thinkers group he contributes to the Snap! programming language and to MicroBlocks. At MicroBlocks, he codes parts of the VM and the standalone IDE, and is also a member of the Project Leadership Committee.",
             "img":"bernat-romagosa.png"
@@ -24,9 +24,23 @@
         {
             "name":"Jens Mönig",
             "role":"Development and consulting",
-            "role-class":"Developer",
-            "bio":"Jens Mönig is a researcher at SAP. He is the architect and lead programmer of UC Berkeley’s SNAP! programming language together with Brian Harvey. Previously Jens has conducted research under Alan Kay, helped develop Scratch for the MIT Media Lab and written enterprise software. He is a fully qualified lawyer in Germany and has been an attorney, corporate counsel and lecturer for many years before rediscovering his love for programming. For leisure Jens loves fooling around with any musical instrument he can lay his hands on.",
+            "role-class":"snap",
+            "bio":"Jens Mönig is a researcher at SAP. He is the architect and lead programmer of UC Berkeley’s SNAP! programming language together with Brian Harvey. Previously Jens has conducted research under Alan Kay, helped develop Scratch for the MIT Media Lab and written enterprise software. He is a fully qualified lawyer in Germany and has been an attorney, corporate counsel and lecturer for many years before rediscovering his love for programming. For leisure Jens loves fooling around with musical instruments.",
             "img":"jens-moenig.png"
+        },
+        {
+            "name":"Turgut Güneysu",
+            "role":"Documentation and testing",
+            "role-class":"educational",
+            "bio":"Turgut is a retired computer professional from the USA, living in Cappadocia, Turkey. He loves helping kids come to grips with computers, computing, programming, microprocessor projects, mobile computing, problem solving; and most importantly, helping them learn to make decisions and be creative.",
+            "img":"turgut-guneysu.png"
+        },
+        {
+            "name":"Jadga Hügle",
+            "role":"Documentation and testing",
+            "role-class":"educational",
+            "bio":"Jadga works for SAP’s Snap! team and develops learning resources for students, teachers and colleagues. In her spare time, when she's not volunteering in after-school computer clubs, Jadga is likely to be found outside watching birds or playing games with her friends. She loves building costumes with microcontrollers and preferably a lot of LEDs. At MicroBlocks, Jadga wants to invent fun and interesting IoT projects and spread the good ideas among teachers and students.",
+            "img":"jadga-huegle.png"
         },
         {
             "name":"Amon Millner",
@@ -41,13 +55,6 @@
             "role-class":"advisor",
             "bio":"Tom Lauwers is the founder and CEO of BirdBrain Technologies, located in Pittsburgh, PA. He seeks to design educational tools that catalyze positive making, coding, and engineering learning experiences in the classroom. Tom received a Ph.D. in robotics in 2010 from Carnegie Mellon in part for his work designing the Finch robot and Hummingbird robotics kit.",
             "img":"tom-lauwers.png"
-        },
-        {
-            "name":"Turgut Güneysu",
-            "role":"Documentation and testing",
-            "role-class":"documentation",
-            "bio":"Turgut is a retired computer professional from the USA, living in Cappadocia, Turkey. He loves helping kids come to grips with computers, computing, programming, microprocessor projects, mobile computing, problem solving; and most importantly, helping them learn to make decisions and be creative.",
-            "img":"turgut-guneysu.png"
         }
     ],
     "ambassadors":[
