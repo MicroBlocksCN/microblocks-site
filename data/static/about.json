@@ -22,6 +22,13 @@
             "img":"kathy-giori.png"
         },
         {
+            "name":"Jens Mönig",
+            "role":"Development and consulting",
+            "role-class":"Developer",
+            "bio":"Jens Mönig is a researcher at SAP. He is the architect and lead programmer of UC Berkeley’s SNAP! programming language together with Brian Harvey. Previously Jens has conducted research under Alan Kay, helped develop Scratch for the MIT Media Lab and written enterprise software. He is a fully qualified lawyer in Germany and has been an attorney, corporate counsel and lecturer for many years before rediscovering his love for programming. For leisure Jens loves fooling around with any musical instrument he can lay his hands on.",
+            "img":"jens-moenig.png"
+        },
+        {
             "name":"Amon Millner",
             "role":"Advisor",
             "role-class":"advisor",
@@ -34,6 +41,13 @@
             "role-class":"advisor",
             "bio":"Tom Lauwers is the founder and CEO of BirdBrain Technologies, located in Pittsburgh, PA. He seeks to design educational tools that catalyze positive making, coding, and engineering learning experiences in the classroom. Tom received a Ph.D. in robotics in 2010 from Carnegie Mellon in part for his work designing the Finch robot and Hummingbird robotics kit.",
             "img":"tom-lauwers.png"
+        },
+        {
+            "name":"Turgut Güneysu",
+            "role":"Documentation and testing",
+            "role-class":"documentation",
+            "bio":"Turgut is a retired computer professional from the USA, living in Cappadocia, Turkey. He loves helping kids come to grips with computers, computing, programming, microprocessor projects, mobile computing, problem solving; and most importantly, helping them learn to make decisions and be creative.",
+            "img":"turgut-guneysu.png"
         }
     ],
     "ambassadors":[
