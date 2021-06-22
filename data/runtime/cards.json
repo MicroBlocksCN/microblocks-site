@@ -1,5 +1,5 @@
 [
-{
+    {
         "title": "Getting Started",
         "language": "English",
         "boards": ["micro:bit"],
@@ -7,8 +7,8 @@
         "pictureFile": "getting-started.png",
         "altText": "Kids using a micro:bit",
         "url": "cards/mb_Getting_Started.pdf"
-},
-{
+    },
+    {
         "title": "Sensors",
         "language": "English",
         "boards": ["micro:bit"],
@@ -16,8 +16,8 @@
         "pictureFile": "sensors.png",
         "altText": "Kids using a micro:bit",
         "url": "cards/mb_Sensors.pdf"
-},
-{
+    },
+    {
         "title": "Sounds",
         "language": "English",
         "boards": ["micro:bit"],
@@ -25,8 +25,8 @@
         "pictureFile": "sound.png",
         "altText": "Kids using a micro:bit",
         "url": "cards/mb_Sounds.pdf"
-},
-{
+    },
+    {
         "title": "Step Counter",
         "language": "English",
         "boards": ["micro:bit"],
@@ -34,8 +34,8 @@
         "pictureFile": "step-counter.png",
         "altText": "Kids using a micro:bit",
         "url": "cards/mb_Step_Counter.pdf"
-},
-{
+    },
+    {
         "title": "Battery Tester",
         "language": "English",
         "boards": ["micro:bit"],
@@ -43,8 +43,8 @@
         "pictureFile": "battery-tester.png",
         "altText": "Kids using a micro:bit",
         "url": "cards/mb_Battery_Tester.pdf"
-},
-{
+    },
+    {
         "title": "Radio",
         "language": "English",
         "boards": ["micro:bit"],
@@ -52,8 +52,8 @@
         "pictureFile": "radio.png",
         "altText": "Kids using a micro:bit",
         "url": "cards/mb_Radio.pdf"
-},
-{
+    },
+    {
         "title": "NeoPixels",
         "language": "English",
         "reqs": "NeoPixels",
@@ -62,8 +62,8 @@
         "pictureFile": "neopixels.png",
         "altText": "Kids using a micro:bit",
         "url": "cards/mb_NeoPixels.pdf"
-},
-{
+    },
+    {
         "title": "Servos",
         "language": "English",
         "reqs": "servo and a way to connect it",
@@ -72,8 +72,8 @@
         "pictureFile": "servos.png",
         "altText": "Kids using a micro:bit",
         "url": "cards/mb_Servos.pdf"
-},
-{
+    },
+    {
         "title": "IR Remote Control",
         "language": "English",
         "reqs": "IR receiver and IR remote control",
@@ -82,9 +82,9 @@
         "pictureFile": "ir-remote.png",
         "altText": "Kids using a micro:bit",
         "url": "cards/mb_IR_Remote_Control.pdf"
-},
+    },
 
-{
+    {
         "title": "Getting Started",
         "language": "Deutsch",
         "boards": ["micro:bit"],
@@ -92,9 +92,9 @@
         "pictureFile": "getting-started.png",
         "altText": "Kids using a micro:bit",
         "url": "cards/DE/mb_Getting_Started_DE.pdf"
-},
+    },
 
-{
+    {
         "title": "Getting Started",
         "language": "Nederlands",
         "boards": ["micro:bit"],
@@ -102,8 +102,8 @@
         "pictureFile": "getting-started.png",
         "altText": "Kids using a micro:bit",
         "url": "https://drive.google.com/file/d/1FfrI2HdwnZHW9su9XeU9PXIBrJWCL0Q1"
-},
-{
+    },
+    {
         "title": "Step Counter",
         "language": "Nederlands",
         "boards": ["micro:bit"],
@@ -111,8 +111,8 @@
         "pictureFile": "step-counter.png",
         "altText": "Kids using a micro:bit",
         "url": "https://drive.google.com/file/d/1RdWEoINypIMUV5lUcGXRz5RmfebggDUS"
-},
-{
+    },
+    {
         "title": "Battery Tester",
         "language": "Nederlands",
         "boards": ["micro:bit"],
@@ -120,8 +120,8 @@
         "pictureFile": "battery-tester.png",
         "altText": "Kids using a micro:bit",
         "url": "https://drive.google.com/file/d/11briudm0avZrYIEMLKZ6zbkm9s0kUmWI"
-},
-{
+    },
+    {
         "title": "Radio",
         "language": "Nederlands",
         "boards": ["micro:bit"],
@@ -129,9 +129,9 @@
         "pictureFile": "radio.png",
         "altText": "Kids using a micro:bit",
         "url": "https://drive.google.com/file/d/1ya8KEE7QY7z6OUjdO5Ys4dLUw1nhaLGZ"
-},
+    },
 
-{
+    {
         "title": "Getting Started",
         "language": "English",
         "boards": ["Circuit Playground Express", "Circuit Playground Bluefruit"],
@@ -139,8 +139,8 @@
         "pictureFile": "getting-started.png",
         "altText": "Kids using a micro:bit",
         "url": "cards/cpx_Getting_Started.pdf"
-},
-{
+    },
+    {
         "title": "NeoPixels",
         "language": "English",
         "boards": ["Circuit Playground Express", "Circuit Playground Bluefruit"],
@@ -148,8 +148,8 @@
         "pictureFile": "neopixels-cpx.png",
         "altText": "Kids using a micro:bit",
         "url": "cards/cpx_NeoPixels.pdf"
-},
-{
+    },
+    {
         "title": "Sound",
         "language": "English",
         "boards": ["Circuit Playground Express", "Circuit Playground Bluefruit"],
@@ -157,8 +157,8 @@
         "pictureFile": "default.png",
         "altText": "Kids using a micro:bit",
         "url": "cards/cpx_Sounds.pdf"
-},
-{
+    },
+    {
         "title": "IR Remote Control",
         "language": "English",
         "reqs": "IR remote control",
@@ -167,9 +167,9 @@
         "pictureFile": "remote-cpx.png",
         "altText": "Kids using a micro:bit",
         "url": "cpx_IR_Remote_Control.pdf"
-},
+    },
 
-{
+    {
         "title": "Buttons | LED Display",
         "language": "English",
         "boards": ["micro:bit"],
@@ -177,8 +177,8 @@
         "pictureFile": "buttons.png",
         "altText": "Kids using a micro:bit",
         "url": "cards2/1_mb_Buttons_Display.pdf"
-},
-{
+    },
+    {
         "title": "Scrolling | Magic 8-Ball",
         "language": "English",
         "boards": ["micro:bit"],
@@ -186,8 +186,8 @@
         "pictureFile": "8-ball.png",
         "altText": "Kids using a micro:bit",
         "url": "cards2/2_mb_Scrolling.pdf"
-},
-{
+    },
+    {
         "title": "Radio | Texting",
         "language": "English",
         "boards": ["micro:bit"],
@@ -195,8 +195,8 @@
         "pictureFile": "radio-texting.png",
         "altText": "Kids using a micro:bit",
         "url": "cards2/3_mb_Radio.pdf"
-},
-{
+    },
+    {
         "title": "Sound | Music",
         "language": "English",
         "reqs": "headphones, piezo speaker, or micro:bit v2",
@@ -205,8 +205,8 @@
         "pictureFile": "default.png",
         "altText": "Kids using a micro:bit",
         "url": "cards2/4_mb_Sound.pdf"
-},
-{
+    },
+    {
         "title": "Sensors | Graphing",
         "language": "English",
         "boards": ["micro:bit"],
@@ -214,8 +214,8 @@
         "pictureFile": "graphing.png",
         "altText": "Kids using a micro:bit",
         "url": "cards2/6_mb_Sensors.pdf"
-},
-{
+    },
+    {
         "title": "Step Counter | Motion",
         "language": "English",
         "boards": ["micro:bit"],
@@ -223,8 +223,8 @@
         "pictureFile": "step-counter.png",
         "altText": "Kids using a micro:bit",
         "url": "cards2/7_mb_Motion.pdf"
-},
-{
+    },
+    {
         "title": "Data | Logging",
         "language": "English",
         "boards": ["micro:bit"],
@@ -232,8 +232,8 @@
         "pictureFile": "default.png",
         "altText": "Kids using a micro:bit",
         "url": "cards2/8_mb_DataLogging.pdf"
-},
-{
+    },
+    {
         "title": "Games | Simon",
         "language": "English",
         "boards": ["micro:bit"],
@@ -241,8 +241,8 @@
         "pictureFile": "simon.png",
         "altText": "Kids using a micro:bit",
         "url": "cards2/9_mb_Games.pdf"
-},
-{
+    },
+    {
         "title": "Flashlight Remote | Flashlight Tag",
         "language": "English",
         "reqs": "flashlight",
@@ -251,5 +251,145 @@
         "pictureFile": "flashlight.png",
         "altText": "Kids using a micro:bit",
         "url": "cards2/10_mb_FlashlightTag.pdf"
-}
+    },
+    {
+        "title": "Guía de inicio rápido",
+        "language": "Castellano",
+        "boards": ["micro:bit"],
+        "level": 0,
+        "pictureFile": "getting-started.png",
+        "altText": "Kids using a micro:bit",
+        "url": "https://drive.google.com/file/d/1jaXAr-Obmd9IHw-K9Ar6Cph5gkzo13OV/view"
+    },
+    {
+        "title": "¡Conéctate!",
+        "language": "Castellano",
+        "boards": ["micro:bit"],
+        "level": 0,
+        "pictureFile": "default.png",
+        "altText": "Kids using a micro:bit",
+        "url": "https://drive.google.com/file/d/1aAyirYOaXz45V28uH4JUk9T8ym3FzZe-/view"
+    },
+    {
+        "title": "Comprobador de carga de batería",
+        "language": "Castellano",
+        "boards": ["micro:bit"],
+        "level": 0,
+        "pictureFile": "battery-tester.png",
+        "altText": "Kids using a micro:bit",
+        "url": "https://drive.google.com/file/d/1kjTIEd0-SnjHmpdiBtufOvVhNPFi0SYM/view"
+    },
+    {
+        "title": "Contador de pasos",
+        "language": "Castellano",
+        "boards": ["micro:bit"],
+        "level": 0,
+        "pictureFile": "step-counter.png",
+        "altText": "Kids using a micro:bit",
+        "url": "https://drive.google.com/file/d/1HietD1ZkZHUDIaRDv20jJfCZHXMRpW60/view"
+    },
+    {
+        "title": "Control remoto por IR",
+        "language": "Castellano",
+        "boards": ["micro:bit"],
+        "reqs": "mando a distancia y receptor IR",
+        "level": 0,
+        "pictureFile": "ir-remote.png",
+        "altText": "Kids using a micro:bit",
+        "url": "https://drive.google.com/file/d/1GHzmjdMJ59F0Fy_LfoeJDXPPERhRUPMc/view"
+    },
+    {
+        "title": "Datos de la noche",
+        "language": "Castellano",
+        "boards": ["micro:bit"],
+        "level": 0,
+        "pictureFile": "night-data.png",
+        "altText": "Kids using a micro:bit",
+        "url": "https://drive.google.com/file/d/1pjHs2WNzbNeOEhJjcJUjGQ4oOhYX6KiI/view"
+    },
+    {
+        "title": "Neopíxeles",
+        "language": "Castellano",
+        "boards": ["micro:bit"],
+        "reqs": "NeoPixels",
+        "level": 0,
+        "pictureFile": "neopixels.png",
+        "altText": "Kids using a micro:bit",
+        "url": "https://drive.google.com/file/d/13qOfoBsAb2xX558q6u0_iz8bgGjsklZU/view"
+    },
+    {
+        "title": "Radio contador de votos",
+        "language": "Castellano",
+        "boards": ["micro:bit"],
+        "level": 0,
+        "pictureFile": "radio-votes.png",
+        "altText": "Kids using a micro:bit",
+        "url": "https://drive.google.com/file/d/1Vbmro-an7p0rWlOIkdevURk1O6UTykd8/view"
+    },
+    {
+        "title": "Radio",
+        "language": "Castellano",
+        "boards": ["micro:bit"],
+        "level": 0,
+        "pictureFile": "radio.png",
+        "altText": "Kids using a micro:bit",
+        "url": "https://drive.google.com/file/d/1Gfn2M3X4i0-RhXVTfc-iHqj-8jc-mnGe/view"
+    },
+    {
+        "title": "Robot bailarín",
+        "language": "Castellano",
+        "reqs": "coche robótico",
+        "boards": ["micro:bit"],
+        "level": 0,
+        "pictureFile": "dancing-robot.png",
+        "altText": "Kids using a micro:bit",
+        "url": "https://drive.google.com/file/d/1LQQqIpy745MlI04QbCGa2BN6-WrFLI6G/view"
+    },
+    {
+        "title": "Sensores",
+        "language": "Castellano",
+        "boards": ["micro:bit"],
+        "level": 0,
+        "pictureFile": "sensors.png",
+        "altText": "Kids using a micro:bit",
+        "url": "https://drive.google.com/file/d/1roATJJnHdKW9ZZa2gFPilMUrrziyWo2R/view"
+    },
+    {
+        "title": "Servos",
+        "language": "Castellano",
+        "reqs": "servomotor y conectores",
+        "boards": ["micro:bit"],
+        "level": 0,
+        "pictureFile": "servos.png",
+        "altText": "Kids using a micro:bit",
+        "url": "https://drive.google.com/file/d/1-ZkbcTEhP3iNf1h7-T_nC8G0MEFymLop/view"
+    },
+    {
+        "title": "Sonidos",
+        "language": "Castellano",
+        "boards": ["micro:bit"],
+        "level": 0,
+        "pictureFile": "sound.png",
+        "altText": "Kids using a micro:bit",
+        "url": "https://drive.google.com/file/d/15y4zXBIbstcH90OQnZoIvlnl_ASSj4eR/view"
+    },
+    {
+        "title": "Sensor de luz LDR",
+        "language": "Castellano",
+        "boards": ["micro:bit"],
+        "level": 0,
+        "pictureFile": "light-sensor.png",
+        "altText": "Kids using a micro:bit",
+        "url": "https://drive.google.com/file/d/1HYGjLJeHqQ5U6DJqTC1M5_1iHqNjmK3P/view"
+    },
+    {
+        "title": "Sensor de presencia",
+        "language": "Castellano",
+        "boards": ["micro:bit"],
+        "reqs": "sensor PIR",
+        "level": 0,
+        "pictureFile": "pir.png",
+        "altText": "Kids using a micro:bit",
+        "url": "https://drive.google.com/file/d/18tFM3TVeRYPcbQDx78ImD84GjauMXXWT/view"
+    }
 ]
