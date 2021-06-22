@@ -406,6 +406,16 @@
         "level": 0,
         "pictureFile": "pir.png",
         "altText": "Kids using a micro:bit",
-        "url": "https://drive.google.com/file/d/18tFM3TVeRYPcbQDx78ImD84GjauMXXWT/view"
+        "url": "https://drive.google.com/file/d/1Sr4-z38IORHv8rchB7SS2aCOK3f_L6HM/view"
+    },
+    {
+        "title": "Comença amb la placa ED1 i el robot Fantàstic",
+        "language": "Català",
+        "boards": ["ED1"],
+        "level": 0,
+        "pictureFile": "ed1.png",
+        "altText": "The ED1 board",
+        "url": "https://cloud.citilab.eu/s/gBngxbAfctZ4g6o/download"
     }
+ 
 ]
