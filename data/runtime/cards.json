@@ -1,5 +1,15 @@
 [
     {
+        "title": "Quickstart guide",
+        "language": "English",
+        "boards": ["micro:bit"],
+        "level": 0,
+        "pictureFile": "quickstart.png",
+        "altText": "Kids using a micro:bit",
+        "url": "QuickStart.pdf"
+    },
+
+    {
         "title": "Getting Started",
         "language": "English",
         "boards": ["micro:bit"],
@@ -83,9 +93,17 @@
         "altText": "Kids using a micro:bit",
         "url": "cards/mb_IR_Remote_Control.pdf"
     },
-
     {
-        "title": "Getting Started",
+        "title": "Los gehts!",
+        "language": "Deutsch",
+        "boards": ["micro:bit"],
+        "level": 0,
+        "pictureFile": "quickstart.png",
+        "altText": "Kids using a micro:bit",
+        "url": "cards/DE/QuickStart_DE.pdf"
+    },
+    {
+        "title": "Verbinde dich",
         "language": "Deutsch",
         "boards": ["micro:bit"],
         "level": 0,
@@ -93,9 +111,8 @@
         "altText": "Kids using a micro:bit",
         "url": "cards/DE/mb_Getting_Started_DE.pdf"
     },
-
     {
-        "title": "Getting Started",
+        "title": "Verbinding maken",
         "language": "Nederlands",
         "boards": ["micro:bit"],
         "level": 0,
@@ -104,7 +121,7 @@
         "url": "https://drive.google.com/file/d/1FfrI2HdwnZHW9su9XeU9PXIBrJWCL0Q1"
     },
     {
-        "title": "Step Counter",
+        "title": "Stappen teller",
         "language": "Nederlands",
         "boards": ["micro:bit"],
         "level": 0,
@@ -113,7 +130,7 @@
         "url": "https://drive.google.com/file/d/1RdWEoINypIMUV5lUcGXRz5RmfebggDUS"
     },
     {
-        "title": "Battery Tester",
+        "title": "Batterij Tester",
         "language": "Nederlands",
         "boards": ["micro:bit"],
         "level": 0,
@@ -122,7 +139,7 @@
         "url": "https://drive.google.com/file/d/11briudm0avZrYIEMLKZ6zbkm9s0kUmWI"
     },
     {
-        "title": "Radio",
+        "title": "Radio - deel 1",
         "language": "Nederlands",
         "boards": ["micro:bit"],
         "level": 0,
@@ -130,7 +147,6 @@
         "altText": "Kids using a micro:bit",
         "url": "https://drive.google.com/file/d/1ya8KEE7QY7z6OUjdO5Ys4dLUw1nhaLGZ"
     },
-
     {
         "title": "Getting Started",
         "language": "English",
@@ -257,7 +273,7 @@
         "language": "Castellano",
         "boards": ["micro:bit"],
         "level": 0,
-        "pictureFile": "getting-started.png",
+        "pictureFile": "quickstart.png",
         "altText": "Kids using a micro:bit",
         "url": "https://drive.google.com/file/d/1jaXAr-Obmd9IHw-K9Ar6Cph5gkzo13OV/view"
     },
@@ -266,7 +282,7 @@
         "language": "Castellano",
         "boards": ["micro:bit"],
         "level": 0,
-        "pictureFile": "default.png",
+        "pictureFile": "getting-started.png",
         "altText": "Kids using a micro:bit",
         "url": "https://drive.google.com/file/d/1aAyirYOaXz45V28uH4JUk9T8ym3FzZe-/view"
     },
