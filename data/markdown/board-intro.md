@@ -1,1 +1,1 @@
-How to set up your board to use it in MicroBlocks.
+How to set up your board for MicroBlocks.
