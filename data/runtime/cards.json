@@ -213,6 +213,66 @@
         "url": "cards2/3_mb_Radio.pdf"
     },
     {
+        "title": "Web Light",
+        "language": "English",
+        "reqs": "RaspberryPi with a WebThings gateway running",
+        "boards": ["micro:bit"],
+        "level": 2,
+        "pictureFile": "web-light.png",
+        "altText": "Kids using a micro:bit",
+        "url": "cards/WOT_WebLight.pdf"
+    },
+    {
+        "title": "Web Button",
+        "language": "English",
+        "reqs": "RaspberryPi with a WebThings gateway running",
+        "boards": ["micro:bit"],
+        "level": 2,
+        "pictureFile": "web-button.png",
+        "altText": "Kids using a micro:bit",
+        "url": "cards/WOT_WebButton.pdf"
+    },
+    {
+        "title": "Run-in-place Race",
+        "language": "English",
+        "reqs": "RaspberryPi with a WebThings gateway running",
+        "boards": ["micro:bit"],
+        "level": 2,
+        "pictureFile": "run-in-place-race.png",
+        "altText": "Kids using a micro:bit",
+        "url": "cards/WOT_Run-in-placeRace.pdf"
+    },
+    {
+        "title": "Hello LED",
+        "language": "English",
+        "reqs": "RaspberryPi with a WebThings gateway running",
+        "boards": ["micro:bit"],
+        "level": 2,
+        "pictureFile": "hello-led.png",
+        "altText": "Kids using a micro:bit",
+        "url": "cards/WOT_HelloLED.pdf"
+    },
+    {
+        "title": "Doorbell",
+        "language": "English",
+        "reqs": "RaspberryPi with a WebThings gateway running",
+        "boards": ["micro:bit"],
+        "level": 2,
+        "pictureFile": "default.png",
+        "altText": "Kids using a micro:bit",
+        "url": "cards/WOT_Doorbell.pdf"
+    },
+    {
+        "title": "Using the WebThings Gateway",
+        "language": "English",
+        "reqs": "RaspberryPi with a WebThings gateway running",
+        "boards": ["micro:bit"],
+        "level": 2,
+        "pictureFile": "webthings-gateway.png",
+        "altText": "Kids using a micro:bit",
+        "url": "cards/WOT_WebThings_Gateway.pdf"
+    },
+    {
         "title": "Sound | Music",
         "language": "English",
         "reqs": "headphones, piezo speaker, or micro:bit v2",
