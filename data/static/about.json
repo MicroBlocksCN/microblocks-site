@@ -25,7 +25,7 @@
             "name":"Jens Mönig",
             "role":"Development and consulting",
             "role-class":"snap",
-            "bio":"Jens Mönig is a researcher at SAP. He is the architect and lead programmer of UC Berkeley’s SNAP! programming language together with Brian Harvey. Previously Jens has conducted research under Alan Kay, helped develop Scratch for the MIT Media Lab and written enterprise software. He is a fully qualified lawyer in Germany and has been an attorney, corporate counsel and lecturer for many years before rediscovering his love for programming. For leisure Jens loves fooling around with musical instruments.",
+            "bio":"Jens Mönig is a researcher at SAP. He is the architect and lead programmer of UC Berkeley’s SNAP! programming language together with Brian Harvey. Previously Jens has conducted research under Alan Kay, helped develop Scratch for the MIT Media Lab and written enterprise software. He is a fully qualified lawyer in Germany and was an attorney, corporate counsel and lecturer for many years before rediscovering his love for programming. For leisure Jens loves fooling around with musical instruments.",
             "img":"jens-moenig.png"
         },
         {
@@ -82,11 +82,6 @@
             "name": "Cesar Gomez Suarez",
             "region":"Eastern Canada",
             "href":"https://www.linkedin.com/in/cesaragomezs/"
-        },
-        {
-            "name": "Turgut Güneysu",
-            "region":"Turkey",
-            "href":"mailto:tguneysu at msn dot com"
         },
         {
             "name": "Ramon Moorlag",
