@@ -45,6 +45,14 @@
         }
     }
 
+    &--blue-violet {
+        background-color: $color-blue-violet;
+        
+        .accordion__content {
+            background-color: $color-blue-violet-50;
+        }
+    }
+
 }
 
 
