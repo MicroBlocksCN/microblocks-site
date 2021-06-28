@@ -137,7 +137,6 @@
 
                                 <div class="col-12 col-md-4">
                                     <video src="assets/vid/liveness.mp4" alt="Clicking on a block and seeing the result immediately" loop autoplay muted></video>
-                                    <video src="assets/vid/concurrency.mp4" alt="Running several scripts in parallel" loop autoplay muted></video>
                                 </div>
 
                                 <div class="col-12 col-md-8">
@@ -208,6 +207,58 @@
             </section>
         </div>
 
+        <!-- Parallelism -->
+        <div class="accordion accordion--orange" aria-expanded="false">
+            <section class="accordion__block">
+
+                <div class="accordion__header" role="button" aria-controls="parallelism" tabindex="0">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-12 col-md-4">
+                                <div class="accordion__index">2</div>
+                            </div>
+
+                            <div class="col-12 col-md-8">
+                                <div class="accordion__title-wrapper">
+                                    <h3 class="accordion__title">Parallelism</h3>
+                                    <div class="accordion__toggle">
+                                        <div class="accordion__toggle--plus">
+                                            {{> svg.icon-plus }}
+                                        </div>
+                                        <div class="accordion__toggle--minus">
+                                            {{> svg.icon-minus }}
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion__content" role="region" aria-labelledby="parallelism" tabindex="0">
+                    <div class="accordion__content-inner">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-12 col-md-4">
+                                    <video src="assets/vid/concurrency.mp4" alt="Running several scripts in parallel" loop autoplay muted></video>
+                                </div>
+
+                                <div class="col-12 col-md-8">
+                                    <div class="wysiwyg">
+                                        {{#markdown "parallelism"}}{{/markdown}}
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+
+            </section>
+        </div>
 
         <!-- Portability -->
         <div class="accordion accordion--blue" aria-expanded="false">            
@@ -218,7 +269,7 @@
                         <div class="row">
 
                             <div class="col-12 col-md-4">
-                                <div class="accordion__index">3</div>
+                                <div class="accordion__index">4</div>
                             </div>
                             <div class="col-12 col-md-8">
                                 <div class="accordion__title-wrapper">
@@ -245,7 +296,6 @@
 
                                 <div class="col-12 col-md-4">
                                     <video src="assets/vid/portability.mp4" alt="Many devices running the same program" loop autoplay muted></video>
-                                    <video src="assets/vid/decompiler.mp4" alt="Reading back a program from a board" loop autoplay muted></video>
                                 </div>
 
                                 <div class="col-12 col-md-8">
@@ -262,6 +312,57 @@
             </section>
         </div>
 
+        <!--  -->
+        <div class="accordion accordion--green" aria-expanded="false">            
+            <section class="accordion__block">
+
+                <div class="accordion__header" role="button" aria-controls="portability">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-12 col-md-4">
+                                <div class="accordion__index">5</div>
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <div class="accordion__title-wrapper">
+                                    <h3 class="accordion__title">Read back</h3>
+                                    <div class="accordion__toggle">
+                                        <div class="accordion__toggle--plus">
+                                            {{> svg.icon-plus }}
+                                        </div>
+                                        <div class="accordion__toggle--minus">
+                                            {{> svg.icon-minus }}
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion__content" role="region" aria-labelledby="portability">
+                    <div class="accordion__content-inner">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-12 col-md-4">
+                                    <video src="assets/vid/decompiler.mp4" alt="Reading back a program from a board" loop autoplay muted></video>
+                                </div>
+
+                                <div class="col-12 col-md-8">
+                                    <div class="wysiwyg">
+                                        {{#markdown "plugshare"}}{{/markdown}}
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+
+            </section>
+        </div>
     </article>
 
 
