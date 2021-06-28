@@ -28,6 +28,23 @@
             background-color: $color-blue-50;
         }
     }
+
+    &--orange {
+        background-color: $color-orange;
+        
+        .accordion__content {
+            background-color: $color-orange-50;
+        }
+    }
+
+    &--green {
+        background-color: $color-green;
+        
+        .accordion__content {
+            background-color: $color-green-50;
+        }
+    }
+
 }
 
 
