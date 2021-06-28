@@ -96,6 +96,11 @@
             "img":"assets/img/collaborators/young-thinkers.png"
         },
 
+        {
+            "name":"micro:bit",
+            "href":"https://microbit.org/",
+            "img":"assets/img/collaborators/microbit.png"
+        },
 
         {
             "name":"Faber",
