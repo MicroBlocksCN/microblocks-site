@@ -15,32 +15,11 @@
   background-color: $color-white;
   @include shadow-light;
 
-  &::before {
-    content: 'Download';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: $zindex-content-layer;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    @include font-display-bold;
-    font-size: 24px;
-    color: $color-black;
-
-    background-color: $color-white;
-
-    opacity: 0;
-    transition: opacity 0.2s ease-out;
-  }
-
   &:hover,
   &:focus-visible {
 
-    &::before {
-      opacity: 0.95;
+    .activity-card__downloads {
+      opacity: 1;
     }
   }
 }
@@ -141,3 +120,46 @@
     background-color: $color-teal;
   }
 }
+
+
+
+
+// Downloads
+// ==========================================================================
+
+
+.activity-card__downloads {
+  position: absolute;
+  @include inset;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  opacity: 0;
+  transition: opacity 0.25s ease-out;
+}
+
+
+.activity-card__downloads-title {
+  color: $color-black-700;
+  margin-bottom: 16px;
+}
+
+
+.activity-card__downloads-links {
+  text-align: center;
+
+  a {
+    margin-bottom: 8px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
