@@ -41,7 +41,7 @@
             <div class="col-12 col-lg-8">
                 <div class="page-header__intro wysiwyg u_mb-4 u_lg:mb-0">
                     <p class="text-lg">Getting started with MicroBlocks takes no time at all. Follow these simple steps to set up your computer and board.</p>
-                    <p class="text-md">You’ll need a <a href="#computer">computer</a> and a <a href="#board">microcontroller board</a>. And then you’ll be ready to use <a href="#interface">the interface</a>.
+                    <p class="text-md">You’ll need a computer (not a mobile device!) with a USB port, a <a href="https://wiki.microblocks.fun/boards/supported"> board</a>, and a USB cable. Run MicroBlocks in a Chrome or Edge browser, or download a standalone app for Chromebook, Windows, MacOS, or Linux.
                 </div>
             </div>
 
@@ -94,19 +94,19 @@
     }}
 
         {{#*inline "tab-buttons"}}
-            {{> _tab-button button-id="windows" button-label="Windows" selected="true"}}
+            {{> _tab-button button-id="browser" button-label="Browser" selected="true"}}
+            {{> _tab-button button-id="chromebook" button-label="Chromebook" selected="false"}}
+            {{> _tab-button button-id="windows" button-label="Windows" selected="false"}}
             {{> _tab-button button-id="macos" button-label="MacOS" selected="false"}}
             {{> _tab-button button-id="linux" button-label="Linux" selected="false"}}
-            {{> _tab-button button-id="chromebook" button-label="Chromebook" selected="false"}}
-            {{> _tab-button button-id="browser" button-label="Browser" selected="false"}}
         {{/inline}}
 
         {{#*inline "tabbed-content"}}
+            {{> _tab-content tab-id="browser" markdown="setup-browser" img="picture-960x540.jpg" alt-text="Hands connecting wires to a board"}}
+            {{> _tab-content tab-id="chromebook" markdown="setup-chromebook" img="chromebook.png" alt-text="Hands connecting wires to a board"}}
             {{> _tab-content tab-id="windows" markdown="setup-windows" img="windows.png" alt-text="Hands connecting wires to a board"}}
             {{> _tab-content tab-id="macos" markdown="setup-macos" img="picture-960x540.jpg" alt-text="Hands connecting wires to a board"}}
             {{> _tab-content tab-id="linux" markdown="setup-linux" img="picture-960x540.jpg" alt-text="Hands connecting wires to a board"}}
-            {{> _tab-content tab-id="chromebook" markdown="setup-chromebook" img="chromebook.png" alt-text="Hands connecting wires to a board"}}
-            {{> _tab-content tab-id="browser" markdown="setup-browser" img="picture-960x540.jpg" alt-text="Hands connecting wires to a board"}}
         {{/inline}}
 
     {{/layouts._tabbed-content}}
