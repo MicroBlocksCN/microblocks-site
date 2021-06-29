@@ -1,4 +1,18 @@
-**Browser** - On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
+#### Running MicroBlocks in the Browser ####
 
-- **Download and install Microblocks**. See below for any additional setup steps for your system.
-- **Download and install Microblocks**. See below for any additional setup steps for your system.
+You can run MicroBlocks a Chrome or Edge browser on a Chromebook, laptop, or desktop computer.
+Running MicroBlocks in the browser avoids the need to install a conventional application,
+a process that often requires IT assistance in school settings.
+
+To run MicroBlocks in the brower, open [https://microblocks.fun](https://microblocks.fun)
+and click "Run" in the navigation bar at the top of the screen. That's it!
+
+#### Saving the MicroBlocks Web App ####
+
+MicroBlocks is a "progressive web app", which means you can save a local copy
+of it that you can launch via a shortcut icon like a conventional application.
+Once saved, the web app even runs offline!
+
+To save the MicroBlocks web app, click the "install" button on the top right of the
+microblocks website navigation bar. That will open MicroBlocks in a new window.
+It will also add a shortcut icon to your desktop so you can launch the web app later.
