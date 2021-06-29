@@ -16,7 +16,8 @@
   @include shadow-light;
 
   &:hover,
-  &:focus-visible {
+  &:focus-visible,
+  &--visible {
 
     .activity-card__downloads {
       opacity: 1;
@@ -154,6 +155,7 @@
   text-align: center;
 
   a {
+    display: block;
     margin-bottom: 8px;
 
     &:last-of-type {

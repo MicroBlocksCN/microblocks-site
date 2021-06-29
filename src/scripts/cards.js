@@ -111,6 +111,7 @@ function updateCards (resettingPage) {
             document.querySelector('.page-learn__cards-list')
         );
     });
+    tappingOnCards();
 };
 
 function scrollToContent () {
@@ -198,4 +199,30 @@ function populateFilterDropdowns () {
             }
         });
     });
+};
+
+// Card interaction for small screens
+
+function tappingOnCards () {
+    var noHoverDevice = window.matchMedia('(hover: none)').matches;
+    var noHoverDevice = true; // for testing on computers
+
+    if (noHoverDevice) {
+
+        var cards = document.querySelectorAll(".activity-card");
+        
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                console.log('oi');
+                card.classList.add('activity-card--visible');
+
+                document.addEventListener('click', (e) => {
+                    var tappedInside = card.contains(e.target);
+                    if (!tappedInside) {
+                        card.classList.remove('activity-card--visible');
+                    };
+                });
+            });
+        });
+    };
 };
