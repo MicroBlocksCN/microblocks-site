@@ -29,6 +29,13 @@
   }
 }
 
+.activity-card__downloads:hover {
+    opacity: 1;
+
+    a {
+        visibility: visible;
+    }
+}
 
 .activity-card__picture {
   position: relative;
