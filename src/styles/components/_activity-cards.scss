@@ -21,6 +21,10 @@
 
     .activity-card__downloads {
       opacity: 1;
+
+      a {
+        visibility: visible;
+      }
     }
   }
 }
@@ -157,6 +161,10 @@
   a {
     display: block;
     margin-bottom: 8px;
+    
+    // Avoid click on touch devices
+    // prior to show the layer
+    visibility: hidden;
 
     &:last-of-type {
       margin-bottom: 0;
