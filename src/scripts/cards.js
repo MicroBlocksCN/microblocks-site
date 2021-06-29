@@ -4,10 +4,11 @@
 
 var currentPage = 1,
     totalPages = 1,
-    cardDescriptors;
+    cardDescriptors,
+    noHoverDevice = window.matchMedia('(hover: none)').matches;
 
 function cardHtml (descriptor) {
-    return `<a class="activity-card" href="${descriptor.url}" role="button" download>
+    return `<div class="activity-card" href="${descriptor.url}">
     <div class="activity-card__picture">
         <img src="assets/img/cards/${descriptor.pictureFile}"
             alt="${descriptor.altText}">
@@ -34,7 +35,14 @@ function cardHtml (descriptor) {
             </div>
         </div>
     </div>
-</a>`;
+    <div class="activity-card__downloads" ${ noHoverDevice ? `hidden="true"` : '' }>
+        <h4 class="activity-card__downloads-title">Resources</h4>
+        <div class="activity-card__downloads-links">
+            <a class="btn btn--purple" href="${descriptor.url}" target="_blank">Download PDF</a>
+            <a class="btn btn--blue" href="${descriptor.url}" target="_blank">Watch Video</a>
+        </div>
+    </div>
+</div>`;
 };
 
 function matchesFilter (descriptor, filter) {
@@ -104,6 +112,7 @@ function updateCards (resettingPage) {
             document.querySelector('.page-learn__cards-list')
         );
     });
+    tappingOnCards();
 };
 
 function scrollToContent () {
@@ -191,4 +200,31 @@ function populateFilterDropdowns () {
             }
         });
     });
+};
+
+// Card interaction for small screens
+
+function tappingOnCards () {    
+
+    if (noHoverDevice) {
+
+        var cards = document.querySelectorAll(".activity-card");
+        
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                card.classList.add('activity-card--visible');
+                card.querySelector('.activity-card__downloads').removeAttribute('hidden');
+
+                document.addEventListener('click', (e) => {
+                    var tappedInside = card.contains(e.target);
+                    if (!tappedInside) {
+                        card.classList.remove('activity-card--visible');
+                        card.querySelector('.activity-card__downloads').setAttribute('hidden', 'true');
+                    };
+
+                    // remove this eventListener?
+                });
+            });
+        });
+    };
 };
