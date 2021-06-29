@@ -6,17 +6,17 @@
         "level": 0,
         "pictureFile": "quickstart.png",
         "altText": "Kids using a micro:bit",
-        "url": "QuickStart.pdf"
+        "url": "https://microblocks.fun/mbtest/cards/QuickStart.pdf"
     },
 
     {
-        "title": "Getting Started",
+        "title": "Getting Started with micro:bit",
         "language": "English",
         "boards": ["micro:bit"],
         "level": 0,
         "pictureFile": "getting-started.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards/mb_Getting_Started.pdf"
+        "url": "https://microblocks.fun/mbtest/cards/mb_Getting_Started.pdf"
     },
     {
         "title": "Sensors",
@@ -25,7 +25,7 @@
         "level": 0,
         "pictureFile": "sensors.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards/mb_Sensors.pdf"
+        "url": "https://microblocks.fun/mbtest/cards/mb_Sensors.pdf"
     },
     {
         "title": "Sounds",
@@ -34,7 +34,7 @@
         "level": 0,
         "pictureFile": "sound.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards/mb_Sounds.pdf"
+        "url": "https://microblocks.fun/mbtest/cards/mb_Sounds.pdf"
     },
     {
         "title": "Step Counter",
@@ -43,7 +43,7 @@
         "level": 0,
         "pictureFile": "step-counter.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards/mb_Step_Counter.pdf"
+        "url": "https://microblocks.fun/mbtest/cards/mb_Step_Counter.pdf"
     },
     {
         "title": "Battery Tester",
@@ -52,7 +52,7 @@
         "level": 0,
         "pictureFile": "battery-tester.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards/mb_Battery_Tester.pdf"
+        "url": "https://microblocks.fun/mbtest/cards/mb_Battery_Tester.pdf"
     },
     {
         "title": "Radio",
@@ -61,7 +61,7 @@
         "level": 0,
         "pictureFile": "radio.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards/mb_Radio.pdf"
+        "url": "https://microblocks.fun/mbtest/cards/mb_Radio.pdf"
     },
     {
         "title": "NeoPixels",
@@ -71,7 +71,7 @@
         "level": 0,
         "pictureFile": "neopixels.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards/mb_NeoPixels.pdf"
+        "url": "https://microblocks.fun/mbtest/cards/mb_NeoPixels.pdf"
     },
     {
         "title": "Servos",
@@ -81,7 +81,7 @@
         "level": 0,
         "pictureFile": "servos.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards/mb_Servos.pdf"
+        "url": "https://microblocks.fun/mbtest/cards/mb_Servos.pdf"
     },
     {
         "title": "IR Remote Control",
@@ -91,7 +91,7 @@
         "level": 0,
         "pictureFile": "ir-remote.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards/mb_IR_Remote_Control.pdf"
+        "url": "https://microblocks.fun/mbtest/cards/mb_IR_Remote_Control.pdf"
     },
     {
         "title": "Los gehts!",
@@ -100,7 +100,7 @@
         "level": 0,
         "pictureFile": "quickstart.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards/DE/QuickStart_DE.pdf"
+        "url": "https://microblocks.fun/mbtest/cards/QuickStart_DE.pdf"
     },
     {
         "title": "Verbinde dich",
@@ -109,7 +109,7 @@
         "level": 0,
         "pictureFile": "getting-started.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards/DE/mb_Getting_Started_DE.pdf"
+        "url": "https://microblocks.fun/mbtest/cards/mb_Getting_Started_DE.pdf"
     },
     {
         "title": "Verbinding maken",
@@ -148,13 +148,13 @@
         "url": "https://drive.google.com/file/d/1ya8KEE7QY7z6OUjdO5Ys4dLUw1nhaLGZ"
     },
     {
-        "title": "Getting Started",
+        "title": "Getting Started with Circuit Playground",
         "language": "English",
         "boards": ["Circuit Playground Express", "Circuit Playground Bluefruit"],
         "level": 0,
         "pictureFile": "getting-started.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards/cpx_Getting_Started.pdf"
+        "url": "https://microblocks.fun/mbtest/cards/cpx_Getting_Started.pdf"
     },
     {
         "title": "NeoPixels",
@@ -163,7 +163,7 @@
         "level": 0,
         "pictureFile": "neopixels-cpx.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards/cpx_NeoPixels.pdf"
+        "url": "https://microblocks.fun/mbtest/cards/cpx_NeoPixels.pdf"
     },
     {
         "title": "Sound",
@@ -172,7 +172,7 @@
         "level": 0,
         "pictureFile": "default.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards/cpx_Sounds.pdf"
+        "url": "https://microblocks.fun/mbtest/cards/cpx_Sounds.pdf"
     },
     {
         "title": "IR Remote Control",
@@ -182,7 +182,7 @@
         "level": 0,
         "pictureFile": "remote-cpx.png",
         "altText": "Kids using a micro:bit",
-        "url": "cpx_IR_Remote_Control.pdf"
+        "url": "https://microblocks.fun/mbtest/cards/cpx_IR_Remote_Control.pdf"
     },
 
     {
@@ -192,7 +192,7 @@
         "level": 1,
         "pictureFile": "buttons.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards2/1_mb_Buttons_Display.pdf"
+        "url": "https://microblocks.fun/mbtest/cards2/1_mb_Buttons_Display.pdf"
     },
     {
         "title": "Scrolling | Magic 8-Ball",
@@ -201,7 +201,7 @@
         "level": 1,
         "pictureFile": "8-ball.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards2/2_mb_Scrolling.pdf"
+        "url": "https://microblocks.fun/mbtest/cards2/2_mb_Scrolling.pdf"
     },
     {
         "title": "Radio | Texting",
@@ -210,7 +210,7 @@
         "level": 2,
         "pictureFile": "radio-texting.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards2/3_mb_Radio.pdf"
+        "url": "https://microblocks.fun/mbtest/cards2/3_mb_Radio.pdf"
     },
     {
         "title": "Web Light",
@@ -220,7 +220,7 @@
         "level": 2,
         "pictureFile": "web-light.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards/WOT_WebLight.pdf",
+        "url": "https://microblocks.fun/mbtest/cards/WOT_WebLight.pdf",
         "videoUrl": "https://diode.zone/videos/watch/fbaa93f8-7508-4888-af02-950b45a09aac"
     },
     {
@@ -231,7 +231,7 @@
         "level": 2,
         "pictureFile": "web-button.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards/WOT_WebButton.pdf",
+        "url": "https://microblocks.fun/mbtest/cards/WOT_WebButton.pdf",
         "videoUrl": "https://diode.zone/videos/watch/6c40d8c4-4a7a-43d4-aa21-181bc547933e"
     },
     {
@@ -242,7 +242,7 @@
         "level": 2,
         "pictureFile": "run-in-place-race.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards/WOT_Run-in-placeRace.pdf",
+        "url": "https://microblocks.fun/mbtest/cards/WOT_Run-in-placeRace.pdf",
         "videoUrl": "https://diode.zone/videos/watch/eb535dfe-09a3-4d6c-9455-ed7cf56751c3"
     },
     {
@@ -253,7 +253,7 @@
         "level": 2,
         "pictureFile": "hello-led.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards/WOT_HelloLED.pdf"
+        "url": "https://microblocks.fun/mbtest/cards/WOT_HelloLED.pdf"
     },
     {
         "title": "Doorbell",
@@ -263,7 +263,7 @@
         "level": 2,
         "pictureFile": "default.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards/WOT_Doorbell.pdf"
+        "url": "https://microblocks.fun/mbtest/cards/WOT_Doorbell.pdf"
     },
     {
         "title": "Using the WebThings Gateway",
@@ -273,7 +273,7 @@
         "level": 2,
         "pictureFile": "webthings-gateway.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards/WOT_WebThings_Gateway.pdf"
+        "url": "https://microblocks.fun/mbtest/cards/WOT_WebThings_Gateway.pdf"
     },
     {
         "title": "Sound | Music",
@@ -283,7 +283,17 @@
         "level": 1,
         "pictureFile": "default.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards2/4_mb_Sound.pdf"
+        "url": "https://microblocks.fun/mbtest/cards2/4_mb_Sound.pdf"
+    },
+    {
+        "title": "NeoPixels",
+        "language": "English",
+        "reqs": "NeoPixels",
+        "boards": ["micro:bit"],
+        "level": 1,
+        "pictureFile": "default.png",
+        "altText": "Kids using a micro:bit",
+        "url": "https://microblocks.fun/mbtest/cards2/5_mb_NeoPixels.pdf"
     },
     {
         "title": "Sensors | Graphing",
@@ -292,7 +302,7 @@
         "level": 1,
         "pictureFile": "graphing.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards2/6_mb_Sensors.pdf"
+        "url": "https://microblocks.fun/mbtest/cards2/6_mb_Sensors.pdf"
     },
     {
         "title": "Step Counter | Motion",
@@ -301,7 +311,7 @@
         "level": 1,
         "pictureFile": "step-counter.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards2/7_mb_Motion.pdf"
+        "url": "https://microblocks.fun/mbtest/cards2/7_mb_Motion.pdf"
     },
     {
         "title": "Data | Logging",
@@ -310,7 +320,7 @@
         "level": 1,
         "pictureFile": "default.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards2/8_mb_DataLogging.pdf"
+        "url": "https://microblocks.fun/mbtest/cards2/8_mb_DataLogging.pdf"
     },
     {
         "title": "Games | Simon",
@@ -319,7 +329,7 @@
         "level": 1,
         "pictureFile": "simon.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards2/9_mb_Games.pdf"
+        "url": "https://microblocks.fun/mbtest/cards2/9_mb_Games.pdf"
     },
     {
         "title": "Flashlight Remote | Flashlight Tag",
@@ -329,7 +339,7 @@
         "level": 1,
         "pictureFile": "flashlight.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards2/10_mb_FlashlightTag.pdf"
+        "url": "https://microblocks.fun/mbtest/cards2/10_mb_FlashlightTag.pdf"
     },
     {
         "title": "Guía de inicio rápido",
@@ -479,7 +489,7 @@
         "level": 0,
         "pictureFile": "ed1.png",
         "altText": "The ED1 board",
-        "url": "https://cloud.citilab.eu/s/gBngxbAfctZ4g6o/download"
+        "url": "https://microblocks.fun/mbtest/cards/ed1_targetes_MicroBlocks.pdf"
     }
- 
+
 ]
