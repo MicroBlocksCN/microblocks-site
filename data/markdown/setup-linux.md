@@ -6,7 +6,13 @@ The browser will give you the option to save the file or open it with **Software
 
 Click the **Install** button. Enter the root password when prompted and click **Authenticate**.
 
-The first time you install MicroBlocks you must reboot to enable access to the serial port. The installer adds the user to the access group for the serial port, but that change does not take effect until the next reboot.
+The first time you install MicroBlocks you must reboot.
+The installer adds the user to the access group for the serial port,
+but that change does not take effect until the next reboot.
+
+After rebooting, start MicroBlocks.
+
+Once the MicroBlocks app is open, you can proceed to **Setting up your board**.
 
 #### Troubleshooting ####
 
@@ -20,13 +26,14 @@ or (for 32-bit):
 
     sudo dpkg -i ~/Downloads/ublocks-i386.deb
 
-If MicroBlocks does not connect to the board make sure that you rebooted after running the installer. Use the:
+If MicroBlocks **does not connect** to your board,
+make sure that you rebooted after running the installer. Then run:
 
     groups
 
-command to verify that you are in the dialout and tty groups.
+to verify that you are in the **dialout** and **tty** groups.
 
-To check that Linux is connecting to your board, plug in the board and run:
+To verify that Linux sees your board, make sure the board is plugged in, then run:
 
     ls /dev | grep ACM
 
