@@ -220,7 +220,8 @@
         "level": 2,
         "pictureFile": "web-light.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards/WOT_WebLight.pdf"
+        "url": "cards/WOT_WebLight.pdf",
+        "videoUrl": "https://diode.zone/videos/watch/fbaa93f8-7508-4888-af02-950b45a09aac"
     },
     {
         "title": "Web Button",
@@ -230,7 +231,8 @@
         "level": 2,
         "pictureFile": "web-button.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards/WOT_WebButton.pdf"
+        "url": "cards/WOT_WebButton.pdf",
+        "videoUrl": "https://diode.zone/videos/watch/6c40d8c4-4a7a-43d4-aa21-181bc547933e"
     },
     {
         "title": "Run-in-place Race",
@@ -240,7 +242,8 @@
         "level": 2,
         "pictureFile": "run-in-place-race.png",
         "altText": "Kids using a micro:bit",
-        "url": "cards/WOT_Run-in-placeRace.pdf"
+        "url": "cards/WOT_Run-in-placeRace.pdf",
+        "videoUrl": "https://diode.zone/videos/watch/eb535dfe-09a3-4d6c-9455-ed7cf56751c3"
     },
     {
         "title": "Hello LED",

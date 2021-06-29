@@ -39,7 +39,10 @@ function cardHtml (descriptor) {
         <h4 class="activity-card__downloads-title">Resources</h4>
         <div class="activity-card__downloads-links">
             <a class="btn btn--purple" href="${descriptor.url}" target="_blank">Download PDF</a>
-            <a class="btn btn--blue" href="${descriptor.url}" target="_blank">Watch Video</a>
+            ${descriptor.videoUrl ?
+                `<a class="btn btn--blue" href="${descriptor.videoUrl}" target="_blank">Watch Video</a>` :
+                ''
+            }
         </div>
     </div>
 </div>`;
