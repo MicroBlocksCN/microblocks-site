@@ -1,6 +1,6 @@
 #### MacOS Setup ####
 
-Go to the [Download](/download) page and click the **Download** button.
+Go to the [Download](download) page and click the **Download** button.
 
 Open the Downloads folder on your computer. Double-click MicroBlocks.app.zip to unzip it.
 

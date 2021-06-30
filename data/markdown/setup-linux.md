@@ -1,6 +1,6 @@
 #### Linux Setup ####
 
-Go to the [Download](/download) page and click the **Download** button.
+Go to the [Download](download) page and click the **Download** button.
 
 The browser will give you the option to save the file or open it with **Software Install**. Select open.
 

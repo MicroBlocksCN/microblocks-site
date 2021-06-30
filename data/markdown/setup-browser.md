@@ -17,10 +17,10 @@ To save the MicroBlocks web app, run MicroBlocks in your browser, then click the
 **install** button on the top right of the browser's URL bar:
 
 Chrome:<br>
-<img src="/assets/img/md/get-started/pwainstall-chrome.png" width="220">
+<img src="assets/img/md/get-started/pwainstall-chrome.png" width="220">
 
 Edge:<br>
-<img src="/assets/img/md/get-started/pwainstall-edge.png" width="200">
+<img src="assets/img/md/get-started/pwainstall-edge.png" width="200">
 
 That will install the web app and open MicroBlocks in a new window.
 It will also add a shortcut icon to your desktop so you can launch the web app later.
