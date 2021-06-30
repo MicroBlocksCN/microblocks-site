@@ -10,7 +10,7 @@ Click the three-dot menu and select **Keep**.
 
 <img src="assets/img/md/get-started/win-downloadblocked-2.png" width="400">
 
-You will then get another warning. Click **show more** and **Keep anyway**.
+You will then get another warning. Click **Show more** and **Keep anyway**.
 
 <img src="assets/img/md/get-started/win-downloadblocked-3.png" width="360">
 
