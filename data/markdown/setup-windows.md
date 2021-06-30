@@ -2,11 +2,25 @@
 
 Go to the [Download](/download) page and click the **Download** button.
 
-If you are running Chrome or Edge you will be warned that the downloaded file could harm you computer.
-You will need to click "keep" or "keep anyway" several times. (Firefox does not present those
-warning dialogs; you can just save or run the installer.)
+In Chrome or Edge, you will be warned that the downloaded file could harm you computer.
 
-Open the saved file, **microBlocks setup.exe**. That will open the installer.
-Click through the installer screens to install the app. The installer will launch
-MicroBlocks when it is done. It also adds a shortcut icon to the Desktop
-that you can use to run MicroBlocks later.
+<img src="/assets/img/md/get-started/win-downloadblocked-1.png" width="400">
+
+Click the three-dot menu and select **Keep**.
+
+<img src="/assets/img/md/get-started/win-downloadblocked-2.png" width="400">
+
+You will then get another warning. Click **show more** and **Keep anyway**.
+
+<img src="/assets/img/md/get-started/win-downloadblocked-3.png" width="350">
+
+Open the saved file, **microBlocks setup.exe**.
+
+After one more warning, that will open the installer.
+
+<img src="/assets/img/md/get-started/win-setup-wizard.png" width="350">
+
+Click through the installer screens to install the app.
+
+The installer will launch MicroBlocks when it is done.
+It will also a shortcut icon to the Desktop that you can use to run MicroBlocks later.

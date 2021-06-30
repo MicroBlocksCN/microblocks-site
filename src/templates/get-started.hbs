@@ -40,7 +40,7 @@
 
             <div class="col-12 col-lg-8">
                 <div class="page-header__intro wysiwyg u_mb-4 u_lg:mb-0">
-                    <p class="text-lg">Getting started with MicroBlocks takes no time at all. Just follow these simple steps.</p>
+                    <p class="text-lg">Getting started with MicroBlocks is easy! Just follow these simple steps.</p>
                     <p class="text-md">You’ll need a computer (not a mobile device!) with a USB port, a USB cable, and a <a href="https://wiki.microblocks.fun/boards/supported"> board</a>. You can run MicroBlocks in a Chrome or Edge browser, or download a standalone app for Chromebook, Windows, MacOS, or Linux.
                 </div>
             </div>
@@ -121,10 +121,10 @@
 
         {{#*inline "tab-buttons"}}
             {{> _tab-button button-id="microbit" button-label="micro:bit" selected="true"}}
-            {{> _tab-button button-id="cpx" button-label="Circuit Playground Express" selected="false"}}
-            {{> _tab-button button-id="calliope" button-label="Calliope Mini" selected="false"}}
-            {{> _tab-button button-id="m5" button-label="M5 Boards" selected="false"}}
-            {{> _tab-button button-id="others" button-label="Others" selected="false"}}
+            {{> _tab-button button-id="cpx" button-label="Circuit Playground" selected="false"}}
+            {{> _tab-button button-id="calliope" button-label="Calliope" selected="false"}}
+            {{> _tab-button button-id="m5" button-label="M5" selected="false"}}
+            {{> _tab-button button-id="others" button-label="Other" selected="false"}}
         {{/inline}}
 
         {{#*inline "tabbed-content"}}
@@ -145,15 +145,13 @@
     }}
 
         {{#*inline "tab-buttons"}}
-            {{> _tab-button button-id="desktop" button-label="Desktop" selected="true"}}
-            {{> _tab-button button-id="chromebook" button-label="Chromebook" selected="false"}}
-            {{> _tab-button button-id="browser" button-label="Browser" selected="false"}}
+            {{> _tab-button button-id="browser" button-label="Browser" selected="true"}}
+            {{> _tab-button button-id="computer" button-label="Application" selected="false"}}
         {{/inline}}
 
         {{#*inline "tabbed-content"}}
-            {{> _tab-content tab-id="desktop" markdown="run-ide-desktop" img="setup-windows.png" alt-text="Hands connecting wires to a board"}}
-            {{> _tab-content tab-id="chromebook" markdown="run-ide-chromebook" img="setup-chromebook.png" alt-text="Hands connecting wires to a board"}}
             {{> _tab-content tab-id="browser" markdown="run-ide-browser" img="setup-browser.png" alt-text="Hands connecting wires to a board"}}
+            {{> _tab-content tab-id="computer" markdown="run-ide-standalone" img="setup-windows.png" alt-text="Hands connecting wires to a board"}}
         {{/inline}}
     {{/layouts._tabbed-content}}
 </div>
