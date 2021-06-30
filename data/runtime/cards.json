@@ -192,7 +192,8 @@
         "level": 1,
         "pictureFile": "buttons.png",
         "altText": "Kids using a micro:bit",
-        "url": "assets/pdf/cards2/1_mb_Buttons_Display.pdf"
+        "url": "assets/pdf/cards2/1_mb_Buttons_Display.pdf",
+        "videoUrl": "https://youtu.be/Pu1jFMuyDpE"
     },
     {
         "title": "Scrolling | Magic 8-Ball",
@@ -201,7 +202,8 @@
         "level": 1,
         "pictureFile": "8-ball.png",
         "altText": "Kids using a micro:bit",
-        "url": "assets/pdf/cards2/2_mb_Scrolling.pdf"
+        "url": "assets/pdf/cards2/2_mb_Scrolling.pdf",
+        "videoUrl": "https://youtu.be/igRhAvRpAqI"
     },
     {
         "title": "Radio | Texting",
@@ -210,8 +212,9 @@
         "level": 2,
         "pictureFile": "radio-texting.png",
         "altText": "Kids using a micro:bit",
-        "url": "assets/pdf/cards2/3_mb_Radio.pdf"
-    },
+        "url": "assets/pdf/cards2/3_mb_Radio.pdf",
+         "videoUrl": "https://youtu.be/o3Mly7wOMOM"
+   },
     {
         "title": "Web Light",
         "language": "English",
@@ -283,7 +286,8 @@
         "level": 1,
         "pictureFile": "default.png",
         "altText": "Kids using a micro:bit",
-        "url": "assets/pdf/cards2/4_mb_Sound.pdf"
+        "url": "assets/pdf/cards2/4_mb_Sound.pdf",
+        "videoUrl": "https://youtu.be/wUXRA6ddepI"
     },
     {
         "title": "NeoPixels",
@@ -293,7 +297,8 @@
         "level": 1,
         "pictureFile": "default.png",
         "altText": "Kids using a micro:bit",
-        "url": "assets/pdf/cards2/5_mb_NeoPixels.pdf"
+        "url": "assets/pdf/cards2/5_mb_NeoPixels.pdf",
+        "videoUrl": "https://youtu.be/HMQY5n7dhsc"
     },
     {
         "title": "Sensors | Graphing",
@@ -302,7 +307,8 @@
         "level": 1,
         "pictureFile": "graphing.png",
         "altText": "Kids using a micro:bit",
-        "url": "assets/pdf/cards2/6_mb_Sensors.pdf"
+        "url": "assets/pdf/cards2/6_mb_Sensors.pdf",
+        "videoUrl": "https://youtu.be/t-X5qIZYqhY"
     },
     {
         "title": "Step Counter | Motion",
@@ -311,7 +317,8 @@
         "level": 1,
         "pictureFile": "step-counter.png",
         "altText": "Kids using a micro:bit",
-        "url": "assets/pdf/cards2/7_mb_Motion.pdf"
+        "url": "assets/pdf/cards2/7_mb_Motion.pdf",
+        "videoUrl": "https://youtu.be/KIOewCLBb3U"
     },
     {
         "title": "Data | Logging",
@@ -320,7 +327,8 @@
         "level": 1,
         "pictureFile": "default.png",
         "altText": "Kids using a micro:bit",
-        "url": "assets/pdf/cards2/8_mb_DataLogging.pdf"
+        "url": "assets/pdf/cards2/8_mb_DataLogging.pdf",
+        "videoUrl": "https://youtu.be/ZBU6l-4XjQw"
     },
     {
         "title": "Games | Simon",
@@ -329,7 +337,8 @@
         "level": 1,
         "pictureFile": "simon.png",
         "altText": "Kids using a micro:bit",
-        "url": "assets/pdf/cards2/9_mb_Games.pdf"
+        "url": "assets/pdf/cards2/9_mb_Games.pdf",
+        "videoUrl": "https://youtu.be/oKuQvBGw41o"
     },
     {
         "title": "Flashlight Remote | Flashlight Tag",
@@ -339,7 +348,8 @@
         "level": 1,
         "pictureFile": "flashlight.png",
         "altText": "Kids using a micro:bit",
-        "url": "assets/pdf/cards2/10_mb_FlashlightTag.pdf"
+        "url": "assets/pdf/cards2/10_mb_FlashlightTag.pdf",
+        "videoUrl": "https://youtu.be/AhnheX1g_nU"
     },
     {
         "title": "Guía de inicio rápido",
