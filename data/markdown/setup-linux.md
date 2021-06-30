@@ -10,10 +10,6 @@ The first time you install MicroBlocks you must reboot.
 The installer adds the user to the access group for the serial port,
 but that change does not take effect until the next reboot.
 
-After rebooting, start MicroBlocks.
-
-Once the MicroBlocks app is open, you can proceed to **Setting up your board**.
-
 #### Troubleshooting ####
 
 If **Software Install** does not work, click the **Download** button and save the file instead of opening it.

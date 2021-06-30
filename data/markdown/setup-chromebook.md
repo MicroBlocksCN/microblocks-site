@@ -7,5 +7,3 @@ Click the **Add to Chrome** button on that page to install the MicroBlocks Chrom
 Open the Chromebook app launcher and click the MicroBlocks bunny icon.
 
 You can pin the MicroBlocks app to make it easy to open in the future.
-
-Once the MicroBlocks app is open, you can proceed to **Setting up your board**.
