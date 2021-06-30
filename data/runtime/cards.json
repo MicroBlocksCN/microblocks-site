@@ -10,7 +10,7 @@
     },
 
     {
-        "title": "Get Started with micro:bit",
+        "title": "Get Started: micro:bit",
         "language": "English",
         "boards": ["micro:bit"],
         "level": 0,
@@ -148,7 +148,7 @@
         "url": "https://drive.google.com/file/d/1ya8KEE7QY7z6OUjdO5Ys4dLUw1nhaLGZ"
     },
     {
-        "title": "Get Started with Circuit Playground",
+        "title": "Get Started: Circuit Playground",
         "language": "English",
         "boards": ["Circuit Playground Express", "Circuit Playground Bluefruit"],
         "level": 0,
@@ -218,7 +218,7 @@
     {
         "title": "Web Light",
         "language": "English",
-        "reqs": "RaspberryPi with a WebThings gateway running",
+        "reqs": "WebThings Gateway on Raspberry Pi",
         "boards": ["micro:bit"],
         "level": 2,
         "pictureFile": "web-light.png",
@@ -229,7 +229,7 @@
     {
         "title": "Web Button",
         "language": "English",
-        "reqs": "RaspberryPi with a WebThings gateway running",
+        "reqs": "WebThings Gateway on Raspberry Pi",
         "boards": ["micro:bit"],
         "level": 2,
         "pictureFile": "web-button.png",
@@ -240,7 +240,7 @@
     {
         "title": "Run-in-place Race",
         "language": "English",
-        "reqs": "RaspberryPi with a WebThings gateway running",
+        "reqs": "WebThings Gateway on Raspberry Pi",
         "boards": ["micro:bit"],
         "level": 2,
         "pictureFile": "run-in-place-race.png",
@@ -251,7 +251,7 @@
     {
         "title": "Hello LED",
         "language": "English",
-        "reqs": "RaspberryPi with a WebThings gateway running",
+        "reqs": "WebThings Gateway on Raspberry Pi",
         "boards": ["micro:bit"],
         "level": 2,
         "pictureFile": "hello-led.png",
@@ -261,7 +261,7 @@
     {
         "title": "Doorbell",
         "language": "English",
-        "reqs": "RaspberryPi with a WebThings gateway running",
+        "reqs": "WebThings Gateway on Raspberry Pi",
         "boards": ["micro:bit"],
         "level": 2,
         "pictureFile": "default.png",
@@ -271,7 +271,7 @@
     {
         "title": "Using the WebThings Gateway",
         "language": "English",
-        "reqs": "RaspberryPi with a WebThings gateway running",
+        "reqs": "WebThings Gateway on Raspberry Pi",
         "boards": ["micro:bit"],
         "level": 2,
         "pictureFile": "webthings-gateway.png",
