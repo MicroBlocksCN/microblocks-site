@@ -7,7 +7,7 @@ Select your board.
 
 <img src="assets/img/md/get-started/browser-connect-dialog.png" width="400">
 
-If you have installed the MicroBlocks firmware (see **Board Setup**)
+If you have installed the MicroBlocks firmware (see [Board Setup](#board))
 a green circle should appear behind the USB icon.
 
 <img src="assets/img/md/get-started/connected.png" width="150">
