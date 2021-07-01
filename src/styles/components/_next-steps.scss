@@ -20,14 +20,13 @@
 .next-steps__cards-wrapper {
 
     @include mq(lg) {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 40px;
+        display: flex;
+        justify-content: center;
     }
 }
 
 
-.next-steps__link {
+.next-steps__card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -40,6 +39,11 @@
     &:hover,
     &:focus-visible {
         top: -16px;
+    }
+
+    @include mq(lg) {
+        width: 32%;
+        padding: 0 20px;
     }
 }
 
