@@ -1,7 +1,9 @@
 #### Circuit Playground Express or Bluefruit
 
 Connect the board to your computer.
-Quickly click the small reset button in the center of the board twice.
+Quickly click the small reset button in the center of the board twice
+[(video)](https://www.youtube.com/watch?v=UN-pkP5oqLw).
+
 
 <img src="assets/img/md/get-started/cpx_reset_button.jpg" width="300">
 

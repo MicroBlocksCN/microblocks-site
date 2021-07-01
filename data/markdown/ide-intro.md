@@ -1,1 +1,1 @@
-How to start the IDE.
+How to use the MicroBlocks editor.

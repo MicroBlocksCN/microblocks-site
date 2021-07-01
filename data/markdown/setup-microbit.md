@@ -1,6 +1,6 @@
 #### micro:bit (v1 or v2) ####
 
-Connect the board to your computer.
+Connect the board to your computer ([video](https://www.youtube.com/watch?v=V4u2_GN8JnU)).
 
 From the MicroBlocks menu (gear icon), select **update firmware on board**.
 
