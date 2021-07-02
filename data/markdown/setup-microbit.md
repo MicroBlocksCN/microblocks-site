@@ -20,7 +20,7 @@ First, select your board type from the menu.
 
 <img src="assets/img/md/get-started/select-microbit.png" width="180">
 
-They you'll be asked to select the USB drive for the board in the browser's file save dialog.
+Then you'll be asked to select the USB drive for the board in the browser's file save dialog.
 
 <img src="assets/img/md/get-started/firmware-install-instructions-microbit.png" width="400">
 
