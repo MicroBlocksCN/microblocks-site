@@ -1,9 +1,7 @@
 #### Circuit Playground Express or Bluefruit
 
 Connect the board to your computer.
-Quickly click the small reset button in the center of the board twice
-[(video)](https://www.youtube.com/watch?v=UN-pkP5oqLw).
-
+Quickly click the small reset button in the center of the board twice.
 
 <img src="assets/img/md/get-started/cpx_reset_button.jpg" width="300">
 
@@ -21,6 +19,8 @@ Firmware installation takes just a few seconds.
 If you are running the MicroBlocks app, MicroBlocks will connect to the board automatically
 when it is done.
 
+[This video](https://www.youtube.com/watch?v=V4u2_GN8JnU) shows these steps.
+
 **Extra Steps in Browser**
 
 If you are running MicroBlocks in the browser or as a web app, you need to help the browser.
@@ -30,7 +30,7 @@ First, select your board type from the menu.
 
 <img src="assets/img/md/get-started/select-cpx.png" width="180">
 
-They you'll be asked to select the USB drive for the board in the browser's file save dialog.
+You'll be asked to select the USB drive for the board in the browser's file save dialog.
 
 <img src="assets/img/md/get-started/firmware-install-instructions-cpx.png" width="400">
 

@@ -1,9 +1,13 @@
 To run MicroBlocks in the Chrome or Edge browser,
 click **Run** in the navigation bar at the top of the screen.
 
+<img src="assets/img/md/get-started/browser-run-button.png" width="70">
+
 Plug in your board, then click the USB icon.
 
-Select your board.
+<img src="assets/img/md/get-started/usb-icon.png" width="50">
+
+Select your board from the browser dialog.
 
 <img src="assets/img/md/get-started/browser-connect-dialog.png" width="400">
 

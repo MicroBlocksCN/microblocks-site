@@ -1,7 +1,9 @@
 #### Chromebook Setup ####
 
 Go to the [Download](download) page and click the **Download** button.
-That will bring you to MicroBlocks page on the Chrome Web Store.
+If are on a Chromebook, that will bring you to the
+[MicroBlocks page](https://chrome.google.com/webstore/detail/microblocks/cbmcbhgijipgdmlnieolilhghfmnngbb?authuser=0)
+on the Chrome Web Store.
 
 <img src="assets/img/md/get-started/chrome-web-store.png" width="400">
 
