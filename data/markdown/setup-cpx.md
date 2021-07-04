@@ -3,11 +3,11 @@
 Connect the board to your computer.
 Quickly click the small reset button in the center of the board twice.
 
-<img src="assets/img/md/get-started/cpx_reset_button.jpg" width="300">
+<img src="assets/img/md/get-started/cpx_reset_button.jpg" width="200">
 
 The LED's will turn red for a few seconds, then turn green and stay green.
 
-<img src="assets/img/md/get-started/cpx-boot-mode.jpg" width="300">
+<img src="assets/img/md/get-started/cpx-boot-mode.jpg" width="200">
 
 If they don't turn green the first time, try again.
 
@@ -44,7 +44,7 @@ When the file is saved (just a few seconds), click to USB icon to connect to it.
 The process for installing firmware on the Clue is identical
 except that the reset button is on the back of the board.
 
-<img src="assets/img/md/get-started/clue_reset_button.png" width="300">
+<img src="assets/img/md/get-started/clue_reset_button.png" width="200">
 
 and the Clue has only a single NeoPixel that turns green. (It's on the back of the board just
 below the USB connector.)
