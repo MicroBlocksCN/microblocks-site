@@ -9,13 +9,14 @@
   position: fixed !important; // Clash with block-connector
   top: 1rem;
   right: 1rem;
-  z-index: $zindex-menu-toggle;
 
   color: $color-white;
   background-color: $color-black;
   border-radius: 2px;  
   line-height: 0;
   @include block-connector;
+  
+  z-index: $zindex-menu-toggle;
 
   &:hover {
     cursor: pointer;
