@@ -11,6 +11,8 @@ The yellow LED will flicker as the firmware is installed. It takes a few seconds
 If you are running the MicroBlocks app, MicroBlocks will connect to the board automatically
 when it is done.
 
+[This video](https://www.youtube.com/watch?v=V4u2_GN8JnU) shows these steps.
+
 **Extra Steps in Browser**
 
 If you are running MicroBlocks in the browser or as a web app, you need to help the browser.
@@ -20,7 +22,7 @@ First, select your board type from the menu.
 
 <img src="assets/img/md/get-started/select-microbit.png" width="180">
 
-They you'll be asked to select the USB drive for the board in the browser's file save dialog.
+Then you'll be asked to select the USB drive for the board in the browser's file save dialog.
 
 <img src="assets/img/md/get-started/firmware-install-instructions-microbit.png" width="400">
 

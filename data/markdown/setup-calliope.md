@@ -18,7 +18,7 @@ For security reasons, the browser cannot access the board's USB drive without as
 
 First, select your board type from the menu.
 
-<img src="assets/img/md/get-started/select-microbit.png" width="180">
+<img src="assets/img/md/get-started/select-calliope.png" width="180">
 
 They you'll be asked to select the USB drive for the board in the browser's file save dialog.
 

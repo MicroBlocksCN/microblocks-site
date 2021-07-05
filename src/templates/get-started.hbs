@@ -94,16 +94,16 @@
     }}
 
         {{#*inline "tab-buttons"}}
-            {{> _tab-button button-id="browser" button-label="Browser" selected="true"}}
             {{> _tab-button button-id="chromebook" button-label="Chromebook" selected="false"}}
+            {{> _tab-button button-id="browser" button-label="Browser" selected="true"}}
             {{> _tab-button button-id="windows" button-label="Windows" selected="false"}}
             {{> _tab-button button-id="macos" button-label="MacOS" selected="false"}}
             {{> _tab-button button-id="linux" button-label="Linux" selected="false"}}
         {{/inline}}
 
         {{#*inline "tabbed-content"}}
-            {{> _tab-content tab-id="browser" markdown="setup-browser" img="setup-browser.png" alt-text="Hands connecting wires to a board"}}
             {{> _tab-content tab-id="chromebook" markdown="setup-chromebook" img="setup-chromebook.png" alt-text="Hands connecting wires to a board"}}
+            {{> _tab-content tab-id="browser" markdown="setup-browser" img="setup-browser.png" alt-text="Hands connecting wires to a board"}}
             {{> _tab-content tab-id="windows" markdown="setup-windows" img="setup-windows.png" alt-text="Hands connecting wires to a board"}}
             {{> _tab-content tab-id="macos" markdown="setup-macos" img="setup-macos.png" alt-text="Hands connecting wires to a board"}}
             {{> _tab-content tab-id="linux" markdown="setup-linux" img="setup-linux.png" alt-text="Hands connecting wires to a board"}}
@@ -123,7 +123,6 @@
             {{> _tab-button button-id="microbit" button-label="micro:bit" selected="true"}}
             {{> _tab-button button-id="cpx" button-label="Circuit Playground" selected="false"}}
             {{> _tab-button button-id="calliope" button-label="Calliope" selected="false"}}
-            {{> _tab-button button-id="m5" button-label="M5" selected="false"}}
             {{> _tab-button button-id="others" button-label="Other" selected="false"}}
         {{/inline}}
 
@@ -131,7 +130,6 @@
             {{> _tab-content tab-id="microbit" markdown="setup-microbit" img="setup-microbit.png" alt-text="Hands connecting wires to a board"}}
             {{> _tab-content tab-id="cpx" markdown="setup-cpx" img="setup-cpx.png" alt-text="Hands connecting wires to a board"}}
             {{> _tab-content tab-id="calliope" markdown="setup-calliope" img="setup-calliope.png" alt-text="Hands connecting wires to a board"}}
-            {{> _tab-content tab-id="m5" markdown="setup-m5" img="setup-m5stack.png" alt-text="Hands connecting wires to a board"}}
             {{> _tab-content tab-id="others" markdown="setup-other-boards" img="setup-other-boards.jpg" alt-text="Hands connecting wires to a board"}}
         {{/inline}}
     {{/layouts._tabbed-content}}
@@ -145,13 +143,13 @@
     }}
 
         {{#*inline "tab-buttons"}}
-            {{> _tab-button button-id="browser" button-label="Browser" selected="true"}}
             {{> _tab-button button-id="computer" button-label="Application" selected="false"}}
+            {{> _tab-button button-id="browser" button-label="Browser" selected="true"}}
         {{/inline}}
 
         {{#*inline "tabbed-content"}}
-            {{> _tab-content tab-id="browser" markdown="run-ide-browser" img="setup-browser.png" alt-text="Hands connecting wires to a board"}}
             {{> _tab-content tab-id="computer" markdown="run-ide-standalone" img="setup-windows.png" alt-text="Hands connecting wires to a board"}}
+            {{> _tab-content tab-id="browser" markdown="run-ide-browser" img="setup-browser.png" alt-text="Hands connecting wires to a board"}}
         {{/inline}}
     {{/layouts._tabbed-content}}
 </div>
