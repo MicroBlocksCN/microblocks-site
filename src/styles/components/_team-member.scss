@@ -4,10 +4,11 @@
 
 
 .team-member {
-    display: flex;
+    // display: flex;
     margin-bottom: 40px;
 
-    @include mq(lg) {
+    @include mq(sm) {
+        display: flex;
         margin-bottom: 56px;
         padding-right: 16px
     }
@@ -21,7 +22,7 @@
 
 .team-member__picture {
     flex-shrink: 0;
-    width: 112px;
+    width: 96px;
     margin-right: 16px;
 
     img {
@@ -32,7 +33,7 @@
     }
 
     @include mq(md) {
-        width: 80px
+        width: 80px;
     }
 }
 
