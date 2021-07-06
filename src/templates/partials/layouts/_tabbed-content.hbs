@@ -1,12 +1,20 @@
-<div id="{{id}}" class="tabs tabs--{{color}}">
+<section id="{{id}}" class="tabs tabs--{{color}}">
+
+    <!-- Number -->
+    
 
     <!-- Intro -->
-    <div class="container u_mb-2 border-top">
+    <div class="container u_mb-2 _border-top">
         <div class="row">
             <div class="col-12 col-lg-4">
-                <h2 class="section-title">
-                    {{tabs-title}}
-                </h2>
+                <div class="tabs__header">
+                    <div class="tabs__index circle">
+                        {{tabs-index}}
+                    </div>
+                    <h2 class="section-title">
+                        {{tabs-title}}
+                    </h2>
+                </div>
             </div>
             <div class="col-12 col-lg-8">
                 <div class="tabs__intro">
@@ -37,4 +45,4 @@
         </div>
     </div>
 
-</div>
+</section>
