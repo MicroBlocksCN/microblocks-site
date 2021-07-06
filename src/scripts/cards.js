@@ -187,7 +187,7 @@ function updatePages () {
 // Dropdown menu filling
 
 function populateFilterDropdowns () {
-    var langs = [],
+    var langs = ['English'],
         boards = [];
     cardDescriptors.forEach(card => {
         if (!langs.includes(card.language)) {
