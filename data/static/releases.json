@@ -42,55 +42,55 @@
     "vm":[
         {
             "platform":"BBC micro:bit",
-            "href":"https://microblocks.fun/downloads/latest/vm/vm.microbit.hex"
+            "href":"https://microblocks.fun/downloads/latest/vm/vm_microbit.hex"
         },
         {
             "platform":"BBC micro:bit v2",
-            "href":"https://microblocks.fun/downloads/latest/vm/vm.microbitV2.hex"
+            "href":"https://microblocks.fun/downloads/latest/vm/vm_microbitV2.hex"
         },
         {
             "platform":"Calliope",
-            "href":"https://microblocks.fun/downloads/latest/vm/vm.calliope.hex"
+            "href":"https://microblocks.fun/downloads/latest/vm/vm_calliope.hex"
         },
         {
             "platform":"Adafruit Circuit Playground Express",
-            "href":"https://microblocks.fun/downloads/latest/vm/vm.circuitplay.uf2"
+            "href":"https://microblocks.fun/downloads/latest/vm/vm_circuitplay.uf2"
         },
         {
             "platform":"Adafruit Circuit Playground Bluefruit",
-            "href":"https://microblocks.fun/downloads/latest/vm/vm.cplay52.uf2"
+            "href":"https://microblocks.fun/downloads/latest/vm/vm_cplay52.uf2"
         },
         {
             "platform":"Adafruit Clue",
-            "href":"https://microblocks.fun/downloads/latest/vm/vm.clue.uf2"
+            "href":"https://microblocks.fun/downloads/latest/vm/vm_clue.uf2"
         },
         {
             "platform":"AdaFruit ItsyBitsy M0",
-            "href":"https://microblocks.fun/downloads/latest/vm/vm.itsybitsy.uf2"
+            "href":"https://microblocks.fun/downloads/latest/vm/vm_itsybitsy.uf2"
         },
         {
             "platform":"Citilab ED1",
-            "href":"https://microblocks.fun/downloads/latest/vm/vm.citilab-ed1.bin"
+            "href":"https://microblocks.fun/downloads/latest/vm/vm_citilab-ed1.bin"
         },
         {
             "platform":"M5Stack",
-            "href":"https://microblocks.fun/downloads/latest/vm/vm.m5stack.bin"
+            "href":"https://microblocks.fun/downloads/latest/vm/vm_m5stack.bin"
         },
         {
             "platform":"M5Stick",
-            "href":"https://microblocks.fun/downloads/latest/vm/vm.m5stick.bin"
+            "href":"https://microblocks.fun/downloads/latest/vm/vm_m5stick.bin"
         },
         {
             "platform":"M5Atom Matrix",
-            "href":"https://microblocks.fun/downloads/latest/vm/vm.m5atom.bin"
+            "href":"https://microblocks.fun/downloads/latest/vm/vm_m5atom.bin"
         },
         {
             "platform":"Generic ESP32",
-            "href":"https://microblocks.fun/downloads/latest/vm/vm.esp32.bin"
+            "href":"https://microblocks.fun/downloads/latest/vm/vm_esp32.bin"
         },
         {
             "platform":"NodeMCU (ESP8266)",
-            "href":"https://microblocks.fun/downloads/latest/vm/vm.nodemcu.bin"
+            "href":"https://microblocks.fun/downloads/latest/vm/vm_nodemcu.bin"
         }
     ]
 }
