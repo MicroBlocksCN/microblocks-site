@@ -27,5 +27,5 @@ You'll be asked to select the USB drive for the board in the browser's file save
 Follow the instructions to save the firmware file on your board.
 
 The yellow light will flicker, stop, then flicker again briefly as the board re-connects
-itself as a USB drive. Wait until that entire sequence is complete—about ten seconds—then click
-the USB icon to connect to the board.
+itself as a USB drive. Wait until that entire sequence is complete—about ten seconds—then
+click the USB icon to connect to the board.
