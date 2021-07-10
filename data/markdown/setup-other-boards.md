@@ -22,9 +22,9 @@ MicroBlocks will start the firmware install process.
 
 <img src="assets/img/md/get-started/esp-connecting.png" width="360">
 
-Some ESP boards require that you prepare the board for firmware installation
-by holding down the **Flash** button while clicking the **Reset** button.
-Check the documentation for your board.
+**Note:** Some ESP boards will connect only if you hold down the **Flash** or **Boot** button
+at the start of the firmware installation process.
+You can release the button when the progress indicator appears.
 
 Once MicroBlocks has connected the board, you will see a progress indicator
 as the firmware is installed.
@@ -42,18 +42,18 @@ MicroBlocks (when running in the browser, reload the page).
 
 #### Troubleshooting ####
 
-Firmware installation on ESP32 and ESP8266 boards is tricky.
+Firmware installation on ESP32 and ESP8266 boards can be tricky.
 
-Some boards must be manually prepared for firmware installation by
-holding down the **Flash** button while clicking the **Reset** button.
+Some boards require you to hold down the **Flash** or **Boot** button
+to the start the installation process.
 
-On others, firmware installation fails randomly, not only with
-MicroBlocks but with other tools as well. You may need to try
-several times.
+On other boards, firmware installation may fail randomly,
+not only with MicroBlocks but with other tools as well.
+You may need to try several times.
 
 It sometimes helps to unplug the board, quit and restart
-MicroBlocks (when running in the browser, reload the page),
-refresh, then plug the board in and try again.
+MicroBlocks (or, when running in the browser, reload the page),
+then plug the board in and try again.
 
 Fortunately, ESP boards work well with MicroBlocks
 once the firmware is installed.
