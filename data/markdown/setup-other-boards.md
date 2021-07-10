@@ -45,7 +45,7 @@ MicroBlocks (when running in the browser, reload the page).
 Firmware installation on ESP32 and ESP8266 boards can be tricky.
 
 Some boards require you to hold down the **Flash** or **Boot** button
-to the start the installation process.
+to start the installation process.
 
 On other boards, firmware installation may fail randomly,
 not only with MicroBlocks but with other tools as well.
