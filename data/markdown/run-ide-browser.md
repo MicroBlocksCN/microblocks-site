@@ -7,7 +7,7 @@ Plug in your board, then click the USB icon.
 
 <img src="assets/img/md/get-started/usb-icon.png" width="50">
 
-Select your board from the browser dialog.
+Select your board from the browser dialog, then click **Connect**.
 
 <img src="assets/img/md/get-started/browser-connect-dialog.png" width="400">
 

@@ -22,13 +22,17 @@ First, select your board type from the menu.
 
 <img src="assets/img/md/get-started/select-microbit.png" width="180">
 
-You'll be asked to select the USB drive for the board in the browser's file save dialog.
+A dialog box will appear. Read the instructions, then click **OK**.
 
-<img src="assets/img/md/get-started/firmware-install-instructions-microbit.png" width="400">
+<img src="assets/img/md/get-started/firmware-install-instructions-microbit.png" width="320">
 
-Follow the instructions to save the firmware file on your board.
+In the browser's save dialog, select the **MICROBIT** drive, then click the **Save** button.
 
-The yellow light will flicker, stop, then flicker again briefly as the board re-connects
-itself as a USB drive.
-Wait until that entire sequence is complete—about ten seconds—then
-click the USB icon to connect to the board.
+<img src="assets/img/md/get-started/firmware-save-dialog-microbit.png" width="500">
+
+You will see the orange light on the board flicker several times as the firmware is installed.
+At the same time, you will see a progress indicator on the screen.
+
+<img src="assets/img/md/get-started/firmware-progress.png" width="320">
+
+When it is done, click the USB icon to connect to the board.
