@@ -500,6 +500,55 @@
         "pictureFile": "ed1.png",
         "altText": "The ED1 board",
         "url": "assets/pdf/cards/ed1_targetes_MicroBlocks.pdf"
+    },
+    {
+        "title": "Color Mixing",
+        "language": "English",
+        "reqs": "Red, Green and Blue LEDs, cables",
+        "boards": ["micro:bit"],
+        "level": 0,
+        "pictureFile": "mixing-colors.png",
+        "altText": "Different colored LEDs, alligator clips",
+        "url": "assets/pdf/cards/tn_Color_Mixing.pdf"
+    },
+    {
+        "title": "Exploring Electricity",
+        "language": "English",
+        "reqs": "piezo speaker, LED, alligator clips",
+        "boards": ["micro:bit"],
+        "level": 0,
+        "pictureFile": "exploring-electricity.png",
+        "altText": "A micro:bit with alligator clips connected",
+        "url": "assets/pdf/cards/tn_Exploring_Electricity.pdf"
+    },
+    {
+        "title": "Getting Started (extended)",
+        "language": "English",
+        "boards": ["micro:bit"],
+        "level": 0,
+        "pictureFile": "getting-started.png",
+        "altText": "test",
+        "url": "assets/pdf/cards/tn_Getting_Started.pdf"
+    },
+    {
+        "title": "micro:bit dance",
+        "language": "English",
+        "reqs": "servos, wheels, cardboard box, rubber bands, battery pack, extension board, tape, popsicle stick",
+        "boards": ["micro:bit"],
+        "level": 1,
+        "pictureFile": "microbit-dance.png",
+        "altText": "A carboard robot car",
+        "url": "assets/pdf/cards/tn_micro_bit_dance.pdf"
+    },
+    {
+        "title": "Time Scales",
+        "language": "English",
+        "reqs": "alligator clips, LED, piezo speaker",
+        "boards": ["micro:bit"],
+        "level": 0,
+        "pictureFile": "time-scales.png",
+        "altText": "test",
+        "url": "assets/pdf/cards/tn_Time_Scales.pdf"
     }
 
 ]
