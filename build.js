@@ -129,6 +129,8 @@ function build () {
 function makeFakeReleaseFiles () {
     fse.ensureFileSync(`${__dirname}/dist/downloads/latest/VERSION.txt`);
     fse.ensureFileSync(`${__dirname}/dist/downloads/latest/CHANGELOG.txt`);
+    fse.ensureFileSync(`${__dirname}/dist/downloads/pilot/VERSION.txt`);
+    fse.ensureFileSync(`${__dirname}/dist/downloads/pilot/CHANGELOG.txt`);
     fs.writeFileSync(
         `${__dirname}/dist/downloads/latest/VERSION.txt`,
         '0.0.0-test\n04/06/2021'
@@ -136,6 +138,14 @@ function makeFakeReleaseFiles () {
     fs.writeFileSync(
         `${__dirname}/dist/downloads/latest/CHANGELOG.txt`,
         'nothing new under the sun'
+    );
+    fs.writeFileSync(
+        `${__dirname}/dist/downloads/pilot/VERSION.txt`,
+        '0.0.1-pilot\n25/11/2021'
+    );
+    fs.writeFileSync(
+        `${__dirname}/dist/downloads/pilot/CHANGELOG.txt`,
+        'lots of flashy new things'
     );
 };
 

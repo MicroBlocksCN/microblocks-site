@@ -44,7 +44,7 @@ function currentSystem() {
     return system;
 };
 
-function fetchVersionAndDate (action) {
+function fetchVersionAndDate (action, codename) {
     var req = new XMLHttpRequest();
     // Let's fetch the latest version and release date
     req.onreadystatechange = function () {
@@ -56,7 +56,10 @@ function fetchVersionAndDate (action) {
             );
         }
     };
-    req.open('GET', '/downloads/latest/VERSION.txt');
+    req.open(
+        'GET',
+        '/downloads/' + (codename || 'latest') + '/VERSION.txt'
+    );
     req.send();
 };
 
@@ -66,6 +69,13 @@ function populateVersionAndDate () {
             document.querySelector('.version').innerText = version;
             document.querySelector('.date').innerText = formatDate(date);
         }
+    );
+    fetchVersionAndDate(
+        (version, date) => {
+            document.querySelector('.pilot-version').innerText = version;
+            document.querySelector('.pilot-date').innerText = formatDate(date);
+        },
+        'pilot'
     );
 };
 
