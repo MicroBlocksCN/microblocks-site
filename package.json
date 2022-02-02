@@ -18,5 +18,6 @@
     "postcss": "^7.0.35",
     "showdown": "^1.9.1",
     "ws": "^7.4.6"
-  }
+  },
+  "dependencies": {}
 }
