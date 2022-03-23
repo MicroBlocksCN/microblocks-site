@@ -19,7 +19,7 @@ Firmware installation takes just a few seconds.
 If you are running the MicroBlocks app, MicroBlocks will connect to the board automatically
 when it is done.
 
-[This video](https://www.youtube.com/watch?v=V4u2_GN8JnU) shows these steps.
+[This video](https://www.youtube.com/watch?v=UN-pkP5oqLw) shows these steps.
 
 **Extra Steps in Browser**
 
