@@ -182,7 +182,7 @@ function compileSass () {
     sass.render(
         {
             file: `${__dirname}/src/styles/main.scss`,
-            outputStyle: (debugMode ? 'nested' : 'compressed')
+            outputStyle: (debugMode ? 'expanded' : 'compressed')
         },
         (err, result) => {
             if (err) {
