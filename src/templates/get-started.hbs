@@ -125,14 +125,16 @@
             {{> _tab-button button-id="microbit" button-label="micro:bit" selected="true"}}
             {{> _tab-button button-id="cpx" button-label="Circuit Playground" selected="false"}}
             {{> _tab-button button-id="calliope" button-label="Calliope" selected="false"}}
+           {{> _tab-button button-id="rp2040" button-label="Raspberry Pi Pico" selected="false"}}
             {{> _tab-button button-id="others" button-label="Other" selected="false"}}
         {{/inline}}
 
         {{#*inline "tabbed-content"}}
-            {{> _tab-content tab-id="microbit" markdown="setup-microbit" img="setup-microbit.png" alt-text="Hands connecting wires to a board"}}
-            {{> _tab-content tab-id="cpx" markdown="setup-cpx" img="setup-cpx.png" alt-text="Hands connecting wires to a board"}}
-            {{> _tab-content tab-id="calliope" markdown="setup-calliope" img="setup-calliope.png" alt-text="Hands connecting wires to a board"}}
-            {{> _tab-content tab-id="others" markdown="setup-other-boards" img="setup-other-boards.jpg" alt-text="Hands connecting wires to a board"}}
+            {{> _tab-content tab-id="microbit" markdown="setup-microbit" img="setup-microbit.png" alt-text="micro:bit board"}}
+            {{> _tab-content tab-id="cpx" markdown="setup-cpx" img="setup-cpx.png" alt-text="Circuit Playground Express boards"}}
+            {{> _tab-content tab-id="calliope" markdown="setup-calliope" img="setup-calliope.png" alt-text="Calliope mini board"}}
+            {{> _tab-content tab-id="rp2040" markdown="setup-rp2040" img="setup-rp2040.jpg" alt-text="Raspberry Pi RP2040 board"}}
+           {{> _tab-content tab-id="others" markdown="setup-other-boards" img="setup-other-boards.jpg" alt-text="Collection of boards that run MicroBlocks"}}
         {{/inline}}
     {{/layouts._tabbed-content}}
 
