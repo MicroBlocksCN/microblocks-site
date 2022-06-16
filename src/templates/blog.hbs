@@ -17,9 +17,8 @@
         <!-- Title -->
         <div class="row">
             <div class="col-12">
-                <h1 class="title-blocks">
-                    <span class="block block--purple">Latest</span>
-                    <span class="block block--teal">News</span>
+                <h1 class="_title-blocks">
+                    <span class="block block--purple">Latest News</span>
                 </h1>
             </div>
         </div>
@@ -34,36 +33,76 @@
 <!-- Contents -->
 <div class="main__contents">
 
-    <!-- Featured Article -->
-    <article class="featured-article">
+    <div class="page-blog__featured-article">
         <div class="container">
             <div class="row">
+                <div class="col-12 col-xl-10 offset-xl-2">
 
-                <div class="col-12 offset-lg-2">
-                    <picture class="featured-article__picture">
-                        <source media="(min-width: 768px)" srcset="assets/img/pictures/contribute-1920x560.jpg">
-                        <source media="(max-width: 767px)" srcset="assets/img/pictures/contribute-960x540.jpg">
-                        <img src="assets/img/picture/contribute-1920x560.jpg" alt="Hands connecting wires to a board" />
-                    </picture>
-                </div>
-
-                <div class="col-12">
-                    <div class="featured-article__content">
-                        <h2 class="featured-article__section">Featured Article</h2>
-                        <h3 class="featured-article__title">The Robotistan Kickstarter heavily featured MicroBlocks.</h3>
-                        <date class="featured-article__date">May 24th, 2022</date>
-                    </div>
-                    <a href="#" class="featured-article__read-more">
-                        <div class="circle circle--purple">
-                            <img src="assets/img/icons/icon-arrow-right.svg" alt="Link Arrow">
+                    <!-- Featured Article -->
+                    <a href="#" class="featured-article" title="##########">
+                        <div class="featured-article__picture-wrapper">
+                            <picture class="featured-article__picture">
+                                <source media="(min-width: 768px)" srcset="assets/img/pictures/contribute-1920x560.jpg">
+                                <source media="(max-width: 767px)" srcset="assets/img/pictures/contribute-960x540.jpg">
+                                <img src="assets/img/picture/contribute-1920x560.jpg" alt="Hands connecting wires to a board" />
+                            </picture>
                         </div>
-                        Read More
+                        <div class="featured-article__content">
+                            <div class="featured-article__content-text">
+                                <h2 class="featured-article__section">Featured Article</h2>
+                                <h3 class="featured-article__title">The Robotistan Kickstarter heavily featured MicroBlocks.</h3>
+                                <date class="featured-article__date">May 24th, 2022</date>
+                            </div>
+                            <div class="featured-article__read-more">
+                                <div class="circle circle--purple">
+                                    <img src="assets/img/icons/icon-arrow-right.svg" alt="Link Arrow">
+                                </div>
+                                Read More
+                            </div>
+                        </div>
                     </a>
-                </div>
 
+                </div>
             </div>
         </div>
-    </article>
+    </div>
+
+    <!-- Other Articles -->
+    <section class="page-blog__articles">
+        <div class="container">
+
+            <div class="row">
+                <div class="col">
+                    <h2 class="page-blog__articles-title">Other Articles</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="page-blog__articles-grid">
+                        {{> _card-article }}
+                        {{> _card-article }}
+                        {{> _card-article }}
+                        {{> _card-article }}
+                        {{> _card-article }}
+                        {{> _card-article }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="page-blog__articles-pagination">
+                        
+                        {{!-- Generated with JS --}}
+                        Pagination!
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 </div>
 <!-- Contents -->

@@ -60,6 +60,7 @@
 @import 'components/base';
 @import 'components/blocks';
 @import 'components/border-top';
+@import 'components/card-article';
 @import 'components/circle';
 @import 'components/colored-section';
 @import 'components/featured-article';
@@ -93,6 +94,7 @@
 // Templates
 // Styles specific to a template
 // ==========================================================================
+@import 'templates/blog';
 @import 'templates/download';
 @import 'templates/index';
 @import 'templates/learn';

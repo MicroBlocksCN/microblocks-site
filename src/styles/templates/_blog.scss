@@ -1,0 +1,31 @@
+// ==========================================================================
+// Templates / Blog
+// ==========================================================================
+
+
+.page-blog__featured-article {
+    margin-bottom: 64px;
+}
+
+
+.page-blog__articles-title {
+    margin-bottom: 16px;
+    padding-top: 8px;
+    @include border-top-small($color-black-300);
+  
+    @include font-display-light;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+
+.page-blog__articles-grid {
+    margin-bottom: 32px;
+    display: grid;
+    gap: 32px;
+
+    @include mq(md) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

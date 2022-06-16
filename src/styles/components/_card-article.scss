@@ -1,0 +1,95 @@
+// ==========================================================================
+// Components / Card Article
+// ==========================================================================
+
+
+.card-article {
+  
+}
+
+
+
+
+
+// Picture
+// ====================================
+
+
+.card-article__picture-wrapper {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+
+.card-article__picture {
+  @include ratio-image(16,9,true);
+}
+
+
+.card-article__read-more {
+  position: absolute;
+  right: 16px;
+  bottom: -16px;
+  
+  transition: transform 0.2s ease-out;
+
+  img {
+    width: 16px;
+  }
+
+  .card-article:hover & {
+    transform: translateX(8px);
+  }
+}
+
+
+
+
+
+// Text Content
+// ====================================
+
+
+.card-article__title {
+  margin-bottom: 4px;
+  padding-right: 48px;
+  
+  @include font-display-bold;
+  font-size: 20px;
+  line-height: 1.125;
+  letter-spacing: -0.025em;
+  color: $color-black;
+
+  transition: color 0.2s ease-out;
+
+  .card-article:hover & {
+    color: $color-purple;
+  }
+}
+
+
+.card-article__date {
+  @include font-display-light;
+  color: $color-purple;
+  font-size: 16px;
+}
+
+
+.featured-article__read-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+
+  color: $color-black;
+
+  transition: transform 0.2s ease-out;
+
+  img {
+    width: 18px;
+  }
+
+  &:hover {
+    transform: translateX(8px);
+  }
+}
