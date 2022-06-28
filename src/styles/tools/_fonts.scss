@@ -18,6 +18,15 @@
 
 @font-face {
     font-family: "Space Grotesk";
+    src: url("assets/fonts/SpaceGrotesk-Regular.woff2") format("woff2"),
+         url("assets/fonts/SpaceGrotesk-Regular.ttf") format("truetype"),
+         url("assets/fonts/SpaceGrotesk-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Space Grotesk";
     src: url("assets/fonts/SpaceGrotesk-Bold.woff2") format("woff2"),
          url("assets/fonts/SpaceGrotesk-Bold.ttf") format("truetype"),
          url("assets/fonts/SpaceGrotesk-Bold.otf") format("opentype");
@@ -65,6 +74,12 @@ $font-regular: "Inter", Helvetica, Arial, sans-serif;
 @mixin font-display-light {
     font-family: $font-display;
     font-weight: 300;
+    font-style: normal;
+}
+
+@mixin font-display-regular {
+    font-family: $font-display;
+    font-weight: 400;
     font-style: normal;
 }
 

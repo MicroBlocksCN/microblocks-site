@@ -3,7 +3,7 @@
 // ==========================================================================
 
 
-.featured-article {
+.article-featured__article {
   color: $color-black;
 
   @include mq(lg) {
@@ -21,14 +21,14 @@
 // ====================================
 
 
-.featured-article__picture-wrapper {
+.article-featured__picture-wrapper {
   @include mq(lg) {
     grid-area: 1/1/1/4;
   }
 }
 
 
-.featured-article__picture {
+.article-featured__picture {
   margin-bottom: 16px;
   @include ratio-image(16,9,cover);
 }
@@ -41,7 +41,7 @@
 // ====================================
 
 
-.featured-article__content {
+.article-featured__content {
   margin-bottom: 16px;
 
   @include mq(md) {
@@ -56,20 +56,24 @@
 }
 
 
-.featured-article__section {
+.article-featured__text {
   margin-bottom: 16px;
-  padding-top: 8px;
-  @include border-top-small($color-black-300);
-
-  @include font-display-light;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
 }
 
 
-.featured-article__title {
-  margin-bottom: 4px;
+.article-featured__section {
+  margin-bottom: 8px;
+
+  @include font-display-regular;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: $color-black-700;
+}
+
+
+.article-featured__title {
+  margin-bottom: 8px;
   
   @include font-display-bold;
   font-size: 32px;
@@ -78,26 +82,36 @@
 
   transition: color 0.2s ease-in-out;
 
-  .featured-article:hover & {
+  .article-featured:hover & {
     color: $color-purple;
   }
 }
 
 
-.featured-article__date {
-  @include font-display-light;
+.article-featured__details {
+  @include font-display-regular;
   color: $color-purple;
-  font-size: 24px;
+  font-size: 20px;
+  line-height: 1.4;
+  font-style: normal;
 }
 
 
-.featured-article__read-more {
+.article-featured__date,
+.article-featured__credits {
+  display: block;
+  color: inherit;
+  font-style: inherit;
+}
+
+
+.article-featured__read-more {
   display: inline-flex;
   align-items: center;
   justify-content: flex-start;
   gap: 8px;
 
-  color: $color-black;
+  color: $color-black-700;
 
   transition: transform 0.2s ease-out;
 
@@ -105,7 +119,7 @@
     width: 18px;
   }
 
-  .featured-article:hover & {
+  .article-featured:hover & {
     transform: translateX(8px);
   }
 }

@@ -1,4 +1,4 @@
-{{! Get Started }}
+{{! Blog }}
 
 {{#> layouts._html-shell
     title="Blog"
@@ -9,23 +9,18 @@
 
 {{#*inline "main-content"}}
 
+
 <!-- Header -->
-<header class="main__header main__header--no-hero">
-
+<header class="page-blog__header">
     <div class="container">
-
-        <!-- Title -->
         <div class="row">
             <div class="col-12">
-                <h1 class="_title-blocks">
+                <h1 class="page-blog__title">
                     <span class="block block--purple">Latest News</span>
                 </h1>
             </div>
         </div>
-
     </div>
-
-
 </header>
 <!-- Header -->
 
@@ -33,33 +28,43 @@
 <!-- Contents -->
 <div class="main__contents">
 
-    <div class="page-blog__featured-article">
+    <div class="page-blog__article-featured">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-xl-10 offset-xl-2">
+                <div class="col-12 col-xl-10 offset-xl-1">
 
                     <!-- Featured Article -->
-                    <a href="#" class="featured-article" title="##########">
-                        <div class="featured-article__picture-wrapper">
-                            <picture class="featured-article__picture">
-                                <source media="(min-width: 768px)" srcset="assets/img/pictures/contribute-1920x560.jpg">
-                                <source media="(max-width: 767px)" srcset="assets/img/pictures/contribute-960x540.jpg">
-                                <img src="assets/img/picture/contribute-1920x560.jpg" alt="Hands connecting wires to a board" />
-                            </picture>
-                        </div>
-                        <div class="featured-article__content">
-                            <div class="featured-article__content-text">
-                                <h2 class="featured-article__section">Featured Article</h2>
-                                <h3 class="featured-article__title">The Robotistan Kickstarter heavily featured MicroBlocks.</h3>
-                                <date class="featured-article__date">May 24th, 2022</date> by <author>Author, Company</author>
+                    <a href="#" class="article-featured">
+                        <article class="article-featured__article">
+
+                            <div class="article-featured__picture-wrapper">
+                                <picture class="article-featured__picture">
+                                    <source media="(min-width: 768px)" srcset="assets/img/pictures/contribute-1920x560.jpg">
+                                    <source media="(max-width: 767px)" srcset="assets/img/pictures/contribute-960x540.jpg">
+                                    <img src="assets/img/picture/contribute-1920x560.jpg" alt="Hands connecting wires to a board" />
+                                </picture>
                             </div>
-                            <div class="featured-article__read-more">
-                                <div class="circle circle--purple">
-                                    <img src="assets/img/icons/icon-arrow-right.svg" alt="Link Arrow">
+
+                            <div class="article-featured__content">
+                                <div class="article-featured__text">
+                                    <h2 class="article-featured__section">Featured Article:</h2>
+                                    <h3 class="article-featured__title">The Robotistan Kickstarter heavily featured MicroBlocks.</h3>
+                                    <div class="article-featured__details">
+                                        <time class="article-featured__date" datetime="2018-07-07" pubdate="pubdate">May 24th, 2022</time> 
+                                        <address class="article-featured__credits">
+                                            by <span class="article-featured__author">Author</span>, <span class="article-featured__organisation">Company</span>
+                                        </address>
+                                    </div>
                                 </div>
-                                Read More
+                                <div class="article-featured__read-more">
+                                    <div class="circle circle--purple">
+                                        <img src="assets/img/icons/icon-arrow-right.svg" alt="Link Arrow">
+                                    </div>
+                                    Read More
+                                </div>
                             </div>
-                        </div>
+
+                        </article>
                     </a>
 
                 </div>
@@ -71,12 +76,14 @@
     <section class="page-blog__articles">
         <div class="container">
 
+            <!-- Title -->
             <div class="row">
                 <div class="col">
                     <h2 class="page-blog__articles-title">Other Articles</h2>
                 </div>
             </div>
 
+            <!-- Articles Grid -->
             <div class="row">
                 <div class="col">
                     <div class="page-blog__articles-grid">
@@ -90,14 +97,20 @@
                 </div>
             </div>
 
+            <!-- Pagination and All Articles-->
             <div class="row">
                 <div class="col">
-                    <div class="page-blog__articles-pagination">
-                        
-                        {{!-- Generated with JS --}}
-                        Pagination!
 
+                    <div class="page-blog__pagination">
+                        <div>
+                            {{!-- Generated with JS --}} Pagination
+                        </div>
                     </div>
+
+                    <div class="page-blog__view-all">
+                        <a class="btn btn--purple" href="archive" target="_blank">View all articles</a>
+                    </div>                   
+
                 </div>
             </div>
 
