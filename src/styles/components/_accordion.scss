@@ -95,7 +95,7 @@
 
     @include focus-visible-large;
 
-    @include mq(md) {
+    @include breakpoint(md) {
         padding: 24px 0;
     }
 }
@@ -108,7 +108,7 @@
     position: relative;
     @include font-display-light;
 
-    @include mq(md) {
+    @include breakpoint(md) {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -201,7 +201,7 @@
     opacity: 0;
     transition: opacity 0.4s ease-out;
 
-    @include mq(lg) {
+    @include breakpoint(lg) {
         padding: 40px;
     }
 }

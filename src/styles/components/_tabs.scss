@@ -80,7 +80,7 @@
         color: $color-black;
     }
 
-    @include mq(sm) {
+    @include breakpoint(sm) {
         display: none;
     }
 }
@@ -120,24 +120,24 @@
     // Adapting size to screens
     // Due to 100% width container for mobile
 
-    @include mq(sm) {
+    @include breakpoint(sm) {
         margin: 0 auto;
         overflow-x: visible;
     }
 
-    @include mq(md) {
+    @include breakpoint(md) {
         width: 720px;        
     }
 
-    @include mq(lg) {
+    @include breakpoint(lg) {
         width: 960px;        
     }
 
-    @include mq(xl) {
+    @include breakpoint(xl) {
         width: 1140px;        
     }
 
-    @include mq(xxl) {
+    @include breakpoint(xxl) {
         width: 1320px;        
     }
 }
@@ -172,7 +172,7 @@
     }
 
 
-    @include mq(md) {
+    @include breakpoint(md) {
         font-size: 20px;
         padding: 12px 20px;
     }
@@ -206,7 +206,7 @@
     margin-bottom: 2rem;
     line-height: 0;
 
-    @include mq(lg) {
+    @include breakpoint(lg) {
         margin-bottom: 0;
     }
 }

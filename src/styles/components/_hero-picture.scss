@@ -8,7 +8,7 @@
   position: relative;
   height: 40vh;
 
-  @include mq(lg) {
+  @include breakpoint(lg) {
     height: 40vh;
   }
 }

@@ -61,7 +61,7 @@
   justify-content: space-between;
   padding: 20px 16px 16px 16px;
 
-  @include mq(md) {
+  @include breakpoint(md) {
     min-height: 148px;
   }
 }

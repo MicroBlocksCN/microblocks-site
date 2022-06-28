@@ -3,7 +3,7 @@
 // ==========================================================================
 
 
-@mixin mq($breakpoint) {
+@mixin breakpoint($breakpoint) {
 
   @if map-has-key($map: $breakpoints, $key: $breakpoint) {
 

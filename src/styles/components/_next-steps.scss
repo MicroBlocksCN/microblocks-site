@@ -19,7 +19,7 @@
 
 .next-steps__cards-wrapper {
 
-    @include mq(lg) {
+    @include breakpoint(lg) {
         display: flex;
         justify-content: center;
     }
@@ -41,7 +41,7 @@
         top: -16px;
     }
 
-    @include mq(lg) {
+    @include breakpoint(lg) {
         width: 32%;
         padding: 0 20px;
     }

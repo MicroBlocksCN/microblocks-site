@@ -54,7 +54,7 @@
       line-height: 1.2;
       letter-spacing: -1px;
   
-      @include mq(lg) {
+      @include breakpoint(lg) {
         font-size: 2rem;
         margin: 0 0 2rem 0;
       }

@@ -12,7 +12,7 @@
   @include border-bottom-large($color-yellow-dark);
 
 
-  @include mq(lg) {
+  @include breakpoint(lg) {
     min-height: 240px;
   }
 }

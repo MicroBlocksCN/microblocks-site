@@ -6,14 +6,14 @@
 .main__header {
   margin-bottom: 80px;
 
-  @include mq(lg) {
+  @include breakpoint(lg) {
     margin-bottom: 120px;
   }
 
   &--margin-tight {
     margin-bottom: 40px;
 
-    @include mq(lg) {
+    @include breakpoint(lg) {
       margin-bottom: 60px;
     }
   }
@@ -42,7 +42,7 @@
 .main__contents {
   margin-bottom: 80px;
 
-  @include mq(lg) {
+  @include breakpoint(lg) {
     margin-bottom: 120px;
   }
 }

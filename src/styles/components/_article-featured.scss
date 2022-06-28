@@ -6,7 +6,7 @@
 .article-featured__article {
   color: $color-black;
 
-  @include mq(lg) {
+  @include breakpoint(lg) {
     display: grid;
     grid-template-columns: repeat( 5, 1fr );
     gap: 32px;
@@ -22,7 +22,7 @@
 
 
 .article-featured__picture-wrapper {
-  @include mq(lg) {
+  @include breakpoint(lg) {
     grid-area: 1/1/1/4;
   }
 }
@@ -44,13 +44,13 @@
 .article-featured__content {
   margin-bottom: 16px;
 
-  @include mq(md) {
+  @include breakpoint(md) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  @include mq(lg) {
+  @include breakpoint(lg) {
     grid-area: 1/4/1/6;
   }
 }

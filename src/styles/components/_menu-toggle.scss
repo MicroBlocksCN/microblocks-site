@@ -42,7 +42,7 @@
 
   // Hide
 
-  @include mq(lg) {
+  @include breakpoint(lg) {
     display: none;
   }
 }

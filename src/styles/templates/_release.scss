@@ -7,14 +7,14 @@
 
     margin-bottom: 32px;
 
-    @include mq(lg) {
+    @include breakpoint(lg) {
         margin-bottom: 0px;
     }  
 }
 
 .page-release__intro-download-btn {
 
-    @include mq(lg) {
+    @include breakpoint(lg) {
         padding-top: 12px;
         text-align: right;
     }

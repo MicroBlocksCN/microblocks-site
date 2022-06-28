@@ -19,12 +19,12 @@
 
     color: $color-black;
 
-    @include mq(md) {
+    @include breakpoint(md) {
         width: auto;
         max-width: 75%;
     }
 
-    @include mq(lg) {
+    @include breakpoint(lg) {
         max-width: 50%;
     }
 }

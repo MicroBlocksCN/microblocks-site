@@ -27,7 +27,7 @@
     padding-top: 8px;
     background-color: $color-yellow-dark;
 
-    @include mq(md) {
+    @include breakpoint(md) {
         margin-top: -46px;
         padding-top: 0;
         background-color: transparent;
@@ -100,7 +100,7 @@
     @include focus-visible-large;
 
 
-    @include mq(md) {
+    @include breakpoint(md) {
         font-size: 20px;
         line-height: 24px;
     }
@@ -120,15 +120,15 @@
     gap: 20px;
 
 
-    @include mq(sm) {
+    @include breakpoint(sm) {
         grid-template: 1fr / repeat(2, 1fr);
     }
 
-    @include mq(md) {
+    @include breakpoint(md) {
         grid-template: 1fr / repeat(3, 1fr);
     }
 
-    @include mq(xl) {
+    @include breakpoint(xl) {
         grid-template: 1fr / repeat(4, 1fr);
     }
 }
@@ -150,15 +150,15 @@
         color: $color-purple;
     }
     
-    @include mq(sm) {
+    @include breakpoint(sm) {
         grid-column: 1 / 3;
     }
 
-    @include mq(md) {
+    @include breakpoint(md) {
         grid-column: 1 / 4;
     }
 
-    @include mq(xl) {
+    @include breakpoint(xl) {
         grid-column: 1 / 5;
     }
 }

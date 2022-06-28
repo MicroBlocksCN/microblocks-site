@@ -63,7 +63,7 @@
   display: block;
   width: 200px;
 
-  @include mq(lg) {
+  @include breakpoint(lg) {
     width: 240px;
     transform: translateY(-23px); // Align logo to titles
   }
