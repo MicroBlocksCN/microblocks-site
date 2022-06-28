@@ -1,0 +1,63 @@
+// ==========================================================================
+// Templates / Article
+// ==========================================================================
+
+
+// Header
+// ========================================
+
+
+.page-article__header {
+    margin: 48px 0 48px 0;
+}
+
+
+.page-article__picture {
+    margin-bottom: 32px;
+    @include ratio-image(5,2,cover);
+}
+
+
+
+
+
+// Header
+// ========================================
+
+
+.page-article__date {
+    display: block;
+    margin-bottom: 8px;
+
+    @include font-display-light;
+    line-height: 1.2;
+    font-size: 32px;
+    color: $color-purple;
+}
+
+
+.page-article__title {
+    margin: 0 0 32px;
+
+    @include font-display-bold;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+}
+
+
+.page-article__details {
+    @include font-display-regular;
+    font-size: 20px;
+    line-height: 1.6;
+    color: $color-black-400;
+    
+    a {
+        color: $color-purple;
+        text-decoration: underline;
+    }
+
+    span {
+        color: $color-black;
+    }
+}

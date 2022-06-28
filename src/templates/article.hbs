@@ -1,0 +1,62 @@
+{{! Blog }}
+
+{{#> layouts._html-shell
+    title="Article"
+    pageClass="page-article"
+    pageUrl="https://wwww.microblocks.fun/article"
+    _pageDescription="Article template."
+}}
+
+{{#*inline "main-content"}}
+
+
+<!-- Header -->
+<header class="page-article__header">
+    <div class="container">
+        
+        <!-- Picture -->
+        <div class="row">
+            <div class="col col-lg-10 offset-lg-1">
+                <picture class="page-article__picture">
+                    <source media="(min-width: 768px)" srcset="assets/img/pictures/contribute-1920x560.jpg">
+                    <source media="(max-width: 767px)" srcset="assets/img/pictures/contribute-960x540.jpg">
+                    <img src="assets/img/picture/contribute-1920x560.jpg" alt="Hands connecting wires to a board" />
+                </picture>
+            </div>
+        </div>
+
+        <!-- Header Text -->
+        <div class="row">
+            <div class="col col-lg-8 offset-lg-2">
+                <time class="page-article__date" datetime="2018-07-07" pubdate="pubdate">May 24th, 2022</time> 
+                <h1 class="page-article__title">The Robotistan Kickstarter heavily featured MicroBlocks.</h3>
+                <div class="page-article__details">
+                    <address class="page-article__credits">
+                        by <a href="#" class="page-article__author">Author</a>, <a href="#" class="page-article__organisation">Company</a>
+                    </address>
+                    <p class="page-article__update">
+                        Latest update: <span>May 30th, 2022</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</header>
+<!-- Header -->
+
+
+<!-- Contents -->
+<div class="main__contents">
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-8 offset-lg-2">
+                text                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contents -->
+
+{{/inline}}
+{{/layouts._html-shell}}
