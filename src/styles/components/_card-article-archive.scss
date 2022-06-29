@@ -1,0 +1,131 @@
+// ==========================================================================
+// Components / Card Article
+// ==========================================================================
+
+
+.card-article-archive {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 32px;
+
+  @include font-display-regular;
+}
+
+
+.card-article-archive__date {
+  grid-area: 1/1/1/3;
+  text-align: right;
+
+  color: $color-purple;
+}
+
+
+.card-article-archive__content {
+  grid-area: 1/3/1/6;
+}
+
+
+.card-article-archive__link {
+  display: block;
+  margin-bottom: 4px;
+  color: $color-grey-900;
+
+  &:hover {
+    color: $color-purple;
+  }
+}
+
+
+.card-article-archive__title {
+  @include font-display-bold;
+  font-size: 20px;
+  line-height: 1.2;
+
+  transition: color 0.2s ease-out;
+}
+
+
+.card-article-archive__credits {
+  font-size: 14px;
+  color: $color-purple;
+}
+
+
+
+
+
+
+
+
+// Picture
+// ====================================
+
+
+.card-article__picture-wrapper {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+
+.card-article__picture {
+  @include ratio-image(16,9,cover);
+}
+
+
+.card-article__read-more {
+  position: absolute;
+  right: 16px;
+  bottom: -16px;
+  
+  transition: transform 0.2s ease-out;
+
+  img {
+    width: 16px;
+  }
+
+  .card-article:hover & {
+    transform: translateX(8px);
+  }
+}
+
+
+
+
+
+// Text Content
+// ====================================
+
+
+.card-article__title {
+  margin-bottom: 4px;
+  padding-right: 48px;
+  
+  @include font-display-bold;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  color: $color-grey-900;
+
+  transition: color 0.2s ease-out;
+
+  .card-article:hover & {
+    color: $color-purple;
+  }
+}
+
+
+.card-article__details {
+  @include font-display-regular;
+  color: $color-purple;
+  font-size: 16px;
+  line-height: 1.4;
+  font-style: normal;
+}
+
+
+.card-article__date,
+.card-article__credits {
+  display: block;
+  color: inherit;
+  font-style: inherit;
+}

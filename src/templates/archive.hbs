@@ -1,0 +1,51 @@
+{{! Blog }}
+
+{{#> layouts._html-shell
+    title="Archive"
+    pageClass="page-archive"
+    pageUrl="https://wwww.microblocks.fun/blog"
+    _pageDescription="List of all articles."
+}}
+
+{{#*inline "main-content"}}
+
+
+<!-- Header -->
+<header class="page-archive__header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8 offset-lg-2 col-xl-7 offset-xl-3">
+                <h1 class="page-archive__title">
+                    <span class="block block--purple">All Articles</span>
+                </h1>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header -->
+
+
+<!-- Contents -->
+<div class="main__contents">
+    <div class="container">
+        <div class="row">
+
+            <!-- Articles List -->
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <div class="page-archive__articles-list">
+                    {{> _card-article-archive }}
+                    {{> _card-article-archive }}
+                    {{> _card-article-archive }}
+                    {{> _card-article-archive }}
+                    {{> _card-article-archive }}
+                    {{> _card-article-archive }}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Contents -->
+
+{{/inline}}
+{{/layouts._html-shell}}
