@@ -3,7 +3,25 @@
 // ==========================================================================
 
 
+.main {
+
+  // Gradient after menu
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+
+    background: linear-gradient( $color-black-200, $color-background );
+  }
+}
+
+
 .main__header {
+  position: relative;
   margin-bottom: 80px;
 
   @include breakpoint(lg) {
@@ -17,25 +35,6 @@
       margin-bottom: 60px;
     }
   }
-
-  // Without a hero image
-  &--no-hero {
-    position: relative;
-    padding-top: 80px;
-
-    &::before {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 80px;
-
-      background: linear-gradient( $color-black-200, $color-background );
-    }
-  }
-
 }
 
 
