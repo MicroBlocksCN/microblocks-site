@@ -9,7 +9,7 @@
 
 .heading-large {
     @include font-display-bold;
-    color: $color-black;
+    color: $color-grey-900;
     letter-spacing: -1px;
     font-size: 40px;
     line-height: 1.2;
@@ -22,10 +22,10 @@
 
 .title-small {
     @include font-display-bold;
-    color: $color-black-700;
+    color: $color-grey-700;
 
     padding-top: 8px;
-    @include border-top-small($color-black-300);
+    @include border-top-small($color-grey-300);
 
     margin-bottom: 20px;
 }

@@ -50,7 +50,7 @@
     @include font-display-regular;
     font-size: 20px;
     line-height: 1.6;
-    color: $color-black-400;
+    color: $color-grey-400;
     
     a {
         color: $color-purple;
@@ -58,6 +58,6 @@
     }
 
     span {
-        color: $color-black;
+        color: $color-grey-900;
     }
 }

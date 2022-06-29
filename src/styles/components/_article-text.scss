@@ -38,7 +38,7 @@
     font-weight: 700;
     font-size: $fontSize-150;
     line-height: $lineHeight-120;
-    color: $color-black;
+    color: $color-grey-900;
 
     @include breakpoint(lg) {
       margin-top: $space-300;
@@ -59,7 +59,7 @@
   p {
     margin-bottom: $space-150;
     line-height: $lineHeight-150;
-    color: $color-black;
+    color: $color-grey-900;
 
     strong {
       font-weight: 700;
@@ -83,7 +83,7 @@
     transition: color $trans-0200 $trans-easing;
 
     &:not(.btn):hover {
-      color: $color-black;
+      color: $color-grey-900;
     }
   }
 
@@ -139,7 +139,7 @@
         font-family: $font-display;
         font-size: $fontSize-087;
         line-height: $lineHeight-100;
-        color: $color-black-400;
+        color: $color-grey-400;
 
         transition: color $trans-0200 $trans-easing;
 
@@ -153,7 +153,7 @@
     &:hover {
 
       &::after {
-        color: $color-black;
+        color: $color-grey-900;
       }
     }
   }
@@ -192,7 +192,7 @@
       display: block;
       padding: $space-050 $space-100 $space-050 $space-075;
   
-      background-color: $color-black-200;
+      background-color: $color-grey-200;
       font-size: $fontSize-075;
       line-height: $lineHeight-150;
     }
@@ -279,13 +279,13 @@
   }
 
   table tbody tr {
-    border-right: 1px solid $color-black-400;
-    border-bottom: 1px solid $color-black-400;
-    border-left: 1px solid $color-black-400;
+    border-right: 1px solid $color-grey-400;
+    border-bottom: 1px solid $color-grey-400;
+    border-left: 1px solid $color-grey-400;
   }
 
   table tbody tr:nth-of-type(even) {
-    background-color: $color-black-200;
+    background-color: $color-grey-200;
   }
 
   
@@ -367,7 +367,7 @@
     h3 {
       margin-top: 0;
       font-size: $fontSize-150;
-      color: $color-black;
+      color: $color-grey-900;
       margin-bottom: $space-200;
     }
 

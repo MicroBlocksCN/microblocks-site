@@ -82,7 +82,7 @@
     font-size: 16px;
     line-height: 20px;
     color: $color-white;
-    background-color: $color-black;
+    background-color: $color-grey-900;
     border-radius: 2px;
 
     background-image: url('assets/img/icons/icon-dropdown.svg');
@@ -140,7 +140,7 @@
 
         @include font-display-bold;
         text-align: center;
-        color: $color-black;
+        color: $color-grey-900;
         font-size: 24px;
     }
 

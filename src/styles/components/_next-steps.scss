@@ -7,7 +7,7 @@
     padding-bottom: 56px;
 
     text-align: center;
-    background-color: $color-black-200;
+    background-color: $color-grey-200;
     @include background-emoji(on-grey);
     
     a:link,
@@ -69,7 +69,7 @@
     margin-bottom: 16px;
 
     p {
-        color: $color-black-700;
+        color: $color-grey-700;
         line-height: 1.2;
     }
 }

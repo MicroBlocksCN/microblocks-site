@@ -78,7 +78,7 @@
 
   a.menu__link:link,
   a.menu__link:visited {
-    color: $color-black;
+    color: $color-grey-900;
   }
 
 
@@ -97,7 +97,7 @@
   width: 100%;
   padding: 32px 0 56px 0;
 
-  background-color: $color-black;
+  background-color: $color-grey-900;
   @include background-emoji(on-black);
 
 
@@ -176,7 +176,7 @@
 
       height: 2px;
       width: 0%;
-      background-color: $color-black;
+      background-color: $color-grey-900;
 
       transition: width 0.3s ease-out;
     }

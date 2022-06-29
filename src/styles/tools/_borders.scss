@@ -4,17 +4,17 @@
 
 
 
-@mixin border-top-small($color: $color-black) {
+@mixin border-top-small($color: $color-grey-900) {
     border-top: 1px solid $color;
 }
 
 
-@mixin border-top-large($color: $color-black) {
+@mixin border-top-large($color: $color-grey-900) {
     border-top: 8px solid $color;
 }
 
 
-@mixin border-bottom-large($color: $color-black) {
+@mixin border-bottom-large($color: $color-grey-900) {
     border-bottom: 8px solid $color;
 }
 
@@ -26,7 +26,7 @@
 
 @mixin focus-visible-large {
     &:focus-visible {
-        outline: 4px dashed $color-black;
+        outline: 4px dashed $color-grey-900;
     }
 }
 

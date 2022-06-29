@@ -49,10 +49,10 @@
 .page-blog__articles-title {
     margin-bottom: 32px;
     padding-top: 8px;
-    @include border-top-small($color-black-300);
+    @include border-top-small($color-grey-300);
   
     @include font-display-regular;
-    color: $color-black-700;
+    color: $color-grey-700;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.05em;

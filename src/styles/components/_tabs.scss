@@ -6,7 +6,7 @@
 .tabs {
     padding: 40px 0 16px 0;
     margin-bottom: 100px;
-    background: $color-black-200;
+    background: $color-grey-200;
     
     &--orange {
         border-top: 1px solid $color-orange;
@@ -77,7 +77,7 @@
     text-align: right;
     
     span {
-        color: $color-black;
+        color: $color-grey-900;
     }
 
     @include breakpoint(sm) {
@@ -162,11 +162,11 @@
     &:focus-visible {
         cursor: pointer;
         color: $color-white;
-        background-color: $color-black;
+        background-color: $color-grey-900;
     }
 
     &--active {
-        color: $color-black !important;
+        color: $color-grey-900 !important;
         background-color: $color-white !important;
         @include shadow-tight;
     }

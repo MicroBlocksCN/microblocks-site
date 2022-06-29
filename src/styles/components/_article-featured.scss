@@ -4,7 +4,7 @@
 
 
 .article-featured__article {
-  color: $color-black;
+  color: $color-grey-900;
 
   @include breakpoint(lg) {
     display: grid;
@@ -68,7 +68,7 @@
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: $color-black-700;
+  color: $color-grey-700;
 }
 
 
@@ -111,7 +111,7 @@
   justify-content: flex-start;
   gap: 8px;
 
-  color: $color-black-700;
+  color: $color-grey-700;
 
   transition: transform 0.2s ease-out;
 
