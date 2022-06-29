@@ -42,7 +42,7 @@
 
   // Hide
 
-  @include breakpoint(lg) {
+  @include breakpoint(xl) {
     display: none;
   }
 }
