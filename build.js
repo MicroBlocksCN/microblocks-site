@@ -8,7 +8,8 @@ var fs = require('fs'),
     postcss = require('postcss'),
     markdown = new (require('showdown')).Converter(),
     args = process.argv.slice(2),
-    debugMode = args.includes('--debug');
+    debugMode = args.includes('--debug'),
+    blogEntries;
 
 // Data
 
@@ -85,6 +86,7 @@ function compileTemplate (templateName, descriptor, destDir, fileName) {
                 `${__dirname}/src/templates/${templateName}.hbs`,
                 'utf8'
             );
+    if (templateName == 'blog') { descriptor['blog-entries'] = blogEntries; }
     fs.writeFileSync(
         `${destDir}/${fileName || templateName}.html`,
         handlebars.compile(template)(descriptor)
@@ -95,6 +97,7 @@ function compileTemplate (templateName, descriptor, destDir, fileName) {
 // Blog
 
 function compileBlog () {
+    blogEntries = [];
     doForFilesInDir(
         'data/blog',
         '/',
@@ -109,6 +112,9 @@ function compileBlog () {
                 `${fullPath}/index.md`,
                 'utf8'
             );
+
+            json.slug = dirName;
+
             // check whether dirName starts with a number, in which case it
             // represents the publication date
             if (parseInt(dirName) + 0 == parseInt(dirName)) {
@@ -116,10 +122,15 @@ function compileBlog () {
             }
             json['last-update'] =
                 json['last-update'] || json['publication-date'];
+
             if (debugMode) { json.livereload = true; }
+
             fse.ensureDirSync(`${__dirname}/dist/blog/${dirName}`);
             fse.copySync(`${fullPath}`, `${__dirname}/dist/blog/${dirName}`);
+
             compileTemplate('article', json, `dist/blog/${dirName}`, 'index');
+
+            blogEntries.push(json);
         }
     );
 };
@@ -192,11 +203,17 @@ function build () {
 
     if (debugMode) { makeFakeReleaseFiles(); }
 
+    // build blog
+    compileBlog();
+
     // compile all templates
     compileTemplates();
 
-    // build blog
-    compileBlog();
+    // make /blog URL work
+    fse.moveSync(
+        `${__dirname}/dist/blog.html`,
+        `${__dirname}/dist/blog/index.html`
+    );
 };
 
 function makeFakeReleaseFiles () {
@@ -332,6 +349,15 @@ function serve () {
         }
         if (!fs.existsSync(pathTo(fileName))) {
             fileName = fileName + '.html';
+        } else if (fs.lstatSync(pathTo(fileName)).isDirectory()) {
+            if (!req.url.endsWith('/')) {
+                // this is a directory, redirect to the same path but with a
+                // trailing slash
+                res.writeHead(301, { Location: req.url + '/'} );
+                res.end();
+                return;
+            }
+            fileName = fileName + '/index.html';
         }
         respondWithFile(res, fileName, getParams(req.url));
     }).listen(3000);

@@ -39,9 +39,9 @@
 
                             <div class="article-featured__picture-wrapper">
                                 <picture class="article-featured__picture">
-                                    <source media="(min-width: 768px)" srcset="assets/img/pictures/contribute-1920x560.jpg">
-                                    <source media="(max-width: 767px)" srcset="assets/img/pictures/contribute-960x540.jpg">
-                                    <img src="assets/img/picture/contribute-1920x560.jpg" alt="Hands connecting wires to a board" />
+                                    <source media="(min-width: 768px)" srcset="/assets/img/pictures/contribute-1920x560.jpg">
+                                    <source media="(max-width: 767px)" srcset="/assets/img/pictures/contribute-960x540.jpg">
+                                    <img src="/assets/img/picture/contribute-1920x560.jpg" alt="Hands connecting wires to a board" />
                                 </picture>
                             </div>
 
@@ -58,7 +58,7 @@
                                 </div>
                                 <div class="article-featured__read-more">
                                     <div class="circle circle--purple">
-                                        <img src="assets/img/icons/icon-arrow-right.svg" alt="Link Arrow">
+                                        <img src="/assets/img/icons/icon-arrow-right.svg" alt="Link Arrow">
                                     </div>
                                     Read More
                                 </div>
@@ -87,12 +87,9 @@
             <div class="row">
                 <div class="col">
                     <div class="page-blog__articles-grid">
+                    {{#each blog-entries}}
                         {{> _card-article }}
-                        {{> _card-article }}
-                        {{> _card-article }}
-                        {{> _card-article }}
-                        {{> _card-article }}
-                        {{> _card-article }}
+                    {{/each}}
                     </div>
                 </div>
             </div>

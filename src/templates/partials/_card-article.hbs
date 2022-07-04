@@ -4,24 +4,24 @@
         {{!-- Picture --}}
         <div class="card-article__picture-wrapper">
             <picture class="card-article__picture">
-                <source media="(min-width: 768px)" srcset="assets/img/pictures/contribute-1920x560.jpg">
-                <source media="(max-width: 767px)" srcset="assets/img/pictures/contribute-960x540.jpg">
-                <img src="assets/img/picture/contribute-1920x560.jpg" alt="Hands connecting wires to a board" />
+                <source media="(min-width: 768px)" srcset="/blog/{{slug}}/thumbnail.jpg">
+                <source media="(max-width: 767px)" srcset="/blog/{{slug}}/thumbnail.jpg">
+                <img src="/blog/{{slug}}/thumbnail.jpg" alt="{{title}}" />
             </picture>
             <div class="card-article__read-more" title="Read More">
                 <div class="circle circle--purple">
-                    <img src="assets/img/icons/icon-arrow-right.svg" alt="Link Arrow">
+                    <img src="/assets/img/icons/icon-arrow-right.svg" alt="Link Arrow">
                 </div>
             </div>
         </div>
         
         {{!-- Text --}}
         <div class="card-article__content">
-            <h3 class="card-article__title">The Robotistan Kickstarter heavily featured MicroBlocks.</h3>
+            <h3 class="card-article__title">{{title}}</h3>
             <div class="card-article__details">
-                <time class="card-article__date" datetime="2018-07-07" pubdate="pubdate">May 24th, 2022</time> 
+                <time class="card-article__date" datetime="{{publication-date}}" pubdate="pubdate">{{ date-string publication-date }}</time> 
                 <address class="card-article__credits">
-                    by <span class="card-article__author">Author</span>, <span class="card-article__organisation">Company</span>
+                    by <span class="card-article__author">{{author}}</span>, <span class="card-article__organisation">{{company}}</span>
                 </address>
             </div>
         </div>
