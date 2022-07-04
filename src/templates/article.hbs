@@ -1,7 +1,6 @@
 {{! Blog }}
 
 {{#> layouts._html-shell
-    title="Article"
     pageClass="page-article"
     pageUrl="https://wwww.microblocks.fun/article"
     _pageDescription="Article template."
@@ -18,9 +17,9 @@
         <div class="row">
             <div class="col col-lg-8 offset-lg-2">
                 <picture class="page-article__picture">
-                    <source media="(min-width: 768px)" srcset="assets/img/pictures/contribute-1920x560.jpg">
-                    <source media="(max-width: 767px)" srcset="assets/img/pictures/contribute-960x540.jpg">
-                    <img src="assets/img/picture/contribute-1920x560.jpg" alt="Hands connecting wires to a board" />
+                    <source media="(min-width: 768px)" srcset="thumbnail.jpg">
+                    <source media="(max-width: 767px)" srcset="thumbnail.jpg">
+                    <img src="thumbnail.jpg" alt="{{title}}" />
                 </picture>
             </div>
         </div>
@@ -28,14 +27,14 @@
         <!-- Header Text -->
         <div class="row">
             <div class="col col-lg-8 offset-lg-2">
-                <time class="page-article__date" datetime="2018-07-07" pubdate="pubdate">May 24th, 2022</time> 
-                <h1 class="page-article__title">The Robotistan Kickstarter heavily featured MicroBlocks.</h3>
+                <time class="page-article__date" datetime="{{publication-date}}" pubdate="pubdate">{{ date-string publication-date }}</time> 
+                <h1 class="page-article__title">{{ title }}</h3>
                 <div class="page-article__details">
                     <address class="page-article__credits">
-                        by <a href="#" class="page-article__author">Author</a>, <a href="#" class="page-article__organisation">Company</a>
+                        by <a href="{{author-link}}" class="page-article__author">{{author}}</a>, <a href="{{company-link}}" class="page-article__organisation">{{company}}</a>
                     </address>
                     <p class="page-article__update">
-                        Latest update: <span>May 30th, 2022</span>
+                        Latest update: <span>{{ date-string last-update }}</span>
                     </p>
                 </div>
             </div>
@@ -52,19 +51,7 @@
         <div class="row">
             <div class="col col-lg-8 offset-lg-2">
                 <div class="article-text">
-                    <p>
-                        The first digit at the top left of the grid represents zero. To its right, we find increasing digits from one to four. After four, we use a horizontal line to represent one group of five, and then keep adding dots to it to represent six, seven, eight and nine.
-                    </p>
-                    <p>
-                        Two horizontal lines mean two groups of five, that is, ten. Similarly, three horizontal lines represent fifteen. After that, we keep adding dots until we have three lines and four dots, which add up to nineteen, the largest digit.
-                    </p>
-                    <h3>Contents based on learn.microblocks.fun</h3>
-                    <p>
-                        The first digit at the top left of the grid represents zero. To its right, we find increasing digits from one to four. After four, we use a horizontal line to represent one group of five, and then keep adding dots to it to represent six, seven, eight and nine.
-                    </p>
-                    <p>
-                        Two horizontal lines mean two groups of five, that is, ten. Similarly, three horizontal lines represent fifteen. After that, we keep adding dots until we have three lines and four dots, which add up to nineteen, the largest digit.
-                    </p>
+{{#markdown}}{{/markdown}}
                 </div>
             </div>
         </div>

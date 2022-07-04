@@ -37,6 +37,9 @@ function doForFilesInDir (dir, extension, action, recursive) {
         } else if (recursive && fs.statSync(fullPath).isDirectory()) {
             // recurse into directory
             doForFilesInDir(dir + '/' + fileName, extension, action, recursive);
+        } else if (extension == '/' && fs.statSync(fullPath).isDirectory()) {
+            // iterate over directories
+            action.call(this, fileName, fullPath);
         }
     });
 };
@@ -71,11 +74,52 @@ function compileTemplates () {
                     JSON.parse(fs.readFileSync(dataPath), 'utf8') :
                     {};
             if (debugMode) { data.livereload = true; }
-            fs.writeFileSync(
-                `dist/${fileName}.html`,
-                handlebars.compile(fileContents)(data)
+            compileTemplate(fileName, data, 'dist');
+        }
+    );
+};
+
+function compileTemplate (templateName, descriptor, destDir, fileName) {
+    var template =
+            fs.readFileSync(
+                `${__dirname}/src/templates/${templateName}.hbs`,
+                'utf8'
             );
-            debug(`compiled template: ${fileName}`);
+    fs.writeFileSync(
+        `${destDir}/${fileName || templateName}.html`,
+        handlebars.compile(template)(descriptor)
+    );
+    debug(`compiled template: ${templateName}`);
+};
+
+// Blog
+
+function compileBlog () {
+    doForFilesInDir(
+        'data/blog',
+        '/',
+        (dirName, fullPath) => {
+            var json = JSON.parse(
+                    fs.readFileSync(
+                        `${fullPath}/meta.json`,
+                        'utf8'
+                    )
+                );
+            json.markdown = fs.readFileSync(
+                `${fullPath}/index.md`,
+                'utf8'
+            );
+            // check whether dirName starts with a number, in which case it
+            // represents the publication date
+            if (parseInt(dirName) + 0 == parseInt(dirName)) {
+                json['publication-date'] = dirName.substring(0,10)
+            }
+            json['last-update'] =
+                json['last-update'] || json['publication-date'];
+            if (debugMode) { json.livereload = true; }
+            fse.ensureDirSync(`${__dirname}/dist/blog/${dirName}`);
+            fse.copySync(`${fullPath}`, `${__dirname}/dist/blog/${dirName}`);
+            compileTemplate('article', json, `dist/blog/${dirName}`, 'index');
         }
     );
 };
@@ -84,7 +128,8 @@ function compileTemplates () {
 
 handlebars.registerHelper('markdown', (context, options) => {
     var mdPath = `${__dirname}/data/markdown/${context}.md`,
-        md = options ? options.fn(this) : context.fn(this),
+        md = context.data ?
+            (context.data.root.markdown || context.fn(this)) : '',
         html;
     if (fs.existsSync(mdPath)) {
         md = fs.readFileSync(mdPath, 'utf8');
@@ -95,6 +140,31 @@ handlebars.registerHelper('markdown', (context, options) => {
         html = `<p>PARSING MARKDOWN FAILED:</p><pre>${md}</pre><br>`;
     }
     return html;
+});
+
+handlebars.registerHelper('date-string', function (context) {
+    var date = new Date(context),
+        day = date.getDate();
+
+    // Thanks to https://stackoverflow.com/a/39466341
+    function nth(n) { return['st','nd','rd'][((n+90)%100-10)%10-1] || 'th'; };
+
+    return [
+            'January',
+            'February',
+            'March',
+            'April',
+            'May',
+            'June',
+            'July',
+            'August',
+            'September',
+            'October',
+            'November',
+            'December'
+        ][date.getMonth()] + ' ' +
+            day + nth(day) + ', ' +
+            date.getFullYear();
 });
 
 // Build script functions
@@ -124,6 +194,9 @@ function build () {
 
     // compile all templates
     compileTemplates();
+
+    // build blog
+    compileBlog();
 };
 
 function makeFakeReleaseFiles () {
@@ -155,13 +228,6 @@ function copyAssets () {
         `${__dirname}/dist/assets`,
         { overwrite: true },
         (err) => { if (err) { console.error(err); } }
-    );
-    doForFilesInDir(
-        'data/runtime',
-        'json',
-        (fileName, fileContents, fullPath) => {
-            fs.copyFileSync(fullPath, `${__dirname}/dist/${fileName}.json`);
-        }
     );
 };
 
