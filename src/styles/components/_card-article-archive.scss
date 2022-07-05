@@ -17,6 +17,7 @@
   text-align: right;
 
   color: $color-purple;
+  line-height: 24px;
 }
 
 
@@ -39,7 +40,7 @@
 .card-article-archive__title {
   @include font-display-bold;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 24px;
 
   transition: color 0.2s ease-out;
 }
@@ -47,7 +48,7 @@
 
 .card-article-archive__credits {
   font-size: 14px;
-  color: $color-purple;
+  color: $color-grey-700;
 }
 
 

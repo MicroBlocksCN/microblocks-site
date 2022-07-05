@@ -10,6 +10,21 @@
 {{#*inline "main-content"}}
 
 
+<!-- Header -->
+<header class="page-blog__header-paginated">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="page-blog__title-paginated">
+                    News - Page X
+                </h1>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header -->
+
+
 <!-- Contents -->
 <div class="main__contents">
 
@@ -34,13 +49,11 @@
             <div class="row">
                 <div class="col">
 
-                    <div class="page-blog__pagination">
-                        <div>
-                            <a href="/blog">1</a>
-                            {{#for 2 page-count 1}}
-                                <a href="/blog/{{this}}">{{this}}</a>
-                            {{/for}}
-                        </div>
+                    <div class="page-blog__pagination pagination">
+                        <a href="/blog" class="pagination__item">1</a>
+                        {{#for 2 page-count 1}}
+                            <a href="/blog/{{this}}" class="pagination__item">{{this}}</a>
+                        {{/for}}
                     </div>
 
                     <div class="page-blog__view-all">

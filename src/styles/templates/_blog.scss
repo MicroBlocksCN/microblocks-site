@@ -3,7 +3,7 @@
 // ==========================================================================
 
 
-// Header
+// Header for initial Blog page
 // ========================================
 
 
@@ -20,6 +20,29 @@
 
 .page-blog__title {
     transform: rotate(-1deg);
+}
+
+
+
+
+
+// Title for paginated Blog page
+// ========================================
+
+
+.page-blog__header-paginated {
+    margin: 64px 0 16px 0;
+}
+
+
+.page-blog__title-paginated {
+    margin-bottom: 32px;
+    padding-top: 8px;
+    @include border-top-small($color-grey-300);
+    
+    @include font-display-bold;
+    font-size: 24px;
+    color: $color-grey-900;
 }
 
 
@@ -85,9 +108,6 @@
 
 .page-blog__pagination {
     margin-bottom: 32px;
-
-    display: flex;
-    justify-content: center;
 }
 
 
