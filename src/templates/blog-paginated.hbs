@@ -1,0 +1,60 @@
+{{! Blog }}
+
+{{#> layouts._html-shell
+    title="Blog"
+    pageClass="page-blog"
+    pageUrl="https://wwww.microblocks.fun/blog"
+    _pageDescription="Latest news related with MicroBlocks."
+}}
+
+{{#*inline "main-content"}}
+
+
+<!-- Contents -->
+<div class="main__contents">
+
+    <!-- Articles -->
+    <section class="page-blog__articles">
+        <div class="container">
+
+            <!-- Articles Grid -->
+            <div class="row">
+                <div class="col">
+                    <div class="page-blog__articles-grid">
+                    {{#each blog-entries}}
+                    {{#unless draft}}
+                        {{> _card-article }}
+                    {{/unless}}
+                    {{/each}}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination and All Articles-->
+            <div class="row">
+                <div class="col">
+
+                    <div class="page-blog__pagination">
+                        <div>
+                            <a href="/blog">1</a>
+                            {{#for 2 page-count 1}}
+                                <a href="/blog/{{this}}">{{this}}</a>
+                            {{/for}}
+                        </div>
+                    </div>
+
+                    <div class="page-blog__view-all">
+                        <a class="btn btn--purple" href="/archive" target="_blank">View all articles</a>
+                    </div>                   
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+<!-- Contents -->
+
+{{/inline}}
+{{/layouts._html-shell}}

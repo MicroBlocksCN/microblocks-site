@@ -106,7 +106,10 @@
 
                     <div class="page-blog__pagination">
                         <div>
-                            {{!-- Generated with JS --}} Pagination
+                            <a href="/blog">1</a>
+                            {{#for 2 page-count 1}}
+                                <a href="/blog/{{this}}">{{this}}</a>
+                            {{/for}}
                         </div>
                     </div>
 

@@ -88,19 +88,8 @@ function compileTemplate (templateName, descriptor, destDir, fileName) {
             );
 
     // yes, special cases are ugly
-    if (templateName == 'blog' || templateName == 'archive') {
+    if (templateName == 'archive') {
         descriptor['blog-entries'] = blogEntries;
-        if (templateName == 'blog') {
-            var featuredSlug =
-                JSON.parse(
-                    fs.readFileSync(
-                        `${__dirname}/data/blog/meta.json`,
-                        'utf8'
-                    )
-                ).featured;
-            descriptor['featured'] =
-                blogEntries.find(each => each.slug == featuredSlug);
-        }
     }
 
     fs.writeFileSync(
@@ -110,9 +99,45 @@ function compileTemplate (templateName, descriptor, destDir, fileName) {
     debug(`compiled template: ${templateName}`);
 };
 
+function compileBlog () {
+    var firstPageSize = 6,
+        pageSize = 12,
+        pageCount =
+            Math.ceil((blogEntries.length - firstPageSize) / pageSize),
+        descriptor = {},
+        featuredSlug =
+            JSON.parse(
+                fs.readFileSync(
+                    `${__dirname}/data/blog/meta.json`,
+                    'utf8'
+                )
+            ).featured;
+
+    descriptor['featured'] =
+        blogEntries.find(each => each.slug == featuredSlug);
+    // store only the entries for the first page
+    descriptor['blog-entries'] = blogEntries.slice(0, firstPageSize);
+    descriptor['page-count'] = pageCount;
+    descriptor.page = 1;
+    compileTemplate('blog', descriptor, 'dist/blog', 'index');
+        
+    // compile all pages
+
+    for (var page = 2; page <= pageCount + 1; page ++) {
+        descriptor['blog-entries'] = blogEntries.slice(page - 1, pageSize);
+        descriptor.page = page;
+        compileTemplate(
+            'blog-paginated',
+            descriptor,
+            'dist/blog',
+            page.toString()
+        );
+    }
+};
+
 // Blog
 
-function compileBlog () {
+function compileArticles () {
     blogEntries = [];
     doForFilesInDir(
         'data/blog',
@@ -143,8 +168,11 @@ function compileBlog () {
             fse.copySync(`${fullPath}`, `${__dirname}/dist/blog/${dirName}`);
 
             compileTemplate('article', json, `dist/blog/${dirName}`, 'index');
+            debug(`compiled article: ${json.title}`);
 
-            blogEntries.push(json);
+            if (!json.draft) {
+                blogEntries.push(json);
+            }
         }
     );
 };
@@ -192,6 +220,14 @@ handlebars.registerHelper('date-string', function (context) {
             date.getFullYear();
 });
 
+// Thanks to https://stackoverflow.com/a/11924998
+handlebars.registerHelper('for', function(from, to, incr, block) {
+    var accum = '';
+    for(var i = from; i <= to; i += incr)
+        accum += block.fn(i);
+    return accum;
+});
+
 // Build script functions
 
 function build () {
@@ -217,17 +253,14 @@ function build () {
 
     if (debugMode) { makeFakeReleaseFiles(); }
 
-    // build blog
-    compileBlog();
+    // build blog articles
+    compileArticles();
 
     // compile all templates
     compileTemplates();
 
-    // make /blog URL work
-    fse.moveSync(
-        `${__dirname}/dist/blog.html`,
-        `${__dirname}/dist/blog/index.html`
-    );
+    // build paginated blog
+    compileBlog();
 };
 
 function makeFakeReleaseFiles () {
