@@ -16,7 +16,7 @@
         <div class="row">
             <div class="col-12">
                 <h1 class="page-blog__title-paginated">
-                    News - Page X
+                    News - Page {{page}}
                 </h1>
             </div>
         </div>
@@ -51,7 +51,11 @@
 
                     <div class="page-blog__pagination pagination">
                         <a href="/blog" class="pagination__item">1</a>
-                        {{#for 2 page-count 1}}
+                        {{#for 2 (inc page -1) 1}}
+                            <a href="/blog/{{this}}" class="pagination__item">{{this}}</a>
+                        {{/for}}
+                            <a href="/blog/{{this}}" class="pagination__item pagination__item--active">{{page}}</a>
+                        {{#for (inc page 1) page-count 1}}
                             <a href="/blog/{{this}}" class="pagination__item">{{this}}</a>
                         {{/for}}
                     </div>

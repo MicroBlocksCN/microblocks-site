@@ -235,6 +235,10 @@ handlebars.registerHelper('for', function(from, to, incr, block) {
     return accum;
 });
 
+handlebars.registerHelper('inc', function (num, increment, context) {
+    return num + increment;
+});
+
 // Build script functions
 
 function build () {
