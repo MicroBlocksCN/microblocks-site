@@ -74,7 +74,6 @@ function compileTemplates () {
             var data = fs.existsSync(dataPath) ?
                     JSON.parse(fs.readFileSync(dataPath), 'utf8') :
                     {};
-            if (debugMode) { data.livereload = true; }
             compileTemplate(fileName, data, 'dist');
         }
     );
@@ -91,6 +90,8 @@ function compileTemplate (templateName, descriptor, destDir, fileName) {
     if (templateName == 'archive') {
         descriptor['blog-entries'] = blogEntries;
     }
+
+    if (debugMode) { descriptor.livereload = true; }
 
     fs.writeFileSync(
         `${destDir}/${fileName || templateName}.html`,
@@ -165,8 +166,6 @@ function compileArticles () {
             if (parseInt(dirName) + 0 == parseInt(dirName)) {
                 json['publication-date'] = dirName.substring(0,10)
             }
-
-            if (debugMode) { json.livereload = true; }
 
             fse.ensureDirSync(`${__dirname}/dist/blog/${dirName}`);
             fse.copySync(`${fullPath}`, `${__dirname}/dist/blog/${dirName}`);
