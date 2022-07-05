@@ -114,8 +114,12 @@ function compileBlog () {
                 )
             ).featured;
 
-    descriptor['featured'] =
+    descriptor.featured =
         blogEntries.find(each => each.slug == featuredSlug);
+
+    // featured article shouldn't show up in the paginated list
+    blogEntries.splice(blogEntries.indexOf(descriptor.featured), 1);
+    
     // store only the entries for the first page
     descriptor['blog-entries'] = blogEntries.slice(0, firstPageSize);
     descriptor['page-count'] = pageCount;
