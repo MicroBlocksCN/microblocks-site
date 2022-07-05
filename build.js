@@ -103,7 +103,7 @@ function compileBlog () {
     var firstPageSize = 6,
         pageSize = 12,
         pageCount =
-            Math.ceil((blogEntries.length - firstPageSize) / pageSize),
+            Math.ceil((blogEntries.length - firstPageSize) / pageSize) + 1,
         descriptor = {},
         featuredSlug =
             JSON.parse(
@@ -124,7 +124,11 @@ function compileBlog () {
     // compile all pages
 
     for (var page = 2; page <= pageCount + 1; page ++) {
-        descriptor['blog-entries'] = blogEntries.slice(page - 1, pageSize);
+        descriptor['blog-entries'] = 
+            blogEntries.slice(
+                firstPageSize + (page - 2) * pageSize,
+                firstPageSize + (page - 1) * pageSize
+            );
         descriptor.page = page;
         compileTemplate(
             'blog-paginated',
