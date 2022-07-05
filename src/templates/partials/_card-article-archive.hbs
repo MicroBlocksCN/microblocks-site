@@ -1,16 +1,20 @@
 <article class="card-article-archive">
 
     <!-- Date -->
-    <time class="card-article-archive__date" datetime="2018-07-07" pubdate="pubdate">May 24th, 2022</time> 
+{{#if publication-date}}
+    <time class="card-article-archive__date" datetime="{{publication-date}}" pubdate="pubdate">{{ date-string publication-date }}</time> 
+{{/if}}
     
     <!-- Text -->
     <div class="card-article-archive__content">
-        <a href="/article" class="card-article-archive__link">
-            <h2 class="card-article-archive__title">The Robotistan Kickstarter heavily featured MicroBlocks.</h2>
+        <a href="/blog/{{slug}}" class="card-article-archive__link">
+            <h2 class="card-article-archive__title">{{title}}</h2>
         </a>
+{{#if author}}
         <address class="card-article-archive__credits">
-            by <span class="card-article-archive__author">Author</span>, <span class="card-article-archive__organisation">Company</span>
+            by <span class="card-article-archive__author">{{author}}</span>{{#if organization}}, <span class="card-article-archive__organisation">{{organization}}</span>{{/if}}
         </address>
+{{/if}}
     </div>
 
 </article>

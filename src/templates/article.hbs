@@ -27,15 +27,21 @@
         <!-- Header Text -->
         <div class="row">
             <div class="col col-lg-8 offset-lg-2">
+{{#if publication-date}}
                 <time class="page-article__date" datetime="{{publication-date}}" pubdate="pubdate">{{ date-string publication-date }}</time> 
+{{/if}}
                 <h1 class="page-article__title">{{ title }}</h3>
                 <div class="page-article__details">
+{{#if author}}
                     <address class="page-article__credits">
-                        by <a href="{{author-link}}" class="page-article__author">{{author}}</a>, <a href="{{company-link}}" class="page-article__organisation">{{company}}</a>
+                        by <a href="{{author-link}}" class="page-article__author">{{author}}</a>{{#if organization}}, <a href="{{organization-link}}" class="page-article__organisation">{{organization}}</a>{{/if}}
                     </address>
+{{/if}}
+{{#if last-update}}
                     <p class="page-article__update">
                         Latest update: <span>{{ date-string last-update }}</span>
                     </p>
+{{/if}}
                 </div>
             </div>
         </div>

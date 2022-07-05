@@ -86,7 +86,23 @@ function compileTemplate (templateName, descriptor, destDir, fileName) {
                 `${__dirname}/src/templates/${templateName}.hbs`,
                 'utf8'
             );
-    if (templateName == 'blog') { descriptor['blog-entries'] = blogEntries; }
+
+    // yes, special cases are ugly
+    if (templateName == 'blog' || templateName == 'archive') {
+        descriptor['blog-entries'] = blogEntries;
+        if (templateName == 'blog') {
+            var featuredSlug =
+                JSON.parse(
+                    fs.readFileSync(
+                        `${__dirname}/data/blog/meta.json`,
+                        'utf8'
+                    )
+                ).featured;
+            descriptor['featured'] =
+                blogEntries.find(each => each.slug == featuredSlug);
+        }
+    }
+
     fs.writeFileSync(
         `${destDir}/${fileName || templateName}.html`,
         handlebars.compile(template)(descriptor)
@@ -120,8 +136,6 @@ function compileBlog () {
             if (parseInt(dirName) + 0 == parseInt(dirName)) {
                 json['publication-date'] = dirName.substring(0,10)
             }
-            json['last-update'] =
-                json['last-update'] || json['publication-date'];
 
             if (debugMode) { json.livereload = true; }
 

@@ -32,14 +32,13 @@
 
             <!-- Articles List -->
             <div class="col-12 col-lg-8 offset-lg-2">
+{{#each blog-entries}}
+{{#unless draft}}
                 <div class="page-archive__articles-list">
                     {{> _card-article-archive }}
-                    {{> _card-article-archive }}
-                    {{> _card-article-archive }}
-                    {{> _card-article-archive }}
-                    {{> _card-article-archive }}
-                    {{> _card-article-archive }}
                 </div>
+{{/unless}}
+{{/each}}
             </div>
 
         </div>

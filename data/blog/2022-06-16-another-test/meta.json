@@ -2,7 +2,6 @@
 	"title": "Another Blog Entry from a Prolific Blogger",
 	"author": "Bernat Romagosa",
 	"author-link": "https://gitlab.com/bromagosa",
-	"company": "MicroBlocks",
-	"company-link": "https://microblocks.fun",
-	"draft": true
+	"organization": "MicroBlocks",
+	"organization-link": "https://microblocks.fun"
 }
