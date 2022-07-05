@@ -34,3 +34,11 @@ To verify that Linux sees your board, make sure the board is plugged in, then ru
     ls /dev | grep ACM
 
 You should see an entry for your board, usually ttyACM0.
+
+In 2022, some Linux distributions, including Ubuntu and Mint, began installing by default
+a package called BRLTTY (short for Braille TTY). Unfortunatley, that package
+conflicts with microcontroller boards that use the CP210x USB-serial chip, including
+many supported by MicroBlocks. BRLTTY grabs these boards so that no entry for the board
+appears in in /dev. This problem can be solved by removing the BRLTTY package:
+
+	sudo apt remove brltty
