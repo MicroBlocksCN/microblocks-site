@@ -182,6 +182,7 @@ function compileArticles () {
             }
         }
     );
+    blogEntries = blogEntries.reverse();
 };
 
 // Handlebars additions
