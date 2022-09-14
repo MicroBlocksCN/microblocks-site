@@ -97,8 +97,13 @@
             "name": "Luis Mayorga",
             "region":"Mexico",
             "href":"https://campsite.bio/luis.mayorga"
+        },
+        {
+            "name": "Binta Moustapha",
+            "region":"Niger Republic and Nigeria",
+            "href":"https://www.linkedin.com/in/binta-moustapha-482abb109"
         }
-    ],
+   ],
     "collaborators": [
         {
             "name":"SAP",
