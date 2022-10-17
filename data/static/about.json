@@ -100,8 +100,13 @@
         },
         {
             "name": "Binta Moustapha",
-            "region":"Niger Republic and Nigeria",
-            "href":"https://www.linkedin.com/in/binta-moustapha-482abb109"
+            "region": "Niger Republic and Nigeria",
+            "href": "https://www.linkedin.com/in/binta-moustapha-482abb109"
+        },
+        {
+            "name": "Roger Wagner",
+            "region": "Western US",
+            "href": "https://rogerwagner.com"
         }
    ],
     "collaborators": [
@@ -136,9 +141,9 @@
         },
 
         {
-            "name":"Birdbrain Technologies",
-            "href":"https://www.birdbraintechnologies.com/",
-            "img":"assets/img/collaborators/birdbrain.png"
+            "name":"Robotistan",
+            "href":"https://www.robotistan.com/",
+            "img":"assets/img/collaborators/robotistan.png"
         },
 
         {
@@ -148,9 +153,9 @@
         },
 
         {
-            "name":"GP Blocks",
-            "href":"http://gpblocks.org/",
-            "img":"assets/img/collaborators/gp-blocks.png"
+            "name":"Birdbrain Technologies",
+            "href":"https://www.birdbraintechnologies.com/",
+            "img":"assets/img/collaborators/birdbrain.png"
         },
 
         {
