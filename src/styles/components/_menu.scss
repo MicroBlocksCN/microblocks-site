@@ -134,7 +134,6 @@
 .menu__links-list {
   width: 100%;
   height: 100%;
-  text-align: center;
 
 
   // Large Screens
@@ -142,14 +141,16 @@
   @include mq(lg) {
     display: flex;
     align-items: center;
-    padding: 0 16px;
+    margin: 0 16px;
   }
 }
 
 
 .menu__link {
   position: relative;
+  width: max-content;
   display: block;
+  margin: 0 auto;
   padding: 8px;
 
   @include font-display-bold;
@@ -169,7 +170,7 @@
   @include mq(lg) {
     font-size: 18px;
     padding: 0;
-    margin: 0 12px;
+    margin: 0 10px;
   }
 
   @include mq(xl) {
@@ -208,15 +209,45 @@
 }
 
 
+
+
+
+// Menu Contents - Interact (Run)
+// ==========================================================================
+
+
 .menu__interact {
 
-  a.menu__link:link,
-  a.menu__link:visited {
-    color: $color-white;
+  @include mq(lg) {
+    margin: 0 0 0 24px;
+  }
 
-    // Interaction
-    &::after {
-      background-color: $color-white;
+  @include mq(xl) {
+    margin: 0 0 0 32px;
+  }
+}
+
+
+.menu__link--run {
+  color: $color-white;
+
+  transition: all 0.2s ease-out;
+
+  // Interaction disabled
+  &::after {
+    background-color: transparent;
+  }
+
+  @include mq(lg) {
+    height: 100%;
+    margin: 0;
+    padding: 0 24px;
+
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: $color-yellow;
     }
   }
 }
