@@ -5,7 +5,7 @@
 
 .wysiwyg {
 
-  color: $color-grey-700;
+  color: $color-black-700;
 
 
   // Headings
@@ -17,7 +17,7 @@
     font-size: 1.2rem;
     line-height: 1.4;
     font-weight: 700;
-    color: $color-grey-900;
+    color: $color-black;
 
 
     margin: 0 0 1.5rem 0;
@@ -54,7 +54,7 @@
       line-height: 1.2;
       letter-spacing: -1px;
   
-      @include breakpoint(lg) {
+      @include mq(lg) {
         font-size: 2rem;
         margin: 0 0 2rem 0;
       }
@@ -71,7 +71,7 @@
 
     a:link,
     a:visited {
-      color: $color-grey-900;
+      color: $color-black;
       text-decoration: underline;
       transition: color 0.2s ease-out;
     }
@@ -112,7 +112,7 @@
       top: 10px;
       left: 0;
 
-      background-color: $color-grey-700;
+      background-color: $color-black-700;
       border-radius: 50%;
     }    
   }
@@ -127,8 +127,8 @@
     padding: 18px 12px 0 12px;
     display: block;
 
-    background-color: $color-grey-50;
-    border: 2px solid $color-grey-200;
+    background-color: $color-black-50;
+    border: 2px solid $color-black-200;
     border-radius: 4px;
 
     margin: 0 0 1.5rem 0;
@@ -180,12 +180,12 @@
   // unify
   &--black,
   .text-black {
-    color: $color-grey-900;
+    color: $color-black;
   }
 
 
   &.colored-section__contents {
-    color: $color-grey-900;
+    color: $color-black;
   }
 
 }

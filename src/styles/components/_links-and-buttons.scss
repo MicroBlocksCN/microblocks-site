@@ -78,7 +78,7 @@
 .btn:hover,       
 .btn:focus-visible {
   color: $color-white;
-  background-color: $color-grey-900;
+  background-color: $color-black;
 
   &::after {
     right: 8px;
@@ -110,11 +110,11 @@
     padding-top: 4px;
     font-size: 20px;
     line-height: 1.2;
-    color: $color-grey-900;
+    color: $color-black;
 
     small {
       font-size: 16px;
-      color: $color-grey-700
+      color: $color-black-700
     }
   }
 

@@ -9,7 +9,7 @@
         background-color: $color-teal;
         
         .accordion__content {
-            background-color: $color-teal-shade;
+            background-color: $color-teal-50;
         }
     }
 
@@ -17,7 +17,7 @@
         background-color: $color-purple;
         
         .accordion__content {
-            background-color: $color-purple-shade;
+            background-color: $color-purple-50;
         }
     }
 
@@ -25,7 +25,7 @@
         background-color: $color-blue;
         
         .accordion__content {
-            background-color: $color-blue-shade;
+            background-color: $color-blue-50;
         }
     }
 
@@ -33,7 +33,7 @@
         background-color: $color-orange;
         
         .accordion__content {
-            background-color: $color-orange-shade;
+            background-color: $color-orange-50;
         }
     }
 
@@ -41,7 +41,7 @@
         background-color: $color-green;
         
         .accordion__content {
-            background-color: $color-green-shade;
+            background-color: $color-green-50;
         }
     }
 
@@ -49,7 +49,7 @@
         background-color: $color-blue-violet;
         
         .accordion__content {
-            background-color: $color-blue-violet-shade;
+            background-color: $color-blue-violet-50;
         }
     }
 
@@ -95,7 +95,7 @@
 
     @include focus-visible-large;
 
-    @include breakpoint(md) {
+    @include mq(md) {
         padding: 24px 0;
     }
 }
@@ -108,7 +108,7 @@
     position: relative;
     @include font-display-light;
 
-    @include breakpoint(md) {
+    @include mq(md) {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -201,7 +201,7 @@
     opacity: 0;
     transition: opacity 0.4s ease-out;
 
-    @include breakpoint(lg) {
+    @include mq(lg) {
         padding: 40px;
     }
 }

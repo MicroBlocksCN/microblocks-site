@@ -8,7 +8,7 @@
   flex-direction: column;
   position: relative;
 
-  color: $color-grey-900;
+  color: $color-black;
 
   overflow: hidden;
   border-radius: 4px;
@@ -61,7 +61,7 @@
   justify-content: space-between;
   padding: 20px 16px 16px 16px;
 
-  @include breakpoint(md) {
+  @include mq(md) {
     min-height: 148px;
   }
 }
@@ -87,7 +87,7 @@
 
   font-size: 14px;
   line-height: 14px;
-  color: $color-grey-700;
+  color: $color-black-700;
 
   &::before {
     content: '';
@@ -99,7 +99,7 @@
     left: 0;
     top: 1px;
 
-    // background-color: $color-grey-700;
+    // background-color: $color-black-700;
     background-image: url('assets/img/icons/icon-asterisk.svg');
   }
 }
@@ -118,7 +118,7 @@
   font-size: 14px;
   line-height: 14px;
   color: $color-white;
-  background-color: $color-grey-900;
+  background-color: $color-black;
 
   margin: 6px 8px 0 0;
   padding: 4px 8px 6px 8px;
@@ -157,7 +157,7 @@
 
 
 .activity-card__downloads-title {
-  color: $color-grey-700;
+  color: $color-black-700;
   margin-bottom: 16px;
 }
 

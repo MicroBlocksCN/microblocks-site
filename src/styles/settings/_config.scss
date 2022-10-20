@@ -1,17 +1,11 @@
-// 
+// ==========================================================================
 // Settings / Config
-//
-// NOTES:
-// - The site uses bootstrap's grid, values for custom grid are commented
-// - Added all the values' of learn.microblocks.fun, to use in article's styles
-//   although they're not used and will be implemented in future revisions.
-// - Sizing based in REM values: 1 is 16px.
 // ==========================================================================
 
 
 
 // CSS Variables
-// ========================================
+// ==========================================================================
 
 :root {
   --bs-gutter-x: 0.75rem;
@@ -22,24 +16,20 @@
 
 
 // z-Index
-// ========================================
+// ==========================================================================
 
-$zindex-menu-toggle:    1000;
-$zindex-popup:           110;
-$zindex-menu-on-top:      91; // hacks
-$zindex-menu:             90;
-$zindex-modals:           80;
-$zindex-content-layer:     5;
-$zindex-hero:             -1;
-$zindex-below:             2;
-$zindex-normal:            1;
-$zindex-below:            -1;
-
+$zindex-menu-toggle: 1000;
+$zindex-menu-on-top: 91; // hacks
+$zindex-menu: 90;
+$zindex-modals: 80;
+$zindex-content-layer: 5;
+$zindex-hero: -1;
+$zindex-above: -1;
 
 
 
 // Breakpoints
-// ========================================
+// ==========================================================================
 
 $breakpoints: (
   xs: 0,
@@ -50,143 +40,9 @@ $breakpoints: (
   xxl: 1400px
 );
 
-// Breakpoints & Grid for custom grid by Marc Campreciós
-// used in learn.microblocks.fun. This site uses Bootstrap's grid
-
-// $col-total: 12;
-// $col-padding: 32px;
-
-// // based on Tailwind at Jan'21
-// $breakpoints: (
-//   'xs'   :  '0',
-//   'sm'   :  '640px',
-//   'md'   :  '768px',
-//   'lg'   :  '1024px',
-//   'xl'   :  '1280px',
-//   'xxl'  :  '1536px' 
-// );
-
-// $rowWidths: (
-//   'xs'   :  100%,
-//   'sm'   :  100%,
-//   'md'   :  704px,
-//   'lg'   :  984px,
-//   'xl'   :  1184px,
-//   'xxl'  :  1280px 
-// );
 
 
+// Global units and variables
+// ==========================================================================
 
-
-
-// Spacing
-// ========================================
-
-$space-025: 0.25rem; //   4px
-$space-050:  0.5rem; //   8px
-$space-075: 0.75rem; //  12px
-$space-100:    1rem; //  16px
-$space-125: 1.25rem; //  20px 
-$space-150:  1.5rem; //  24px 
-$space-175: 1.75rem; //  28px 
-$space-200:    2rem; //  32px 
-$space-250:  2.5rem; //  40px 
-$space-300:    3rem; //  48px 
-$space-350:  3.5rem; //  56px 
-$space-400:    4rem; //  64px 
-// $space-450:  4.5rem; //  72px 
-$space-500:    5rem; //  80px 
-// $space-600:    6rem; //  96px 
-$space-800:    8rem; // 128px 
-// $space-1000:  10rem; // 160px 
-// $space-1200:  12rem; // 192px 
-$space-1500:  15rem; // 240px 
-$space-2000:  20rem; // 320px 
-$space-2500:  25rem; // 400px
-
-
-
-
-// Spacing Percentual
-// ========================================
-
-$spacePercentual-20:   20%;
-$spacePercentual-25:   25%;
-$spacePercentual-30:   30%;
-$spacePercentual-33:   33%;
-$spacePercentual-40:   40%;
-$spacePercentual-50:   50%;
-$spacePercentual-60:   60%;
-$spacePercentual-66:   66%;
-$spacePercentual-75:   75%;
-$spacePercentual-80:   80%;
-
-
-
-
-
-// Font Sizes
-// ========================================
-
-$fontSize-050:    0.5rem; //  8px
-$fontSize-075:   0.75rem; // 12px
-$fontSize-087:  0.875rem; // 14px
-$fontSize-100:      1rem; // 16px
-$fontSize-125:   1.25rem; // 20px
-$fontSize-150:    1.5rem; // 24px
-$fontSize-200:      2rem; // 32px
-$fontSize-250:    2.5rem; // 40px
-$fontSize-300:      3rem; // 48px
-$fontSize-350:    3.5rem; // 56px
-$fontSize-400:      4rem; // 64px
-$fontSize-600:      6rem; // 96px
-
-
-
-
-
-// Line Height
-// ========================================
-
-// $lineHeight-0875:   0.875;
-$lineHeight-100:    1;
-// $lineHeight-1125:   1.125; // Rename others?
-$lineHeight-120:    1.2;
-// $lineHeight-140:    1.4;
-$lineHeight-150:    1.5;
-
-
-
-
-
-// Radius
-// ========================================
-
-$borderRadius-025: 0.25rem; // 4px
-$borderRadius-050:  0.5rem; // 8px
-$borderRadius-max:  100rem; // max
-
-
-
-
-
-// Shadows
-// ========================================
-
-$boxShadow-tight:     0 0 8px rgba(0, 0, 0, 0.2);
-$boxShadow-base:      0 0 16px rgba(0, 0, 0, 0.15);
-$boxShadow-expanded:  0 0 32px rgba(0, 0, 0, 0.1);
-
-$textShadow-base:     0 0 4px rgba(0, 0, 0, 0.5);
-
-
-
-
-
-// Transitions
-// ========================================
-
-$trans-0200: 0.2s;
-$trans-0400: 0.4s;
-$trans-0800: 0.8s;
-$trans-easing: ease-out;
+$border-radius-global: 4px;

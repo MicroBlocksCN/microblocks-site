@@ -7,7 +7,7 @@
     padding-bottom: 56px;
 
     text-align: center;
-    background-color: $color-grey-200;
+    background-color: $color-black-200;
     @include background-emoji(on-grey);
     
     a:link,
@@ -19,7 +19,7 @@
 
 .next-steps__cards-wrapper {
 
-    @include breakpoint(lg) {
+    @include mq(lg) {
         display: flex;
         justify-content: center;
     }
@@ -41,7 +41,7 @@
         top: -16px;
     }
 
-    @include breakpoint(lg) {
+    @include mq(lg) {
         width: 32%;
         padding: 0 20px;
     }
@@ -69,7 +69,7 @@
     margin-bottom: 16px;
 
     p {
-        color: $color-grey-700;
+        color: $color-black-700;
         line-height: 1.2;
     }
 }

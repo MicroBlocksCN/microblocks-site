@@ -12,9 +12,13 @@
   right: -100%;
   z-index: $zindex-menu;
 
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-end;
+  // align-items: center;
+
   background-color: $color-yellow;
   @include background-emoji(on-yellow);
-  box-shadow: $boxShadow-base;
 
   transition: right 0.4s ease-out;
 
@@ -23,14 +27,9 @@
   }
 
 
-  // Medium Screens
-  @include breakpoint(md) {
-    width: 320px;
-  }
-
-
   // Large Screens
-  @include breakpoint(xl) {
+
+  @include mq(lg) {
     height: 100%;
     width: 100%;
 
@@ -50,7 +49,7 @@
   display: flex;
   flex-direction: column;
 
-  @include breakpoint(xl) {
+  @include mq(lg) {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
@@ -60,8 +59,6 @@
     overflow-y: unset;
   }
 }
-
-
 
 
 
@@ -76,14 +73,25 @@
 
   @include border-bottom-large($color-yellow-dark);
 
+  .menu__links-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @include mq(lg) {
+      flex-direction: row;
+    }
+  }
+
   a.menu__link:link,
   a.menu__link:visited {
-    color: $color-grey-900;
+    color: $color-black;
   }
 
 
   // Large Screens
-  @include breakpoint(xl) {
+
+  @include mq(lg) {
     width: auto;
     height: 100%;
     padding: 0;
@@ -97,12 +105,17 @@
   width: 100%;
   padding: 32px 0 56px 0;
 
-  background-color: $color-grey-900;
+  background-color: $color-black;
   @include background-emoji(on-black);
+
+  @include mq(md) {
+    padding: 32px 0 80px 0;
+  }
 
 
   // Large Screens
-  @include breakpoint(xl) {
+
+  @include mq(lg) {
     width: auto;
     height: 100%;
     padding: 0;
@@ -114,31 +127,20 @@
 
 
 
-
-
 // Menu Contents
 // ==========================================================================
 
 
 .menu__links-list {
-  height: 100%;
   width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-
+  height: 100%;
   text-align: center;
 
-  // Medium Screens
-  @include breakpoint(md) {
-    justify-content: center;
-  }
 
   // Large Screens
-  @include breakpoint(xl) {
-    flex-direction: row;
-    justify-content: flex-end;
+
+  @include mq(lg) {
+    display: flex;
     align-items: center;
     padding: 0 16px;
   }
@@ -155,16 +157,30 @@
   line-height: 1;
 
 
+  @include mq(md) {
+    font-size: 36px;
+    padding: 16px 12px;
+    letter-spacing: -0.25px;
+  }
+
+
   // Large Screens
-  @include breakpoint(xl) {
+
+  @include mq(lg) {
     font-size: 18px;
     padding: 0;
     margin: 0 12px;
   }
 
+  @include mq(xl) {
+    font-size: 20px;
+    padding: 0;
+    margin: 0 16px;
+  }
+
 
   // Interaction
-  @include breakpoint(xl) {
+  @include mq(lg) {
 
     &::after {
       content: '';
@@ -176,7 +192,7 @@
 
       height: 2px;
       width: 0%;
-      background-color: $color-grey-900;
+      background-color: $color-black;
 
       transition: width 0.3s ease-out;
     }
@@ -207,8 +223,6 @@
 
 
 
-
-
 // Menu Logo
 // ==========================================================================
 
@@ -222,8 +236,14 @@
   left: 0;
 
 
-  @include breakpoint(md) {
-    // in md screens, header__logo is visible
+  @include mq(md) {
+    width: 240px;
+  }
+
+
+  // Large Screens
+
+  @include mq(lg) {
     display: none;
   }
 }

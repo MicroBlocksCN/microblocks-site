@@ -27,7 +27,7 @@
     padding-top: 8px;
     background-color: $color-yellow-dark;
 
-    @include breakpoint(md) {
+    @include mq(md) {
         margin-top: -46px;
         padding-top: 0;
         background-color: transparent;
@@ -82,7 +82,7 @@
     font-size: 16px;
     line-height: 20px;
     color: $color-white;
-    background-color: $color-grey-900;
+    background-color: $color-black;
     border-radius: 2px;
 
     background-image: url('assets/img/icons/icon-dropdown.svg');
@@ -100,7 +100,7 @@
     @include focus-visible-large;
 
 
-    @include breakpoint(md) {
+    @include mq(md) {
         font-size: 20px;
         line-height: 24px;
     }
@@ -120,15 +120,15 @@
     gap: 20px;
 
 
-    @include breakpoint(sm) {
+    @include mq(sm) {
         grid-template: 1fr / repeat(2, 1fr);
     }
 
-    @include breakpoint(md) {
+    @include mq(md) {
         grid-template: 1fr / repeat(3, 1fr);
     }
 
-    @include breakpoint(xl) {
+    @include mq(xl) {
         grid-template: 1fr / repeat(4, 1fr);
     }
 }
@@ -140,7 +140,7 @@
 
         @include font-display-bold;
         text-align: center;
-        color: $color-grey-900;
+        color: $color-black;
         font-size: 24px;
     }
 
@@ -150,15 +150,15 @@
         color: $color-purple;
     }
     
-    @include breakpoint(sm) {
+    @include mq(sm) {
         grid-column: 1 / 3;
     }
 
-    @include breakpoint(md) {
+    @include mq(md) {
         grid-column: 1 / 4;
     }
 
-    @include breakpoint(xl) {
+    @include mq(xl) {
         grid-column: 1 / 5;
     }
 }

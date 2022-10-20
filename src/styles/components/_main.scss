@@ -3,35 +3,17 @@
 // ==========================================================================
 
 
-.main {
-
-  // Gradient after menu
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-
-    background: linear-gradient( $color-grey-200, $color-background );
-  }
-}
-
-
 .main__header {
-  position: relative;
   margin-bottom: 80px;
 
-  @include breakpoint(lg) {
+  @include mq(lg) {
     margin-bottom: 120px;
   }
 
   &--margin-tight {
     margin-bottom: 40px;
 
-    @include breakpoint(lg) {
+    @include mq(lg) {
       margin-bottom: 60px;
     }
   }
@@ -41,7 +23,7 @@
 .main__contents {
   margin-bottom: 80px;
 
-  @include breakpoint(lg) {
+  @include mq(lg) {
     margin-bottom: 120px;
   }
 }

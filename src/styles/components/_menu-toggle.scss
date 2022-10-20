@@ -11,7 +11,7 @@
   right: 1rem;
 
   color: $color-white;
-  background-color: $color-grey-900;
+  background-color: $color-black;
   border-radius: 2px;  
   line-height: 0;
   @include block-connector;
@@ -42,7 +42,7 @@
 
   // Hide
 
-  @include breakpoint(xl) {
+  @include mq(lg) {
     display: none;
   }
 }

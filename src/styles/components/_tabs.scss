@@ -6,7 +6,7 @@
 .tabs {
     padding: 40px 0 16px 0;
     margin-bottom: 100px;
-    background: $color-grey-200;
+    background: $color-black-200;
     
     &--orange {
         border-top: 1px solid $color-orange;
@@ -77,10 +77,10 @@
     text-align: right;
     
     span {
-        color: $color-grey-900;
+        color: $color-black;
     }
 
-    @include breakpoint(sm) {
+    @include mq(sm) {
         display: none;
     }
 }
@@ -120,24 +120,24 @@
     // Adapting size to screens
     // Due to 100% width container for mobile
 
-    @include breakpoint(sm) {
+    @include mq(sm) {
         margin: 0 auto;
         overflow-x: visible;
     }
 
-    @include breakpoint(md) {
+    @include mq(md) {
         width: 720px;        
     }
 
-    @include breakpoint(lg) {
+    @include mq(lg) {
         width: 960px;        
     }
 
-    @include breakpoint(xl) {
+    @include mq(xl) {
         width: 1140px;        
     }
 
-    @include breakpoint(xxl) {
+    @include mq(xxl) {
         width: 1320px;        
     }
 }
@@ -162,17 +162,17 @@
     &:focus-visible {
         cursor: pointer;
         color: $color-white;
-        background-color: $color-grey-900;
+        background-color: $color-black;
     }
 
     &--active {
-        color: $color-grey-900 !important;
+        color: $color-black !important;
         background-color: $color-white !important;
         @include shadow-tight;
     }
 
 
-    @include breakpoint(md) {
+    @include mq(md) {
         font-size: 20px;
         padding: 12px 20px;
     }
@@ -206,7 +206,7 @@
     margin-bottom: 2rem;
     line-height: 0;
 
-    @include breakpoint(lg) {
+    @include mq(lg) {
         margin-bottom: 0;
     }
 }

@@ -7,11 +7,11 @@
     margin-bottom: 40px;
     padding: 56px 0;
 
-    @include breakpoint(lg) {
+    @include mq(lg) {
         margin-bottom: 64px;
     }
 
-    @include breakpoint(xl) {
+    @include mq(xl) {
         margin-bottom: 80px;
     }
 }
@@ -22,11 +22,11 @@
     grid-template: 1fr / 1fr;
     gap: 32px;
 
-    @include breakpoint(md) {
+    @include mq(md) {
         grid-template: 1fr / repeat(2, 1fr);
     }
 
-    @include breakpoint(xl) {
+    @include mq(xl) {
         grid-template: 1fr / repeat(4, 1fr);
     }
 }

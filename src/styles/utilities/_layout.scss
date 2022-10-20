@@ -32,7 +32,7 @@
 }
 
 .u_lg\:mb-0 {
-  @include breakpoint(lg) {
+  @include mq(lg) {
     margin-bottom: 0 !important;
   }
 }

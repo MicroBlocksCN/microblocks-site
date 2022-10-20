@@ -9,12 +9,12 @@
 
 .heading-large {
     @include font-display-bold;
-    color: $color-grey-900;
+    color: $color-black;
     letter-spacing: -1px;
     font-size: 40px;
     line-height: 1.2;
 
-    @include breakpoint(lg) {
+    @include mq(lg) {
         font-size: 48px;
     }
 }
@@ -22,10 +22,10 @@
 
 .title-small {
     @include font-display-bold;
-    color: $color-grey-700;
+    color: $color-black-700;
 
     padding-top: 8px;
-    @include border-top-small($color-grey-300);
+    @include border-top-small($color-black-300);
 
     margin-bottom: 20px;
 }
@@ -43,7 +43,7 @@
 
     margin-bottom: 32px;
 
-    @include breakpoint(lg) {
+    @include mq(lg) {
         font-size: 40px;
         padding-right: 32px
     }
