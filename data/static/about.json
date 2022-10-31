@@ -107,6 +107,11 @@
             "name": "Roger Wagner",
             "region": "Western US",
             "href": "https://rogerwagner.com"
+        },
+        {
+            "name": "Wenjie Wu",
+            "region": "China",
+            "href": "https://wwj718.github.io"
         }
    ],
     "collaborators": [
@@ -171,10 +176,21 @@
         },
 
         {
+            "name":"Elite AI Maker Space",
+            "href":"https://aimaker.space/",
+            "img":"assets/img/collaborators/elite2.png"
+        },
+
+        {
+            "name":"CodeLab",
+            "href":"https://www.codelab.club/",
+            "img":"assets/img/collaborators/codelab.png"
+        },
+
+        {
             "name":"Platform IO",
             "href":"https://platformio.org/",
             "img":"assets/img/collaborators/pio.png"
         }
-
-    ]
+   ]
 }
