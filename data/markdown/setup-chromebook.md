@@ -1,22 +1,12 @@
-#### Chromebook Setup ####
+#### Chromebook 设置 ####
 
-Google is phasing out Chrome apps. Thus, for most Chromebook users, it is
-better to run MicroBlocks in the browser instead of installing the app.
+进入[下载](https://www.microblocksfun.cn/download)页面，点击「**下载**」按钮。
+如果你使用的是 Chromebook，就会进入 Chrome 网上应用商店的 [MicroBlocks 页面](https://chrome.google.com/webstore/detail/microblocks/cbmcbhgijipgdmlnieolilhghfmnngbb?authuser=0)。
 
-However, some older Chromebooks have reached their
-[end of life](https://support.google.com/chromebook/answer/9367166?hl=en)
-and cannot be updated to a version of Chrome that supports webserial (v89 or later).
-Fortunately, such Chromebooks can still run the MicroBlocks Chrome app.
+<img src="/assets/img/md/get-started/chrome-web-store.png" width="400">
 
-Go to the [Download](download) page and click the **Download** button.
-If are on a Chromebook, that will bring you to the
-[MicroBlocks page](https://chrome.google.com/webstore/detail/microblocks/cbmcbhgijipgdmlnieolilhghfmnngbb?authuser=0)
-on the Chrome Web Store.
+点击「**添加到 Chrome**」按钮，安装 MicroBlocks Chrome 应用程序。
 
-<img src="assets/img/md/get-started/chrome-web-store.png" width="400">
+如果要运行，请打开 Chromebook 应用启动器，再点击 MicroBlocks 兔子图标。
 
-Click the **Add to Chrome** button to install the app.
-
-To run, open the Chromebook app launcher and click the MicroBlocks bunny icon.
-
-You can pin the MicroBlocks app to make it easy to open in the future.
+你可以将 MicroBlocks 应用固定下来，以方便之后打开。

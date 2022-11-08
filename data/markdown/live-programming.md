@@ -1,1 +1,1 @@
-MicroBlocks is a **live** environment. Click on a block and it runs immediately, right on the board. Try out commands. See and graph sensor values in real time. No more waiting for code to compile and download. 
+MicroBlocks 基于实时编程环境运行。点击积木，它会即时在主板上运行。直接调试程序命令，实时查看和绘制传感器的数值，省去等待代码编译和下载的时间。

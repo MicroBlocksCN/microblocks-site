@@ -1,38 +1,35 @@
-#### micro:bit (v1 or v2) ####
+#### micro:bit（V1 或 V2） ####
 
-Connect the board to your computer.
+你需要将 micro:bit 主板通过 USB 数据线连接到电脑。
 
-From the MicroBlocks menu (gear icon), select **update firmware on board**.
+在顶部菜单栏点击「设置」按钮，选择「**升级主板固件**」。
 
-<img src="assets/img/md/get-started/update-firmware-menu.png" width="180">
+<img src="/assets/img/md/get-started/update-firmware-menu.png" width="180">
 
-The yellow LED will flicker as the firmware is installed. It takes a few seconds.
+在安装固件时，黄色 LED 会闪烁，过程会持续几秒钟。
 
-If you are running the MicroBlocks app, MicroBlocks will connect to the board automatically
-when it is done.
+如果你正在运行 MicroBlocks 应用程序，MicroBlocks 将在完成后自动连接到 micro:bit 主板。
 
-[This video](https://www.youtube.com/watch?v=V4u2_GN8JnU) shows these steps.
+详细步骤请看[此视频](https://www.youtube.com/watch?v=V4u2_GN8JnU)。
 
-**Extra Steps in Browser**
+**浏览器中的更多步骤**
 
-If you are running MicroBlocks in the browser or as a web app, you need to help the browser.
-(For security reasons, the browser cannot access the board's USB drive without asking the user.)
+如果你在浏览器或者在 Web App 上运行 MicroBlocks，你需要设置浏览器。（出于安全性考虑，浏览器无法在不询问用户的情况下主动访问主板的 USB 驱动器。)
 
-First, select your board type from the menu.
+首先，从菜单中选择主板类型。
 
-<img src="assets/img/md/get-started/select-microbit.png" width="180">
+<img src="/assets/img/md/get-started/select-microbit.png" width="180">
 
-A dialog box will appear. Read the instructions, then click **OK**.
+此时会出现一个对话框，阅读说明，然后点击「**确定**」。
 
-<img src="assets/img/md/get-started/firmware-install-instructions-microbit.png" width="320">
+<img src="/assets/img/md/get-started/firmware-install-instructions-microbit.png" width="320">
 
-In the browser's save dialog, select the **MICROBIT** drive, then click the **Save** button.
+在浏览器的保存对话框中，选择「**MICROBIT 驱动器**」，然后点击「**保存**」按钮。
 
-<img src="assets/img/md/get-started/firmware-save-dialog-microbit.png" width="500">
+<img src="/assets/img/md/get-started/firmware-save-dialog-microbit.png" width="500">
 
-You will see the orange light on the board flicker several times as the firmware is installed.
-At the same time, you will see a progress indicator on the screen.
+在安装固件的过程中，你会看到主板上的橙色指示灯闪烁几次。同时，你会在屏幕上看到进度指示。
 
-<img src="assets/img/md/get-started/firmware-progress.png" width="320">
+<img src="/assets/img/md/get-started/firmware-progress.png" width="320">
 
-When it is done, click the USB icon to connect to the board.
+完成后，点击 USB 图标连接到主板。

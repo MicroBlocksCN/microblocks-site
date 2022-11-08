@@ -9,18 +9,18 @@ Connect the board to your computer.
 
 From the MicroBlocks menu (gear icon), select **update firmware on board**.
 
-<img src="assets/img/md/get-started/update-firmware-menu.png" width="180">
+<img src="/assets/img/md/get-started/update-firmware-menu.png" width="180">
 
 Select your board type from the menu.
 
-<img src="assets/img/md/get-started/select-other.png" width="180">
+<img src="/assets/img/md/get-started/select-other.png" width="180">
 
 If you are running MicroBlocks in the browser, you will be asked to
 select the board if it is not already connected.
 
 MicroBlocks will start the firmware install process.
 
-<img src="assets/img/md/get-started/esp-connecting.png" width="360">
+<img src="/assets/img/md/get-started/esp-connecting.png" width="360">
 
 **Note:** Some ESP boards will connect only if you hold down the **Flash** or **Boot** button
 at the start of the firmware installation process.
@@ -29,7 +29,7 @@ You can release the button when the progress indicator appears.
 Once MicroBlocks has connected the board, you will see a progress indicator
 as the firmware is installed.
 
-<img src="assets/img/md/get-started/esp-progress.png" width="360">
+<img src="/assets/img/md/get-started/esp-progress.png" width="360">
 
 For ESP32 boards, the progress sequence will repeat several times
 as different parts of the firmware are installed.

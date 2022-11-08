@@ -1,30 +1,23 @@
-#### No Setup Needed! ####
+#### 无需设置！ ####
 
-You don't need to install anything to run MicroBlocks in a Chrome or Edge browser;
-just click **Run** in the navigation bar at the top of the screen.
+不需要安装任何软件就可以在 Chrome 或 Edge 浏览器中运行 MicroBlocks；只需在页面顶部导航栏中点击「运行 MicroBlocks」即可。
 
-<img src="assets/img/md/get-started/browser-run-button.png" width="70">
+<img src="/assets/img/md/get-started/browser-run-button.png" width="200">
 
-Running MicroBlocks in the browser avoids the need to install a conventional application,
-a process that often requires IT assistance.
+在浏览器中运行 MicroBlocks，无需安装传统应用程序，无需专业技术人员协助。
 
-MicroBlocks will run in other browsers, but it can only connect to a board when
-run in Chrome or Edge on a desktop, laptop, or Chromebook computer (not a mobile device).
+MicroBlocks 也可以在其他浏览器中运行，但只有在台式机、笔记本电脑或 Chromebook 电脑（非移动设备）上的 Chrome 或 Edge 浏览器中运行时，它才能与主板连接。
 
-#### Optional: Save the MicroBlocks Web App ####
+#### 可选方法：把 MicroBlocks 放在你的桌面上 ####
 
-For convenience, you can save a copy of MicroBlocks as a "progressive web app"
-that you can launch via a shortcut icon like a conventional application.
-Once saved, the MicroBlocks web app even runs offline!
+为方便起见，你可以将 MicroBlocks 另存为 Web App（渐进式网络应用程序），像运行传统应用程序一样通过快捷方式图标启动。一旦保存，MicroBlocks Web App 甚至可以离线运行。
 
-To save the MicroBlocks web app, run MicroBlocks in your browser, then click the
-**install** button on the top right of the browser's URL bar:
+保存方法：首先在浏览器中运行 MicroBlocks ，然后点击浏览器 URL 栏右上方的按钮，见下图。
 
 Chrome:<br>
-<img src="assets/img/md/get-started/pwainstall-chrome.png" width="220">
+<img src="/assets/img/md/get-started/pwainstall-chrome.png" width="220">
 
 Edge:<br>
-<img src="assets/img/md/get-started/pwainstall-edge.png" width="200">
+<img src="/assets/img/md/get-started/pwainstall-edge.png" width="200">
 
-That will install the web app and open MicroBlocks in a new window.
-It will also add a shortcut to your desktop so you can launch the web app later.
+这样即可安装 Web App，并在新窗口中打开 MicroBlocks。这种操作还会在桌面上添加快捷方式，以便日后启动。

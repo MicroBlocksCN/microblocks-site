@@ -1,1 +1,1 @@
-Want to display an animation while controlling a motor? No problem! MicroBlocks lets you write separate scripts for each task and run them at the same time. Your code is simpler to write and easier to understand. 
+想在控制电机的同时显示动画？没问题！MicroBlocks 允许为多个命令编写单独的脚本，并同步运行。让代码写起来更简单，更易理解。
