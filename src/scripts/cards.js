@@ -10,7 +10,7 @@ var currentPage = 1,
 function cardHtml (descriptor) {
     return `<div class="activity-card" href="${descriptor.url}">
     <div class="activity-card__picture">
-        <img src="assets/img/cards/${descriptor.pictureFile}"
+        <img src="/assets/img/cards/${descriptor.pictureFile}"
             alt="${descriptor.altText}">
     </div>
     <div class="activity-card__info">
