@@ -1,9 +1,145 @@
-<html>
-    <head>
-        <meta http-equiv="Refresh" content="0; URL=https://learn.microblocks.fun" />
-    </head>
-    <body>
-        <h1>Redirecting you to learn.microblocks.fun ...</h1>
-        <a href="https://learn.microblocks.fun">Please click here if you're not redirected automatically</a>
-    </body>
-</html>
+{{! Learn }}
+
+{{#> layouts._html-shell 
+    title="Learn" 
+    pageClass="page-learn"
+    pageUrl="https://wwww.microblocks.fun/learn"
+    _pageDescription="Latest release of MicroBlocks."
+}}
+
+{{#*inline "main-content"}}
+
+
+<!-- Header -->
+<header class="main__header">
+
+
+    <!-- Hero -->
+    <div class="hero-picture">
+        <picture class="hero-picture__img">
+            <source media="(min-width: 768px)" srcset="/assets/img/pictures/learn-1920x560.jpg">
+            <source media="(max-width: 767px)" srcset="/assets/img/pictures/learn-960x540.jpg">
+            <img src="/assets/img/pictures/learn-1920x560.jpg" alt="Hands connecting wires to a board" />
+        </picture>
+    </div>
+
+
+    <div class="container">
+
+        <!-- Title -->
+        <div class="row">
+            <div class="col-12">
+                <h1 class="title-blocks">
+                    <span class="block block--purple">Learn</span>
+                </h1>
+            </div>
+        </div>
+
+        <!-- Intro -->
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="picture picture--16/9 u_rotate-left-2 u_mb-2">
+                    <img src="/assets/img/pictures/learn-intro-960x540.jpg" alt="Kids playing with a board">
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="wysiwyg">
+{{#markdown}}
+Activity cards present simple scripts that help users get started with an activity. They are designed to be printed two per page and folded in half to make a two-sided card. To make them last longer, the cards can be laminated or printed on card stock.
+
+This page includes activity cards designed for beginners to advanced users, using different boards, and in various languages. Use the menus to explore!
+
+Some of these cards have been [contributed](https://wiki.microblocks.fun/contributors) by MicroBlocks users. If you create a activity card, consider [submitting it](contribute#content-creation) for possible inclusion in this collection.
+
+We invite you to [help translate](contribute#translate) these cards to your language.
+{{/markdown}}
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</header>
+<!-- Header -->
+
+
+<!-- Contents -->
+<div class="main__contents">
+
+
+    <div class="page-learn__activity-cards">
+
+        <form class="page-learn__filters" onchange="updateCards(true); // reset page">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Language -->
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <label class="page-learn__label" for="language">Language:</label>
+                        <select class="page-learn__select" id="language" name="language">
+                            <option value="">All Languages</option>
+                            <option selected value="English">English</option>
+                            <!-- Filled from cards.js -->
+                        </select> 
+                    </div>
+
+                    <!-- Boards -->
+                    <div class="col-6 col-md-4 offset-lg-3 col-lg-3">
+                        <label class="page-learn__label" for="board">Board:</label>
+                        <select class="page-learn__select page-learn__select--purple" id="board" name="board">
+                            <option value="">All Boards</option>
+                            <!-- Filled from cards.js -->
+                        </select> 
+                    </div>
+
+                    <!-- Level -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <label class="page-learn__label" for="level">Level:</label>
+                        <select class="page-learn__select page-learn__select--teal" id="level" name="level">
+                            <option value="">All Levels</option>
+                            <option value="0">Beginner</option>
+                            <option value="1">Intermediate</option>
+                            <option value="2">Advanced</option>
+                        </select> 
+                    </div>
+
+                </div>
+            </div>
+        </form>
+
+
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-learn__cards-list">
+                        <!-- Filled from cards.js -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <nav class="page-learn__pagination pagination" aria-label="Pagination Navigation">
+                        <!-- Filled from cards.js -->
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+        <script>
+            updateCards();
+        </script>
+    </div>
+
+
+
+</div>
+<!-- Contents -->
+
+{{> _footer_wiki color="grey" }}
+
+{{/inline}}
+{{/layouts._html-shell}}

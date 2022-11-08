@@ -16,9 +16,9 @@
     <!-- Hero -->
     <div class="hero-picture">
         <picture class="hero-picture__img">
-            <source media="(min-width: 768px)" srcset="assets/img/pictures/get-started-1920x560.jpg">
-            <source media="(max-width: 767px)" srcset="assets/img/pictures/get-started-960x540.jpg">
-            <img src="assets/img/picture/get-started-1920x560.jpg" alt="Hands connecting wires to a board" />
+            <source media="(min-width: 768px)" srcset="/assets/img/pictures/get-started-1920x560.jpg">
+            <source media="(max-width: 767px)" srcset="/assets/img/pictures/get-started-960x540.jpg">
+            <img src="/assets/img/picture/get-started-1920x560.jpg" alt="Hands connecting wires to a board" />
         </picture>
     </div>
 
@@ -29,8 +29,10 @@
         <div class="row">
             <div class="col-12">
                 <h1 class="title-blocks">
-                    <span class="block block--orange">Get</span>
-                    <span class="block block--teal">Started</span>
+{{!--                     <span class="block block--orange">Get</span> --}}
+{{!--                     <span class="block block--teal">Started</span> --}}
+                    <span class="block block--orange">开始</span>
+                    <span class="block block--teal">使用</span>
                 </h1>
             </div>
         </div>
@@ -40,33 +42,39 @@
 
             <div class="col-12 col-lg-8">
                 <div class="page-header__intro wysiwyg u_mb-4 u_lg:mb-0">
-                    <p class="text-lg">Getting started with MicroBlocks is easy! Just follow these simple steps.</p>
-                    <p class="text-md">You’ll need a computer (not a mobile device!) with a USB port, a USB cable, and a <a href="https://wiki.microblocks.fun/boards/supported"> board</a>. You can run MicroBlocks in a Chrome or Edge browser, or download a standalone app for Chromebook, Windows, MacOS, or Linux.
+{{!--                     <p class="text-lg">Getting started with MicroBlocks is easy! Just follow these simple steps.</p> --}}
+{{!--                     <p class="text-md">You’ll need a computer (not a mobile device!) with a USB port, a USB cable, and a <a href="https://wiki.microblocks.fun/boards/supported"> board</a>. You can run MicroBlocks in a Chrome or Edge browser, or download a standalone app for Chromebook, Windows, MacOS, or Linux.</p> --}}
+                    <p class="text-lg">开始使用 MicroBlocks 很简单！只需遵循下述简单的步骤。</p>
+                    <p class="text-md">你需要一台有 USB 接口的电脑（不支持 iPad 或者安卓平板）、一根 USB 连接线和一块 <a href="https://wiki.microblocks.fun/boards/supported">micro:bit 主板</a>。你可以在 Chrome 或 Edge 浏览器中运行 MicroBlocks，或者下载一个独立的应用程序，用于 Chromebook、Windows、macOS 或 Linux。</p>
                 </div>
             </div>
 
             <div class="col-12 offset-lg-1 col-lg-3">
                 <nav>
                     <h2 class="title-line">
-                        <span>The Recipe</span>
+{{!--                         <span>The Recipe</span> --}}
+                        <span>菜单</span>
                     </h2>
                     <ul class="list-numeric">
                         <li>
                             <a class="list-numeric__anchor" href="#computer">
                                 <div class="list-numeric__index circle circle--orange">1</div>
-                                <div class="list-numeric__text">Set up your computer</div>
+{{!--                                 <div class="list-numeric__text">Set up your computer</div> --}}
+                                <div class="list-numeric__text">设置好你的电脑</div>
                             </a>
                         </li>
                         <li>
                             <a class="list-numeric__anchor" href="#board">
                                 <div class="list-numeric__index circle circle--purple">2</div>
-                                <div class="list-numeric__text">Set up your board</div>
+{{!--                                 <div class="list-numeric__text">Set up your board</div> --}}
+                                <div class="list-numeric__text">设置好你的主板</div>
                             </a>
                         </li>
                         <li>
                             <a class="list-numeric__anchor" href="#ide">
                                 <div class="list-numeric__index circle circle--teal">3</div>
-                                <div class="list-numeric__text">Start coding!</div>
+{{!--                                 <div class="list-numeric__text">Start coding!</div> --}}
+                                <div class="list-numeric__text">开始编程！</div>
                             </a>
                         </li>
                     </ul>
@@ -88,17 +96,22 @@
     <!-- Computer -->
     {{#> layouts._tabbed-content
         tabs-index="1"
-        tabs-title="Computer Setup"
+        tabs-title="电脑设置"
         color="orange"
         id="computer"
         markdown="computer-intro"
     }}
 
         {{#*inline "tab-buttons"}}
-            {{> _tab-button button-id="browser" button-label="Browser" selected="true"}}
+{{!--             {{> _tab-button button-id="browser" button-label="Browser" selected="true"}} --}}
+{{!--             {{> _tab-button button-id="chromebook" button-label="Chromebook" selected="false"}} --}}
+{{!--             {{> _tab-button button-id="windows" button-label="Windows" selected="false"}} --}}
+{{!--             {{> _tab-button button-id="macos" button-label="MacOS" selected="false"}} --}}
+{{!--             {{> _tab-button button-id="linux" button-label="Linux" selected="false"}} --}}
+            {{> _tab-button button-id="browser" button-label="浏览器" selected="true"}}
             {{> _tab-button button-id="chromebook" button-label="Chromebook" selected="false"}}
             {{> _tab-button button-id="windows" button-label="Windows" selected="false"}}
-            {{> _tab-button button-id="macos" button-label="MacOS" selected="false"}}
+            {{> _tab-button button-id="macos" button-label="macOS" selected="false"}}
             {{> _tab-button button-id="linux" button-label="Linux" selected="false"}}
         {{/inline}}
 
@@ -115,41 +128,45 @@
     <!-- Board -->
     {{#> layouts._tabbed-content
         tabs-index="2"
-        tabs-title="Board Setup"
+        tabs-title="主板设置"
         color="purple"
         id="board"
         markdown="board-intro"
     }}
 
         {{#*inline "tab-buttons"}}
+{{!--             {{> _tab-button button-id="microbit" button-label="micro:bit" selected="true"}} --}}
+{{!--             {{> _tab-button button-id="cpx" button-label="Circuit Playground" selected="false"}} --}}
+{{!--             {{> _tab-button button-id="calliope" button-label="Calliope" selected="false"}} --}}
+{{!--             {{> _tab-button button-id="others" button-label="Other" selected="false"}} --}}
             {{> _tab-button button-id="microbit" button-label="micro:bit" selected="true"}}
             {{> _tab-button button-id="cpx" button-label="Circuit Playground" selected="false"}}
             {{> _tab-button button-id="calliope" button-label="Calliope" selected="false"}}
-           {{> _tab-button button-id="rp2040" button-label="Raspberry Pi Pico" selected="false"}}
             {{> _tab-button button-id="others" button-label="Other" selected="false"}}
         {{/inline}}
 
         {{#*inline "tabbed-content"}}
-            {{> _tab-content tab-id="microbit" markdown="setup-microbit" img="setup-microbit.png" alt-text="micro:bit board"}}
-            {{> _tab-content tab-id="cpx" markdown="setup-cpx" img="setup-cpx.png" alt-text="Circuit Playground Express boards"}}
-            {{> _tab-content tab-id="calliope" markdown="setup-calliope" img="setup-calliope.png" alt-text="Calliope mini board"}}
-            {{> _tab-content tab-id="rp2040" markdown="setup-rp2040" img="setup-rp2040.jpg" alt-text="Raspberry Pi RP2040 board"}}
-           {{> _tab-content tab-id="others" markdown="setup-other-boards" img="setup-other-boards.jpg" alt-text="Collection of boards that run MicroBlocks"}}
+            {{> _tab-content tab-id="microbit" markdown="setup-microbit" img="setup-microbit.png" alt-text="Hands connecting wires to a board"}}
+            {{> _tab-content tab-id="cpx" markdown="setup-cpx" img="setup-cpx.png" alt-text="Hands connecting wires to a board"}}
+            {{> _tab-content tab-id="calliope" markdown="setup-calliope" img="setup-calliope.png" alt-text="Hands connecting wires to a board"}}
+            {{> _tab-content tab-id="others" markdown="setup-other-boards" img="setup-other-boards.jpg" alt-text="Hands connecting wires to a board"}}
         {{/inline}}
     {{/layouts._tabbed-content}}
 
     <!-- IDE -->
     {{#> layouts._tabbed-content
         tabs-index="3"
-        tabs-title="Start Coding!"
+        tabs-title="开始编程！"
         color="teal"
         id="ide"
         markdown="ide-intro"
     }}
 
         {{#*inline "tab-buttons"}}
-            {{> _tab-button button-id="browser" button-label="Browser" selected="true"}}
-            {{> _tab-button button-id="computer" button-label="Application" selected="false"}}
+{{!--             {{> _tab-button button-id="browser" button-label="Browser" selected="true"}} --}}
+{{!--             {{> _tab-button button-id="computer" button-label="Application" selected="false"}} --}}
+            {{> _tab-button button-id="browser" button-label="浏览器" selected="true"}}
+            {{> _tab-button button-id="computer" button-label="应用程序" selected="false"}}
         {{/inline}}
 
         {{#*inline "tabbed-content"}}

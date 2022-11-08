@@ -11,11 +11,17 @@
     <div class="header__rosza">
       <img class="header__rosza-bubble" src="/assets/img/graphics/rosza-bubble.svg" alt="Speech Bubble">
       <div class="header__rosza-text">
+{{!--         <p> --}}
+{{!--           Hello! I’m Rosza!<br /> --}}
+{{!--           I was named after a<br /> --}}
+{{!--           <a href="https://en.wikipedia.org/wiki/R%C3%B3zsa_P%C3%A9ter" target="_blank">great mathematician</a><br /> --}}
+{{!--           Check her out! --}}
+{{!--         </p> --}}
         <p>
-          Hello! I’m Rosza!<br />
-          I was named after a<br />
-          <a href="https://en.wikipedia.org/wiki/R%C3%B3zsa_P%C3%A9ter" target="_blank">great mathematician</a><br />
-          Check her out!
+          你好，我是兔子路莎。<br />
+          我跟一位<a href="https://en.wikipedia.org/wiki/R%C3%B3zsa_P%C3%A9ter" target="_blank">伟大的数学家</a><br />
+          同名哦，来听听<br />
+          她的故事吧！
         </p>
       </div>
     </div>
@@ -42,23 +48,33 @@
       </a>
     </div>
 
-    <div class="menu-scroll" role="menu">
+    <div class="menu-scroll">
 
       <div class="menu__explain">
         <ul class="menu__links-list">
-          <li role="none"><a class="menu__link" role="menuitem" href="/what-is-microblocks">What is it?</a></li>
-          <li role="none"><a class="menu__link" role="menuitem" href="/get-started">Get Started</a></li>
-          <li role="none"><a class="menu__link" role="menuitem" href="https://learn.microblocks.fun">Learn</a></li>
-          <li role="none"><a class="menu__link" role="menuitem" href="/contribute">Contribute</a></li>
-          <li role="none"><a class="menu__link" role="menuitem" href="/about">About</a></li>
-          <li role="none"><a class="menu__link" role="menuitem" href="https://wiki.microblocks.fun/" target="_blank">Wiki</a></li>
-          <li role="none"><a class="menu__link" role="menuitem" href="/download">Download</a></li>
-          <!-- <li role="none"><a class="menu__link" role="menuitem" href="/blog">Blog</a></li> -->
+{{!--           <li role="none"><a class="menu__link" role="menuitem" href="/what-is-microblocks">What is it?</a></li> --}}
+{{!--           <li role="none"><a class="menu__link" role="menuitem" href="/get-started">Get Started</a></li> --}}
+{{!--           <li role="none"><a class="menu__link" role="menuitem" href="/learn">Learn</a></li> --}}
+{{!--           <li role="none"><a class="menu__link" role="menuitem" href="/contribute">Contribute</a></li> --}}
+{{!--           <li role="none"><a class="menu__link" role="menuitem" href="/about">About</a></li> --}}
+{{!--           <li role="none"><a class="menu__link" role="menuitem" href="https://wiki.microblocks.fun/" target="_blank">Wiki</a></li> --}}
+{{!--           <li role="none"><a class="menu__link" role="menuitem" href="/download">Download</a></li> --}}
+          <li role="none"><a class="menu__link" role="menuitem" href="/what-is-microblocks">介绍</a></li>
+          <li role="none"><a class="menu__link" role="menuitem" href="/get-started">开始</a></li>
+          <li role="none"><a class="menu__link" role="menuitem" href="https://learn.microblocks.fun/en/index">学习</a></li>
+          <li role="none"><a class="menu__link" role="menuitem" href="/contribute">贡献</a></li>
+          <li role="none"><a class="menu__link" role="menuitem" href="/about">关于</a></li>
+          <li role="none"><a class="menu__link" role="menuitem" href="https://wiki.microblocks.fun/" target="_blank">维基</a></li>
+          <li role="none"><a class="menu__link" role="menuitem" href="/download">下载</a></li>
+          <li role="none"><a class="menu__link" role="menuitem" href="https://forums.microblocksfun.cn">论坛</a></li>
         </ul>
       </div>
 
       <div class="menu__interact">
-        <a class="menu__link menu__link--run" role="menuitem" target="_blank" href="https://microblocks.fun/run/microblocks.html">Run</a>
+        <ul class="menu__links-list clickable" onclick="location='https://blocks.microblocksfun.cn/'">
+{{!--           <li role="none"><a class="menu__link" role="menuitem" href="https://microblocks.fun/run/microblocks.html">Run</a></li> --}}
+          <li role="none"><a class="menu__link" role="menuitem" href="https://blocks.microblocksfun.cn/">运行 MicroBlocks</a></li>
+        </ul>      
       </div>
 
     </div>
