@@ -1,44 +1,33 @@
-#### Linux Setup ####
+#### Linux 设置 ####
 
-Go to the [Download](download) page and click the **Download** button.
+进入[下载](https://www.microblocksfun.cn/download)页面，点击「**下载**」按钮。
 
-The browser will give you the option to save the file or open it with **Software Install**. Select open.
+浏览器会让你选择保存文件或用**软件安装**打开文件。选择「打开」。
 
-Click the **Install** button. Enter the root password when prompted and click **Authenticate**.
+单击「**安装**」按钮。在提示时输入根密码，然后点击「**验证**」。
 
-The first time you install MicroBlocks you must reboot.
-The installer adds the user to the access group for the serial port,
-but that change does not take effect until the next reboot.
+第一次安装 MicroBlocks 时，你必须重新启动。安装程序将用户添加到串行端口的访问组中，但这一变更在下次重启前不会生效。
 
-#### Troubleshooting ####
+#### 疑难解答 ####
 
-If **Software Install** does not work, click the **Download** button and save the file instead of opening it.
+如果**软件安装**不成功，请点击「**下载**」按钮，保存文件（请勿直接运行）。
 
-Open a terminal and run (for 64-bit):
+打开一个终端并运行（64 位）：
 
     sudo dpkg -i ~/Downloads/ublocks-amd64.deb
 
-or (for 32-bit):
+或（32 位）：
 
     sudo dpkg -i ~/Downloads/ublocks-i386.deb
 
-If MicroBlocks **does not connect** to your board,
-make sure that you rebooted after running the installer. Then run:
+如果 MicroBlocks **没有连接到**你的主板上，确保你在运行安装程序后重新启动。然后运行:
 
     groups
 
-to verify that you are in the **dialout** and **tty** groups.
+来验证你是否在 **dialout** 和 **tty** 组中。
 
-To verify that Linux sees your board, make sure the board is plugged in, then run:
+要验证 Linux 是否检测到你的主板，确保主板已经连接，然后运行：
 
     ls /dev | grep ACM
 
-You should see an entry for your board, usually ttyACM0.
-
-In 2022, some Linux distributions, including Ubuntu and Mint, began installing by default
-a package called BRLTTY (short for Braille TTY). Unfortunatley, that package
-conflicts with microcontroller boards that use the CP210x USB-serial chip, including
-many supported by MicroBlocks. BRLTTY grabs these boards so that no entry for the board
-appears in in /dev. This problem can be solved by removing the BRLTTY package:
-
-	sudo apt remove brltty
+你应该会看到主板有一个条目，通常是 ttyACM0。

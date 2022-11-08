@@ -1,1 +1,1 @@
-MicroBlocks downloads your code as you write it. When you like what your program does, just unplug the board and you're good to go. Make a game, a fitness app, or light-up clothing that goes wherever you do.
+MicroBlocks 允许边写边下载代码。程序一旦写好，只需拔线，主板就可开始运行。你可随心所欲制作游戏、健身应用程序，或可发光衣服。

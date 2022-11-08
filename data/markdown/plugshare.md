@@ -1,1 +1,1 @@
-With MicroBlocks, the board acts like a memory stick. No need for files; just plug in a board and the scripts reappear. Hand your board to a friend so they can explore your code. They might even add a cool new feature! 
+有了 MicroBlocks，主板就像一张内存卡。无需通过文件存储；只要插上主板，就能重现代码。把主板交给你的朋友，他们就可探索上面的代码，甚至直接添加更棒的新功能！

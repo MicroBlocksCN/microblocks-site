@@ -1,1 +1,1 @@
-How to set up your computer to use MicroBlocks.
+如何设置你的电脑，以使用 MicroBlocks。

@@ -1,20 +1,13 @@
-#### MacOS Setup ####
+#### macOS 设置 ####
 
-Go to the [Download](download) page and click the **Download** button.
+进入[下载](https://www.microblocksfun.cn/download)页面，点击「**下载**」按钮
 
-Open the Downloads folder on your computer. Double-click MicroBlocks.app.zip to unzip it.
+打开电脑上的「下载」文件夹。双击 MicroBlocks.app.zip，将其解压。
 
-Right-click on **MicroBlocks.app** and select **Open**.
-A dialog will inform you that the app was downloaded from the Internet.
+右键点击 **MicroBlocks.app**，并选择「**打开**」。将弹出对话框告知你，该应用无法打开。
 
-<img src="assets/img/md/get-started/mac-download-warning.png" width="400">
+<img src="/assets/img/md/get-started/mac-download-warning.png" width="400">
 
-Click the **Open** button.
+#### 疑难解答 ####
 
-Although it will seem that nothing happened, you can now open the app by double-clicking it.
-
-To finish, drag MicroBlocks.app to the Applications folder and drag MicroBlocks.app.zip to the trash.
-
-#### Troubleshooting ####
-
-If you cannot open MicroBlocks.app, open **System Preferences...** from the Apple menu and  select **Security & Privacy**. In the **General** tab, make sure that **Allow apps downloaded from:** is set to **App Store and identified developers**.
+如果你不能打开 MicroBlocks.app，从苹果菜单中打开系统偏好设置，并选择「**安全性与隐私**」。在「**通用**」选项卡中，确保将「**允许从以下位置下载的 App**」设置为「**App Store 和被认可的开发者**」。

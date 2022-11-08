@@ -1,1 +1,1 @@
-MicroBlocks runs on many different boards, but your scripts are portable. Buttons, sensors, and display blocks behave the same on all boards with the relevant hardware. MicroBlocks even simulates the micro:bit 5x5 LED display on TFT displays.
+MicroBlocks 可以在许多不同的主板上运行，且脚本可「一版多用」。按钮、传感器和显示积木可通用于所有具相关硬件的主板上。MicroBlocks 甚至可以在 TFT 显示器上模拟 micro:bit 的 5*️5 LED 显示器。

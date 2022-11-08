@@ -1,1 +1,1 @@
-How to set up your board for MicroBlocks.
+如何为 MicroBlocks 设置你的主板。
