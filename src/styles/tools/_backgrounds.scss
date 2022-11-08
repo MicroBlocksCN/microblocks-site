@@ -8,7 +8,7 @@
 // opstions; 'on-yellow" (default), "on-grey"
 
 @mixin background-emoji($color: on-yellow) {
-    background-image: url('assets/img/backgrounds/background-#{$color}.png');
+    background-image: url('/assets/img/backgrounds/background-#{$color}.png');
     background-position: center center;
 }
 
