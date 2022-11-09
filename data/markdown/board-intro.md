@@ -1,1 +1,1 @@
-如何为 MicroBlocks 设置你的主板。
+如何在 MicroBlocks 里设置主板。
