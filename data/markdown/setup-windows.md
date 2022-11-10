@@ -1,6 +1,6 @@
 #### Windows设置 ####
 
-进入[下载](https://www.microblocksfun.cn/download)页面，点击「**下载**」按钮。
+进入[下载](/download)页面，点击「**下载**」按钮。
 
 在 Chrome 或 Edge 浏览器中，会弹出警告提示下载的文件可能会损害你的电脑。
 
