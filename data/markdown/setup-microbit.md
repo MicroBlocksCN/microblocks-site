@@ -8,13 +8,15 @@
 
 在安装固件时，黄色 LED 会闪烁，过程会持续几秒钟。
 
+<!--
 如果你正在运行 MicroBlocks app，MicroBlocks 将在完成后自动连接到 micro:bit 主板。
 
 详细步骤请看[此视频](https://www.youtube.com/watch?v=V4u2_GN8JnU)。
+-->
 
-**浏览器中的更多步骤**
+**浏览器中的操作步骤**
 
-如果你在浏览器或者在 Web App 上运行 MicroBlocks，你需要设置浏览器。（出于安全性考虑，浏览器无法在不询问用户的情况下主动访问主板的 USB 驱动器。)
+如果你在浏览器或者在 Web App 上运行 MicroBlocks，你需要设置浏览器。<!--（出于安全性考虑，浏览器无法在不询问用户的情况下主动访问主板的 USB 驱动器。)-->
 
 首先，从菜单中选择主板类型。
 
@@ -22,7 +24,7 @@
 
 此时会出现一个对话框，阅读说明，然后点击「**确定**」。
 
-<img src="/assets/img/md/get-started/firmware-install-instructions-microbit-cn.png" width="320">
+<img src="/assets/img/md/get-started/firmware-install-instructions-microbit-cn.png" width="400">
 
 在浏览器的保存对话框中，选择「**MICROBIT 驱动器**」，然后点击「**保存**」按钮。
 

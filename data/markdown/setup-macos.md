@@ -1,6 +1,6 @@
 #### macOS 设置 ####
 
-进入[下载](https://www.microblocksfun.cn/download)页面，点击「**下载**」按钮
+进入[下载](/download)页面，点击「**下载**」按钮
 
 打开电脑上的「下载」文件夹。双击 MicroBlocks.app.zip，将其解压。
 

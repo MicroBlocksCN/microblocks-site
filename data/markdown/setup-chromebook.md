@@ -1,6 +1,6 @@
 #### Chromebook 设置 ####
 
-进入[下载](https://www.microblocksfun.cn/download)页面，点击「**下载**」按钮。
+进入[下载](/download)页面，点击「**下载**」按钮。
 如果你使用的是 Chromebook，就会进入 Chrome 网上应用商店的 [MicroBlocks 页面](https://chrome.google.com/webstore/detail/microblocks/cbmcbhgijipgdmlnieolilhghfmnngbb?authuser=0)。
 
 <img src="/assets/img/md/get-started/chrome-web-store.png" width="400">
