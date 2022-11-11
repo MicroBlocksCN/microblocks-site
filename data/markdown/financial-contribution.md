@@ -1,9 +1,9 @@
-MicroBlocks is a not-for-profit project under the fiscal sponsorship of the Software Freedom Conservancy, a 501(c)(3) non-profit.
+MicroBlocks 是一个非营利项目(501(c)(3) 非营利组织)，由软件自由保护协会提供财政赞助。
 
-MicroBlocks can accept tax-deductible donations, grants, and sponsorships from individuals and organizations. If you find MicroBlocks useful, we invite you or your organization to contribute.
+MicroBlocks 接受来自个人和组织的可减税捐赠、资助和赞助。如果您觉得 MicroBlocks 对您有用，我们邀请您或您的组织捐款。
 
-Click the button below to make a personal donation to the project via PayPal or credit card.
+点击下面的按钮，通过 PayPal 或信用卡向该项目进行个人捐赠。
 
-If you would like to make a large donation (over $500) via wire transfer (which saves us the PayPal service fee) or sponsor this project in some other way, please contact us.
+如果您想通过电汇进行大额捐款(超过500美元, 这样可以省去 PayPal 的服务费)或以其他方式赞助这个项目，请与我们联系。
 
-Thank you. Every little bit helps!
+感谢您的任何帮助！

@@ -1,2 +1,2 @@
-We'd welcome your help in localizing the MicroBlocks editor.
-Please contact us if you'd like to help.
+欢迎帮助改善 MicroBlocks 编程环境的汉化。    
+如果您愿意提供帮助，请联系我们。

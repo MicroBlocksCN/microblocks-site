@@ -1,9 +1,8 @@
-#### Activity Cards
+#### 活动(Activity)
+MicroBlocks 团队制作了[许多有趣的活动](https://learn.microblocksfun.cn/en/)。也欢迎社区用户分享自己制作的有趣活动。
 
-Have ideas for your own activity cards? We encourage you to use the MicroBlocks formats! You can copy the style of our [official activity cards](https://drive.google.com/drive/folders/1BxsJ-nEC1MxT67O2bfrHBS9b8nmuMDad) in Google Slides/Docs format under the Creative Commons CC BY-SA 4.0 license using this [template](https://docs.google.com/presentation/d/1NYn_RX_OrrrJJO6j5mOKRSDriC7CMYItpkGHszJXXPw).
+如果您愿意分享， [从这里开始吧](https://github.com/MicroBlocksCN/microblocks-learn#%E6%8F%90%E4%BA%A4%E6%B4%BB%E5%8A%A8activities)！
 
-If you want your own cards to be listed under our [card gallery](learn), please get in touch with us at [interest@microblocks.fun](mailto:interest@microblocks.fun).
+#### MicroBlocks Logo 的使用
 
-#### MicroBlocks Logo Use
-
-However, the bunny image, the name *MicroBlocks*, and the phrase *Small, Fast, Human Friendly* are registered US trademarks and cannot be used without written permission from our fiscal sponsor, the [Software Freedom Conservancy](https://sfconservancy.org). Those trademarks (including the bunny image) should not appear on your own original materials or activity cards, although they should appear on direct translations of MicroBlocks activity cards.
+MicroBlocks 的兔子图像、*MicroBlocks* 名称和短语 *Small, Fast, Human Friendly* 是美国注册商标，未经我们的财政赞助商 [软件自由保护协会](https://sfconservancy.org) 的书面许可，不得使用。 这些商标（包括兔子图像）不应出现在您自己的原始材料或活动卡上，但可以出现在 MicroBlocks 活动卡的翻译版本上。
