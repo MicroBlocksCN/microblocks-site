@@ -2,115 +2,115 @@
     "team":[
         {
             "name":"John Maloney",
-            "role":"Software development",
+            "role":"软件开发",
             "role-class":"developer",
-            "bio":"John Maloney is best known as one of the co-creators of Scratch, which he worked on for its first eleven years. He also helped create Squeak Smalltalk, EToys, GP Blocks, and the Morphic UI framework. At MicroBlocks, John is the lead developer for both the virtual machine and the programming environment, as well as a member of the Project Leadership Committee. He holds B.S. and M.S. degrees from MIT and a Ph.D. in Computer Science from the University of Washington.",
+            "bio":"John Maloney 是 Scratch 的联合创始人之一，他也因此闻名。在 Scratch 项目的头 11 年里, 他都致力于此。他还帮助创建了 Squeak Smalltalk、EToys、GP Blocks 和 Morphic UI 框架。John 拥有麻省理工学院的学士及硕士学位、华盛顿大学的计算机科学博士学位。John 是 MicroBlocks 的虚拟机和编程环境的主要开发者，同时也是项目领导委员会成员。",
             "img":"john-maloney.png"
         },
         {
             "name":"Bernat Romagosa",
-            "role":"Software development",
+            "role":"软件开发",
             "role-class":"developer",
-            "bio":"Bernat Romagosa is a software engineer from Barcelona. He is the author of Snap4Arduino and the main developer of Beetle Blocks. As part of the SAP Young Thinkers group he contributes to the Snap! programming language and to MicroBlocks. At MicroBlocks, he codes parts of the VM and the standalone IDE, and is also a member of the Project Leadership Committee.",
+            "bio":"Bernat Romagosa 是一名软件工程师，来自巴塞罗那。他是 Snap4Arduino 的作者和 Beetle Blocks 的主要开发者。作为 SAP 青年思想家小组（SAP Young Thinkers group）的一员，他为 Snap！编程语言和 MicroBlocks 作出了贡献。他在 MicroBlocks 中负责虚拟机和独立IDE的部分工作，同时也是项目领导委员会成员。",
             "img":"bernat-romagosa.png"
         },
         {
             "name":"Kathy Giori",
-            "role":"Global Partnerships and Outreach",
+            "role":"全球伙伴关系与外联",
             "role-class":"partnership",
-            "bio":"Kathy Giori fills her desk with hardware that can be programmed using MicroBlocks, and enjoys teaching workshops. She currently leads ecosystem engagement at Zededa, and has worked in Silicon Valley her whole career. At MicroBlocks, she directs global partnerships and outreach, and is a member of the Project Leadership Committee. She holds a B.S. in EE from the University of Minnesota and an M.S. in EE from Stanford.",
+            "bio":"Kathy Giori 的办公桌上摆满了可以用 MicroBlocks 编程的硬件，她也热衷于在研讨会上授课。Kathy 目前在 Zededa 主导「生态系统参与」（ecosystem engagement）方面的工作。她多年来都在硅谷从业。Kathy 拥有明尼苏达大学电子电气工程专业学士学位和斯坦福大学电子电气工程专业硕士学位。她在 MicroBlocks 中负责主导全球伙伴关系和外联工作，同时也是项目领导委员会成员。",
             "img":"kathy-giori.png"
         },
         {
             "name":"Jens Mönig",
-            "role":"Development and consulting",
+            "role":"开发和咨询",
             "role-class":"snap",
-            "bio":"Jens Mönig is a researcher at SAP. He is the architect and lead programmer of UC Berkeley’s SNAP! programming language together with Brian Harvey. Previously Jens has conducted research under Alan Kay, helped develop Scratch for the MIT Media Lab and written enterprise software. He is a fully qualified lawyer in Germany and was an attorney, corporate counsel and lecturer for many years before rediscovering his love for programming. For leisure Jens loves fooling around with musical instruments.",
+            "bio":"Jens Mönig 是 SAP 的研究员。他与 Brian Harvey 同为加州大学伯克利分校 SNAP！编程语言的架构师, 也是该项目的首席程序员。在此之前， Jens 曾在 Alan Kay 的领导下进行研究工作，帮助麻省理工学院媒体实验室（MIT Media Lab）开发 Scratch 并编写企业软件。Jens 还是德国的执业律师。在他重新认识到自己对编程的热爱之前，他曾做过多年的律师、企业顾问和演讲者。Jens的兴趣爱好是玩乐器。",
             "img":"jens-moenig.png"
         },
         {
             "name":"Turgut Güneysu",
-            "role":"Documentation and testing",
+            "role":"文档与测试",
             "role-class":"educational",
-            "bio":"Turgut is a retired computer professional from the USA, living in Cappadocia, Turkey. He loves helping kids come to grips with computers, computing, programming, microprocessor projects, mobile computing, problem solving; and most importantly, helping them learn to make decisions and be creative.",
+            "bio":"Turgut Güneysu 是一位来自美国的退休计算机专家，目前住在土耳其的卡帕多西亚。他热衷于帮助孩子掌握计算机、计算、编程、微处理器项目、移动计算、解决问题等知识技能。最重要的是，帮助他们学会如何决策并发挥创造力。",
             "img":"turgut-guneysu.png"
         },
         {
             "name":"Jadga Hügle",
-            "role":"Documentation and testing",
+            "role":"文档与测试",
             "role-class":"educational",
-            "bio":"Jadga works for SAP’s Snap! team and develops learning resources for students, teachers and colleagues. In her spare time, when she's not volunteering in after-school computer clubs, Jadga is likely to be found outside watching birds or playing games with her friends. She loves building costumes with microcontrollers and preferably a lot of LEDs. At MicroBlocks, Jadga wants to invent fun and interesting IoT projects and spread the good ideas among teachers and students.",
+            "bio":"Jadga Hügle 供职于 SAP 的Snap！团队，为学生、教师和同事制作学习资源。业余时间，Jadga 要么在课后计算机俱乐部做志愿者，要么在外边看鸟或者跟朋友玩游戏。她喜欢用微控制器制作服装，并喜欢在上边装点许多 LED。Jadga 希望用 MicroBlocks 创造有趣的物联网项目，并在教师和学生中分享交流好点子。",
             "img":"jadga-huegle.png"
         },
         {
             "name":"Amon Millner",
-            "role":"Advisor",
+            "role":"顾问",
             "role-class":"advisor",
-            "bio":"Amon Millner is an Associate Professor of Computing and Innovation at the Olin College of Engineering. He directs the Extending Access to STEM Empowerment (EASE) Lab - developing technologies and community programs to facilitate learners incorporating computing into the way that they play, learn, prepare to fully participate in society, and uplift their communities. He has co-invented blocks-based languages from Scratch to Unruly Splats and is an Advisory Board member for MicroBlocks.",
+            "bio":"Amon Millner 是富兰克林·欧林工程学院的计算与创新专业副教授。他主导运营 STEM 赋能普及实验室（Extending Access to STEM Empowerment Lab，简称EASE）—— 开发技术和社区项目，以促进学习者将「计算」融入到玩耍、学习、为社会参与做准备、和改善社区的方式当中。作为积木块编程语言的开创者之一，Scratch 和 Unruly Splats 都是他的代表项目。Amon 在 MicroBlocks 担任顾问委员会成员。",
             "img":"amon-millner.png"
         },
         {
             "name":"Tom Lauwers",
-            "role":"Advisor",
+            "role":"顾问",
             "role-class":"advisor",
-            "bio":"Tom Lauwers is the founder and CEO of BirdBrain Technologies, located in Pittsburgh, PA. He seeks to design educational tools that catalyze positive making, coding, and engineering learning experiences in the classroom. Tom received a Ph.D. in robotics in 2010 from Carnegie Mellon in part for his work designing the Finch robot and Hummingbird robotics kit.",
+            "bio":"Tom Lauwers 是 BirdBrain Technologies 公司的创始人和首席执行官，该公司位于匹兹堡。他希望设计出一些教育工具，能在课堂进行创造、编程和工程学习时，让课堂产生积极的学习体验。 他设计了「雀鸟机器人」（Finch robot）和「蜂鸟机器人套件」（Hummingbird robotics kit），这些发明在一定程度上也对他在 2010 年获得卡内基梅隆大学机器人学的博士学位有很大帮助。",
             "img":"tom-lauwers.png"
         }
     ],
     "ambassadors":[
         {
-            "name": "Sara Dib",
+            "name": "阿尔及利亚",
             "region":"Algeria",
             "href":"https://www.linkedin.com/in/sara-dib-b12840144/"
         },
         {
             "name": "Audra Kaplan",
-            "region":"Eastern US and CSTA",
+            "region":"美国东部及美国计算机科学教师协会(CSTA)",
             "href":"https://twitter.com/AudraKaplan/"
         },
         {
             "name": "Nargiza Kholmatova",
-            "region":"Central Asia",
+            "region":"中亚",
             "href":"https://www.linkedin.com/in/nargizakholmatova/"
         },
         {
             "name": "Leah Strichartz",
-            "region":"Western US",
+            "region":"美国西部",
             "href":"https://www.linkedin.com/in/leahstrichartz/"
         },
         {
             "name": "Cesar Gomez Suarez",
-            "region":"Eastern Canada",
+            "region":"加拿大东部",
             "href":"https://www.linkedin.com/in/cesaragomezs/"
         },
         {
             "name": "Peter Mathijssen",
-            "region":"The Netherlands",
+            "region":"荷兰",
             "href":"https://petermathijssen.nl/"
         },
         {
             "name": "Ramon Moorlag",
-            "region":"The Netherlands",
+            "region":"荷兰",
             "href":"http://ramonmoorlag.nl/"
         },
         {
             "name": "Luis Mayorga",
-            "region":"Mexico",
+            "region":"墨西哥",
             "href":"https://campsite.bio/luis.mayorga"
         },
         {
             "name": "Binta Moustapha",
-            "region": "Niger Republic and Nigeria",
+            "region": "尼日利亚及尼日尔",
             "href": "https://www.linkedin.com/in/binta-moustapha-482abb109"
         },
         {
             "name": "Roger Wagner",
-            "region": "Western US",
+            "region": "美国西部",
             "href": "https://rogerwagner.com"
         },
         {
             "name": "Wenjie Wu",
-            "region": "China",
+            "region": "中国",
             "href": "https://wwj718.github.io"
         }
    ],
