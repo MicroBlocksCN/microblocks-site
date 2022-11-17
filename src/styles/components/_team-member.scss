@@ -7,7 +7,7 @@
     // display: flex;
     margin-bottom: 40px;
 
-    @include mq(sm) {
+    @include breakpoint(sm) {
         display: flex;
         margin-bottom: 56px;
         padding-right: 16px
@@ -32,7 +32,7 @@
         object-fit: cover;
     }
 
-    @include mq(md) {
+    @include breakpoint(md) {
         width: 80px;
     }
 }
@@ -51,7 +51,7 @@
     line-height: 1;
     letter-spacing: -0.5px;
 
-    @include mq(md) {
+    @include breakpoint(md) {
         font-size: 24px;
     }
 }
@@ -65,7 +65,7 @@
     font-size: 24px;
     text-transform: lowercase;
 
-    @include mq(md) {
+    @include breakpoint(md) {
         font-size: 20px;
     }
 

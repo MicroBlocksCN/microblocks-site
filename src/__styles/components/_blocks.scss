@@ -1,0 +1,50 @@
+// ==========================================================================
+// Components / Title Blocks
+// ==========================================================================
+
+
+.block {
+  display: inline-block;
+  padding: 6px 12px 10px;
+  border-radius: $border-radius-global;
+  margin-bottom: 12px;
+
+  @include font-display-bold;
+  color: $color-white;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -1px;
+  text-transform: lowercase;
+
+  @include block-connector;
+
+
+  // Large Screens
+
+  @include mq(md) {
+    font-size: 48px;
+  }
+
+
+  // Colors
+
+  &--orange {
+    background-color: $color-orange;
+  }
+
+  &--purple {
+    background-color: $color-purple;
+  }
+
+  &--blue {
+    background-color: $color-blue;
+  }
+
+  &--teal {
+    background-color: $color-teal;
+  }
+
+  &--green {
+    background-color: $color-green;
+  }
+}

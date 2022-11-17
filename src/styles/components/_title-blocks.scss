@@ -7,7 +7,7 @@
   margin: -24px 0 40px 0;
   font-size: 32px;
 
-  @include mq(md) {
+  @include breakpoint(md) {
     margin: -32px 0 40px 0;
     font-size: 48px;
   }

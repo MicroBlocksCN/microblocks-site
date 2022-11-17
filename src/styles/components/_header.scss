@@ -13,7 +13,7 @@
 
   // Large Screens
 
-  @include mq(md) {
+  @include breakpoint(md) {
     height: 56px;
   }
 }
@@ -26,11 +26,11 @@
 
   transition: transform 0.2s ease-out;
 
-  @include mq(md) {
+  @include breakpoint(md) {
     width: 240px;
   }
 
-  @include mq(lg) {
+  @include breakpoint(lg) {
     z-index: $zindex-menu-on-top;
   }
   

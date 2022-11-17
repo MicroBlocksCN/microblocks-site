@@ -1,0 +1,24 @@
+// ==========================================================================
+// Tools / Backgrounds
+// ==========================================================================
+
+
+
+// Mixins
+// opstions; 'on-yellow" (default), "on-grey"
+
+@mixin background-emoji($color: on-yellow) {
+    background-image: url('assets/img/backgrounds/background-#{$color}.png');
+    background-position: center center;
+}
+
+
+// Build somehow?
+
+.bg-grey {
+    background-color: $color-black-200;
+}
+
+.bg-white {
+    background-color: $color-white;
+}

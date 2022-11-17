@@ -1,0 +1,51 @@
+// ==========================================================================
+// Elements / Rounded Icons, Lists Indexs...
+// ==========================================================================
+
+
+.circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+
+  @include center-content-flex;
+
+  @include font-display-bold;
+  color: $color-white;
+
+
+  // Sizes
+
+  &--large {
+    width: 48px;
+    height: 48px;
+  }
+
+
+  // Colors
+
+  &--yellow {
+    background-color: $color-yellow;
+    color: $color-black;
+  }
+
+  &--orange {
+    background-color: $color-orange;
+  }
+
+  &--teal {
+    background-color: $color-teal;
+  }
+
+  &--purple {
+    background-color: $color-purple;
+  }
+
+  &--green {
+    background-color: $color-green;
+  }
+
+  &--blue {
+    background-color: $color-blue;
+  }
+}

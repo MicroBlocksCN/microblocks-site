@@ -20,16 +20,17 @@
     justify-content: center;
     
     @include font-display-bold;
-    color: $color-black;
+    color: $color-grey-900;
     font-size: 16px;
     line-height: 16px;
     background-color: $color-white;
+    box-shadow: $boxShadow-base;
 
     transition: all 0.2s ease-out;
 
     &--active {
         color: $color-white;
-        background-color: $color-black;
+        background-color: $color-grey-900;
     }
 
     &--disabled {
@@ -40,7 +41,7 @@
     &:focus-visible {
         cursor: pointer;
         color: $color-white;
-        background-color: $color-black;
+        background-color: $color-grey-900;
     }
 
     &--disabled {
@@ -49,7 +50,7 @@
         &:hover,
         &:focus-visible {
             cursor: not-allowed;
-            color: $color-black;
+            color: $color-grey-900;
             background-color: $color-white;
         }
     }

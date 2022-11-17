@@ -5,6 +5,6 @@
 
 .border-top {
     padding-top: 40px;
-    // border-top: 1px solid $color-black-300;
-    @include border-top-small($color-black-300);
+    // border-top: 1px solid $color-grey-300;
+    @include border-top-small($color-grey-300);
 }

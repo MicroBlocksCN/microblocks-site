@@ -9,8 +9,8 @@
 
 .page-blog__header {
     margin: 64px 0 16px 0;
-
-    @include mq(lg) {
+    
+    @include breakpoint(lg) {
         position: relative;
         z-index: 1;
         margin: 80px 0 -56px 0;
@@ -38,11 +38,11 @@
 .page-blog__title-paginated {
     margin-bottom: 32px;
     padding-top: 8px;
-    @include border-top-small($color-black-300);
-
+    @include border-top-small($color-grey-300);
+    
     @include font-display-bold;
     font-size: 24px;
-    color: $color-black-900;
+    color: $color-grey-900;
 }
 
 
@@ -56,7 +56,7 @@
 .page-blog__article-featured {
     margin-bottom: 40px;
 
-    @include mq(lg) {
+    @include breakpoint(lg) {
         margin-bottom: 60px;
     }
 }
@@ -72,10 +72,10 @@
 .page-blog__articles-title {
     margin-bottom: 32px;
     padding-top: 8px;
-    @include border-top-small($color-black-300);
-
-    @include font-display-bold;
-    color: $color-black-700;
+    @include border-top-small($color-grey-300);
+  
+    @include font-display-regular;
+    color: $color-grey-700;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -87,13 +87,13 @@
     display: grid;
     row-gap: 40px;
 
-    @include mq(md) {
+    @include breakpoint(md) {
         margin-bottom: 60px;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 32px;
     }
 
-    @include mq(lg) {
+    @include breakpoint(lg) {
         grid-template-columns: repeat(3, 1fr);
     }
 }

@@ -33,9 +33,9 @@
   }
 
   &--grey {
-    background-color: $color-black-200;
+    background-color: $color-grey-200;
     @include background-emoji(on-grey);
-    @include border-top-large($color-black-300);
-    @include border-bottom-large($color-black-300);
+    @include border-top-large($color-grey-300);
+    @include border-bottom-large($color-grey-300);
   }
 }

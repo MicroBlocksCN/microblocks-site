@@ -1,0 +1,40 @@
+// ==========================================================================
+// Components / List Numeric
+// ==========================================================================
+
+
+.list-numeric__anchor {
+    position: relative;
+
+    display: flex;
+    align-items: baseline;    
+    line-height: 20px;
+    margin-bottom: 16px;
+
+    transition: left 0.2s ease-out;
+    left: 0;
+
+
+    &:hover,
+    &:focus-visible {
+        left: 8px;
+    }
+
+    // @include focus-visible-large;
+}
+
+
+.list-numeric__index {
+    flex-shrink: 0;
+
+    // Styled by .circle class
+    margin-right: 8px;
+}
+
+
+.list-numeric__text {
+    @include font-display-bold;
+    font-size: 20px;
+    letter-spacing: -1px;
+    color: $color-black;
+}

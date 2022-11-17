@@ -1,0 +1,21 @@
+// ==========================================================================
+// Templates / Release
+// ==========================================================================
+
+
+.page-release .main-header__intro {
+
+    margin-bottom: 32px;
+
+    @include mq(lg) {
+        margin-bottom: 0px;
+    }  
+}
+
+.page-release__intro-download-btn {
+
+    @include mq(lg) {
+        padding-top: 12px;
+        text-align: right;
+    }
+}

@@ -58,9 +58,12 @@
 @import 'components/accordion';
 @import 'components/activity-cards';
 @import 'components/article-featured';
+@import 'components/article-text';
 @import 'components/base';
 @import 'components/blocks';
 @import 'components/border-top';
+@import 'components/card-article-archive';
+@import 'components/card-article';
 @import 'components/circle';
 @import 'components/colored-section';
 @import 'components/footer';
@@ -93,6 +96,8 @@
 // Templates
 // Styles specific to a template
 // ==========================================================================
+@import 'templates/archive';
+@import 'templates/article';
 @import 'templates/blog';
 @import 'templates/download';
 @import 'templates/index';

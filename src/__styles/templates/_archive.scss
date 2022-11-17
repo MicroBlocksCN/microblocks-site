@@ -1,0 +1,23 @@
+// ==========================================================================
+// Templates / Archive
+// ==========================================================================
+
+
+// Header
+// ========================================
+
+
+.page-archive__header {
+    margin: 64px 0 16px 0;
+}
+
+
+.page-archive__title {
+    transform: rotate(-1deg);
+}
+
+
+.page-archive__articles-list {
+    display: grid;
+    gap: 24px;
+}

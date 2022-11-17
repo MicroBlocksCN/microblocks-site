@@ -1,0 +1,86 @@
+// ==========================================================================
+// Layout / Header
+// ==========================================================================
+
+
+.header {
+  height: 48px;
+  z-index: $zindex-menu;
+  position: relative;
+
+  background-color: $color-white;
+
+
+  // Large Screens
+
+  @include mq(md) {
+    height: 56px;
+  }
+}
+
+
+.header__logo {
+  position: absolute;
+  display: block;
+  width: 200px;
+
+  transition: transform 0.2s ease-out;
+
+  @include mq(md) {
+    width: 240px;
+  }
+
+  @include mq(lg) {
+    z-index: $zindex-menu-on-top;
+  }
+  
+  &:hover,
+  &:focus-visible {
+    transform: rotate(-2deg);
+  }
+}
+
+
+.header__rosza {
+  position: absolute;
+  top: 80px;
+  left: 70px;
+
+  width: 160px;
+  height: 110px;
+  transform: rotate(-5deg);
+
+  // Initial State
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+
+  &-bubble {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 16px;
+    height: 100px;
+    width: 100%;
+
+    font-weight: bold;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: -0.25px;
+
+    a:link,
+    a:visited {
+      color: $color-purple;
+    }
+  }
+}

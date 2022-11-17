@@ -11,7 +11,7 @@
 .index-hero__boardie {
     text-align: right;
 
-    @include mq(xl) {
+    @include breakpoint(xl) {
         margin-right: 100px;
     }
 }
@@ -28,7 +28,7 @@
     margin-top: 40px;
     margin-bottom: 40px;
 
-    @include mq(md) {
+    @include breakpoint(md) {
         font-size: 72px;
         margin-top: 100px;
         padding-bottom: 40px;
@@ -39,7 +39,7 @@
 .index-hero__statement-explained {
     display: none;
 
-    @include mq(md) {
+    @include breakpoint(md) {
         display: block;
         position: absolute;
     }
@@ -71,7 +71,7 @@
 
     margin-top: 32px;
 
-    @include mq(lg) {
+    @include breakpoint(lg) {
         height: 100%;
         margin-top: 0;
         display: flex;
@@ -95,7 +95,7 @@
 
     margin-bottom: 40px;
 
-    @include mq(md) {
+    @include breakpoint(md) {
 
         &:nth-of-type( 2n + 1 ) {
             flex-direction: row-reverse;

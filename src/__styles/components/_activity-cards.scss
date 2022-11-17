@@ -1,0 +1,182 @@
+// ==========================================================================
+// Components / Activity Cards
+// ==========================================================================
+
+
+.activity-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  color: $color-black;
+
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: $color-white;
+  @include shadow-light;
+
+  &:hover,
+  &:focus-visible,
+  &--visible {
+
+    .activity-card__downloads {
+      opacity: 1;
+
+      a {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.activity-card__downloads:hover {
+    opacity: 1;
+
+    a {
+        visibility: visible;
+    }
+}
+
+.activity-card__picture {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
+
+.activity-card__info {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 16px 16px 16px;
+
+  @include mq(md) {
+    min-height: 148px;
+  }
+}
+
+
+.activity-card__text-wrapper {
+  margin-bottom: 24px
+}
+
+
+.activity-card__title {
+  @include font-display-bold;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+
+
+.activity-card__requirement {
+  position: relative;
+  margin-top: 8px;
+  padding-left: 20px;
+
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-black-700;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+
+    position: absolute;
+    left: 0;
+    top: 1px;
+
+    // background-color: $color-black-700;
+    background-image: url('assets/img/icons/icon-asterisk.svg');
+  }
+}
+
+
+.activity-card__tags-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.activity-card__tag {
+  display: block;
+
+  @include font-regular-bold;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-white;
+  background-color: $color-black;
+
+  margin: 6px 8px 0 0;
+  padding: 4px 8px 6px 8px;
+  border-radius: 2px;
+
+  &--board {
+    background-color: $color-purple;
+  }
+
+  &--level {
+    background-color: $color-teal;
+  }
+}
+
+
+
+
+// Downloads
+// ==========================================================================
+
+
+.activity-card__downloads {
+  position: absolute;
+  @include inset;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  opacity: 0;
+  transition: opacity 0.25s ease-out;
+}
+
+
+.activity-card__downloads-title {
+  color: $color-black-700;
+  margin-bottom: 16px;
+}
+
+
+.activity-card__downloads-links {
+  text-align: center;
+
+  a {
+    display: block;
+    margin-bottom: 8px;
+    
+    // Avoid click on touch devices
+    // prior to show the layer
+    visibility: hidden;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+

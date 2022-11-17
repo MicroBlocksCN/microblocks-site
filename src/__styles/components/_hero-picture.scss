@@ -1,0 +1,26 @@
+// ==========================================================================
+// Components / Hero Picture
+// ==========================================================================
+
+
+
+.hero-picture {
+  position: relative;
+  height: 40vh;
+
+  @include mq(lg) {
+    height: 40vh;
+  }
+}
+
+
+.hero-picture__img {
+  position: absolute;
+  @include inset;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

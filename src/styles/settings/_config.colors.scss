@@ -7,31 +7,38 @@
 // ==========================================================================
 
 
-$color-white: #FFFFFF;
-$color-black-50: #FAFAFA;
-$color-black-200: #EDEDED;
-$color-black-300: #E0E0E0;
-$color-black-400: #BDBDBD;
-$color-black-700: #616161;
-$color-black-900: #212121;
-$color-black: #2C2C2C; // aka black-500
+$color-background:    #FCFCFC;
 
-$color-yellow: #FED722;
-$color-yellow-dark: #FBC227;
-$color-orange: #F58518;
-$color-orange-50: #FEFEE8;
-$color-purple: #B6519D;
-$color-purple-50: #FFF2FC;
-$color-blue: #009ECE;
-$color-blue-50: #EEFBFF;
-$color-teal: #01928B;
-$color-teal-50: #F2FFFE;
-$color-green: #52A546;
-$color-green-50: #EAF6E9;
-$color-green: #52A546;
-$color-green-50: #EAF6E9;
-$color-blue-violet: #4E58A7;
-$color-blue-violet-50: #e1e4f8;
+$color-white:         #FFFFFF;
+$color-grey-50:       #FAFAFA;
+$color-grey-200:      #EEEEEE;
+$color-grey-300:      #E0E0E0;
+$color-grey-400:      #BDBDBD;
+$color-grey-700:      #616161;
+$color-grey-900:      #2C2C2C; // aka black-500
+$color-black:         #000000;
 
+$color-yellow:        #FFDF48;
+$color-yellow-dark:   #FFC632;
+$color-orange-shade:  #FEFEE8;
+$color-orange:        #F58518;
+$color-purple-shade:  #FFF2FC;
+$color-purple:        #B1529A;
+$color-purple-dark:   #A8318B;
+$color-red:           #E84C45;
+$color-red-dark:      #6C2420;
+$color-blue-shade:    #EEFBFF;
+$color-blue-light:    #8DE4FF;
+$color-blue:          #009ECE;
+$color-blue-medium:   #007599;
+$color-blue-dark:     #1A4B5A;
+$color-teal-shade:    #F2FFFE; 
+$color-teal:          #01928B;
+$color-green-shade:   #EAF6E9;
+$color-green:         #52A546;
+$color-green-dark:    #275A1F;
+$color-blue-violet-shade: #e1e4f8;
+$color-blue-violet:   #4E58A7;
 
-$color-background: #F8F8F8;
+$color-script-pane:   #DCDCDC;
+$background-white-transparent: rgba(255,255,255,0.9);

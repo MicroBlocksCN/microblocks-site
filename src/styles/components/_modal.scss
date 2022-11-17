@@ -17,14 +17,14 @@
     border: 8px solid $color-yellow-dark;
     @include shadow-light;
 
-    color: $color-black;
+    color: $color-grey-900;
 
-    @include mq(md) {
+    @include breakpoint(md) {
         width: auto;
         max-width: 75%;
     }
 
-    @include mq(lg) {
+    @include breakpoint(lg) {
         max-width: 50%;
     }
 }
@@ -37,7 +37,7 @@
     
 
     color: $color-white;
-    background-color: $color-black;
+    background-color: $color-grey-900;
     border-radius: 50%;
     padding: 12px;
     line-height: 0;

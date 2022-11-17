@@ -1,0 +1,125 @@
+// ==========================================================================
+// Templates / Home
+// ==========================================================================
+
+
+
+// Hero
+// ==========================================================================
+
+
+.index-hero__boardie {
+    text-align: right;
+
+    @include mq(xl) {
+        margin-right: 100px;
+    }
+}
+
+
+.index-hero__statement {
+    position: relative;
+
+    @include font-regular-bold;
+    font-size: 56px;
+    line-height: 1;
+    letter-spacing: -2px;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    @include mq(md) {
+        font-size: 72px;
+        margin-top: 100px;
+        padding-bottom: 40px;
+    }
+}
+
+
+.index-hero__statement-explained {
+    display: none;
+
+    @include mq(md) {
+        display: block;
+        position: absolute;
+    }
+
+    &--tools {
+        top: -94px;
+        left: -20px;
+    }
+
+    &--fastest {
+        top: -84px;
+        left: 240px;
+    }
+
+    &--human {
+        top: 140px;
+        left: 100px;
+    }
+    
+}
+
+
+
+// Intro text
+// ==========================================================================
+
+
+.page-home .page-header__intro {
+
+    margin-top: 32px;
+
+    @include mq(lg) {
+        height: 100%;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }    
+}
+
+
+
+// What makes MicroBlocks Special
+// ==========================================================================
+
+
+.index-special {
+    padding-bottom: 40px;
+}
+
+
+.index-special__block {
+
+    margin-bottom: 40px;
+
+    @include mq(md) {
+
+        &:nth-of-type( 2n + 1 ) {
+            flex-direction: row-reverse;
+    
+            .index-special__content {
+                text-align: right
+            }
+    
+            .index-special__index {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }    
+}
+
+
+.index-special__illustration {
+    text-align: center;
+}
+
+
+.index-special__title {
+    @include font-display-bold;
+    font-size: 32px;
+    margin-bottom: 16px;
+}

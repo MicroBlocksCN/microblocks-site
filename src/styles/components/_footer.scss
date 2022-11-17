@@ -6,9 +6,9 @@
 
 .footer {
   padding: 48px 0 24px 0;
-  background-color: $color-black;
+  background-color: $color-grey-900;
 
-  color: $color-black-400;
+  color: $color-grey-400;
   font-size: 14px;
   line-height: 1.2rem;
   
@@ -26,7 +26,7 @@
 
     a:link,
     a:visited {
-      color: $color-black-400;
+      color: $color-grey-400;
       text-decoration: underline;
       transition: color 0.3s ease-out;
     }
@@ -63,7 +63,7 @@
   display: block;
   width: 200px;
 
-  @include mq(lg) {
+  @include breakpoint(lg) {
     width: 240px;
     transform: translateY(-23px); // Align logo to titles
   }

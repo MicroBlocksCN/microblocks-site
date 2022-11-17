@@ -6,7 +6,7 @@
 .block {
   display: inline-block;
   padding: 6px 12px 10px;
-  border-radius: $border-radius-global;
+  border-radius: $borderRadius-050;
   margin-bottom: 12px;
 
   @include font-display-bold;
@@ -21,7 +21,7 @@
 
   // Large Screens
 
-  @include mq(md) {
+  @include breakpoint(md) {
     font-size: 48px;
   }
 

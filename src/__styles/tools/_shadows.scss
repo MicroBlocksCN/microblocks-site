@@ -1,0 +1,16 @@
+// ==========================================================================
+// Tools / Shadows
+// ==========================================================================
+
+
+@mixin shadow-light {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+}
+
+@mixin shadow-medium {
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.25);
+}
+
+@mixin shadow-tight {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.10);
+}
