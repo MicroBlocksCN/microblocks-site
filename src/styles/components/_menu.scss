@@ -210,36 +210,13 @@
 
 .menu__interact {
 
-  @include breakpoint(lg) {
-    margin: 0 0 0 24px;
-  }
+  a.menu__link:link,
+  a.menu__link:visited {
+    color: $color-white;
 
-  @include breakpoint(xl) {
-    margin: 0 0 0 32px;
-  }
-}
-
-
-.menu__link--run {
-  color: $color-white;
-
-  transition: all 0.2s ease-out;
-
-  // Interaction disabled
-  &::after {
-    background-color: transparent;
-  }
-
-  @include breakpoint(lg) {
-    height: 100%;
-    margin: 0;
-    padding: 0 24px;
-
-    display: flex;
-    align-items: center;
-
-    &:hover {
-      color: $color-yellow;
+    // Interaction
+    &::after {
+      background-color: $color-white;
     }
   }
 }
