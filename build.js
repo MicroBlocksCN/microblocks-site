@@ -210,6 +210,8 @@ handlebars.registerHelper('date-string', function (context) {
     // Thanks to https://stackoverflow.com/a/39466341
     function nth(n) { return['st','nd','rd'][((n+90)%100-10)%10-1] || 'th'; };
 
+    return date.toLocaleDateString("en-cn")
+    /*
     return [
             'January',
             'February',
@@ -226,6 +228,7 @@ handlebars.registerHelper('date-string', function (context) {
         ][date.getMonth()] + ' ' +
             day + nth(day) + ', ' +
             date.getFullYear();
+    */
 });
 
 // Thanks to https://stackoverflow.com/a/11924998
