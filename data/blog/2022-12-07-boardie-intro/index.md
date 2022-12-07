@@ -18,7 +18,7 @@ We want people to experience the magic, and the resulting learning, of doing phy
 
 #### What Boardie is
 
-Boardie is a virtual board that does some of the things that actual microcontrollers can do. It has two programmable buttons, like a micro:bit, and it can emulate the 5x5 LED display of the micro:bit or the 240x240 pixel TFT display of Adafruit Clue. It can make square-wave beeps and play tunes, and it supports a simple file system. Finally, it supports the same MicroBlocks HTTP libraries that work on WiFi enabled boards.
+Boardie is a virtual board that does some of the things that actual microcontrollers can do. It has two programmable buttons, like a micro:bit, and it can emulate the 5x5 LED display of the micro:bit or the 240x240 pixel TFT display of Adafruit Clue. It can make square-wave beeps and play tunes, and it supports a simple file system. Finally, it supports the same MicroBlocks HTTP client library that works on WiFi enabled boards.
 
 #### Using Boardie
 
