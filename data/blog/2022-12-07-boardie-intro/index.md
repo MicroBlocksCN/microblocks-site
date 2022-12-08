@@ -22,7 +22,7 @@ Boardie is a virtual board that does some of the things that actual microcontrol
 
 #### Using Boardie
 
-Boardie runs in the MicroBlocks web app at [microblocks.fun/run](microblocks.fun/run). Since it does not require WebSerial, it can run in Safari and Firefox, as well as Chrome and Edge. Boardie is not supported in the MicroBlocks stand-alone apps.
+Boardie runs in the MicroBlocks web app at [microblocks.fun/run](https://microblocks.fun/run). Since it does not require WebSerial, it can run in Safari and Firefox, as well as Chrome and Edge. Boardie is not supported in the MicroBlocks stand-alone apps.
 
 Start Boardie by clicking on the USB icon and selecting *open Boardie*. When Boardie is open, MicroBlocks is connected to it and you can program and interact with it in the same way you would a real, physical device.
 
