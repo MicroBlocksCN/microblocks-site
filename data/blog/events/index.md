@@ -11,5 +11,7 @@
 
 #### 中文社区
 
+-   2022.12.10 [《MicroBlocks 演示答疑分享会 第 3 期》](https://www.bilibili.com/video/BV1WK41167B9/)
 -   2022.12.03 [《MicroBlocks 演示答疑分享会 第 2 期》](https://www.bilibili.com/video/BV1KG4y1R7i8/)
 -   2022.11.26 [《MicroBlocks 演示答疑分享会 第 1 期》](https://www.bilibili.com/video/BV1LK411R732/)
+ 
