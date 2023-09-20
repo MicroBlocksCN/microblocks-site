@@ -1,79 +1,79 @@
-How do you give someone a hand-on introduction to MicroBlocks if they don't have a microcontroller board?
+如果一个人没有编程主板，怎么入门 MicroBlocks 呢 ?
 
-That's a problem we have encountered many times when presenting MicroBlocks at virtual workshops over the past several years. It is also a problem faced  by teachers who don't have enough boards for every student in their class.
+这是我们过去几年在研讨会上介绍 MicroBlocks 时，多次遇到的问题。也是教师面临的一个问题，他们没有足够的板子给班上的每个学生使用。
 
-Enter **Boardie**, a virtual board for MicroBlocks that lets people try MicroBlocks right in the browser.
+使用 **Boardie** ! 这是一个 MicroBlocks 的虚拟器，让人们在浏览器中可以直接尝试 MicroBlocks。
 
 ![A screenshot showing the Boardie UI](boardie.png)
 
-The goal of Boardie is to introduce MicroBlocks to people who are thinking about physical computing but don't yet have a board. We want to help them see that coding a microcontroller is easy and fun, and encourage them to dive into actual physical computing.
+Boardie 的目标是把 MicroBlocks 介绍给那些打算进行物理计算但还没有编程主板的人。我们希望帮助他们看到，给微控制器编码是很容易且有趣的，并鼓励他们深入到实际的物理计算中去。
 
-#### What Boardie is not
+#### Boardie 不是什么
 
-Boardie is not meant to replace a real microcontroller. The magic of physical computing arises from its ability to interact with the physical world: to sense physical phenomenon like light, sound, and temperature and to control things like lights, motors, and electrical appliances.
+Boardie 不打算取代真正的微控制器。物理计算的魔力来自于它与真实物理世界互动的能力: 感知光、声音和温度等物理现象，并控制灯、马达和电器等事物。
 
-Boardie makes no attempt to simulate physical sensors or output devices. While it is not difficult to simulate those things — for example, sliders can be used as virtual sensor inputs and animated images can show virtual motors and servos — we feel that doing that misses the point.
+Boardie 没有试图模拟物理传感器或输出设备。虽然模拟这些东西并不困难, 例如，滑块可以作为虚拟的传感器输入，动画图像可以显示虚拟的马达和舵机, 但我们觉得这样做忽略了重点。
 
-We want people to experience the magic, and the resulting learning, of doing physical computing in the actual physical world. 
+我们希望人们能够体验在实际的物理世界中进行物理计算的魅力，以及由此带来的学习热情。
 
-#### What Boardie is
+#### Boardie 是什么
 
-Boardie is a virtual board that does some of the things that actual microcontrollers can do. It has two programmable buttons, like a micro:bit, and it can emulate the 5x5 LED display of the micro:bit or the 240x240 pixel TFT display of the Adafruit Clue. It can make square-wave beeps and play tunes, and it supports a simple file system. Finally, it supports the same MicroBlocks HTTP client library that works on WiFi enabled boards.
+Boardie 是一块虚拟主板，可以做一些实际的微控制器能做的事情。它有两个可编程的按钮，就像 micro:bit 一样，它可以模拟 micro:bit 的 5x5 LED 显示屏或 Adafruit Clue 的 240x240 像素的 TFT 显示屏。它可以发出方波蜂鸣声和播放曲子，并支持一个简单的文件系统。最后，它支持 MicroBlocks HTTP 客户端库，这个客户端原本用于 WiFi 板子。
 
-#### Using Boardie
+#### 使用 Boardie
 
-Boardie runs in the MicroBlocks web app at [microblocks.fun/run](https://microblocks.fun/run). Since it does not require WebSerial, it can run in Safari and Firefox, as well as Chrome and Edge. Boardie is not supported in the MicroBlocks stand-alone apps.
+你可以点击 [这里](https://microblocksfun.cn/run/microblocks.html)(浏览器中) 来使用 Boardie. 由于它不需要 WebSerial，因此可以在 Safari 、Firefox 、Chrome 和 Edge 中运行。 Boardie 在 MicroBlocks 独立应用程序中不受支持，只能用于浏览器版本。
 
-Start Boardie by clicking on the USB icon and selecting *open Boardie*. When Boardie is open, MicroBlocks is connected to it and you can program and interact with it in the same way you would a real, physical device.
+通过单击 USB 图标, 并选择**连接模拟器**来启动 Boardie。 当 Boardie 打开时，MicroBlocks 会连接到它，您可以像使用真实的物理设备一样对其进行编程和交互。
 
-MicroBlocks can only be connected to one board at a time. So, since Boardie is a virtual board, you'll need to disconnect Boardie before connecting MicroBlocks to a physical board. Use the *disconnect* command in the USB icon menu or Boardie's power switch to disconnect. Boardie disappears when it is disconnected.
+MicroBlocks 一次只能连接到一个板子上。因此，由于 Boardie 是一个虚拟板，你在将 MicroBlocks 连接到物理板之前，需要先断开 Boardie。点击 USB 图标菜单中的 **断开连接** 或者点击 Boardie 右上角的的电源开关来断开连接。Boardie 在断开连接后会消失。
 
-#### Examples
+#### 例子
 
-Here is a simple micro:bit example running on Boardie, the *Heartbeat* project:
+这里有一个在 Boardie 上运行的简单 micro:bit 例子，**心跳** 项目。
 
 ![The heartbeat project running on Boardie](heartbeat.gif)
 
-Clicking the A button on Boardie runs the script.
+点击 Boardie 上的 A 按钮，运行脚本。
 
-When the Boardie device is in focus you can also use the left and right arrow keys or the A and B keys on your keyboard to activate the buttons. That feature is useful for games.
+当 Boardie 设备处于聚焦状态时，你也可以使用键盘上的左右方向键或 A、B 键来激活按钮。这个功能对游戏很有用。
 
-Having a TFT display means we're not limited to a 5x5 matrix.  As with the Adafruit Clue, the Citilab ED1 or the M5Stack, you can draw arbitrary graphics on the screen using the MicroBlocks TFT library.
+拥有一个 TFT 显示屏意味着我们不再局限于 5x5 的矩阵。与 Adafruit Clue、Citilab ED1 或 M5Stack 一样，你可以使用 MicroBlocks TFT 库在屏幕上绘制任意的图形 (也支持海龟(turtle)库！)
 
-This Jumpy Ball game was originally designed for the Citilab ED1 but is coded to automatically adjust to different screen dimensions:
+这个跳跳球游戏最初是为 Citilab ED1 设计的，但其编码可自动调整到不同的屏幕尺寸。
 
 ![The jumpy ball game running on Boardie](jumpy.gif)
 
-Boardie features a ~5MB file system that can store data or media files. This tile-matching memory game uses the MicroBlocks BMP library to display images:
+Boardie 具有一个大约 5MB 的文件系统，可以存储数据或文件。这个记忆游戏使用 MicroBlocks BMP 库来显示图像。
 
 ![The memory game running on Boardie](memory.gif)
 
-You may have noticed that the Boardie TFT screen is actually a touch screen, which gives you more possibilities for UI design than just the two buttons would.
+你可能已经注意到，Boardie TFT 屏幕实际上是一个触摸屏，这给你的用户界面设计提供了更多的可能性，而不仅仅是两个按钮。
 
-Boardie also features a speaker. The speaker grill at the bottom of the face plate glows when sound is being played:
+Boardie 还带有一个扬声器。面板底部的扬声器格栅在播放声音时发光(像是音量提示)。
 
 ![Boardie playing some music](sound.gif)
 
-Here's the exact same game being playing on a physical board:
+完全相同的游戏，在真实的板子上运行:
 
 ![The snake game on an Adafruit Clue](snake.gif)
 
-We can't wait to see what you will create with Boardie!
+我们迫不及待地想看看你将用 Boardie 创造出什么!
 
 ---
 
-#### Boardie Specs
+#### Boardie 技术参数
 
-For the more tech-oriented, here are the technical specs of this virtual board:
+对于更注重技术的人来说，以下是这个虚拟主板的技术参数:
 
-* RAM: 65kB
-* File storage: ~5MB
-* Inputs: A and B buttons, plus a combined A+B button, touch screen
-* Outputs: 240x240px 24-bit TFT, speaker
-* Network capabilities: HTTP Client
+- RAM: 65kB
+- 文件存储: 大约 5MB
+- 输入: A 和 B 按钮, A+B 组合按钮, 触摸屏
+- 输出: 240x240 像素 24-bit TFT, 扬声器
+- 网络能力: HTTP 客户端
 
 ---
 
-#### Acknowledgment
+#### 致谢
 
-Many thanks to Christiane, leader of the SAP Young Thinkers group, for suggesting Boardie. We were initially skeptical, but now we love Boardie!
+非常感谢 SAP 青年思想家小组的负责人 Christiane 提议构建 Boardie。我们最初持怀疑态度，但现在我们都很喜欢 Boardie!
