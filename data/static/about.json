@@ -36,6 +36,13 @@
             "img":"turgut-guneysu.png"
         },
         {
+            "name":"Wenjie Wu",
+            "role":"软件开发",
+            "role-class":"developer",
+            "bio":"Wenjie Wu, 个人计算长期追随者。创建了非营利组织 CodeLab, 使命是 '传递编程的乐趣，鼓励孩子成为数字时代的创作者'。 他是 CodeLab Adapter 的作者。 为了方便人们使用, 他将 MicroBlocks 本地化为中文并托管在中国。他还为 MicroBlocks 贡献了 MQTT、Sphero-RVR、Wukong 等积木库。 他喜欢在博客上分享有趣的东西: https://wwj718.github.io",
+            "img":"wenjie-wu.jpg"
+        },
+        {
             "name":"Jadga Hügle",
             "role":"文档与测试",
             "role-class":"educational",
